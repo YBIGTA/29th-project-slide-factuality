@@ -285,23 +285,21 @@ def split_claims(text: str) -> list[str]:
 def build_records(slide: 슬라이드정보) -> list[dict[str, Any]]:
     result: list[dict[str, Any]] = []
     seen: set[str] = set()
-    context_items = [item for item in slide.items if item.role != "title"]
+    # Context는 현재 claim과 제목을 포함한 슬라이드 전체 텍스다.
+    # 따라서 같은 슬라이드에서 추출된 모든 claim은 동일한 Context를
+    # 가지며, 항목 순서를 통해 claim의 상대적 위치도 확인할 수 있다.
+    context = [f"[{item.tag}] {item.text}" for item in slide.items]
     for source in slide.items:
         for claim in split_claims(source.text):
             if not claim or claim in seen:
                 continue
             seen.add(claim)
-            context = [
-                f"[{item.tag}] {item.text}"
-                for item in context_items
-                if item.item_id != source.item_id
-            ]
             result.append(
                 {
                     "Slide #": slide.number,
                     "Claim (PPT)": claim,
                     "Slide_Title": slide.title,
-                    "Context (PPT)": context,
+                    "Context (PPT)": list(context),
                 }
             )
     return result
