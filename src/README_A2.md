@@ -6,7 +6,7 @@
 ## 실행
 
 ```bash
-pip install pypdf kiwipiepy
+python -m pip install -r requirements.txt
 
 # ① PDF -> 초벌 텍스트 (정제 보조. 결과는 사람이 검수한다)
 python src/pdf_to_text.py docs/raw/arts_01.pdf --doc-id arts_01

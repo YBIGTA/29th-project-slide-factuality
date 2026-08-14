@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""PPTX의 텍스트를 빠르게 추출해 claim JSONL로 저장한다."""
+"""PPTX의 텍스트를 빠르게 추출해 claim JSONL로 저장한다.
+
+추출 기준은 ``prompts/claim_split_v1.txt``에 문서화되어 있다.
+"""
 
 from __future__ import annotations
 
