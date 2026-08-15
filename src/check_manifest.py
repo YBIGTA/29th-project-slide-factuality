@@ -24,15 +24,14 @@
 
 사용법
   # 1. 등록 안 된 덱/원문이 있는지 훑어본다 (아무것도 고치지 않는다 — 매주 이거부터 돌려라)
-  #    등록 안 된 덱마다 --add 명령을 통째로 찍어준다. 터미널에 그대로 붙여넣고
-  #    <...> 로 표시된 자리만 채우면 된다.
+  #    등록 안 된 덱마다 --add 명령을 통째로, 한 줄로 찍어준다. bash·PowerShell·cmd
+  #    아무 데나 그대로 붙여넣고 FILL_ 로 시작하는 자리만 실제 값으로 바꾸면 된다.
+  #    (한 줄인 이유: PowerShell 은 bash 처럼 줄 끝 `\` 로 이어붙이지 않는다 — 백틱을 쓴다.
+  #    셸마다 문법이 달라서 아예 한 줄로 만들었다)
   python src/check_manifest.py --scan
 
-  # 2. --scan 이 찍어준 명령을 그대로 붙여넣거나, 손으로 하나씩 추가한다.
-  python src/check_manifest.py --add --deck-id "bio02_claudecode X1" --doc-id bio_02 \\
-      --title "BF-7, 허혈성 뇌손상을 막고 기억력을 살리다" \\
-      --source "대한해부학회지 38(2), 181-188, 2005" \\
-      --domain 의학 --license KOGL-1 --tool claudecode --split train
+  # 2. --scan 이 찍어준 명령을 그대로 붙여넣거나, 손으로 하나씩 추가한다. (한 줄)
+  python src/check_manifest.py --add --deck-id "bio02_claudecode X1" --doc-id bio_02 --title "BF-7, 허혈성 뇌손상을 막고 기억력을 살리다" --source "대한해부학회지 38(2), 181-188, 2005" --domain 의학 --license KOGL-1 --tool claudecode --split train
 """
 from __future__ import annotations
 
@@ -119,42 +118,60 @@ def guess_doc_id(deck_id: str) -> str | None:
     return None
 
 
+# FILL_ 로 시작하는 토큰만 쓴다 — <...>, [...], $(...) 같은 건 bash 에선 괜찮아도
+# PowerShell/cmd 에서는 리다이렉션·타입 캐스트·서브식으로 해석돼서 그대로 붙여넣으면
+# 터미널이 깨진다(실제로 이 문제로 --add 가 실패했었다). FILL_ 토큰은 공백·특수문자가
+# 없는 그냥 문자열이라, 안 고치고 그대로 실행해도 셸이 죽지 않고 manifest.csv 에
+# "FILL_SOURCE" 같은 값이 그대로 들어갈 뿐이다 — 실행 전에 사람이 바꾸면 된다.
 PLACEHOLDER = {
-    "doc_id": "<DOC_ID>",
-    "title": "<TITLE>",
-    "source": "<SOURCE, 예: 학회지 45(1), 2025, 197-220>",
-    "domain": "<DOMAIN>",
-    "license": "<LICENSE, 예: KOGL-1 / CC-BY>",
-    "tool": "<TOOL, 예: claudecode>",
-    "prompt_id": "<PROMPT_ID>",
-    "split": "<train|test|generalization>",
+    "doc_id": "FILL_DOC_ID",
+    "title": "FILL_TITLE",
+    "source": "FILL_SOURCE",
+    "domain": "FILL_DOMAIN",
+    "license": "FILL_LICENSE",
+    "tool": "FILL_TOOL",
+    "prompt_id": "FILL_PROMPT_ID",
+    "split": "FILL_SPLIT",
+}
+
+HINTS = {
+    "source": "예: 학회지 45(1), 2025, 197-220",
+    "domain": "예: 의학, 사회학, 예술",
+    "license": "예: KOGL-1, CC-BY, CC BY-NC 4.0",
+    "prompt_id": "예: P1",
+    "split": "train / test / generalization 중 하나",
 }
 
 
 def add_command_for(deck_path: Path, doc_id_hint: str | None = None) -> str:
-    """등록 안 된 덱 하나에 대해, 터미널에 바로 붙여넣을 수 있는 --add 명령을 만든다.
+    """등록 안 된 덱 하나에 대해, 터미널에 바로 붙여넣을 수 있는 --add 명령을 한 줄로 만든다.
 
-    기계적으로 뽑을 수 있는 값(deck_id, tool 추정, title 추정)은 채우고
-    사람이 정해야 하는 값은 <..._자리> 로 표시해서 뭘 고쳐야 하는지 한눈에 보이게 한다.
+    한 줄로 만드는 이유: bash 는 줄 끝 `\\` 로 여러 줄을 이어 붙이지만 PowerShell 은
+    그 문법이 없다(백틱을 쓴다). 셸을 안 가리려면 아예 한 줄이 제일 안전하다.
+    기계적으로 뽑을 수 있는 값(deck_id, tool 추정, title 추정)은 채우고, 사람이 정해야
+    하는 값은 FILL_ 로 시작하는 자리로 남긴다.
     """
     deck_id = deck_path.stem
     doc_id = doc_id_hint or guess_doc_id(deck_id) or PLACEHOLDER["doc_id"]
     title = guess_title(deck_path) or PLACEHOLDER["title"]
     tool = guess_tool(deck_id) or PLACEHOLDER["tool"]
 
-    lines = [
+    def val(v: str) -> str:
+        return v if v.startswith("FILL_") else shlex.quote(v)
+
+    parts = [
         "python src/check_manifest.py --add",
-        f"  --deck-id {shlex.quote(deck_id)}",
-        f"  --doc-id {doc_id if doc_id.startswith('<') else shlex.quote(doc_id)}",
-        f"  --title {title if title.startswith('<') else shlex.quote(title)}",
-        f"  --source {PLACEHOLDER['source']}",
-        f"  --domain {PLACEHOLDER['domain']}",
-        f"  --license {PLACEHOLDER['license']}",
-        f"  --tool {tool if tool.startswith('<') else shlex.quote(tool)}",
-        f"  --prompt-id {PLACEHOLDER['prompt_id']}",
-        f"  --split {PLACEHOLDER['split']}",
+        f"--deck-id {shlex.quote(deck_id)}",
+        f"--doc-id {val(doc_id)}",
+        f"--title {val(title)}",
+        f"--source {PLACEHOLDER['source']}",
+        f"--domain {PLACEHOLDER['domain']}",
+        f"--license {PLACEHOLDER['license']}",
+        f"--tool {val(tool)}",
+        f"--prompt-id {PLACEHOLDER['prompt_id']}",
+        f"--split {PLACEHOLDER['split']}",
     ]
-    return " \\\n".join(lines)
+    return " ".join(parts)
 
 
 # ─────────────────────────────────────────────────────────────
@@ -182,8 +199,11 @@ def scan(root: Path) -> int:
 
     if new_decks:
         print(f"[등록 안 된 덱] decks/ 에는 있는데 manifest.csv deck_id 에는 없음 — {len(new_decks)}개")
-        print("아래 명령을 터미널에 그대로 붙여넣고 <...> 자리만 채워라"
-              "(deck_id·title·tool 은 추정해서 미리 채웠다 — 틀렸으면 고칠 것).\n")
+        print("아래 명령은 한 줄이라 bash/PowerShell/cmd 어디에 붙여넣어도 그대로 동작한다.")
+        print("FILL_ 로 시작하는 자리만 실제 값으로 바꿔라"
+              "(deck_id·title·tool 은 추정해서 미리 채웠다 — 틀렸으면 고칠 것).")
+        hint_line = "  ".join(f"{k}={v}" for k, v in HINTS.items())
+        print(f"  참고: {hint_line}\n")
         for p in new_decks:
             n = slide_count_of(p)
             print(f"# \"{p.name}\"  (slide_count={n if n is not None else '?'} — 실행하면 자동으로 채워짐)")
@@ -224,20 +244,35 @@ def add(root: Path, args: argparse.Namespace) -> int:
     pdf_path = root / "docs" / "raw" / f"{args.doc_id}.pdf"
     pages = page_count_of(pdf_path) if pdf_path.exists() else None
 
+    valid_splits = {"train", "test", "generalization"}
+    split = args.split or ""
+    if split and split not in valid_splits:
+        print(f"WARN --split 값 '{split}' 은 train/test/generalization 중 하나가 아니다"
+              f"(FILL_SPLIT 을 안 바꾸고 그대로 돌렸을 수 있다) — 빈 칸으로 저장한다.",
+              file=sys.stderr)
+        split = ""
+
+    # FILL_ 로 시작하는 값은 안 바꾸고 그대로 돌린 것이다 — CSV 에는 글자 그대로 박아넣지
+    #않고 빈 칸으로 남긴다. "FILL_SOURCE" 같은 쓰레기 값이 manifest.csv 에 남는 것보다
+    # 빈 칸으로 두고 나중에 채워야 한다는 걸 명확히 하는 편이 낫다.
+    def clean(v: str | None) -> str:
+        v = v or ""
+        return "" if v.startswith("FILL_") else v
+
     row = {
         "doc_id": args.doc_id,
-        "title": args.title or "",
-        "source": args.source or "",
-        "domain": args.domain or "",
-        "owner": args.owner or "",
-        "license": args.license or "",
-        "source_url": args.source_url or "",
+        "title": clean(args.title),
+        "source": clean(args.source),
+        "domain": clean(args.domain),
+        "owner": clean(args.owner),
+        "license": clean(args.license),
+        "source_url": clean(args.source_url),
         "lang": args.lang,
         "pages": pages if pages is not None else "",
-        "split": args.split or "",
+        "split": split,
         "deck_id": args.deck_id,
-        "tool": args.tool or "",
-        "prompt_id": args.prompt_id or "",
+        "tool": clean(args.tool),
+        "prompt_id": clean(args.prompt_id),
         "slide_count": slide_count if slide_count is not None else "",
     }
     rows.append(row)
@@ -269,7 +304,9 @@ def main() -> int:
     ap.add_argument("--license", help="예: KOGL-1, CC-BY")
     ap.add_argument("--source-url")
     ap.add_argument("--lang", default="ko")
-    ap.add_argument("--split", choices=["train", "test", "generalization"])
+    ap.add_argument("--split", help="train / test / generalization 중 하나 "
+                                    "(choices 로 강제하지 않는다 — FILL_SPLIT 을 안 바꾸고 "
+                                    "그대로 돌려도 크래시 대신 경고만 뜨게 하려고)")
     ap.add_argument("--tool", help="예: claudecode, chatGPT")
     ap.add_argument("--prompt-id")
 
@@ -280,6 +317,10 @@ def main() -> int:
     if args.add:
         if not args.deck_id or not args.doc_id:
             ap.error("--add 는 --deck-id 와 --doc-id 가 둘 다 필요하다")
+        if args.doc_id.startswith("FILL_"):
+            ap.error(f"--doc-id 가 아직 '{args.doc_id}' 그대로다 — 실제 doc_id 로 바꾸고 다시 실행할 것 "
+                     f"(이 값은 passages/{{doc_id}}.jsonl 등 다른 단계에서도 그대로 쓰여서 "
+                     f"placeholder 로 등록하면 안 된다)")
         return add(args.root, args)
     ap.error("--scan 또는 --add 가 필요하다")
 
