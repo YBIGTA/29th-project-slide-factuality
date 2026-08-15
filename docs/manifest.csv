@@ -1,4 +1,9 @@
-doc_id,title,source,domain,owner,license,source_url,lang,pages,split,deck_id,tool,prompt_id,slide_count
-socio_01,복지태도의 영향요인: 현재와 미래 불평등 수준에 대한 인식을 중심으로,"보건사회연구 43(4), 2023, 309-327",사회학,,,,ko,6,,socio_01__claudecode,claudecode,,6
-socio_02,산재 노동자의 노동시장 지위 회복 영향 요인 분석: 재해 당시 노동시장 지위에 따른 차이를 중심으로,"보건사회연구 45(1), 2025, 197-220",사회학,,,,ko,6,,socio_02__claudecode,claudecode,,9
-arts_01,유대-아랍 음악과 문화정체성,"한국예술연구 제52호, 임성희, pp.131-136",예술,,,,ko,6,,arts_01__claudecode,claudecode,,10
+﻿doc_id,title,source,domain,owner,license,source_url,lang,pages,split,deck_id,tool,prompt_id,slide_count
+socio_01,蹂듭??쒕룄???곹뼢?붿씤: ?꾩옱? 誘몃옒 遺덊룊???섏???????몄떇??以묒떖?쇰줈,"蹂닿굔?ы쉶?곌뎄 43(4), 2023, 309-327",?ы쉶??,,,,ko,6,train,socio_01__claudecode,,,6
+socio_02,?곗옱 ?몃룞?먯쓽 ?몃룞?쒖옣 吏???뚮났 ?곹뼢 ?붿씤 遺꾩꽍: ?ы빐 ?뱀떆 ?몃룞?쒖옣 吏?꾩뿉 ?곕Ⅸ 李⑥씠瑜?以묒떖?쇰줈,"蹂닿굔?ы쉶?곌뎄 45(1), 2025, 197-220",?ы쉶??,,,,ko,6,train,socio_02__claudecode,claudecode,,9
+arts_01,"?좊?-?꾨엻 ?뚯븙怨?臾명솕?뺤껜??""?쒓뎅?덉닠?곌뎄 ??2?? ?꾩꽦?? pp.131-136""",?덉닠,,,,,ko,6,train,arts_01__claudecode,claudecode,,10
+bio_01,WILD YEAST · XOD INHIBITION,,,,,,ko,9,train,bio_01__chatGPT,chatGPT,,9
+bio_02,"BF-7, 허혈성 뇌손상을 막고 기억력을 살리다","대한해부학회지 38(2), 181-188, 2005",의학,,CC BY-NC 4.0,,ko,8,train,bio_02__claudecode,claudecode,,10
+bio_03,pH 감응형 수화젤 미세입자 탑재 및 방출 거동 분석,,,,,,ko,6,train,bio_03__gemini,gemini,,10
+bio_04,압타머를 이용한 새로운 혈흔 탐지 방법의 개발,,,,,,ko,18,train,bio_04__gemini,gemini,,13
+tech_01,TEXT-TO-POSE · DIFFUSION,,,,,,ko,,train,tech_01__chatGPT,chatGPT,,9
