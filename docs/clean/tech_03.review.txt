@@ -1,0 +1,487 @@
+# 추출 방식: 2단 (종결어미 75.0%)
+[p6 회전텍스트] M(PO, SF) ∈ {0,1}
+[p6 회전텍스트] Coverage = (적용된 보안통제 수
+[p6 회전텍스트] / 적용이 필요한 전체 보안통제 수)
+[p6 회전텍스트] Security Control = f(SEC, PO, SF)
+[p1 머리말] Vol. 31 No. 7, pp. 107-116, July 2026
+[p1 각주]   ∙First Author: Gyeongsu Kim, Corresponding Author: Hanjin Lee
+[p1 각주]   *Gyeongsu Kim (weloving@naver.com), Department of Digital Management, Korea University
+[p1 각주]   *Hyunsu Yoo (n3oism@gmail.com), Department of Digital Management, Korea University
+[p1 각주]   **Hanjin Lee (cus@handong.edu), School of Creative Convergence Education, Handong Global University
+[p1 각주]   ∙Received: 2026. 04. 13, Revised: 2026. 05. 13, Accepted: 2026. 06. 17.
+[p1 각주]   Copyright ⓒ 2026 The Korea Society of Computer and Information
+[p1 각주]   http://www.ksci.re.kr pISSN:1598-849X | eISSN:2383-9945
+[p1 각주]   한국컴퓨터정보학회논문지
+[p1 각주]   Journal of The Korea Society of Computer and Information
+[p1 각주]   https://doi.org/10.9708/jksci.2026.31.07.107
+[p1 각주]   . 기존
+[p1 각주]   , 추적성 부족,
+[p1 각주]   ITU-T X.805와 X.1601과 같은 국제표준을 통
+[p1 각주]   SEC(Security Requirement Code) 기반의 요구
+[p1 각주]   , 그리고 요구사항 적용 범위를 평가하기 위
+[p1 각주]   , 제안 방법은 요구사항 적용 범
+[p1 각주]   .
+[p2 각주]   (Security Technology Reference Model)을 기반으로
+[p2 각주]   보안요구사항을 정형화하고, 보호대상과 보안기능 간 매핑
+[p2 각주]   구조를 통해 요구사항과 아키텍처 간의 관계를 체계적으
+[p2 각주]   로 정의하는 정량적 모델을 제안한다.
+[p2 각주]   II. Theoretical Background and Related
+[p2 각주]   Works
+[p2 각주]   기존 연구는 보안요구사항 도출 및 아키텍처 설계 관점
+[p2 각주]   에서 규제 및 표준 기반 접근, 보안 프레임워크 기반 접근,
+[p2 각주]   그리고 클라우드 보안기술 중심 접근으로 구분할 수 있다.
+[p2 각주]   규제 및 표준 기반 접근은 금융권 보안위협과 요구사항,
+[p2 각주]   모바일 전자금융서비스 보안성 검토, 금융분야 클라우드
+[p2 각주]   이용규제, 그리고 클라우드 서비스 정보보호 프레임워크와
+[p2 각주]   같은 연구에서 확인되듯이 규제 준수 측면에서는 유용하
+[p2 각주]   지만, 실제 시스템 설계와의 연계성은 제한적인 경우가 많
+[p2 각주]   다 [1,11-14].
+[p2 각주]   보안 프레임워크 기반 접근은 ITU-T X.1601과 X.805,
+[p2 각주]   그리고 Zero Trust Architecture와 같이 보안구조를 설
+[p2 각주]   명할 수 있는 이론적 틀을 제공한다는 장점이 있다. 그러
+[p2 각주]   나 X.805는 전통적 네트워크 중심 구조에 강점을 가지는
+[p2 각주]   반면 클라우드 반영이 부족하고, X.1601은 클라우드 환경
+[p2 각주]   에 적합하지만 온프레미스와의 통합적 설계 관점은 상대
+[p2 각주]   적으로 제한적이다 [16-18,20]. 국내에서도 안전한 클라우
+[p2 각주]   드 컴퓨팅 환경을 위한 보안 아키텍처 연구와 X.805 기반
+[p2 각주]   정보보호 프레임워크 도출 연구가 수행되었으나, 규제 요
+[p2 각주]   구사항을 정량적으로 구조화하여 설계 단계로 연결하는
+[p2 각주]   수준까지는 확장되지 않았다 [19,20].
+[p2 각주]   클라우드 보안기술 중심 접근은 AWS 보안 서비스 활
+[p2 각주]   용, PCI DSS 준수, AWS 보안 아키텍처 구성, REST 기반
+[p2 각주]   보안 프레임워크, 그리고 클라우드 환경에서의 Zero
+[p2 각주]   Trust 구현과 같은 연구에서 확인되듯이 운영 및 구현 단
+[p2 각주]   계에서 실질적인 통제 방안을 제시한다 [15,21-23]. 다만
+[p2 각주]   이러한 접근은 주로 특정 환경 또는 기술 요소에 초점을
+[p2 각주]   맞추고 있어, 규제 요구사항 자체를 정형화하고 이를 설계
+[p2 각주]   구조로 일관되게 변환하는 체계를 충분히 제공하지는 않
+[p2 각주]   는다.
+[p2 각주]   또한 클라우드 관련 연구 중에는 거버넌스, 법·제도 개
+[p2 각주]   선 및 규제 체계에 대한 연구도 수행되고 있으며, 이러한
+[p2 각주]   연구는 클라우드 환경에서의 정책적·관리적 관점을 제공한
+[p2 각주]   다 [24,25]. 그러나 최근 연구에서는 클라우드 거버넌스와
+[p2 각주]   규제 체계, 보안 아키텍처 적용 방법론에 대한 논의가 확
+[p3 각주]   ITU-T Zero Trust Proposed
+[p3 각주]   Category
+[p3 각주]   X.805X.1601ArchitectureSTRM
+[p3 각주]   Access
+[p3 각주]   Cloud Control and Integrated
+[p3 각주]   Primary ScopeComputing Identity- Hybrid
+[p3 각주]   Infrastructure
+[p3 각주]   Environment Centric Environment
+[p3 각주]   Security
+[p3 각주]   Requirement Not Not Not
+[p3 각주]   Formalization Provided Provided Provided Provided
+[p3 각주]   Quantitative Not Not Not
+[p3 각주]   Assessment Supported Supported Supported Supported
+[p3 각주]   Requirement-
+[p3 각주]   to-Architecture Limited Limited Limited Supported
+[p3 각주]   Traceability
+[p3 각주]   ITU-T On-Premises
+[p3 각주]   on Quantitative Security Requirements Modeling and
+[p3 각주]   앞서 탐구한 CSA CCM, NIST SP 800-53과 같은 프레
+[p3 각주]   임워크도 검토하였으나, 본 연구의 목적이 보안통제 체계
+[p3 각주]   수립이 아닌 요구사항과 아키텍처 간 정량적 매핑 모델 제
+[p3 각주]   안에 있으므로 비교 대상은 보안 아키텍처 관점에서 직접
+[p3 각주]   적인 관련성이 높은 X.805, X.1601 및 Zero Trust
+[p3 각주]   Architecture를 중심으로 구성하였다.
+[p3 각주]   요컨대 기존 접근과 달리 보안요구사항을 SEC 모델로
+[p3 각주]   정형화하고, STRM 기반 매트릭스를 통해 요구사항과 아
+[p3 각주]   키텍처 간 관계를 정량적으로 정의함으로써 설계의 일관
+[p3 각주]   성과 재현성을 확보하는 것을 목표로 한다.
+[p3 각주]   III. STRM-based Quantitative Security
+[p3 각주]   Requirements Model
+[p3 각주]   제안하는 연구에서는 ITU-T X.805와 X.1601의 구조적
+[p3 각주]   강점을 결합하여 STRM을 정립하고자 한다. X.805는
+[p3 각주]   End-to-End 보안관점에서 계층과 보안기능 차원을 체계
+[p3 각주]   화한 반면, X.1601은 클라우드 환경의 책임분담과 가상화
+[p3 각주]   특성을 반영한다. STRM은 두 표준을 통합하여 내부 인프
+[p3 각주]   라와 클라우드가 혼재된 환경에서도 일관된 보안설계를
+[p3 각주]   가능하게 하는 참조 구조를 제공한다.
+[p3 각주]   Fig. 1. ITU-T X.805 Security Architecture
+[p3 각주]   그림1(Figure 1)은 ITU-T X.805에서 정의한 보안 아키
+[p3 각주]   텍처를 나타내며, 보안 계층(Security Layer), 보안 차원
+[p3 각주]   (Security Dimension) 및 종단간 통신 관점
+[p3 각주]   (End-to-End Communication)을 기반으로 보안요구사
+[p3 각주]   항을 구조화한다.
+[p4 각주]   Limited Insufficient Integration
+[p4 각주]   Consideration of with On-Premises
+[p4 각주]   LimitationsCloud-Native and Infrastructure and
+[p4 각주]   Virtualized Traditional Network
+[p4 각주]   EnvironmentsSecurity
+[p4 각주]   Provides Cloud-Specific
+[p4 각주]   Provides
+[p4 각주]   Security Controls →
+[p4 각주]   Fundamental
+[p4 각주]   Complemen- Combined Use Enables
+[p4 각주]   Security Principles
+[p4 각주]   tarity Comprehensive
+[p4 각주]   for Traditional
+[p4 각주]   Coverage of Hybrid
+[p4 각주]   Infrastructure
+[p4 각주]   Environments
+[p4 각주]   STRM의 핵심 개념은 전체 보안체계를 ‘보호대상
+[p4 각주]   (Protection Object)’과 ‘보안통제(Security Function)’의
+[p4 각주]   관계로 구조화하는 것이다. 먼저 보호대상은 데이터 흐름에
+[p4 각주]   따라 단말기(Endpoint), 네트워크(Network), 서버(Server),
+[p4 각주]   애플리케이션(Application), DBMS, 클라우드(Cloud)로 구
+[p4 각주]   분된다. 다음으로 보안통제는 접근통제(Access Control),
+[p4 각주]   식별 및 인증(Identification and Authentication), 권한관리
+[p4 각주]   (Authorization Management), 기밀성(Confidentiality),
+[p4 각주]   ITU-T ITU-T
+[p4 각주]   개인정보보호(Privacy Protection), 무결성(Integrity), 가용
+[p4 각주]   성(Availability), 로깅 및 감사(Logging and Audit Trail),
+[p4 각주]   보안운영(Security Operations and Management)로 정규
+[p4 각주]   화된다(Figure 3).
+[p4 각주]   Fig. 3. STRM Components and Structure
+[p4 각주]   그림4(Figure 4)는 제안하는 STRM의 핵심 구조를 나
+[p4 각주]   타낸다. STRM은 ITU-T X.805와 ITU-T X.1601의 보안
+[p4 각주]   기능을 통합하고, 이를 보호대상(Protection Object)과 연
+[p4 각주]   계하여 표현한다. 보호 대상은 Endpoint, Network,
+[p4 각주]   Server, Application, DBMS, Cloud로 구성되며, 이를
+[p4 각주]   통해 보안요구 사항 도출과 아키텍처 설계 간의 추적 가능
+[p4 각주]   한 관계를 정의할 수 있다. 또한 STRM은 본 연구에서 제
+[p4 각주]   안하는 SEC 기반 보안요구사항 모델링과 정량적 매핑 절
+[p4 각주]   차의 기반 구조로 활용된다.
+[p4 각주]   Fig. 4. STRM Matrix Structure (Protection Object ×
+[p4 각주]   Security Function)
+[p5 각주]   identifier assigned to each
+[p5 각주]   ① SEC Code
+[p5 각주]   security requirement (e.g, SEC-030).
+[p5 각주]   Concise title summarizing the core
+[p5 각주]   ②intent of the security requirement
+[p5 각주]   Name
+[p5 각주]   (e.g., Encryption of Sensitive Data).
+[p5 각주]   Refined requirement statement derived
+[p5 각주]   from legal, regulatory, and international
+[p5 각주]   ③
+[p5 각주]   Definitionstandard provisions, translated into
+[p5 각주]   technical and implementable terms.
+[p5 각주]   Security control category based on STRM
+[p5 각주]   Security Functions, indicating the
+[p5 각주]   ④relevant security service domain
+[p5 각주]   Criterion
+[p5 각주]   (e.g., Access Control, Authentication,
+[p5 각주]   Confidentiality).
+[p5 각주]   Infrastructure classification based on
+[p5 각주]   STRM Protection Objects, identifying the
+[p5 각주]   ⑤ Applicable infrastructure layers where the
+[p5 각주]   Target
+[p5 각주]   requirement must be applied
+[p5 각주]   (e.g., Endpoint, Server, Cloud).
+[p5 각주]   Related
+[p5 각주]   Applicable laws, supervisory regulations,
+[p5 각주]   Regulations
+[p5 각주]   ⑥and standard clause identifiers
+[p5 각주]   and
+[p5 각주]   supporting the requirement.
+[p5 각주]   References
+[p5 각주]   Types of evidence used to verify
+[p5 각주]   implementation, such as logs,
+[p5 각주]   ⑦ Verification
+[p5 각주]   Evidenceconfiguration values, inspection reports,
+[p5 각주]   or audit records.
+[p5 각주]   Priority level of the requirement (High
+[p5 각주]   ⑧/ Medium /Low) or indication of
+[p5 각주]   Priority
+[p5 각주]   mandatory compliance status.
+[p5 각주]   Management metadata including
+[p5 각주]   Remarks /
+[p5 각주]   revision date, related systems,
+[p5 각주]   ⑨ Change
+[p5 각주]   responsible personnel, and change
+[p5 각주]   History
+[p5 각주]   history.
+[p5 각주]   표 3(Table 3)는 보안요구사항을 정형화된 데이터 객체
+[p5 각주]   로 정의한 구조를 나타내며, 요구사항의 추적성과 재사용
+[p5 각주]   성을 확보하기 위한 기반을 제공한다.
+[p5 각주]   2. Classification and Structuring of Security
+[p5 각주]   Requirements Based on STRM
+[p5 각주]   정형화된 보안요구사항은 STRM의 핵심 구성요소인 보
+[p5 각주]   호대상(PO)과 보안기능(SF)을 기준으로 분류 된다. 먼저
+[p5 각주]   보호대상은 Endpoint, Network, Server, Application,
+[p5 각주]   DBMS, Cloud로 구분되며, 보안기능은 접근통제부터 보
+[p5 각주]   안운영까지 정의된다.
+[p5 각주]   각 SEC 코드는 하나 이상의 보호대상 및 보안기능에 매
+[p5 각주]   핑되며, 이를 통해 보안요구사항의 적용 범위와 성격을 구
+[p5 각주]   조적으로 정의할 수 있다.
+[p6 각주]   SEC-030 Network Server Appli- DBMS Cloud ● ● ● ● ● ● ● ● ● ● ●
+[p6 각주]   Table 5. STRM Matrix: Mapping Between Security
+[p6 각주]   Functions and Protection Objects
+[p6 각주]   Protection
+[p6 각주]   Object →
+[p6 각주]   Endpoint
+[p6 각주]   / Security cation
+[p6 각주]   Function ↓
+[p6 각주]   Access
+[p6 각주]   Control ● ● ● ●
+[p6 각주]   Identification
+[p6 각주]   and ● ○ ● ● ● ●
+[p6 각주]   Authentication
+[p6 각주]   Authorization
+[p6 각주]   Management ○ ● ● ● ● ●
+[p6 각주]   Confidentiality ● ● ● ● ● ●
+[p6 각주]   Privacy
+[p6 각주]   Protection ● ○ ● ● ● ●
+[p6 각주]   Integrity ○ ○ ● ● ● ●
+[p6 각주]   Availability ○ ● ●
+[p6 각주]   Logging and
+[p6 각주]   Audit Trail
+[p6 각주]   Security
+[p6 각주]   Operations
+[p6 각주]   ○ ○ ○ ○ ○ ●
+[p6 각주]   and
+[p6 각주]   Management
+[p6 각주]   Legend:
+[p6 각주]   ● : Applicable, ○ : Not applicable
+[p6 각주]   본 매트릭스(Table 5)는 보안기능과 보호대상 간 적용
+[p6 각주]   관계를 정량적으로 표현하며, 보안요구사항 적용 범위를
+[p6 각주]   분석하기 위한 기준을 제공한다.
+[p6 각주]   4. Mapping to Security Architecture Design
+[p6 각주]   나아가 정량화된 보안요구사항은 다음과 같은 변환 함
+[p6 각주]   수에 의해 아키텍처 설계 요소로 연결된다.
+[p6 각주]   이를 통해 각 보안요구사항은 특정 인프라 계층에서 요
+[p6 각주]   구되는 보안통제로 변환되며, 설계 과정에서 일관된 적용
+[p6 각주]   이 가능해진다. 특히 클라우드 환경에서는 책임분담 모델
+[p6 각주]   을 고려하여 CSP와 사용자 영역을 구분하고, 각 영역에
+[p6 각주]   적합한 보안통제를 적용한다.
+[p6 각주]   이 변환 함수는 보안요구사항을 단순 개념 수준에서 실
+[p6 각주]   제 설계요소로 연결하는 핵심 메커니즘으로, 동일한 SEC
+[p6 각주]   코드라도 보호대상과 보안기능의 조합에 따라 서로 다른
+[p6 각주]   보안통제로 구체화될 수 있다. 이를 통해 보안설계는 기술
+[p6 각주]   선택이 아닌 구조적 매핑 과정으로 전환된다.
+[p7 머리말] 적용이 필요한 전체 보안통제 수는 STRM에서 정의한 6
+[p7 각주]   Control
+[p7 각주]   End
+[p7 각주]   L4/L7 WAS Database Cloud
+[p7 각주]   point Cluster
+[p7 각주]   AvailabilityLoad Auto Replica- Auto
+[p7 각주]   Redun- -ing
+[p7 각주]   Balancer Scalingtion Scaling
+[p7 각주]   dancy
+[p7 각주]   ApplicCloud
+[p7 각주]   ation Database Trail,
+[p7 각주]   Logging and Local NMS, OS
+[p7 각주]   Logs, Audit Configu-
+[p7 각주]   Audit Trail Logs Syslog Syslog
+[p7 각주]   Audit Logsration
+[p7 각주]   TrailsLogs
+[p7 각주]   Security Patch Network DevSec
+[p7 각주]   VulnerDatabase
+[p7 각주]   Operations ManagManage Ops CSPM,
+[p7 각주]   ability Monitor-
+[p7 각주]   and ement ment Security CNAPP
+[p7 각주]   Scannering
+[p7 각주]   ManagementAgentSystem Tools
+[p7 각주]   표 6(Table 6)은 STRM 기반 매핑 결과를 실제 보안통
+[p7 각주]   제 구현 요소로 변환한 예시로, 요구사항이 아키텍처 설계
+[p7 각주]   로 연결되는 과정을 보여준다.
+[p7 각주]   5. Procedural Implications
+[p7 각주]   본 절에서 제시한 절차는 보안요구사항을 단순 문서가
+[p7 각주]   아닌 구조화된 데이터로 전환하고, 이를 아키텍처 설계에
+[p7 각주]   직접 활용할 수 있도록 한다는 점에서 의의를 가진다. 이
+[p7 각주]   를 통해 보안설계는 경험 기반 접근에서 벗어나, 재현성과
+[p7 각주]   일관성을 갖는 구조 기반 설계 방식으로 전환될 수 있다.
+[p7 각주]   Network Server Appli- DBMS Cloud
+[p7 각주]   on Quantitative Security Requirements Modeling and
+[p7 각주]   V. Case Study and Validation
+[p7 각주]   이번 연구에서 제안한 STRM 기반 보안요구사항 정량화
+[p7 각주]   및 아키텍처 매핑 모델의 타당성을 검증하기 위해, 금융기
+[p7 각주]   관 하이브리드·멀티클라우드 환경 구축 프로젝트 사례를
+[p7 각주]   대상으로 적용 및 분석을 수행하였다. 크게 검증은 정량적
+[p7 각주]   평가와 정성적 평가를 병행하는 방식으로 수행하였다.
+[p7 각주]   대표적으로 살펴볼 사례는 국내 금융기관의 차세대 시
+[p7 각주]   스템 구축 사업 중 하이브리드·멀티클라우드 환경 적용 프
+[p7 각주]   로젝트를 대상으로 수행하였다. 분석 대상은 프로젝트 범
+[p7 각주]   위 정의서, 보안요구사항 정의서, 보안성 검토 결과서 및
+[p7 각주]   보안 아키텍처 설계서이며, 동일 프로젝트를 기준으로 기
+[p7 각주]   존 방식과 STRM 기반 방식을 비교분석했다. 평가 과정에
+[p7 각주]   서는 제안된 기준에 따라 보호대상과 보안기능 간 매핑을
+[p7 각주]   수행하고, 프로젝트 범위에 해당하는 보안통제의 적용 여
+[p7 각주]   부를 확인하였다.
+[p7 각주]   1. Design of Quantitative Validation
+[p7 각주]   앞서 밝힌 바와 같이, 본 연구에서는 STRM(Security
+[p7 각주]   Technology Reference Model) 기반 보안요구사항 정량
+[p7 각주]   화 모델의 적용 효과를 분석하기 위해 보안요구사항 적용
+[p7 각주]   범위를 나타내는 Coverage 지표를 활용하였다. Coverage
+[p7 각주]   는 보호대상과 보안기능 간 매핑 결과를 기반으로 적용된
+[p7 각주]   보안통제의 비율을 측정하는 지표로서 정의한다.
+[p7 각주]   다만 여기에서 Coverage는 보안통제의 강도, 성숙도
+[p7 각주]   또는 보안성 수준을 평가하기 위한 지표가 아니라, 보안요
+[p7 각주]   구사항이 설계 과정에 얼마나 충실하게 반영되었는지를
+[p7 각주]   평가하기 위한 요구사항 적용 범위 지표로 정의하였다.
+[p7 각주]   개의 보호대상(Endpoint, Network, Server, Application,
+[p7 각주]   DBMS, Cloud)과 9개의 보안기능의 조합을 기준으로 산정
+[p7 각주]   하였다. 이에 따라 전체 통제 후보군은 최대 54개(6×9) 항목
+[p7 각주]   으로 구성된다. 이 중 실제 프로젝트 범위에 해당하는 통제
+[p7 각주]   만을 평가 대상으로 선정하였으며, 선정 여부는 프로젝트 범
+[p7 각주]   위 정의서, 보안요구사항 정의서, 보안성 검토 결과서 및 보
+[p7 각주]   안 아키텍처 설계서를 기준으로 판단하였다.
+[p7 각주]   모든 보안통제에 동일 가중치를 적용하였으며, 통제 중
+[p7 각주]   요도, 위험도 또는 규제 영향도에 따른 별도의 가중치는
+[p7 각주]   부여하지 않았다. 이는 본 연구의 목적이 개별 보안통제의
+[p7 각주]   우수성을 평가하는 것이 아니라, 요구된 보안통제가 설계
+[p7 각주]   과정에 누락 없이 반영되었는지를 정량적으로 확인하는
+[p7 각주]   데 있기 때문이다.
+[p8 머리말] Controls 47 47
+[p8 머리말] Controls 28 43
+[p8 머리말] - Implemented security control = 1
+[p8 머리말] - Non-implemented security control = 0
+[p8 각주]   Traceability LimitedEstablished
+[p8 각주]   * Evaluation Criteria:
+[p8 각주]   - Coverage = Number of implemented security controls
+[p8 각주]   / Total number of evaluated security controls
+[p8 각주]   여기에서 Coverage는 보안통제의 품질 수준을 의미하
+[p8 각주]   는 것이 아니라, 설계 과정에서 요구된 통제가 실제로 반
+[p8 각주]   영되었는지를 측정하기 위한 적용 범위 지표이다. 본 사례
+[p8 각주]   에서는 STRM 기준에 따라 총 54개의 보안통제 후보군을
+[p8 각주]   식별하였다. 이 중 프로젝트 범위에 해당하는 47개 통제를
+[p8 각주]   평가 대상으로 선정하였으며, 평가는 프로젝트 설계 산출
+[p8 각주]   물 및 보안성 검토 결과를 기준으로 수행하였다.
+[p8 각주]   Conventional Partially Explicitly
+[p8 각주]   기존 방식에서는 47개 통제 중 28개 통제가 설계 산출
+[p8 각주]   물에 반영되어 Coverage 59.6%를 나타냈다. 반면 STRM
+[p8 각주]   기반 방식에서는 동일 조건에서 43개 통제가 반영되어
+[p8 각주]   Coverage 91.5%를 기록하였다. 특히 접근통제, 로깅 및
+[p8 각주]   감사, 보안운영 영역에서 기존 방식에서 누락되었던 요구
+[p8 각주]   사항이 추가로 식별되었으며, 이를 통해 요구사항 적용 범
+[p8 각주]   위가 확대되는 결과를 확인하였다.
+[p8 각주]   특히 접근통제, 로깅 및 감사(Logging and Audit
+[p8 각주]   Trail), 보안운영 영역에서 기존 방식은 담당자 경험에 따
+[p8 각주]   라 적용 여부가 달라지는 경향이 있었으나, STRM 기반
+[p8 각주]   접근 방식에서는 보호대상과 보안기능 간 매핑 규칙에 따
+[p8 각주]   라 일관성 있게 적용되었다.
+[p8 각주]   더불어 요구사항과 보안통제 간 관계가 명확하게 정의
+[p8 각주]   됨에 따라 설계 변경 시 영향도 분석이 용이해졌으며, 규
+[p8 각주]   제 대응 과정에서 요구사항 추적성(Traceability) 확보에
+[p8 각주]   도 긍정적인 효과가 확인되었다. 따라서 STRM 기반 접근
+[p8 각주]   방식은 단순한 Coverage 향상뿐 아니라 보안요구사항 누
+[p8 각주]   락 감소, 설계 일관성 확보 및 규제대응 효율성 향상 측면
+[p8 각주]   에서도 유의미한 개선효과를 제공하는 것으로 분석되었다.
+[p8 각주]   요컨대 본 연구는 복수의 금융기관 프로젝트 적용 경험
+[p8 각주]   을 기반으로 방법론을 설계하고 검증하였다. 다만 금융권
+[p8 각주]   중심 사례를 대상으로 분석이 수행되었으므로, 향후 공공·
+[p8 각주]   제조·의료 등 다양한 산업 환경에 대한 추가 검증을 통해
+[p8 각주]   일반화 가능성을 확대할 필요가 있다.
+[p8 각주]   3. Design of Qualitative Validation
+[p8 각주]   한편 정성적 검증은 금융기관 클라우드 구축 및 보안 아
+[p8 각주]   키텍처 설계 경험을 보유한 전문가를 대상으로 수행하였다.
+[p8 각주]   평가 대상은 금융회사 정보보호 담당자 1명, 본 사례 프
+[p8 각주]   로젝트에 참여한 보안 아키텍트 1명, 그리고 금융권 보안
+[p8 각주]   아키텍처 구축 및 정보보호 컨설팅 경험을 보유한 정보보
+[p8 각주]   호 전문가 2명 등 총 4명으로 구성하였다. 이 중 정보보호
+[p8 각주]   전문가 2명은 금융권 보안 아키텍처 구축 경험을 바탕으로
+[p8 각주]   실무 협의 및 전문가 자문 형태로 의견을 제공하였다.
+[p8 각주]   의견 수집은 이메일 질의응답과 전문가 인터뷰를 병행
+[p8 각주]   하여 수행하였다. 금융회사 정보보호 담당자와 프로젝트
+[p8 각주]   참여 보안 아키텍트는 이메일을 통해 의견을 수집하였으
+[p8 각주]   며, 정보보호 전문가 2명은 실무 협의 과정에서 수행된 전
+[p8 각주]   문가 인터뷰를 통해 의견을 수집하였다.
+[p8 각주]   평가 항목은 보안요구사항 추적성(Requirement
+[p8 각주]   Traceability), 설계 일관성(Design Consistency), 규제
+[p8 각주]   대응 용이성(Regulatory Compliance Support), 요구사
+[p9 각주]   on Quantitative Security Requirements Modeling and
+[p9 각주]   선행연구와 사례 분석을 종합하면, 기존 접근은 규제 중
+[p9 각주]   심, 프레임워크 중심, 기술 중심으로 분절되어 있었으며,
+[p9 각주]   이로 인해 요구사항과 설계 간의 직접적인 연결성과 재현
+[p9 각주]   성이 충분히 확보되지 못하였다 [1, 14–18, 21–25]. 이에
+[p9 각주]   비해 STRM 기반 접근은 보안요구사항을 구조화된 데이터
+[p9 각주]   객체로 관리하고, 인프라 계층과 보안기능 간의 매핑을 통
+[p9 각주]   해 설계의 일관성과 추적성을 강화한다는 점에서 차별성
+[p9 각주]   을 가진다. 또한 AWS 중심의 구현 사례와 클라우드 컴플
+[p9 각주]   라이언스 및 보안 거버넌스 관련 연구를 함께 고려할 때,
+[p9 각주]   본 연구가 제안하는 방법론은 특정 기술이나 CSP에 종속
+[p9 각주]   되지 않는 확장 가능한 설계 프레임워크로 활용될 수 있다
+[p9 각주]   [21–25].
+[p9 각주]   후속 연구에서는 다양한 산업 환경과 다수의 프로젝트
+[p9 각주]   를 대상으로 정량적 검증을 확대하고, STRM 기반 모델을
+[p9 각주]   AI 기반 자동 설계 및 DevSecOps 환경과 연계하여 발전
+[p9 각주]   시키는 방향이 필요하다.
+[p9 각주]   REFERENCES
+[p9 각주]   [1] D. Shin, I. Yoo, and J. Kim, “A Study on Cloud Security Threats
+[p9 각주]   and Security Requirements in the Korean Financial Sector,” Journal
+[p9 각주]   of the Korea Next-Generation Computing Society, vol. 20, no. 4,
+[p9 각주]   pp. 77-96, 2024. doi:10.23019/kingpc.20.4.202408.007
+[p9 각주]   [2] J. S. Lim, “A Study on Security Policies for Activating Cloud
+[p9 각주]   Adoption in Financial Companies,” Journal of Culture Technology,
+[p9 각주]   vol. 3, no. 4, pp. 199-205, 2017. doi:10.17703/JCCT.2017.3.4.199
+[p9 각주]   [3] K. N. Mishra, V. Bhattacharjee, S. Saket, and S. P. Mishra, “Cloud
+[p9 각주]   and Big Data Security System’s Review Principles: A Decisive
+[p9 각주]   Investigation,” Wireless Personal Communications, vol. 117, no.
+[p9 각주]   2, pp. 1-38, 2022. doi:10.1007/s11277-022-09781-0
+[p9 각주]   [4] M. Hossain, G. Kayas, R. Hasan, A. Skjellum, S. Noor, and S.
+[p9 각주]   M. R. Islam, “A Holistic Analysis of Internet of Things (IoT)
+[p9 각주]   Security: Principles, Practices, and New Perspectives,” Future
+[p9 각주]   Internet, vol. 16, no. 2, Art. 40, 2024. doi:10.3390/fi16020040
+[p9 각주]   [5] S.-J. Park, Y.-J. Lee, and W.-H. Park, “Configuration Method of
+[p9 각주]   AWS Security Architecture That Is Applicable to the Cloud
+[p9 각주]   Lifecycle for Sustainable Social Network,” Security and
+[p9 각주]   Communication Networks, vol. 2022, Art. 3686423, 2022. doi:10.
+[p9 각주]   1155/2022/3686423
+[p9 각주]   [6] Financial Security Institute, Guide to the Use of Cloud Computing
+[p9 각주]   Services in the Financial Sector (2025 Revision), Seoul, Korea,
+[p9 각주]   2025.
+[p9 각주]   [7] Financial Security Institute, Reference Guide for Security
+[p9 각주]   Management of Commercial Cloud Services in the Financial
+[p9 각주]   Sector, Seoul, Korea, 2024.
+[p10 각주]   Cloud Computing Environment,” Journal of The Korea Society
+[p10 각주]   of Computer and Information, vol. 23, no. 12, pp. 81-87, 2018.
+[p10 각주]   doi:10.9708/jksci.2018.23.12.081
+[p10 각주]   [20] Y. Cho and Y. Won, “A Methodology for Deriving an Information
+[p10 각주]   Security Framework for Network Services Based on ITU-T X.805,”
+[p10 각주]   in Proceedings of the 24th Fall Conference of the Korea Information
+[p10 각주]   Processing Society, vol. 12, no. 2, pp. 1027-1030, 2005.
+[p10 각주]   [21] B. Balakrishna, “Strategic Implementation of AWS Security
+[p10 각주]   Services: A Focus on Best Practices, SSM and Secrets Manager,”
+[p10 각주]   Journal of Technology and Systems, vol. 6, no. 1, pp. 25-35,
+[p10 각주]   2024. doi:10.47941/jts.1659
+[p10 각주]   [22] V. Kasibhatla, “Navigating PCI DSS Compliance in the AWS
+[p10 각주]   Cloud,” ISACA Journal, vol. 3, pp. 1–8, 2024.
+[p10 각주]   [23] H. Yoo, K. Kim, and H.-J. Lee, “Research on automated
+[p10 각주]   inspection of electronic financial infrastructure vulnerabilities—
+[p10 각주]   focusing on security equipment,” Journal of Korea Multimedia
+[p10 각주]   Society, vol. 29, no. 2, pp. 319–328, 2026.
+[p10 각주]   doi:10.9717/kmms.2026.29.2.319
+[p10 각주]   [24] H.-W. Lee, “A Study on Cloud Security Architecture Complying
+[p10 각주]   with the Korean Electronic Financial Supervisory Regulations,”
+[p10 각주]   Master’s thesis, Graduate School of Information and
+[p10 각주]   Communications, Konkuk University, Seoul, Korea, 2023.
+[p10 각주]   [25] J.-K. Lee, D. Min, and H.-Y. Kwon, “Issues and Suggestions
+[p10 각주]   for ‘Act on the Development of Cloud Computing’ and Protection
+[p10 각주]   of Its Users,” Journal of Information Technology Applications
+[p10 각주]   & Management, vol. 24, no. 1, pp. 81-91, 2017. doi:10.
+[p10 각주]   21219/jitam.2017.24.1.081
+[p10 각주]   [26] J. Woo, C. Kim, and H. Lee. “Research on the application of
+[p10 각주]   ISO 42001 for information security management in AI
+[p10 각주]   environments,” The Society of Convergence Knowledge
+[p10 각주]   Transactions, vol. 13, no. 1, pp. 65–74, 2025.
+[p10 각주]   doi:10.22716/sckt.2025.13.1.006
+[p10 각주]   Authors
+[p10 각주]   Gyeongsu Kim received his M.S. degree in
+[p10 각주]   Digital Management from Korea University,
+[p10 각주]   Korea, in 2026. He is currently a Director
+[p10 각주]   at an information security consulting firm.
+[p10 각주]   He has over 20 years of professional
+[p10 각주]   experience in the information security field, including
+[p10 각주]   development, engineering, and security consulting. His main
+[p10 각주]   research interests include information security, cloud
+[p10 각주]   computing, privacy protection, and security architecture.
+[p10 각주]   Hyunsu Yoo received his M.S. degree in
+[p10 각주]   Digital Management from Korea University,
+[p10 각주]   Korea, in 2026. He is currently the CEO of
+[p10 각주]   OpenSecureLabBiz, an information security
+[p10 각주]   consulting firm. He has over 21 years of
+[p10 각주]   professional experience in the information security field,
+[p10 각주]   including dev-ops. engineering. His main research interests
+[p10 각주]   include information security, and cloud computing.
+[p10 각주]   Hanjin Lee received the B.S. in Sociology,
+[p10 각주]   M.S. degree in Communication from Yonsei
+[p10 각주]   University, Korea in 2006 and 2011.
+[p10 각주]   Furthermore he received the Ph.D. degrees
+[p10 각주]   in Digital Management, Korea University,
+[p10 각주]   2021. His research interests are focused on AI biz
+[p10 각주]   innovation, user behavior and digitalization. He has gained
+[p10 각주]   16 years experience in the Naver, eBay, and Coupang Corp.
+[띄어쓰기] 전자금융감독규정  ->  전자 금융 감독 규정
+[띄어쓰기] 클라우드보안기술을  ->  클라우드 보안 기술을
+[띄어쓰기] 전자금융감독규정  ->  전자 금융 감독 규정

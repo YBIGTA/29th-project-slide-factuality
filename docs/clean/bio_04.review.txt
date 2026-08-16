@@ -1,0 +1,147 @@
+# 추출 방식: 1단 (종결어미 80.3%)
+[p1 각주]   1) 국립과학수사연구원 유전자과
+[p1 각주]   * 책임(교신저자)
+[p2 머리말] 136 경찰학연구 제23권 제4호(통권 제76호)
+[p2 각주]   1 ) V i r k l e r K 외 , A n a l y s i s o f b o d y f l u i d s f o r f o r e n s i c p u r p o s e s : from laboratory testing to non-destructive
+[p2 각주]   rapid confirmatory identification at a crime scene, Forensic Sci Int., 2009, 188(1-3), pp 1-17
+[p2 각주]   2) Lee HY 외, RNA for Body Fluid Identification in Forensics, Korean J Leg Med., 2009, 33(1), pp 84-88
+[p2 각주]   3) An JH 외, Body fluid identification in forensics, BMB Rep., 2012, 45(10), pp 545-553
+[p2 각주]   4) 이민지 외, 오래된 혈흔 시료에 대한 혈청학적 식별법의 비교 연구, 분석과학, 2018, 31(5), pp 201-207
+[p2 각주]   5) Blum LJ 외, A New High-Performance Reagent and Procedure for Latent Bloodstain Detection Based on
+[p2 각주]   Luminol Chemiluminescence, Canadian Society of Forensic Science Journal, 2006, 39(3), pp 81-99
+[p2 각주]   6) Siegel JA 외, Encyclopedia of forensic sciences (2nd ed.), Academic Press, 2013
+[p2 각주]   7 ) R i c h a r d L i , F o r e n s i c B i o l o g y ( 2 n d e d . ) , C R C P r e s s , 2 0 1 5
+[p3 머리말] 압타머를 이용한 새로운 혈흔 탐지 방법의 개발 137
+[p3 각주]   8 ) C r e a m e r J I 외 , A c o m p r e h e n s i v e e x p e r i m e n t a l s t u d y o f i n d u s t r ial, domestic and environmental
+[p3 각주]   interferences with the forensic luminol test for blood, Luminescence, 2003, 18(4), pp 193-198
+[p3 각주]   9) Castelló A 외, Chemistry in crime investigation: sodium percarbonate effects on bloodstains detection, J
+[p3 각주]   Forensic Sci., 2012, 57(2), pp 500-502
+[p3 각주]   10) Howard D 외, Detection of blood on clothing laundered with s odium percarbonate, Forensic Sci Int.,
+[p3 각주]   2019, 302, 109885
+[p3 각주]   11) O'Sullivan CK, Aptasensors-the future of biosensing?, Anal Bioanal Chem., 2002, 372(1), pp 44-48
+[p3 각주]   12) Bunka DHJ 외, Aptamers come of age-at last, Nature Reviews Microbiology, 2006, 4(8), pp 588-596
+[p3 각주]   13) Kim JY 외, Identification of female-specific blood stains us ing a 17β-estradiol-targeted aptamer-based
+[p3 각주]   sensor, Int J Legal Med., 2018, 132(1), pp 91-98
+[p3 각주]   14) Satoh T 외, Detection of prostate-specific antigen in semen using DNA aptamers: an application of
+[p3 각주]   nucleic acid aptamers in forensic body fluid identification, An alytical Methods, 2020, 12(21), pp
+[p3 각주]   2703-2709
+[p4 머리말] 138 경찰학연구 제23권 제4호(통권 제76호)
+[p4 각주]   (Sigma-Aldrich, USA)와 Manganese(II) chloride (Sigma-Aldrich, USA)를 증류수에 녹
+[p4 각주]   여 사용하였다. 양배추와 마늘은 즙을 내어 사용하였다. 표백제는 유한락스 (Korea) 제품을
+[p4 각주]   사용하였고, 소와 고양이의 면역글로불린 G는 Bethyl Laboratories Inc. (USA)에서, 개의
+[p4 각주]   면역글로불린 G는 Rockland Immunochemicals (USA)에서 구매하여 사용하였다.
+[p4 각주]   인간 면역글로불린 G 압타머는 3’말단에 소광체 (quencher)인 BHQ1을 합성하였고, 압
+[p4 각주]   타머와 상보적 결합을 하는 DNA는 5’말단에 형광체 (fluorophore)인 6-FAM을 합성하였
+[p4 각주]   다. 상보적 DNA는 압타머의 3’말단을 기준으로 8 base pair에서부터 12 base pair까지
+[p4 각주]   상보적 결합을 이루는 DNA를 만들었다. 음성대조군(Negative Control, NC)은 전체 길이
+[p4 각주]   가 23mer인 압타머와 상보적결합을 하는 DNA를 만들었다. 모든 상보적 DNA는 바이오니
+[p4 각주]   아 (Korea)에서 구매하여 사용하였다. 압타센서 제작시 음성대조군은 압타머의 농도 5nM,
+[p4 각주]   상보적 DNA의 농도 50nM을 동량 혼합하여 사용하였고, AS-10과 AS-11은 압타머의 농
+[p4 각주]   도는 5nM, 상보적 DNA의 농도는 350nM을 동량 혼합하여 사용하였다. 동량 섞은 압타머
+[p4 각주]   와 상보적 DNA는 90℃의 온도에서 5분간 반응시키고 상온에서 식힌 후 사용하였다.
+[p5 머리말] 압타머를 이용한 새로운 혈흔 탐지 방법의 개발 139
+[p5 각주]   TM Trio Quantification
+[p5 각주]   kit (Thermo Fisher Scientific, USA)를 사용하여 사용자 지침서대로 수행하였고, 측정
+[p5 각주]   장비는 ABI 7500 RT-PCR (Thermo Fisher Scientific, USA) 장비를 사용하였다.
+[p5 각주]   4. DNA 프로필 분석
+[p5 각주]   압타센서가 DNA 프로필 분석에 영향을 미치는지 확인하기 위하여, 추출한 DNA를 각각
+[p5 각주]   GlobalFiler™ PCR Amplification Kit (Thermo Fisher Scientific, U SA)와
+[p5 각주]   PowerPlex® Fusion System (Promega, USA)를 이용하여 사용자 지침서대로 증폭하였
+[p5 각주]   다. 증폭 산물은 3500 genetic analyzer (Thermo Fisher Scientific, USA) 와
+[p5 각주]   GeneMapper ID-X v1.4 Software (Thermo Fisher Scientific, USA)로 분석하여 DNA
+[p5 각주]   프로필을 분석하였다.
+[p5 각주]   5. 통계처리
+[p5 각주]   실험결과는 각 실험마다 3번의 독립적인 반복 실험결과를 평균 내어 계산한 값이다. 음성
+[p5 각주]   대조군과 압타센서 실험군간의 통계적 유의성은 student’s t-tests로 계산하였고, 3 그룹간
+[p6 머리말] 140 경찰학연구 제23권 제4호(통권 제76호)
+[p7 머리말] 압타머를 이용한 새로운 혈흔 탐지 방법의 개발 141
+[p7 각주]   15) Miyakawa S 외, Structural and molecular basis for hyperspeci ficity of RNA aptamer to human
+[p7 각주]   immunoglobulin G, RNA, 2008, 14(6), pp 1154-1163
+[p7 각주]   16) http://www.unafold.org (2023.10.27 검색)
+[p8 머리말] 142 경찰학연구 제23권 제4호(통권 제76호)
+[p8 각주]   (A: AS-10, B: AS-11)
+[p8 각주]   2. 압타센서의 검증
+[p8 각주]   개발된 압타센서에 대해 압타센서의 농도 감소에 따라 형광 세기가 감소하는지 확인해보
+[p8 각주]   았다. 압타센서의 농도를 1/10씩 희석하여 350, 35, 3.5, 0.35, 0.035nM로 처리하여 형
+[p8 각주]   광 세기를 측정해본 결과, AS-10과 AS-11 압타센서 모두 희석된 농도에 따라 형광 세기가
+[p8 각주]   감소함을 확인하였다 (그림 5).
+[p8 각주]   17) Miao D 외, Fluorescent aptasensor based on D-AMA/F-CSC for the sensitive and specific recognition of
+[p8 각주]   myoglobin, Spectrochim Acta A Mol Biomol Spectrosc., 2020, 228, 117714
+[p9 머리말] 압타머를 이용한 새로운 혈흔 탐지 방법의 개발 143
+[p10 머리말] 144 경찰학연구 제23권 제4호(통권 제76호)
+[p10 각주]   18) Quickenden TI 외, Increasing the specificity of the forensic luminol test for blood, Luminescence, 2001,
+[p10 각주]   6(3), pp 251-253
+[p10 각주]   1 9 ) T o b e S S 외 , E v a l u a t i o n o f s i x p r e s u m p t i v e t e s t s f o r b l o o d , their specificity, sensitivity, and effect on
+[p10 각주]   high molecular-weight DNA, J Forensic Sci., 2007, 52(1), pp 102-109
+[p11 머리말] 압타머를 이용한 새로운 혈흔 탐지 방법의 개발 145
+[p11 각주]   pp 71-77
+[p11 각주]   21) Miyakawa S 외, Structural and molecular basis for hyperspecif i c i t y o f R N A a p t a m e r t o h u m a n
+[p11 각주]   immunoglobulin G, RNA, 2008, 14(6), pp 1154-1163 (재인용)
+[p12 머리말] 146 경찰학연구 제23권 제4호(통권 제76호)
+[p12 각주]   (A: AS-10, B: AS-11)
+[p13 머리말] 압타머를 이용한 새로운 혈흔 탐지 방법의 개발 147
+[p13 각주]   (A: AS-10, B: AS-11)
+[p13 각주]   5. DNA 프로필 분석에 미치는 영향
+[p13 각주]   DNA 프로필 분석에서 압타센서에 의한 형광 간섭이 보이는지 관찰하고자, 그림 10에서
+[p13 각주]   추출한 DNA로 GlobalFiler™ PCR Amplification Kit와 PowerPlex® Fusion System
+[p13 각주]   을 이용하여 증폭하였다. 그 결과, 전체 실험에서 음성대조군 대비 AS-10과 AS-11에서 유
+[p13 각주]   사한 경향성의 DNA 프로필이 검출되어 DNA 증폭과정에서 형광 간섭이 관찰되지 않은 것
+[p13 각주]   으로 판단하였다 (그림 12).
+[p14 머리말] 148 경찰학연구 제23권 제4호(통권 제76호)
+[p15 머리말] 압타머를 이용한 새로운 혈흔 탐지 방법의 개발 149
+[p16 머리말] 150 경찰학연구 제23권 제4호(통권 제76호)
+[p16 각주]   Blum LJ 외, A New High-Performance Reagent and Procedure for Lat ent
+[p16 각주]   Bloodstain Detection Based on Luminol Chemiluminescence, Canadian
+[p16 각주]   Society of Forensic Science Journal, 2006, 39(3), pp 81-99
+[p16 각주]   Creamer JI 외, A comprehensive experimental study of industrial, d o m e s t i c
+[p16 각주]   and environmental interferences with the forensic luminol test for
+[p16 각주]   blood, Luminescence, 2003, 18(4), pp 193-198
+[p16 각주]   Castelló A 외, Chemistry in crime investigation: sodium percarbonate effe cts
+[p16 각주]   on bloodstains detection, J Forensic Sci., 2012, 57(2), pp 500- 502
+[p16 각주]   H o w a r d D 외 , D e t e c t i o n o f b l o o d o n c l o t h i n g l a u n d e r e d w i t h s o d i um
+[p16 각주]   percarbonate, Forensic Sci Int., 2019, 302, 109885
+[p16 각주]   O ' S u l l i v a n C K , A p t a s e n s o r s - - t h e f u t u r e o f b i o s e n s i n g ? , A n a l B i oanal Chem.,
+[p16 각주]   2002, 372(1), pp 44-48
+[p16 각주]   Bunka DHJ 외, Aptamers come of age – at last, Nature Reviews Microbiology,
+[p16 각주]   2006, 4(8), pp 588-596
+[p16 각주]   Kim JY 외, Identification of female-specific blood stains using a 17β
+[p16 각주]   -estradiol-targeted aptamer-based sensor, Int J Legal Med., 201 8,
+[p16 각주]   132(1), pp 91-98.
+[p17 머리말] 압타머를 이용한 새로운 혈흔 탐지 방법의 개발 151
+[p17 각주]   blood, Luminescence, 2001, 16(3), pp 251-253
+[p17 각주]   T o b e S S 외 , E v a l u a t i o n o f s i x p r e s u m p t i v e t e s t s f o r b l o o d , t h e i r s p e c i f i c i t y ,
+[p17 각주]   s e n s i t i v i t y , a n d e f f e c t o n h i g h m o l e c u l a r - w e i g h t D N A , J F o r e n s ic Sci.,
+[p17 각주]   2007, 52(1), pp 102-109
+[p17 각주]   2. 국내문헌
+[p17 각주]   이민지 외, 오래된 혈흔 시료에 대한 혈청학적 식별법의 비교 연구, 분석과학, 2018,
+[p17 각주]   31(5), pp 201-207
+[p17 각주]   정주연 외, 새로운 루미놀 기반 혈흔 탐지 시약이 디엔에이에 미치는 영향에 대한 연구,
+[p17 각주]   분석과학, 2018, 31(2), pp 71-77
+[p17 각주]   Ⅱ. 단행본
+[p17 각주]   1. 국외문헌
+[p17 각주]   Siegel JA 외, Encyclopedia of forensic sciences (2nd ed.), Academic Press, 2013
+[p17 각주]   Richard Li, Forensic Biology (2nd ed.), CRC Press, 2015
+[p17 각주]   Ⅲ. 기타
+[p17 각주]   http://www.unafold.org (2023.10.27. 검색)
+[p18 머리말] 152 경찰학연구 제23권 제4호(통권 제76호)
+[p18 각주]   f l u o r e s c e n c e s i g n a l o f t h e a c t i v a t a b l e a p t a s e n s o r w a s e n h a n c e d approximately
+[p18 각주]   twofold upon increasing the concentration of human immunoglobulin G, confirming
+[p18 각주]   that the aptasensor worked effectively. In the verification of the aptasensor’s
+[p18 각주]   detection capability in human blood, we observed that it was validated for its effective
+[p18 각주]   identification ability and found to be inactivated for various false positive factors of
+[p18 각주]   lum inol reaction. In addition, we showed that false positive factors by fluorescence
+[p18 각주]   interference were not found in DNA extraction and subsequent DNA profiling, which
+[p18 각주]   applies to bloodstain identification in evidence of forensic investigation. Collectively,
+[p18 각주]   these findings suggest that the novel aptasensor specifically t argeting human
+[p18 각주]   immunoglobulin G can be an effective alternative to identify human blood and
+[p18 각주]   bloodstain, which is expected to contribute toward solving crimes.
+[p18 각주]   Keywords : Aptamer, Human immunoglobulin G, Luminol, Bloodstain identification,
+[p18 각주]   DNA profile
+[p18 각주]   ❖ This work is supported by National Forensic Service (NFS2023D NA02), Ministry of the Interior and
+[p18 각주]   Safety, Republic of Korea.
+[p18 각주]   1) Forensic DNA Division, National Forensic Service, Wonju26460, Korea
+[p18 각주]   * Corresponding author
+[띄어쓰기] 중장기과학수사감정기법연구개발  ->  중장기 과학 수사 감정 기법 연구 개발
+[띄어쓰기] 화학발광검사로는  ->  화학 발광 검사로는
+[띄어쓰기] 바이오센서로서의  ->  바이오 센서로서의
+[띄어쓰기] 전립선특이항원을  ->  전립선 특이 항원을

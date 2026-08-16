@@ -171,9 +171,17 @@ _CHAR_FIX = {
 }
 
 
+# 수식 편집기(HWP 등)가 심어놓은 글리프는 사용자 정의 영역(PUA)에 들어간다.
+# 유니코드 매핑이 없어서 무슨 글자였는지 복원할 방법이 없다 (α 인지 u 인지 모른다).
+# 그대로 두면 글꼴이 없는 환경에서 네모로 보여 파일이 깨진 것처럼 읽히므로
+# 눈에 띄는 기호 하나로 바꾼다. segment.normalize() 도 같은 치환을 한다.
+_PUA = re.compile("[-󰀀-􏿿]")
+
+
 def clean_body(text: str) -> str:
     for bad, good in _CHAR_FIX.items():
         text = text.replace(bad, good)
+    text = _PUA.sub("□", text)
     text = _INLINE_MARKER.sub("", text)
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
@@ -219,8 +227,18 @@ def is_heading(line: str) -> bool:
 
 
 def _page_lines(page) -> list[tuple[int, str]]:
-    """(들여쓰기 칸 수, 줄 내용). 들여쓰기는 문단 시작을 알려주는 유일한 단서다."""
+    """(들여쓰기 칸 수, 줄 내용). 들여쓰기는 문단 시작을 알려주는 유일한 단서다.
+
+    layout 모드를 쓰는 이유는 한글 공백 때문이다. 기본 모드는 PDF 생산기에 따라
+    한글 어절 사이 공백을 통째로 잃는다(arts_01 이 그랬다).
+
+    그런데 반대 경우도 있다. bio_04 는 layout 모드가 0자를 돌려주고 기본 모드는
+    멀쩡하다. layout 이 빈손이면 기본 모드로 물러난다 — 들여쓰기 정보를 잃지만
+    아무것도 못 읽는 것보다 낫다.
+    """
     raw = page.extract_text(extraction_mode="layout") or ""
+    if not raw.strip():
+        raw = page.extract_text() or ""
     out = []
     for ln in raw.split("\n"):
         if not ln.strip():

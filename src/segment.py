@@ -174,8 +174,15 @@ _QUOTES = str.maketrans({
 })
 
 
+# 수식 글리프(사용자 정의 영역). pdf_to_text.clean_body() 가 원문 쪽을 □ 로
+# 바꾸므로, 라벨의 evidence_text 에 원래 글리프가 남아 있어도 매칭되도록
+# 여기서도 같은 치환을 한다.
+_PUA = re.compile("[-󰀀-􏿿]")
+
+
 def normalize(s: str) -> str:
     s = unicodedata.normalize("NFKC", s)
+    s = _PUA.sub("□", s)
     s = s.translate(_QUOTES)
     s = re.sub(r"(?<=[가-힣.'\")])\d{1,2}\)", "", s)   # 남아 있는 각주 마커
     return re.sub(r"\s+", " ", s).strip()
