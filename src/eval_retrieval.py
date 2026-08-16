@@ -1,3 +1,4 @@
+from __future__ import annotations
 """A-5 · 검색기 자체 점검 (라벨 없이 돌리는 하한선 측정)
 
 **주의: 이건 진짜 평가가 아니다.**
@@ -18,7 +19,7 @@
 사용법
   python src/eval_retrieval.py --deck-id arts_01__claudecode
 """
-from __future__ import annotations
+
 
 import argparse
 import json

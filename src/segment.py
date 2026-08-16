@@ -1,3 +1,4 @@
+from __future__ import annotations
 """A-2 · 문장 분리기 + 근거 구간 생성
 
 `docs/clean/{doc_id}.txt` 를 받아서
@@ -12,7 +13,7 @@ find_evidence() 가 A-2의 숨은 본체다. 이게 없으면 B-1이 recall 을 
   python src/segment.py docs/clean/arts_01.txt --doc-id arts_01
   python src/segment.py docs/clean/arts_01.txt --doc-id arts_01 --show 20
 """
-from __future__ import annotations
+
 
 import argparse
 import json

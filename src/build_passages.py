@@ -1,3 +1,4 @@
+from __future__ import annotations
 """A-5 · passage pool 생성 — 검색기(BM25 · 임베딩)의 공용 입력을 만든다
 
 `spans/{window}/{doc_id}.jsonl` 을 받아서 `passages/{doc_id}.jsonl` 로 옮긴다.
@@ -21,7 +22,7 @@ w3 pool 과 w5 pool 을 한 파일에 섞어도 충돌하지 않는다.
   python src/build_passages.py --doc-id arts_01 --window w5
   python src/build_passages.py --all                    # spans/w3 안의 모든 문서
 """
-from __future__ import annotations
+
 
 import argparse
 import json
