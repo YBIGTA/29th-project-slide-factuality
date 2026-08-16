@@ -279,7 +279,11 @@ def build_dataset(root: Path, manifest_path: Path, out_dir: Path, target_deck: s
             slide_counts[slide_idx] = slide_counts.get(slide_idx, 0) + 1
             c_num = slide_counts[slide_idx]
 
-            claim_id = item.get("claim_id") or f"{deck_id}__s{slide_idx}__c{c_num}"
+            # build_queries.py 와 같은 규약을 쓴다 — 두 파일이 다르면 dataset 과
+            # retrieval 을 claim_id 로 조인할 때 에러 없이 0건이 나온다.
+            # 0 을 채우는 이유는 문자열 정렬에서 s1, s10, s11, s2 로 섞이지 않게 하려고,
+            # 구분자가 _ 하나인 이유는 deck_id 자체가 __ 를 쓰기 때문이다.
+            claim_id = item.get("claim_id") or f"{deck_id}_s{slide_idx:02d}_c{c_num:02d}"
             claim_text = item.get("claim_text") or item.get("Claim (PPT)") or item.get("claim") or ""
             slide_title = item.get("slide_title") or item.get("Slide_Title") or item.get("title") or ""
             
