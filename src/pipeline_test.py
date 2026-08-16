@@ -15,6 +15,8 @@ try:
     from src.retrieve_bm25 import BM25Index, retrieve as retrieve_bm25, write_jsonl as write_bm25_jsonl
     from src.dense_retrieve import run_deck as run_dense_deck, DEFAULT_MODEL as DENSE_DEFAULT_MODEL
     from src.build_dataset import build_dataset
+    from src.build_passages import build as build_passages, write_jsonl as write_passages
+    from src.build_queries import build as build_queries, write_jsonl as write_queries, load_manifest
 except ImportError:
     from segment import split_sentences, build_spans, _write_jsonl
     from claim_split import read_slides, build_records, save_jsonl
@@ -25,6 +27,8 @@ except ImportError:
         run_dense_deck = None
         DENSE_DEFAULT_MODEL = "intfloat/multilingual-e5-large"
     from build_dataset import build_dataset
+    from build_passages import build as build_passages, write_jsonl as write_passages
+    from build_queries import build as build_queries, write_jsonl as write_queries, load_manifest
 
 
 def run_full_pipeline(doc_id: str, deck_id: str, root: Path = Path(".")) -> bool:
@@ -52,13 +56,14 @@ def run_full_pipeline(doc_id: str, deck_id: str, root: Path = Path(".")) -> bool
     _write_jsonl(root / "spans" / "sents" / f"{doc_id}.jsonl", sents)
     _write_jsonl(out_w3_path, w3_spans)
 
-    passages = [{"passage_id": sp.span_id, "text": sp.text, "sent_ids": sp.sent_ids, "window": "w3"} for sp in w3_spans]
-    passages_out = root / "passages" / f"{doc_id}.jsonl"
-    passages_out.parent.mkdir(parents=True, exist_ok=True)
-    with passages_out.open("w", encoding="utf-8") as f:
-        for p in passages:
-            f.write(json.dumps(p, ensure_ascii=False) + "\n")
-    print(f"[Step 1] Completed: {len(w3_spans)} spans generated.")
+    # passage 는 A-5 의 build_passages 를 그대로 쓴다. 여기서 따로 만들면
+    # passage_id 에 doc_id 접두사가 빠져서(`w3_001` vs `arts_01_w3_001`)
+    # 문서 간 ID 가 겹치고, 검색 결과에서 doc_id 를 떼어 정답과 맞추는
+    # B-1 의 대조가 통째로 깨진다 (README_A5 "팀 계약").
+    passages = build_passages(root, doc_id, "w3")
+    write_passages(root / "passages" / f"{doc_id}.jsonl", passages)
+    print(f"[Step 1] Completed: {len(w3_spans)} spans generated, "
+          f"{len(passages)} passages ({passages[0]['passage_id']} ...).")
 
     # Step 2: A-3 PPT Claim 분할
     print("[Step 2] Running A-3 claim extraction...")
@@ -85,26 +90,19 @@ def run_full_pipeline(doc_id: str, deck_id: str, root: Path = Path(".")) -> bool
             print(f"[Error] PPTX or Claim JSONL not found.", file=sys.stderr)
             return False
 
-    queries = []
-    for idx, c in enumerate(claims_rows, start=1):
-        c_id = c.get("claim_id") or f"{deck_id}__s{c.get('Slide #', 1)}__c{idx}"
-        q_text = c.get("Claim (PPT)") or c.get("claim_text") or ""
-        queries.append({
-            "claim_id": c_id,
-            "deck_id": deck_id,
-            "doc_id": doc_id,
-            "query_text": q_text
-        })
-    query_out = root / "retrieval" / "queries" / f"{deck_id}.jsonl"
-    query_out.parent.mkdir(parents=True, exist_ok=True)
-    with query_out.open("w", encoding="utf-8") as f:
-        for q in queries:
-            f.write(json.dumps(q, ensure_ascii=False) + "\n")
+    # 쿼리도 A-5 의 build_queries 를 그대로 쓴다. 여기서 따로 만들면
+    # claim_id 가 옛 규약(`{deck}__s1__c1`)으로 붙어서, build_queries 가
+    # 만드는 `{deck}_s01_c01` 과 안 맞고 dataset↔retrieval 조인이 0건이 된다.
+    queries = build_queries(root, deck_id, load_manifest(root))
+    write_queries(root / "retrieval" / "queries" / f"{deck_id}.jsonl", queries)
+    print(f"[Step 2] claim_id 부여: {queries[0]['claim_id']} ...")
 
     # Step 3: A-4 BM25 키워드 검색
     print("[Step 3] Running A-4 BM25 retrieval...")
     index = BM25Index(passages)
-    bm25_results = retrieve_bm25(queries, passages, index, top_n=5)
+    # top_n 은 20 으로 맞춘다. 이 스크립트는 실제 retrieval/ 파일을 덮어쓰므로
+    # 5 로 돌리면 R@10 을 못 재게 되어 B-1 지표가 반쪽이 된다.
+    bm25_results = retrieve_bm25(queries, passages, index, top_n=20)
     out_bm25_path = root / "retrieval" / "bm25" / f"{deck_id}.jsonl"
     write_bm25_jsonl(out_bm25_path, bm25_results)
     print(f"[Step 3] Completed: BM25 results saved to {out_bm25_path}")
@@ -118,7 +116,7 @@ def run_full_pipeline(doc_id: str, deck_id: str, root: Path = Path(".")) -> bool
                 deck_id=deck_id,
                 model_name=DENSE_DEFAULT_MODEL,
                 device=None,
-                top_n=5,
+                top_n=20,
                 window="w3",
                 show=0
             )
@@ -131,26 +129,26 @@ def run_full_pipeline(doc_id: str, deck_id: str, root: Path = Path(".")) -> bool
     else:
         print("[Step 4] dense_retrieve module not found. Skipped.")
 
-    # Step 5: B-1 Hybrid 검색기 확인
-    print("[Step 5] Checking B-1 Hybrid retrieval...")
-    hybrid_candidates = [
-        root / "src" / "retrieve_hybrid.py",
-        root / "src" / "hybrid_retrieve.py",
-        root / "src" / "fuse_ranks.py"
-    ]
-    b1_executed = False
-    for h_script in hybrid_candidates:
-        if h_script.exists():
-            try:
-                cmd = [sys.executable, str(h_script), "--deck-id", deck_id]
-                subprocess.run(cmd, capture_output=True, text=True, check=True)
-                print(f"[Step 5] Completed: B-1 script ({h_script.name}) executed.")
-                b1_executed = True
-                break
-            except Exception as e:
-                print(f"[Step 5] B-1 execution failed: {e}")
-    if not b1_executed:
-        print("[Step 5] B-1 hybrid script not found yet. Skipped.")
+    # Step 5: B-1 하이브리드 + 검색 방식 비교
+    # 하이브리드는 별도 검색기가 아니라 BM25·임베딩 결과를 RRF 로 합치는
+    # 계산이라, compare_retrieval.py 안에서 만들어진다.
+    print("[Step 5] Running B-1 retrieval comparison...")
+    b1 = root / "src" / "compare_retrieval.py"
+    ann = root / "annotation" / "annotations_long.csv"
+    if not b1.exists():
+        print("[Step 5] compare_retrieval.py 가 없다. 건너뜀.")
+    elif not ann.exists():
+        print(f"[Step 5] 라벨이 없다 ({ann}). 하이브리드 평가는 라벨이 있어야 한다. 건너뜀.")
+    else:
+        cmd = [sys.executable, str(b1), "--root", str(root), "--deck-id", deck_id,
+               "--annotations", str(ann),
+               "--out", str(root / "results" / f"retrieval_compare_{deck_id}.md"),
+               "--metrics-dir", str(root / "results" / "_metrics")]
+        r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8")
+        if r.returncode == 0:
+            print(f"[Step 5] Completed: results/retrieval_compare_{deck_id}.md")
+        else:
+            print(f"[Step 5] 실패 (code {r.returncode})\n{(r.stderr or '')[-400:]}")
 
     # Step 6: B-2 데이터셋 생성
     print("[Step 6] Running B-2 dataset builder...")
