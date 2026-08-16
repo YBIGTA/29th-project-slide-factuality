@@ -13,6 +13,21 @@ A-2 본체가 아니다. `docs/clean/` 을 손으로 만들 때 출발점을 주
 
 사용법
   python src/pdf_to_text.py "논문.pdf" --doc-id arts_01
+  python src/pdf_to_text.py "2단조판.pdf" --doc-id socio_01 --two-column
+
+2단 조판(--two-column)
+  layout 모드는 페이지 전체를 하나의 좌표평면으로 보고 한 줄에 있는 텍스트를 전부
+  줄 세운다. 2단 조판에서는 왼쪽 컬럼과 오른쪽 컬럼이 같은 y 좌표(같은 줄 높이)에
+  나란히 있으므로, 그 둘을 같은 줄로 합쳐버려서 왼쪽 문장 중간에 오른쪽 문장이
+  끼어드는 문장 파괴가 일어난다(예: socio_01, tech_02, tech_03, bio_02 에서 실제로
+  터졌다). --two-column 은 글자 하나하나의 실제 좌표(visitor_text)를 직접 받아서
+  x 좌표 기준으로 왼쪽 컬럼 글자와 오른쪽 컬럼 글자를 먼저 나눈 뒤, 각 컬럼을
+  따로 위에서 아래로 재구성한다. 컬럼 경계(gutter)는 기본으로 페이지 폭의 50%
+  지점을 쓰고, 컬럼 폭이 다른 문서는 --gutter-frac 으로 조정한다.
+
+  본문 위쪽의 논문 제목처럼 페이지 전체 폭에 걸친 텍스트는 글자 단위로 반이
+  왼쪽에, 반이 오른쪽에 잘려 들어간다 — 완벽하지 않지만, 이 문제가 없으면
+  본문 문장 자체가 통째로 망가지는 것보다는 훨씬 낫다. review 파일로 확인할 것.
 """
 from __future__ import annotations
 
@@ -214,11 +229,70 @@ def _page_lines(page) -> list[tuple[int, str]]:
     return out
 
 
+def _page_lines_two_column(page, gutter_frac: float = 0.5, y_eps: float = 2.5,
+                            dropped: list[str] | None = None, pno: int = 0) -> list[tuple[int, str]]:
+    """2단 조판용. 글자 단위 좌표(visitor_text)로 왼쪽/오른쪽 컬럼을 먼저 나눈 뒤
+    각 컬럼을 따로 위->아래로 재구성한다. layout 모드처럼 같은 줄에 두 컬럼이
+    섞여 들어가는 문장 파괴를 막는다.
+
+    회전된 글자(표/그림 안 세로쓰기 등)는 좌표 기준 재구성에 넣으면 순서가
+    엉키므로 제외하고 `dropped` 로그에 남긴다.
+    """
+    w = float(page.mediabox.width)
+    gutter = w * gutter_frac
+
+    frags: list[tuple[float, float, str]] = []
+
+    def visitor(text, cm, tm, font_dict, font_size):
+        if not text or not text.strip():
+            return
+        # cm/tm 의 b, c 성분이 0에서 벗어나면 축과 어긋난(회전된) 글자다.
+        # 좌표 기반 컬럼 재구성 순서를 어지럽히므로 제외하고 로그만 남긴다.
+        rotated = abs(cm[1]) > 1e-3 or abs(cm[2]) > 1e-3 or abs(tm[1]) > 1e-3 or abs(tm[2]) > 1e-3
+        if rotated:
+            if dropped is not None:
+                dropped.append(f"[p{pno} 회전텍스트] {text.strip()}")
+            return
+        frags.append((tm[4], tm[5], text))
+
+    page.extract_text(visitor_text=visitor)
+
+    def build(side_frags):
+        side_frags = sorted(side_frags, key=lambda f: (-f[1], f[0]))
+        lines: list[tuple[float, list[tuple[float, str]]]] = []
+        for x, y, text in side_frags:
+            if lines and abs(lines[-1][0] - y) <= y_eps:
+                lines[-1][1].append((x, text))
+            else:
+                lines.append((y, [(x, text)]))
+        out = []
+        for y, items in lines:
+            items.sort(key=lambda t: t[0])
+            joined = re.sub(r"\s+", " ", "".join(t for _, t in items)).strip()
+            if not joined:
+                continue
+            indent = int(round(items[0][0]))  # x좌표를 그대로 씀. 상대 비교(indent > base)만 하므로 단위 변환 불필요
+            out.append((indent, joined))
+        return out
+
+    left = build([f for f in frags if f[0] < gutter])
+    right = build([f for f in frags if f[0] >= gutter])
+    return left + right
+
+
 def pdf_to_text(pdf_path: str | Path, keep_footnotes: bool = False,
-                fix_spacing: bool = True):
+                fix_spacing: bool = True, two_column: bool = False,
+                gutter_frac: float = 0.5):
     reader = PdfReader(str(pdf_path))
     joiner = LineJoiner(Kiwi() if Kiwi else None)
-    pages = [_page_lines(p) for p in reader.pages]
+    dropped: list[str] = []
+    if two_column:
+        pages = [
+            _page_lines_two_column(p, gutter_frac=gutter_frac, dropped=dropped, pno=i)
+            for i, p in enumerate(reader.pages, 1)
+        ]
+    else:
+        pages = [_page_lines(p) for p in reader.pages]
 
     # 1차 통과: 본문에 실제로 달려 있는 각주 마커 번호를 모은다.
     #           이게 있어야 각주와 절 제목을 구분할 수 있다.
@@ -228,8 +302,8 @@ def pdf_to_text(pdf_path: str | Path, keep_footnotes: bool = False,
     }
 
     # 문단 단위로 모은다. 문단 = 들여쓰기로 시작하는 줄부터 다음 들여쓰기 직전까지.
+    # dropped 는 위에서 이미 초기화했다 (2단 조판일 때 회전 텍스트 로그가 들어있을 수 있다).
     paragraphs: list[list[str]] = []
-    dropped: list[str] = []
 
     for pno, lines in enumerate(pages, 1):
         kept = [(ind, ln) for ind, ln in lines if not is_running_head(ln)]
@@ -281,10 +355,15 @@ def main():
     ap.add_argument("--out-dir", default="docs/clean")
     ap.add_argument("--keep-footnotes", action="store_true")
     ap.add_argument("--no-fix-spacing", action="store_true")
+    ap.add_argument("--two-column", action="store_true",
+                     help="2단 조판 PDF용. layout 모드 대신 좌표 기반 컬럼 분리로 추출한다.")
+    ap.add_argument("--gutter-frac", type=float, default=0.5,
+                     help="컬럼 경계를 페이지 폭의 몇 %%로 볼지 (기본 0.5 = 정중앙). --two-column 일 때만 쓴다.")
     args = ap.parse_args()
 
     text, dropped, markers = pdf_to_text(
-        args.pdf, args.keep_footnotes, fix_spacing=not args.no_fix_spacing)
+        args.pdf, args.keep_footnotes, fix_spacing=not args.no_fix_spacing,
+        two_column=args.two_column, gutter_frac=args.gutter_frac)
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)

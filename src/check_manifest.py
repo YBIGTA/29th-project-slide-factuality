@@ -49,14 +49,29 @@ HUMAN_REQUIRED = ["title", "source", "domain", "license", "split"]
 
 
 def read_manifest(path: Path) -> list[dict]:
+5-bio-02-x124-관련-작업
+    """utf-8-sig 로 연다 — 엑셀의 "CSV UTF-8" 저장이 파일 맨 앞에 붙이는 BOM을
+    벗겨내기 위해서다. BOM 을 못 벗기면 첫 컬럼 헤더가 "doc_id" 가 아니라
+    "\\ufeffdoc_id" 로 읽혀서, row.get("doc_id") 가 매 행 None 을 돌려주고
+    doc_id 등록이 전부 안 된 것처럼 보인다(실제로 이 버그로 8개 덱이 다 깨졌었다).
+    utf-8-sig 는 BOM 이 있으면 벗기고 없으면 그냥 utf-8 처럼 읽어서 어느 쪽이든 안전하다.
+    """
     if not path.exists():
         return []
-    with path.open(encoding="utf-8", newline="") as f:
+    with path.open(encoding="utf-8-sig", newline="") as 
+        feature/a1
         return list(csv.DictReader(f))
 
 
 def write_manifest(path: Path, rows: list[dict]) -> None:
-    with path.open("w", encoding="utf-8", newline="") as f:
+5-bio-02-x124-관련-작업
+    """utf-8-sig 로 쓴다 — BOM 을 붙여야 엑셀이 더블클릭으로 열 때 한글을 안 깨뜨리고
+    UTF-8 로 알아서 인식한다(BOM 없이 순수 UTF-8 로 쓰면 엑셀이 시스템 로캘(CP949)로
+    잘못 해석해서 한글이 깨지는 사고가 난다 — 지난번 UnicodeDecodeError 가 그거였다).
+    read_manifest() 가 BOM 유무 상관없이 읽으니 이후 어느 쪽으로도 문제없다.
+    """
+    with path.open("w", encoding="utf-8-sig", newline="") as f:
+        feature/a1
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
         for r in rows:
