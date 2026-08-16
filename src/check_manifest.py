@@ -1,3 +1,4 @@
+from __future__ import annotations
 """manifest.csv 관리 도구 — 기계적으로 알 수 있는 값은 자동으로 채우고,
 사람이 결정해야 하는 값은 빠뜨리지 않았는지 확인한다.
 
@@ -33,7 +34,7 @@
   # 2. --scan 이 찍어준 명령을 그대로 붙여넣거나, 손으로 하나씩 추가한다. (한 줄)
   python src/check_manifest.py --add --deck-id "bio02_claudecode X1" --doc-id bio_02 --title "BF-7, 허혈성 뇌손상을 막고 기억력을 살리다" --source "대한해부학회지 38(2), 181-188, 2005" --domain 의학 --license KOGL-1 --tool claudecode --split train
 """
-from __future__ import annotations
+
 
 import argparse
 import csv

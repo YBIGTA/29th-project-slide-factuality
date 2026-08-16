@@ -1,3 +1,4 @@
+from __future__ import annotations
 """A-5 · claim 에 claim_id 를 붙여 검색 쿼리 파일을 만든다
 
 `claims/{deck_id}.jsonl` 에는 **claim_id 가 없다.** 필드가 `Slide #`,
@@ -19,7 +20,7 @@ claim 이 하나 늘어도 뒷 슬라이드의 ID 가 밀리지 않는다. claim
   python src/build_queries.py --deck-id arts_01__claudecode
   python src/build_queries.py --all
 """
-from __future__ import annotations
+
 
 import argparse
 import csv

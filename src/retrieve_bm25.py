@@ -1,3 +1,4 @@
+from __future__ import annotations
 """A-4 · BM25 검색기 (희소 검색기)
 
 claim 과 passage 를 형태소로 쪼갠 뒤 Okapi BM25 로 점수를 매겨, **같은 문서
@@ -24,7 +25,7 @@ torch 를 요구하지 않는다. build_queries.py 와 같은 이유다 — dens
   python src/retrieve_bm25.py --deck-id arts_01__claudecode --window w5
   python src/retrieve_bm25.py --deck-id arts_01__claudecode --show 5   # 눈으로 확인
 """
-from __future__ import annotations
+
 
 import argparse
 import json

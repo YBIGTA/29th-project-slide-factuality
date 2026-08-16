@@ -1,3 +1,4 @@
+from __future__ import annotations
 """A-5 · 임베딩 검색기 (dense retriever)
 
 multilingual-e5 로 passage 와 claim 을 같은 공간에 넣고, **같은 문서 안에서만**
@@ -19,7 +20,7 @@ score(cosine)도 같이 싣지만 **RRF 는 rank 만 쓴다.** BM25 점수와 co
   python src/dense_retrieve.py --deck-id arts_01__claudecode --window w5
   python src/dense_retrieve.py --deck-id arts_01__claudecode --show 5   # 눈으로 확인
 """
-from __future__ import annotations
+
 
 import argparse
 import hashlib

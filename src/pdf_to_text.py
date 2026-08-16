@@ -1,3 +1,4 @@
+from __future__ import annotations
 """PDF -> 초벌 텍스트 (정제 보조 도구)
 
 A-2 본체가 아니다. `docs/clean/` 을 손으로 만들 때 출발점을 주는 도구다.
@@ -29,7 +30,7 @@ A-2 본체가 아니다. `docs/clean/` 을 손으로 만들 때 출발점을 주
   왼쪽에, 반이 오른쪽에 잘려 들어간다 — 완벽하지 않지만, 이 문제가 없으면
   본문 문장 자체가 통째로 망가지는 것보다는 훨씬 낫다. review 파일로 확인할 것.
 """
-from __future__ import annotations
+
 
 import argparse
 import re

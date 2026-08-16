@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+from __future__ import annotations
 """
 각자 맡으신 덱에 대해 검색기 실행과 라벨링이 완료되면 아래 명령어로 최종 `dataset/*.jsonl`을 생성해 주시면 됩니다.
 
@@ -11,11 +11,9 @@ python src/build_dataset.py --excel annotation.xlsx
 
 """Phase B-2 · Input Data 가공 및 최종 데이터셋 빌더
 
-- annotation.xlsx 에서 가져옴 
 - claims/, retrieval/ (dense/bm25), passages/ 와 결합하여 dataset/*.jsonl 생성
 """
 
-from __future__ import annotations
 
 import argparse
 import csv
