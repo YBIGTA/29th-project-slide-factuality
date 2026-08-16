@@ -1,0 +1,8 @@
+kiwipiepy>=0.21,<1
+pypdf>=5,<7
+python-pptx>=1.0,<2
+
+# A-5 임베딩 검색기
+torch>=2.2
+sentence-transformers>=3,<6
+numpy>=1.24
