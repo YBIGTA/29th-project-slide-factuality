@@ -36,7 +36,10 @@ def load_manifest(root: Path) -> dict[str, str]:
     mapping: dict[str, str] = {}
     if not path.exists():
         return mapping
-    with path.open(encoding="utf-8", newline="") as f:
+    # utf-8-sig 여야 한다. manifest.csv 는 엑셀에서 열려고 BOM 을 달고 저장되는데,
+    # 그냥 utf-8 로 읽으면 첫 컬럼명이 'doc_id' 가 아니라 '﻿doc_id' 가 되어
+    # row.get("doc_id") 가 전 행에서 None 이 된다 — 매핑이 통째로 비어버린다.
+    with path.open(encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f):
             deck_id = (row.get("deck_id") or "").strip()
             doc_id = (row.get("doc_id") or "").strip()
