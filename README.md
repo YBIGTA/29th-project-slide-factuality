@@ -92,10 +92,14 @@ retrieval/queries/*.jsonl      claim_id 가 붙은 검색 쿼리
 | `retrieve_bm25.py` | A-4 | 형태소 토큰 기반 BM25. 공백 분리하면 `정책을/정책이` 가 갈라져서 형태소를 쓴다 |
 | `dense_retrieve.py` | A-5 | multilingual-e5 임베딩 검색. passage 에 `passage:`, claim 에 `query:` 접두사가 필수다 |
 | `eval_retrieval.py` | A-5 | 검색기 자체 점검. **진짜 평가가 아니다** — claim 이 원문에 그대로 있는 경우만 정답으로 쓰는 하한선 측정 |
+| `pick_extraction.py` | A-2 | PDF 를 1단·2단 두 방식으로 뽑아 점수를 재고 나은 쪽을 남긴다 |
+| `compare_retrieval.py` | B-1 | 라벨의 근거로 정답을 만들고 BM25·임베딩·하이브리드 3종을 비교한다 |
+| `summarize_b1.py` | B-1 | 덱별 지표를 모아 `results/retrieval_summary.md` 한 표로 만든다 |
 | `build_dataset.py` | B-2 | 라벨 + 검색 결과 + claim 을 합쳐 `dataset/*.jsonl` 로. `manifest.csv` 의 split 을 따른다 |
 | `pipeline_test.py` | — | A-2 → A-3 → 검색 → B-2 를 한 번에 돌려보는 통합 점검 |
 | `README_A2.md` | | 문장 분리기 상세 — 실제 논문에서 터진 예외 6가지 |
 | `README_A5.md` | | 임베딩 검색기 상세와 BM25 와의 "팀 계약" |
+| `README_B1.md` | | 검색 방식 비교 — 정답 만드는 법, 가중 RRF, 지표 정의 |
 
 ---
 
