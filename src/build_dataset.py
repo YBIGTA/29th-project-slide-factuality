@@ -40,10 +40,23 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
 
 
 def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
+    # 1. 기존 데이터가 있으면 모두 읽어오기
+    existing_data = []
+    if path.exists():
+        existing_data = read_jsonl(path)
+    
+    # 2. 이번에 새로 갱신되는 덱 ID들 확인
+    new_deck_ids = {r.get("deck_id") for r in rows if r.get("deck_id")}
+    
+    # 3. 기존 데이터 중, 이번 갱신 대상이 '아닌' 데이터만 남기고 새 데이터와 결합
+    merged_rows = [r for r in existing_data if r.get("deck_id") not in new_deck_ids]
+    merged_rows.extend(rows)
+
+    # 4. 결합된 전체 데이터를 저장
     path.parent.mkdir(parents=True, exist_ok=True)
     temp_path = path.with_suffix(path.suffix + ".tmp")
     with temp_path.open("w", encoding="utf-8", newline="\n") as f:
-        for row in rows:
+        for row in merged_rows:
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
     temp_path.replace(path)
 
@@ -134,7 +147,8 @@ def parse_excel_annotations(excel_path: Path) -> dict[str, list[dict[str, Any]]]
         annotator_name = extract_annotator_from_sheet(sheet)
 
         # 1. 시트명에서 구체적인 덱 식별자 추출 (예: bio02, tech01, socio02 등)
-        match = re.search(r"(arts_?\d+|bio_?\d+|socio_?\d+|tech_?\d+|finance_?\d+)", sheet, re.IGNORECASE)
+        # 정규식에 fin_?\d+ 추가
+        match = re.search(r"(arts_?\d+|bio_?\d+|socio_?\d+|tech_?\d+|finance_?\d+|fin_?\d+)", sheet, re.IGNORECASE)
         if match:
             raw_key = match.group(1).lower().replace("_", "")
             # 번호 두자리 포맷 정규화 (예: bio2 -> bio02)
@@ -142,6 +156,8 @@ def parse_excel_annotations(excel_path: Path) -> dict[str, list[dict[str, Any]]]
             if m_num:
                 num = int(m_num.group(1))
                 prefix = re.sub(r"\d+", "", raw_key)
+                if prefix == "fin":      # fin으로 적은 시트명을
+                    prefix = "finance"   # 공식 규약인 finance로 자동 변환
                 deck_key = f"{prefix}_{num:02d}"
             else:
                 deck_key = raw_key
