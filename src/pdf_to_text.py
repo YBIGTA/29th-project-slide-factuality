@@ -171,9 +171,17 @@ _CHAR_FIX = {
 }
 
 
+# 수식 편집기(HWP 등)가 심어놓은 글리프는 사용자 정의 영역(PUA)에 들어간다.
+# 유니코드 매핑이 없어서 무슨 글자였는지 복원할 방법이 없다 (α 인지 u 인지 모른다).
+# 그대로 두면 글꼴이 없는 환경에서 네모로 보여 파일이 깨진 것처럼 읽히므로
+# 눈에 띄는 기호 하나로 바꾼다. segment.normalize() 도 같은 치환을 한다.
+_PUA = re.compile("[-󰀀-􏿿]")
+
+
 def clean_body(text: str) -> str:
     for bad, good in _CHAR_FIX.items():
         text = text.replace(bad, good)
+    text = _PUA.sub("□", text)
     text = _INLINE_MARKER.sub("", text)
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)

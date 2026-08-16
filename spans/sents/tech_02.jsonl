@@ -37,9 +37,9 @@
 {"sent_id": "s037", "text": "따라서 작업자의 위치정보뿐 아니라 헬멧 착용 상태와 같은 문맥 정보를 함께고려하는 의사결정 방식이 필요하다.", "start": 4183, "end": 4243, "is_heading": false}
 {"sent_id": "s038", "text": "본 연구는 기존의 PPE 검출 연구와 거리 기반 안전 판단 연구를 연결하여, 헬멧 착용 상태 인식 결과를 위험 인지형 의사결정에 활용하는 프레임워크를 제안한다.", "start": 4245, "end": 4334, "is_heading": false}
 {"sent_id": "s039", "text": "이를 통해 단순히 헬멧 착용 여부를 검출하는 데 그치지 않고, 검출 결과가 후속 안전 의사결정에 어떤 영향을 주는지 분석한다.", "start": 4335, "end": 4405, "is_heading": false}
-{"sent_id": "s040", "text": "26Journal of The Korea Society of Computer and Information\n\n검출 모델은 각 객체 에 대해 다음과 같은 출력을 생성한다.", "start": 4406, "end": 4500, "is_heading": false}
-{"sent_id": "s041", "text": "  \n\n\n\n여기서 는 예측 클래스이며, ∈helmet no  helmet이다.", "start": 4502, "end": 4564, "is_heading": false}
-{"sent_id": "s042", "text": "는 검출 신뢰도이고,    는 정규화된 바운딩 박스 중심 좌\n\n 표와 너비, 높이를 의미한다.", "start": 4565, "end": 4631, "is_heading": false}
+{"sent_id": "s040", "text": "26Journal of The Korea Society of Computer and Information\n\n검출 모델은 각 객체 □에 대해 다음과 같은 출력을 생성한다.", "start": 4406, "end": 4500, "is_heading": false}
+{"sent_id": "s041", "text": "□□□ □□ □□\n\n□□□□\n\n여기서 □□는 예측 클래스이며, □□∈□helmet□ no □ helmet□이다.", "start": 4502, "end": 4564, "is_heading": false}
+{"sent_id": "s042", "text": "□□는 검출 신뢰도이고, □□ □□ □□ □는 정규화된 바운딩 박스 중심 좌\n\n□□□□□ 표와 너비, 높이를 의미한다.", "start": 4565, "end": 4631, "is_heading": false}
 {"sent_id": "s043", "text": "본 연구에서는 no-helmet 클래스를 안전상 더 중요한 상태로 간주한다.", "start": 4632, "end": 4674, "is_heading": false}
 {"sent_id": "s044", "text": "이는 헬멧미착용 작업자의 미검출은 위험 판단 지연으로 이어질 수있기 때문이다.", "start": 4675, "end": 4718, "is_heading": false}
 {"sent_id": "s045", "text": "따라서 이후 의사결정 단계에서는 단순 객체 위치뿐 아니라 헬멧 착용 여부를 함께 반영한다.", "start": 4719, "end": 4769, "is_heading": false}
@@ -47,18 +47,18 @@
 {"sent_id": "s047", "text": "객체 검출 결과를 의사결정 모듈에서 사용하기 위해서 는 이미지 좌표를 작업자 상태 변수로 변환해야 한다.", "start": 4809, "end": 4867, "is_heading": false}
 {"sent_id": "s048", "text": "본연구에서는 실제 3차원 위치 추정 장비를 사용하지 않고, 단일 이미지 기반의 단순 근사 방법을 사용하였다.", "start": 4868, "end": 4928, "is_heading": false}
 {"sent_id": "s049", "text": "이는 제안 프레임워크의 초기 검증을 위한 경량 구조이며, 향후 depth 카메라나 다중 카메라 기반 위치 추정으로 확장할 수 있다.", "start": 4929, "end": 5002, "is_heading": false}
-{"sent_id": "s050", "text": "먼저 바운딩 박스의 수평 중심 좌표 를 이용하여 작업자의 횡방향 위치 를 계산한다.", "start": 5004, "end": 5054, "is_heading": false}
-{"sent_id": "s051", "text": " \n\n여기서  은 가정한 작업 공간의 폭을 의미한다.", "start": 5056, "end": 5096, "is_heading": false}
+{"sent_id": "s050", "text": "먼저 바운딩 박스의 수평 중심 좌표 □□를 이용하여 작업자의 횡방향 위치 □□를 계산한다.", "start": 5004, "end": 5054, "is_heading": false}
+{"sent_id": "s051", "text": "□□□□□□ □\n\n여기서 □□□ □은 가정한 작업 공간의 폭을 의미한다.", "start": 5056, "end": 5096, "is_heading": false}
 {"sent_id": "s052", "text": "이미지 중심에 가까운 객체는 운용 경로에 가까운 작업자로 해석하고, 이미지 좌우에 위치한 객체는 상대적으로 경로에서 떨어진 작업자로 해석한다.", "start": 5097, "end": 5176, "is_heading": false}
-{"sent_id": "s053", "text": "전방 거리 는 바운딩 박스의 높이와 수직 중심 위치를 이용하여 근사하였다.", "start": 5178, "end": 5221, "is_heading": false}
+{"sent_id": "s053", "text": "전방 거리 □□는 바운딩 박스의 높이와 수직 중심 위치를 이용하여 근사하였다.", "start": 5178, "end": 5221, "is_heading": false}
 {"sent_id": "s054", "text": "일반적으로 작업자가 카메라에 가까울수록 이미지에서 더 크게 나타나고, 화면 하단에 가 까워지는 경향이 있다.", "start": 5222, "end": 5282, "is_heading": false}
-{"sent_id": "s055", "text": "이를 반영하기 위해 다음과 같이근접도 점수(closeness score) 를 정의하였다.\n\n\n\n  \n\n\n\n\n\n여기서  는 기준 바운딩 박스 높이이고, α는 바운딩박스 높이와 수직 위치의 반영 비율을 조절하는 계수이다.", "start": 5283, "end": 5430, "is_heading": false}
+{"sent_id": "s055", "text": "이를 반영하기 위해 다음과 같이근접도 점수(closeness score) □□를 정의하였다.\n\n□□\n\n□□□□□ □ □□□\n\n□□□□□\n\n□□□□\n\n여기서 □□ □□는 기준 바운딩 박스 높이이고, α는 바운딩박스 높이와 수직 위치의 반영 비율을 조절하는 계수이다.", "start": 5283, "end": 5430, "is_heading": false}
 {"sent_id": "s056", "text": "이후 전방 위치는 다음과 같이 계산한다.", "start": 5431, "end": 5453, "is_heading": false}
-{"sent_id": "s057", "text": "Robust\n\nRisk-Aware Decision Support for Industrial Safety Monitoring 27\n\nmax\n\nm ax\n\n\n\n이는 단일 작업자의 위험 상태에도 전체 시스템이 즉각적으로 대응하도록 설계된 보수적 안전 기준을 반영한다.", "start": 5454, "end": 5601, "is_heading": false}
+{"sent_id": "s057", "text": "Robust\n\nRisk-Aware Decision Support for Industrial Safety Monitoring 27\n\nmax\n\nm ax□\n\n□\n\n이는 단일 작업자의 위험 상태에도 전체 시스템이 즉각적으로 대응하도록 설계된 보수적 안전 기준을 반영한다.", "start": 5454, "end": 5601, "is_heading": false}
 {"sent_id": "s058", "text": "인간-기계 또는 인간-로봇 상호작용 분야에서도 작업자와 시스템 간 거리, 보호 영역, 감속 및 정지 조건은 안전 의 사결정의 핵심 요소로 다루어져 왔다 [11-16].", "start": 5602, "end": 5695, "is_heading": false}
 {"sent_id": "s059", "text": "최종 의사결정은 정상 동작, 감속, 정지의 세 단계로 구성된다.", "start": 5697, "end": 5732, "is_heading": false}
-{"sent_id": "s060", "text": "    m ind angerm axstop\n\n\n\n sm ax m insafem ax\n\n\n\nm ax otherwise\n\n여기서 m in은 가장 가까운 작업자와의 거리, d anger 는 즉시 정지 거리, safe는 감속을 위한 안전 거리이다.", "start": 5734, "end": 5884, "is_heading": false}
-{"sent_id": "s061", "text": "과 는 각각 정지 및 감속을 결정하는 위험도 임계값이며, 는 감속 비율이다.", "start": 5886, "end": 5930, "is_heading": false}
+{"sent_id": "s060", "text": "□ □ □ □□ □m ind angerm axstop\n\n□\n\n□ □sm ax□ □m insafem ax\n\n□\n\n□□m ax□ otherwise\n\n여기서 □m in은 가장 가까운 작업자와의 거리, d anger 는 즉시 정지 거리, safe는 감속을 위한 안전 거리이다.", "start": 5734, "end": 5884, "is_heading": false}
+{"sent_id": "s061", "text": "과 는 각각 정지 및 감속을 결정하는 위험도 임계값이며, □□는 감속 비율이다.", "start": 5886, "end": 5930, "is_heading": false}
 {"sent_id": "s062", "text": "본 실험에서는 =0.75, =0.42를 기본 임계값으로 사용하였다.", "start": 5932, "end": 5969, "is_heading": false}
 {"sent_id": "s063", "text": "stop은 고위험 상태에서 정지 동작을 유도하기 위한 임계값이고, 는 즉시 정지까지는 필요하지 않지만 감속이 필요한 중간 위험 상태를 구분하기 위한 임계값이다.", "start": 5970, "end": 6059, "is_heading": false}
 {"sent_id": "s064", "text": "파라미터 선택이 의사결정 결과에 미치는 영향을 확인하기 위해 본 연구에서는 aggressive, default, conservative의 세 가지 설정에 대한 민감도 분석을 추가로 수행하였다.", "start": 6060, "end": 6167, "is_heading": false}
