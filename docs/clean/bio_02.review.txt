@@ -1,0 +1,336 @@
+[p4 회전텍스트] In farction area (%)
+[p5 회전텍스트] Score (%)
+[p7 회전텍스트] 한국잠사학회지
+[p1 머리말] 대한해부학회지 제38권제 2호 2005
+[p1 머리말] The Korean J. Anat. 38(2), 181~188, 2005
+[p1 각주]   Tel: 02-820-5642, Fax: 02-826-1265, E-mail: whitefox@cau.ac.kr
+[p1 각주]   도가 뇌졸중으로 발병되고 있으며, 점차 서구화된 생활습관
+[p1 각주]   과 식생활 방식으로 인하여 현재 우리나라에서도 최근 들
+[p1 각주]   —
+[p1 각주]   181
+[p1 각주]   어 뇌경색 등의 질환이 점차 증가하고 있는 추세이기 때문
+[p1 각주]   에 국내 인구의 고령화 추세를 고려해 볼 때 이 질환의 중
+[p1 각주]   요성은 날로 커지고 있다.
+[p1 각주]   223
+[p1 각주]   , 김의태, 조혜진,
+[p1 각주]   343,*
+[p1 각주]   , 권오상, 이원복
+[p1 각주]   12
+[p1 각주]   신경외과학교실, 신경과학교실
+[p1 각주]   34
+[p1 각주]   해부학교실, 신경과학교실
+[p1 각주]   . 본 연구에서는 가잠 추출물인BF -7의 보호효
+[p1 각주]   , 동물실험을 위하여SD rat의 중간대뇌동맥의 일시적인
+[p1 각주]   BF -7 (10 mg/kg)을 하루에 한번씩7
+[p1 각주]   8방미로 시험을 시행하였다. 또한
+[p1 각주]   (32명), 200 mg 투여군(33명)과 400 mg 투여군(34명)을
+[p1 각주]   7을 경구 투여한 경우infarct size가 현저하게 감소함을
+[p1 각주]   . 더욱이 허혈에 의한 기억력
+[p1 각주]   BF -7이 복잡한2차원 그림을 기억하고 인지하는
+[p1 각주]   BF -7이 두뇌를 보호하고, 두뇌기능을 활성화 시키
+[p1 각주]   , Rey Complex Figure Test
+[p1 각주]   -
+[p1 각주]   et al., 2004). 뇌혈
+[p1 각주]   —
+[p1 각주]   한편 이러한 뇌허헐로 인한 뇌신경세포의 손상은 허혈동
+[p1 각주]   안만이 아니라 재관류가 이루어진 이후에도 지속적으로 발
+[p1 각주]   병하여 환자들의 회복 지연 및 후유증 발생의 원인이 되고
+[p1 각주]   있어 그 심각성 및 개선의 필요성은 시급하다 하겠다. 따라
+[p1 각주]   서 최근에 여러 연구에 의해서 뇌허혈에 따라 유도되는 뇌
+[p1 각주]   신경 손상의 예방이나 개선 및 치료방법과 전략에 대해서
+[p1 각주]   병태생리학적인 현상이나 신경 세포의 손상이 나타나는 기
+[p1 각주]   전을 규명하고, 뇌허혈의 진행이나 결과를 차단하고 보호할
+[p1 각주]   수 있는 새로운 치료제를 개발하는데 많은 연구가들의 다
+[p1 각주]   각도에서의 다양한 접근이 활발하게 시도되고 있는 추세이
+[p1 각주]   다(Koroshetz & Moskowitz, 1996; Zivin, 1998; Sobey, 2001).
+[p1 각주]   뇌혈류공급 동맥의 폐색으로 인한 국소뇌허혈(focal cere-
+[p1 각주]   bral ischemia)은 신경세포와 미세혈관에 손상이 생기게 하
+[p1 각주]   며 동시에 조직손상이 오는 염증과정을 거치게 된다(Lipton,
+[p1 각주]   1999). 실험동물모델과 임상연구에서 허혈 초기에 효과적으
+[p1 각주]   로 치료하는 것이 조직손상정도, 경색의 정도, 그리고 허혈
+[p1 각주]   에 의한 사망률을 낮출 수 있을 것이라고 알려지고 있다
+[p1 각주]   (Koroshetz & Moskowitz, 1996; Scholler
+[p2 각주]   Roman, 2004).
+[p2 각주]   현재까지의 뇌허혈 치료방법으로는 크게3가지 방법이
+[p2 각주]   널리 알려져 있는데, 첫째로 산소공급의 빠른 원상회복, 둘
+[p2 각주]   용 및 독성 때문에 아직 사용에 논란의 여지가 많은 상태
+[p2 각주]   째로 국소뇌허혈 부위의 염증방지, 그리고 셋째로 신경세포
+[p2 각주]   의 보호와 허혈손상부위의 효과적인 기능회복 등을 들 수
+[p2 각주]   (Cerebral blood flow) channel antagonist, NMDA/AMPA antagonist
+[p2 각주]   연구결과에서도 찾아볼 수 있는데 이런 인지기능 손상은 학
+[p2 각주]   이다. 그러므로 부작용이 적으며, 효능이 좋고, 원인적 치료
+[p2 각주]   까지 가능한 새로운 뇌기능 개선 및 치료제를 찾아내고 효
+[p2 각주]   가있 다. 현재 사용 중이거나 개발 중인 치료제들로는 항혈
+[p2 각주]   습 수행 및 기억력 과정에서 아주 중요한 역할을 담당하고 전제(antithrombic agents), 면역과 염증 조절제, 독성을 나타
+[p2 각주]   내는 자유라디칼을 없애주는 약물(Free radical scavenger),
+[p2 각주]   Ca
+[p2 각주]   과를 입증하여 개발하는 노력이 절실히 요구되고 있다.
+[p2 각주]   따라서 본 연구에서는 이런 단점들을 보완한 즉, 독성이
+[p2 각주]   있는 부위로 알려져 있는(Blozovski, 1979; Chrobak
+[p2 각주]   BF-7의 일시적 뇌허혈에 의한 학습과 기억에 미치는 효과
+[p2 각주]   Bombyx
+[p2 각주]   mori)으로부터 추출한BF -7을 이용하여 뇌보호효과를 확
+[p2 각주]   인하였다(Chae et al., 2004). 본 실험에서 사용한 실험모델
+[p2 각주]   로는 일시적으로 중간대뇌동맥(middle cerebral artery,
+[p2 각주]   MCA) 를 폐쇄하여 뇌에 공급되는 혈관들을 차단한 후 재
+[p2 각주]   관류를 하여 신경세포의 손상을 일으켜서 기억력 손상을
+[p2 각주]   유발할 수 있는, 뇌허혈 동물모델을 이용하였고, 일시적 뇌
+[p2 각주]   허혈에 의해 유도된 뇌신경세포사멸 및 조직의 손상 억제
+[p2 각주]   재 료및방 법
+[p2 각주]   1. 실험동물 및 사육조건
+[p2 각주]   본 실험에서는 체중이200~250 g 내외의 주령8주된 건
+[p2 각주]   강한 Sprague-Dawley계 수컷 흰쥐를 실험동물로 사용하였
+[p2 각주]   다. 1주 동안 적응기간을 가지게 했으며 일반행동이상여부
+[p2 각주]   낮고 뇌허혈에 의해 감퇴된 학습과 기억력을 개선시켜 뇌
+[p2 각주]   를 관찰하여 이상이 관찰되는 동물은 본 연구에 사용하지
+[p2 각주]   기능을 보호시키고 향상시켜줄 수 있는 예방 및 치료 물질
+[p2 각주]   여부를 알아보았으며, 방사형 8방미로(8-arm radial maze)
+[p2 각주]   방법을 이용한 인지기능평가 실험을 통해 감퇴된 기억력
+[p2 각주]   2. 실험재료
+[p2 각주]   BF -7의 분리는 기본적으로 여주홍 등에 의해 보고된 방
+[p2 각주]   법을 이용하였다(여주홍 등, 2004). Bombyx mori의 고치를
+[p2 각주]   0.03% sodium carbonate않았다. 모든 실험동물은 실험기간동안 항온과 0.05% 마르셀 비누 용액에서, 항습이 가능한 30
+[p2 각주]   을 찾아내고 개발하고자, 최근에 학습 및 기억 증진 등의
+[p2 각주]   분간 끓인 후 건조시켰다사육장에서 12시간 채광, 12. 98시간 차광의 조건에서 식수와 도에서 1시간 동안5 M CaCl 2
+[p2 각주]   뇌보호 기능이 유용하다고 알려지고 있는 가잠(
+[p2 각주]   용액에서 용해시켰다사료를 자유롭게 섭취하도록 하였다. 증류수에서 투석하여 염을 완전히 제 . 각군 당총 10마리씩
+[p2 각주]   거하고 단백질 분해효소 혼합액에 넣은후총 40및 인지기능의 개선에 효과가 있는지 확인하였다마리의 흰쥐를 이용하였다., Sephadex G. 더나 아 -25
+[p2 각주]   column chromatography가 Complex Figure Test (CFT)를통 해로 구성된 국내 최초로 표준 BF -7을 분리 정제하였다.
+[p2 각주]   본 실험에 이용한 다른 모든 시약은 시그마 회사화된 기억검사법인Rey-Kim 검사법을 이용하여BF -(Sigma 7이
+[p2 각주]   Co.)다양한 모집단에서 무작위로 선발된 일반인들에 있어서 임 로부터 구입하였다.
+[p2 각주]   3. 허혈동물모델 (ischemia animal Model) 제조법
+[p2 각주]   200~250 g의 Sprague-Dawley rat에 ketamine 30~40
+[p2 각주]   상적으로 두뇌인지기능 개선을 가져오는지를 검사하였다.
+[p3 머리말] 2 mm 간격으로 관상절편을 만들어2% 2, 3, 5-triphenyltetra-
+[p3 머리말] 모양의 중앙(반지름 34 cm)으로부터 8개의 arm (길이 60
+[p3 머리말] 183 .,
+[p3 각주]   hematoxylin and eosine (H&E) staining을 하였다.
+[p3 각주]   , 이원복
+[p3 각주]   회씩 방치하여3일 동안 적응시킨 후, 한 마리씩 미로에 넣
+[p3 각주]   고 먹이 컵에 있는 해바라기 씨를 다 먹을 때까지의 각
+[p3 각주]   6. 피검자 선정 및 편성
+[p3 각주]   .arm을 방문하는 횟수와 시간을 측정하여2분 내에 오류횟
+[p3 각주]   수가 2대학생회 이내에 도달 할 때까지 훈련을 시켰다, 가정주부, 회사 직장인, 종교단체 방문 신도 등 각 . 이미 들어
+[p3 각주]   계각층의 19갔던 arm을 다시 들어가는 횟수를 오류횟수로 하였다세이 상65세 이하의 건강한 한국인 성인 남녀 . 훈
+[p3 각주]   지원자를 대상으로 하였으며련이 된rat를 아래의 방법으로 뇌허혈 동물모델을 만들고, 직업과 학력 및 거주지 등을
+[p3 각주]   무작위로 추출하여 일반적인 대한민국의 보편적 집단을 대 BF -7을 경구로10 mg/kg 용량으로 1일 1회씩 7일동 안투
+[p3 각주]   여하고 그 후 일주일로부터5일까지 오류횟수와latency
+[p3 각주]   time을 대조군과 비교하였다.
+[p3 각주]   변하도록 하였다. 피검자 선정 시 다음의 경우는 피검자에
+[p3 각주]   서 제외하였다. 1) 질병이 있어 치료를 받고 있는 경우2)
+[p3 각주]   인체 시험 참가하기4주 이내에 인지기능에 영향을 미칠
+[p3 각주]   수 있는 의약품을 복용한 경험이 있는 경우3) 인체 시험
+[p3 각주]   참가하기 4주 이내에 인지기능에 영향을 미칠 수 있는 건
+[p3 각주]   강기능식품을 섭취한 경험이 있는 경우4) 일상적인 의사소
+[p3 각주]   통이 어려운 경우5) 시력 장애가 있어 글자 및 그림을 읽
+[p3 각주]   을 수 없는 경우6) 손이나 팔에 장애가 있어 필기가 어려
+[p3 각주]   운경 우7) 기타 인체 시험의 참여가 적절치 않다고 판단되
+[p3 각주]   는경 우
+[p3 각주]   피검자로 99명이 참가하여 인체시험을 마쳤으며, 시험참
+[p3 각주]   가자들의 연령은19세부터 64세로 평균 연령은41.9세였으
+[p3 각주]   며 남성이26명 여성이73명이었다. 시험군은 위약군39명,
+[p3 각주]   BF -7 200 mg 군 40명, BF -7 400 mg 군 40명, 총 119명을
+[p3 각주]   무작위 배정하였다. 대상자 선정에서 제외되거나 중도에 탈
+[p3 각주]   락한 지원자를 제외한 나머지99명의 지원자가 그룹별로
+[p3 각주]   위약군 32명 (참여율 82%), BF -7 200 mg 군 33명 (참여율
+[p3 각주]   7. Rey Complex Figure Test (RCFT)
+[p3 각주]   83.5%), BF-7 400 mg 군 34명(참여율 85%)으로 최종 인체
+[p3 각주]   시험 종료 시까지 시험에 참가하였다Rey Complex Figure Test (RCFT)는 국내 및 국제적으로 (전체 참여율83%).
+[p3 각주]   널리 사용되는 공인된 신경심리 검사법각 그룹별로 시험 종료 시까지 참여한 대상자의 수가 인체 (Hamby et al
+[p3 각주]   1993)으로 기억과 분석, 계산, 사고, 판단 등을 담당하고 있
+[p3 각주]   는 뇌의 전두엽부위의 기능에 대한 평가를 위해 시행되는
+[p3 각주]   시험의 유효성 검증을 위한 통계 처리하는데 충분한 수의
+[p3 각주]   대상자를 확보하였다. 피검자들은 시험 기간동안 평소와 동
+[p3 각주]   일하게 식사와 흡연을 하도록 하였으며, 음주는 금지하였
+[p3 각주]   다.
+[p4 머리말] 2 mm 4 mm 6 mm 8 mm 10 mm 12 mm
+[p4 머리말] 200 mg 섭취군, 400 mg 섭취군과 위약섭취군에서 그리기/기
+[p4 머리말] 0 2 4 6 8 10 12 14
+[p4 각주]   one-way ANOVA (Tukey’s multiple comparison test)를이
+[p4 각주]   용하여 통계적 유의성을 검증하였다.
+[p4 각주]   것과 이에 의한 뇌경색 부위와 주변의 정상조직과의 경계
+[p4 각주]   p test The effect of BF Each bar represents the size of infarcted area examined by
+[p4 각주]   를 TTC 염색으로 확인하는 것이 가능하였다. 전두엽 말단
+[p4 각주]   으로부터 2 mm 간격으로 관상절편을6개 만들어TTC 염색
+[p4 각주]   을 하였다. 뇌경색부위의 면적을 계산하여 비교한 결과 예
+[p4 각주]   상하였던 대로sham operated group에서는 경색이 전혀 없
+[p4 각주]   50
+[p4 각주]   40
+[p4 각주]   BF-7의 일시적 뇌허혈에 의한 학습과 기억에 미치는 효과
+[p4 각주]   -7 once a day for 7 days. White area represented infarcted
+[p4 각주]   30
+[p4 각주]   *
+[p4 각주]   20
+[p4 각주]   10
+[p4 각주]   0
+[p4 각주]   Cutting distance (mm)
+[p4 각주]   Fig. 2.
+[p4 각주]   TTC staining. Slashed bar represents the BF-7 treated group for 7
+[p4 각주]   days with 10 mg/kg, once a day. Empty bar indicated no BF-7 treated
+[p4 각주]   group. *: p⁄0.05 vs. vehicle control.
+[p4 각주]   었고 BF -7을 투여한 군에서 전체적으로 경색부위가 대조
+[p4 각주]   군 (Vehicle control group)에 비하여 줄어든 경향이 나타났
+[p4 각주]   으며 특히 전두엽 극으로부터6 mm 부분 즉 허혈손상에 의
+[p4 각주]   해 손상이 가장 많이 일어나는 부분에서 뇌경색부위가 유
+[p4 각주]   의성 있게 감소되는 결과를 얻었다(Figs. 1, 2). sham operat-
+[p4 각주]   ed group은 실험 절차를 동일하게 시행한 뒤 혈관결찰을
+[p4 각주]   하지 않았다. 또한 해마(Hippocampus) 부위의 신경세포 손
+[p4 각주]   상정도를 확인하기 위하여H&E 염색을 하여 검사 하였다.
+[p4 각주]   신경세포가 허혈에 의해 손상되어서 죽어가고 있을 때 나
+[p4 각주]   타나는 red (eosinophilic) neuron의 수가 대조군에 비하여
+[p4 각주]   BF -7 투여 군에서 현저하게 감소되어 있으며 유의성 있는
+[p5 각주]   185 Neuronal cell death in hippocampus A. Control group (no The protective role of BF Improvement effects of BF
+[p5 각주]   까지 BF -7 투여군의 error수는 sham control 군의 error수
+[p5 각주]   수준으로 감소한 반면 용매만 투여한 대조군의error수는
+[p5 각주]   회복이 되지 않았다. 이상의 결과로 보아 중뇌동맥의 일시
+[p5 각주]   80
+[p5 각주]   60
+[p5 각주]   , 이원복
+[p5 각주]   40
+[p5 각주]   Fig. 4.-7 on learning and memory impair-
+[p5 각주]   ment induced by brain ischemia. *: p⁄0.05 vs. vehicle control and
+[p5 각주]   sham control group.
+[p5 각주]   Before *
+[p5 각주]   C
+[p5 각주]   After *
+[p5 각주]   B
+[p5 각주]   A
+[p5 각주]   20
+[p5 각주]   0
+[p5 각주]   Placebo 200mg 400mg
+[p5 각주]   Fig. 5.-7 on memory of complex figure.
+[p5 각주]   RCFT test was performed as described (Kim, H.G). The values are
+[p5 각주]   p⁄0.05). Relationship among placebo, 200 mg BF-7,
+[p5 각주]   and 400 mg BF -7 group were analyzed by one-way ANOVA
+[p5 각주]   (Turkey’s multiple comparison test), and their statistical significant
+[p5 각주]   p⁄0.05).
+[p5 각주]   reported as a mean S.E.M. The scores before and after administration
+[p5 각주]   difference are shown as different characters (A, B, and C) (
+[p5 각주]   of BF -7 were compared with t-tests. And significant differences are
+[p5 각주]   shown as * (3. Rey Complex Figure Test 증진 효과
+[p5 각주]   RCFT 검사는 피검자가 복잡한 구조의 도형을 얼마나 효
+[p5 각주]   적 폐쇄로 인하여 공간 기억력이 감퇴하게 되나, BF -7의
+[p5 각주]   반복투여에 의하여 이런 공간기억력의 감퇴가 억제되었으
+[p5 각주]   므로, BF-7이 뇌허혈에 의한 학습과 기억력 감퇴억제 효능
+[p5 각주]   이 우수하며, 공간 인지에 대한 학습 능력과 기억력의 증진
+[p5 각주]   을 야기 시키는 효과가 있음을 알 수 있었다.
+[p6 각주]   et al., 1986; McGurk et al., 1992).
+[p6 각주]   본 실험 결과 뇌허혈 모델 실험에서MCA 처치로 인한 뇌
+[p6 각주]   허혈이 유발되었을 때, 방사형 미로 학습에 심각한 학습 장
+[p6 각주]   나고 있음을 처음으로 확인하게 되었다. 이러한 방사형8방
+[p6 각주]   애를 일으켰으며, 반면 BF -7을 투여하였을 때에는 인지 능
+[p6 각주]   미로는 공간에 대한 기억력과 학습 수행 능력을 측정하고
+[p6 각주]   력 결손과 장애를 방어하고 증진시키는 우수한 보호효과를
+[p6 각주]   연구하기 위한 실험 장치로서, 방사형 미로에서 학습을 기
+[p6 각주]   나타냈다.
+[p6 각주]   억하는 시간 범위, 기억 능력을 매개하는 다양한 약물들이
+[p6 각주]   현재까지 뇌허혈 치료에는 많은 약물들의 효능이 평가되
+[p6 각주]   기억과 방사형 미로 학습 수행에 어떠한 영향을 미치는지
+[p6 각주]   고 있으며, 그 중에 일부는 현재 사용되고 있다. 그럼에도
+[p6 각주]   불구하고 아직까지 이러한 질환의 인지기능의 결손 및 장
+[p6 각주]   알아보기 위해 주로 사용되어 온 유용한 방법이다(Beatty
+[p6 각주]   & Shavalia, 1980; Bolhuis
+[p6 각주]   애를 치료할 수 있는 뛰어난 효능이 확립된 약물이나 치료
+[p6 각주]   법은 거의 없는 실정이다. 또한 이들 약물에 대한 연구는
+[p6 각주]   다양한 각도에서 활발히 진행은 되고 있으나, 뇌기 능치 료
+[p6 각주]   를 위한 기억력 손상 회복 및 학습 수행 능력 향상에 대한
+[p6 각주]   연구는 미비한 실정이다.
+[p6 각주]   따라서 본 실험에서는MCA 동물 모델과 임상실험을 통
+[p6 각주]   하여 BF -7의 효능에 대해 연구하고자 하였으며, 그결 과
+[p6 각주]   BF -7의 기억력, 학습 능력 등의 인지기능개선효과를 확인
+[p6 각주]   할 수 있었다. 일반인들의 기억력과 구성능력, 학습력 개선
+[p6 각주]   효과를 갖는지를 평가하기 위해서Rey Complex Figure
+[p6 각주]   Test (RCFT)를 사용하였는데, 이러한 RCFT 검사법은 국제
+[p6 각주]   적으로 공인 받은 기억력 및 구성능력을 검사하는 대표적
+[p6 각주]   인 두뇌 인지 기능 검사법이다. 다양한 연령과 다양한 상황
+[p6 각주]   의 사람들을 대상으로 하여 일반적인 대한민국의 보편적
+[p6 각주]   집단을 대변하고자 하였으며, BF -7이 유효한 효과를 나타
+[p6 각주]   낼 수 있는지를 검사하기 위해서20대부터 60대까지 다양
+[p6 각주]   한 직업군을 가진 남녀 지원자를 대상으로 위약대조, 이중
+[p6 각주]   맹검 테스트를 거쳐 시험자와 피험자의 본의 아니게 개입
+[p6 각주]   될 수도 있는 가능성을 배제 하였다. 이 RCFT 검사 결과를
+[p6 각주]   통해서, 복잡한 구조의 도형을 얼마나 효과적으로 기억하고
+[p6 각주]   그릴 수 있는지 여부 및 그 도형에 대한 단기 및 장기 기
+[p6 각주]   억에 대한 상관관계 등을 알아볼 수 있으며, 검사를 수행해
+[p6 각주]   본 결과 위약군에서는 통계적으로 유의한 결과가 나타나지
+[p6 각주]   않았으나, BF -7을 섭취한 군에서는 용량별로 각각36.8%
+[p6 각주]   에서 55.6%로, 24.7%에서 65.2%로 크게 향상되어 용량 의
+[p6 각주]   존적으로 단기 및 장기 기억에 대한 인지능력 증진과 향상
+[p6 각주]   효과를 관찰할 수 있었다. 이러한 결과는BF -7이 복잡한
+[p6 각주]   도형 등의 공간/입체적 기억력 및 구성력에 대한 인지기능
+[p6 각주]   까지도 크게 개선시킬 수 있음을 의미 하는 것이며, 이는
+[p6 각주]   BF -7이 전체적으로 기억력 및 학습 능력 등의 인지기능
+[p6 각주]   강화에 탁월한 효과가 있음을 나타내 주는 것이다.
+[p7 머리말] 187 BF
+[p7 각주]   The role of BF-7 on neuroprotection and enhancement of
+[p7 각주]   하여 새로운 뇌허혈에 의한 인지기능 손상의 치료제로 개 cognitive function,
+[p7 각주]   memory in a multiple component T-maze task,
+[p7 각주]   발할 만한 가치가 충분히 있다고 사료된다.
+[p7 각주]   , 이원복
+[p7 각주]   Gray JA, McNaughton N : Comparison between the behavioral
+[p7 각주]   effects of septal and hippocampus lesions, Neuroscience
+[p7 각주]   .
+[p7 각주]   and biobehavioral Reviews 7: 119-188, 1982.
+[p7 각주]   Hamby SL, Wilkins JW, Barry NS : Organizational quality on the
+[p7 각주]   Rey-Osterrieth and Taylor Complex Figure Tests: A new
+[p7 각주]   scoring system, Psychological Assessment 5: 27-33, 1993.
+[p7 각주]   Hodges H, Sowinski P, Fleming P, Kershaw TR, Sinden JD,
+[p7 각주]   Meldrum BS, Gray JA : Contrasting effects of fetal CA1
+[p7 각주]   Neuroscience 72: 959-988, 1996.
+[p7 각주]   Koroshetz WJ, Moskowitz MA : Emerging treatments for stroke in
+[p7 각주]   humans, Trends Pharmacol Sci 17: 227-33, 1996.
+[p7 각주]   Leys D, Erkinjuntti T, Desmond DW, Schmidt R, Englund E,
+[p7 각주]   Pasquier F, Parnetti L, Ghika J, Kalaria RN, Chabriat H,
+[p7 각주]   and CA3 hippocampal grafts on deficits in spatial learning
+[p7 각주]   Alzheimer Dis Assoc Disord 13(3):
+[p7 각주]   , S38-48, 1999.
+[p7 각주]   Lipton P : Ischemic cell death in brain neurons, Physiol Rev 79:
+[p7 각주]   1431-1568, 1999.
+[p7 각주]   McGurk SR, Levin ED, Butcher LL : Dopaminergic drug reverse
+[p7 각주]   the impairment of radial-arm maze performance caused by
+[p7 각주]   lesions involving the cholinergic medial pathway, Neuro-
+[p7 각주]   Scheltens P, Bogousslavsky J : Vascular dementia: the role
+[p7 각주]   science 50: 129-135, 1992.
+[p7 각주]   Olton DS, Wenk GL : The third generation of progress. Psycho-
+[p7 각주]   and working memory induced by global cerebral ischemia
+[p7 각주]   pharmacology, meltzer, New York Press, p. 941, 1987.
+[p7 각주]   Roman GC : Brain hypoperfusion: a critical factor in vascular de-
+[p7 각주]   mentia, Neurol Res 26: 454-458, 2004.
+[p7 각주]   Scholler K, Zausinger S, Baethmann A, Schmid-Elsaesser R :
+[p7 각주]   Neuroprotection in ischemic stroke? combination drug the-
+[p7 각주]   Brain Res 1023: 272-278, 2004.
+[p7 각주]   of cerebral infarcts,
+[p7 각주]   Sobey CG : Cerebrovascular dysfunction after subarachnoid haem-
+[p7 각주]   orrhage: novel mechanisms and directions for therapy, in rats, Clin
+[p7 각주]   Exp Pharmacol Phyisol 28: 926-929, 2001.
+[p7 각주]   Zivin JA : Current status of new drug development for ischemic
+[p7 각주]   stroke In Ischemic Stroke: From Basic Mechanisms to New
+[p7 각주]   Monogr Clin Neurosci 16: 128 -138,
+[p7 각주]   rapy and mild hypothermia in a rat model of permanent
+[p7 각주]   1998.
+[p7 각주]   Drug Development,
+[p7 각주]   focal cerebral ischemia,
+[p8 머리말] Key words :-7, Ischemia, 8
+[p8 머리말] -7 (10 mg/kg) was oral treated for 7
+[p8 각주]   limited blood supply or reinforce of blood. For the animal study, transient middle cerebral artery occlusion was
+[p8 각주]   operated with SD rat. To check whether BF-7 attenuated the ischemic damage, BF
+[p8 각주]   days once a day. To evaluate the learning and memory of the rat, 8
+[p8 각주]   Rey Complex Figure Test (RCFT) was used with control group (32 person), 200 mg treated group (33 person) and 400
+[p8 각주]   mg treated group (34 person). Treatment of BF-7 greatly reduced the infarct size. Also the neuronal damages in the
+[p8 각주]   hippocampus were significantly diminished. Furthermore, The memory impairment by ischemia was recovered. The
+[p8 각주]   clinical test showed that BF-7 greatly enhanced the brain function recognizing and memorizing complex two
+[p8 각주]   dimensional figures. Our results implicated that BF-7 plays a positive roles on protecting brain and enhancing brain
+[p8 각주]   Abnormal blood supply to brain, such as ischemia induce neuronal damages, possibly leading to Learning and memory, BF
+[p8 각주]   function clinically.
+[p8 각주]   BF-7의 일시적 뇌허혈에 의한 학습과 기억에 미치는 효과
+[p8 각주]   -induced Learning
+[p8 각주]   -Ang University
+[p8 각주]   -arm radial maze test, Rey Complex Figure Test
+[p8 각주]   -arm maze test was conducted. For clinical study,
+[띄어쓰기] 진보되어왔음에도  ->  진보되어 왔음에도
+[띄어쓰기] 다발뇌경색성치매나  ->  다발 뇌경색성 치매나
+[띄어쓰기] 날개근입천장동맥을  ->  날개 근 입천장 동맥을
+[띄어쓰기] 회복시켜설치되어  ->  회복시켜 설치되어
+[띄어쓰기] 해마부일반행동검사법로  ->  해마부 일반 행동 검사법로
+[띄어쓰기] 연속관상절편으로  ->  연속 관상 절편으로
+[띄어쓰기] 방사형동물모델에서  ->  방사형 동물 모델에서

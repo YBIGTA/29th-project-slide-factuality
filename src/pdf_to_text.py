@@ -219,8 +219,18 @@ def is_heading(line: str) -> bool:
 
 
 def _page_lines(page) -> list[tuple[int, str]]:
-    """(들여쓰기 칸 수, 줄 내용). 들여쓰기는 문단 시작을 알려주는 유일한 단서다."""
+    """(들여쓰기 칸 수, 줄 내용). 들여쓰기는 문단 시작을 알려주는 유일한 단서다.
+
+    layout 모드를 쓰는 이유는 한글 공백 때문이다. 기본 모드는 PDF 생산기에 따라
+    한글 어절 사이 공백을 통째로 잃는다(arts_01 이 그랬다).
+
+    그런데 반대 경우도 있다. bio_04 는 layout 모드가 0자를 돌려주고 기본 모드는
+    멀쩡하다. layout 이 빈손이면 기본 모드로 물러난다 — 들여쓰기 정보를 잃지만
+    아무것도 못 읽는 것보다 낫다.
+    """
     raw = page.extract_text(extraction_mode="layout") or ""
+    if not raw.strip():
+        raw = page.extract_text() or ""
     out = []
     for ln in raw.split("\n"):
         if not ln.strip():

@@ -1,0 +1,215 @@
+[p1 회전텍스트] 135
+[p2 회전텍스트] 136
+[p3 회전텍스트] 137
+[p4 회전텍스트] 138
+[p5 회전텍스트] 139
+[p6 회전텍스트] 140
+[p7 회전텍스트] 141
+[p8 회전텍스트] 142
+[p9 회전텍스트] 143
+[p10 회전텍스트] 144
+[p11 회전텍스트] 145
+[p12 회전텍스트] 146
+[p13 회전텍스트] 147
+[p14 회전텍스트] 148
+[p15 회전텍스트] 149
+[p16 회전텍스트] 150
+[p17 회전텍스트] 151
+[p18 회전텍스트] 152
+[p1 각주]   1) 국립과학수사연구원 유전자과
+[p1 각주]   동함을 확인할 수 있었다. 인간 혈흔을 대상으로 한 탐지능 검증에서 본 압타센서는 효과적인 식별능력
+[p1 각주]   을 검증할 수 있었으며, 특이적으로 루미놀 반응에 대한 다양한 위양성 요소들에 대해서는 비활성화됨을
+[p1 각주]   * 책임(교신저자)
+[p1 각주]   확인하였다. 이와 더불어, 혈흔 식별에 따른 DNA 추출 및 추가적인 유전자 분석 결과에서도 형광 간섭
+[p1 각주]   135경찰학연구 제23권 제4호(통권 제76호) 2023 https://doi.org/10.22816/polsci.20 23.23.4.135 압타머를 이용한 새로운 혈흔 탐지 방법의 개발❖ Development of a novel detection method for the analysis of bloodstain using an aptam er 조1)박미진1)·박명진1)·박현철1)·김주영1)* Ⅰ. 서론 Ⅱ. 재료 및 방법 Ⅲ. 결과 및 고찰 Ⅳ. 결론 〉〉 국 문 요 약 〈〈 범죄 현장에서 혈흔 분석을 통한 개인식별은 사건현장을 재구성하거나 피의자를 찾아내고 범인을 특정 하는데 매우 중요하다. 법과학 분야에서의 혈흔 분석은 혈청학적 식별을 포함하여 혈흔 형태에 의한 사 건 분석 및 유전자 분석 등 매우 중요한 생물학적 증거물 분석의 한 방법이지만, 범죄 현장에서 혈흔을 보다 효과적으로 검출할 수 있는 식별 기술은 지속적인 연구필요성이 요구되어지고 있다. 본 연구에서는 기존보다 효과적인 혈흔 검출의 식별방법을 제시하고자 혈액 내 존재하는 인간 면역글로불린 G를 대상 으로 한 압타머를 이용하여 혈흔 검출용 압타센서를 개발하였다. 새로 개발된 압타센서는 인간 면역글로 불린 G의 농도 증가에 따라 약 2배의 형광 세기가 증가하였으며, 이를 통해 압타센서가 효과적으로 작 동함을 확인할 수 있었다. 인간 혈흔을 대상으로 한 탐지능 검증에서 본 압타센서는 효과적인 식별능력 을 검증할 수 있었으며, 특이적으로 루미놀 반응에 대한 다양한 위양성 요소들에 대해서는 비활성화됨을 확인하였다. 이와 더불어, 혈흔 식별에 따른 DNA 추출 및 추가적인 유전자 분석 결과에서도 형광 간섭 에 의한 위양성 요소가 발견되지 않아 범죄 현장 증거물에서의 혈흔 식별에 적용가능함을 확인하였다. 이러한 연구 결과는 새로 개발된 인간 면역글로불린 G 특이적인 압타센서가 인간 혈액 및 혈흔을 식별 하는데 효과적인 대안으로 제시될 수 있으며, 이를 통해 유전자 분석을 통한 사건 해결에 도움이 될 것 으로 사료된다. 주제어: 압타머 (Aptamer), 인간 면역글로불린 G (Human immunoglobulin G), 루미놀 (Luminol), 혈흔 식별 (Bloodstain identification), 디엔에이 프로필 (DNA profile) ❖ 이 논문은 행정안전부 주관 국립과학수사연구원 중장기과학수사감정기법연구개발(R&D)사업의 지원을 받아 수행한 연구임(NFS2023DNA02) 1) 국립과학수사연구원 유전자과 * 책임(교신저자)
+[p1 각주]   에 의한 위양성 요소가 발견되지 않아 범죄 현장 증거물에서의 혈흔 식별에 적용가능함을 확인하였다.
+[p1 각주]   이러한 연구 결과는 새로 개발된 인간 면역글로불린 G 특이적인 압타센서가 인간 혈액 및 혈흔을 식별
+[p1 각주]   하는데 효과적인 대안으로 제시될 수 있으며, 이를 통해 유전자 분석을 통한 사건 해결에 도움이 될 것
+[p1 각주]   으로 사료된다.
+[p1 각주]   ❖
+[p1 각주]   조1)박미진1)·박명진1)·박현철1)·김주영1)*
+[p2 각주]   rapid confirmatory identification at a crime scene, Forensic Sci Int., 2009, 188(1-3), pp 1-17
+[p2 각주]   2) Lee HY 외, RNA for Body Fluid Identification in Forensics, Korean J Leg Med., 2009, 33(1), pp 84-88
+[p2 각주]   3) An JH 외, Body fluid identification in forensics, BMB Rep., 2012, 45(10), pp 545-553
+[p2 각주]   4) 이민지 외, 오래된 혈흔 시료에 대한 혈청학적 식별법의 비교 연구, 분석과학, 2018, 31(5), pp 201-207
+[p2 각주]   5) Blum LJ 외, A New High-Performance Reagent and Procedure for Latent Bloodstain Detection Based on
+[p2 각주]   는 장점이 있다. 하지만 루미놀 반응은 혈흔 이외에도 루미놀을 산화시킬 수 있는 다른 산 Luminol Chemiluminescence, Canadian Society of Forensic Science Journal, 2006, 39(3), pp 81-99
+[p2 각주]   6) Siegel JA 외, Encyclopedia of forensic sciences (2nd ed.), Academic Press, 2013
+[p2 각주]   의 산화-환원반응을 일으켜 무색의 기질이 산화되면 발색반응 또는 형광반응이 일어나게 7 ) R i c h a r d L i , F o r e n s i c B i o l o g y ( 2 n d e d . ) , C R C P r e s s , 2 0 1 5
+[p2 각주]   유전자 분석을 통해 범인을 특정하는데 매우 중요하게 여겨지고 있다. 예를 들어 강도, 살
+[p2 각주]   136 경찰학연구 제23권 제4호(통권 제76호) Ⅰ. 서 론 범죄 현장에서 채취된 증거물은 사건 해결에 중요한 단서를 제공할 수 있으며, 특히 지 문, 혈흔, 타액, 정액 및 모발과 같은 생물학적 증거물은 개인 식별을 통한 사건 해결에 중 요한 역할을 수행할 수 있다. 이 중, 혈흔은 범죄 현장에서 가장 흔하게 발견되는 생물학적 증거물 중 하나로, 범죄 현장에서 육안으로 식별이 가능하여 이를 통한 혈흔 형태 분석 및 유전자 분석을 통해 범인을 특정하는데 매우 중요하게 여겨지고 있다. 예를 들어 강도, 살 인, 강간과 같은 강력범죄의 경우, 사건 현장에서 발견된 혈흔은 사건 정황 해석의 지표가 되며, 혈흔 형태의 분석을 통해 사건 현장을 재구성할 수 있다. 1)2)3)4) 일반적으로 혈흔으로 의심되는 증거물에 대해서는 예비시험 (presumptive assay)과 확 증시험 (confirmatory assay)을 통해 혈액 및 인혈 여부를 판단한다. 대부분의 예비시험은 기본적으로 산화-환원 반응의 원리에 기초한다. 혈액 내 헤모글로빈의 헴 (heme) 촉매 하 의 산화-환원반응을 일으켜 무색의 기질이 산화되면 발색반응 또는 형광반응이 일어나게 된다. 발색반응을 일으키는 검사로는 페놀프탈레인 (phenolphthalein), 류코 말라카이트 그린 (leucomalachite green), 테트라메틸벤지딘 (tetramethylbenzidine) 검사 등이 있 으며 화학발광검사로는 루미놀 (luminol), 플루오레세인 (fluorescein) 검사 등이 있다. 혈 흔 예비시험의 가장 대표적인 방법으로 쓰이는 루미놀은 산화제인 과산화수소의 존재하에 헤모글로빈의 철분이 촉매작용하여 반응한다. 5)6)7) 루미놀에 의한 혈흔 예비시험은 빠르고 쉬울 뿐만 아니라 루미놀 반응 이후에 수행되는 유전자 검출 반응에도 영향을 주지 않는다 는 장점이 있다. 하지만 루미놀 반응은 혈흔 이외에도 루미놀을 산화시킬 수 있는 다른 산 화제들과 반응하여 비특이적인 위양성 결과를 나타낼 수 있다는 단점이 있다. 대표적으로 강력한 산화제인 가정용 표백제, 일부 채소가 가지고 있는 식물의 과산화효소, 구리, 철, 망 1 ) V i r k l e r K 외 , A n a l y s i s o f b o d y f l u i d s f o r f o r e n s i c p u r p o s e s : from laboratory testing to non-destructive rapid confirmatory identification at a crime scene, Forensic Sci Int., 2009, 188(1-3), pp 1-17 2) Lee HY 외, RNA for Body Fluid Identification in Forensics, Korean J Leg Med., 2009, 33(1), pp 84-88 3) An JH 외, Body fluid identification in forensics, BMB Rep., 2012, 45(10), pp 545-553 4) 이민지 외, 오래된 혈흔 시료에 대한 혈청학적 식별법의 비교 연구, 분석과학, 2018, 31(5), pp 201-207 5) Blum LJ 외, A New High-Performance Reagent and Procedure for Latent Bloodstain Detection Based on Luminol Chemiluminescence, Canadian Society of Forensic Science Journal, 2006, 39(3), pp 81-99 6) Siegel JA 외, Encyclopedia of forensic sciences (2nd ed.), Academic Press, 2013 7 ) R i c h a r d L i , F o r e n s i c B i o l o g y ( 2 n d e d . ) , C R C P r e s s , 2 0 1 5
+[p2 각주]   화제들과 반응하여 비특이적인 위양성 결과를 나타낼 수 있다는 단점이 있다. 대표적으로
+[p2 각주]   된다. 발색반응을 일으키는 검사로는 페놀프탈레인 (phenolphthalein), 류코 말라카이트
+[p2 각주]   인, 강간과 같은 강력범죄의 경우, 사건 현장에서 발견된 혈흔은 사건 정황 해석의 지표가
+[p2 각주]   강력한 산화제인 가정용 표백제, 일부 채소가 가지고 있는 식물의 과산화효소, 구리, 철, 망
+[p2 각주]   그린 (leucomalachite green), 테트라메틸벤지딘 (tetramethylbenzidine) 검사 등이 있
+[p2 각주]   으며 화학발광검사로는 루미놀 (luminol), 플루오레세인 (fluorescein) 검사 등이 있다. 혈
+[p2 각주]   되며, 혈흔 형태의 분석을 통해 사건 현장을 재구성할 수 있다.
+[p2 각주]   흔 예비시험의 가장 대표적인 방법으로 쓰이는 루미놀은 산화제인 과산화수소의 존재하에
+[p2 각주]   헤모글로빈의 철분이 촉매작용하여 반응한다.
+[p2 각주]   1)2)3)4)
+[p3 각주]   interferences with the forensic luminol test for blood, Luminescence, 2003, 18(4), pp 193-198
+[p3 각주]   9) Castelló A 외, Chemistry in crime investigation: sodium percarbonate effects on bloodstains detection, J
+[p3 각주]   Forensic Sci., 2012, 57(2), pp 500-502
+[p3 각주]   는 화학적 합성방법에 따라 합성되기 때문에 단시간에 적은 비용으로 합성될 수 있으며 생 10) Howard D 외, Detection of blood on clothing laundered with s odium percarbonate, Forensic Sci Int.,
+[p3 각주]   행한 바 있다. 이 전립선특이항원을 타겟으로 하는 압타머로 효소결합 올리고뉴클레오타이 2019, 302, 109885
+[p3 각주]   11) O'Sullivan CK, Aptasensors-the future of biosensing?, Anal Bioanal Chem., 2002, 372(1), pp 44-48
+[p3 각주]   12) Bunka DHJ 외, Aptamers come of age-at last, Nature Reviews Microbiology, 2006, 4(8), pp 588-596
+[p3 각주]   13) Kim JY 외, Identification of female-specific blood stains us ing a 17β-estradiol-targeted aptamer-based
+[p3 각주]   sensor, Int J Legal Med., 2018, 132(1), pp 91-98
+[p3 각주]   Kim 등은 혈액 내 여성 특이적인 호르몬인 17β-에스트라다이올 (17β-estradiol)을 타겟
+[p3 각주]   14) Satoh T 외, Detection of prostate-specific antigen in semen using DNA aptamers: an application of
+[p3 각주]   nucleic acid aptamers in forensic body fluid identification, An alytical Methods, 2020, 12(21), pp
+[p3 각주]   2703-2709
+[p3 각주]   산재현성이 높고 또한 고온과 pH에 매우 안정하다는 장점이 있다.
+[p3 각주]   압타머를 이용한 새로운 혈흔 탐지 방법의 개발 137 간과 같은 금속이온 등은 루미놀의 위양성 반응을 나타낼 수 있다.8) 루미놀에 대한 비특이 적 반응의 한계점을 보완하기 위한 연구들이 수행된 바 있지만, 아직 범죄 현장에 적용 가 능한 실험방법은 구축된 바 없다. 9)10) 따라서 혈흔을 탐지하는 방법의 높은 민감성과 특이 성을 갖는 검출 방법에 대한 연구는 그 필요성이 지속적으로 요구되어지고 있다. 본 논문에서 사용한 압타머 (aptamer)는 단일가닥으로 이루어진 DNA 또는 RNA로, 이 는 약 20~60mer 길이의 핵산으로 이루어져 있다. 압타머는 그 자체로 특이적인 3차 구조 를 이루어 단백질, 화합물과 같은 타겟 물질에 높은 친화성과 특이성으로 결합한다. 압타머 는 화학적 합성방법에 따라 합성되기 때문에 단시간에 적은 비용으로 합성될 수 있으며 생 산재현성이 높고 또한 고온과 pH에 매우 안정하다는 장점이 있다. 11) 12) 이러한 장점을 가 진 압타머는 바이오센서로서의 적용과 응용의 가능성을 시사해준다. 특히, 법과학 분야에서 인체유류체액에 대한 압타머의 활용가능성에 대한 연구가 보고된 바 있다. Joo-Young Kim 등은 혈액 내 여성 특이적인 호르몬인 17β-에스트라다이올 (17β-estradiol)을 타겟 으로 선정하고 17β-에스트라다이올을 타겟하는 헤어핀 구조의 압타센서 (aptasensor)를 제작하였다. 제작된 압타센서는 여성 혈흔 특이적으로 발광함을 확인하여 압타센서를 이용 한 여성 혈흔 특이적인 검출방법을 제시하였다. 13) 또한 Tetsuya Satoh 등은 정액반응 검 사 시 이용하는 전립선특이항원 (prostate specific antigen)을 타겟으로 하는 연구를 수 행한 바 있다. 이 전립선특이항원을 타겟으로 하는 압타머로 효소결합 올리고뉴클레오타이 드 검사 (enzyme-linked oligonucleotide assay)와 실시간 중합효소 연쇄 반응 (real-time polymerase chain reaction)을 수행한 결과, 정액 특이적으로 검출됨을 확인 하였다. 14) 하지만 압타머를 이용하여 인간 혈흔 특이적인 검출 방법을 개발한 연구는 아직 8 ) C r e a m e r J I 외 , A c o m p r e h e n s i v e e x p e r i m e n t a l s t u d y o f i n d u s t r ial, domestic and environmental interferences with the forensic luminol test for blood, Luminescence, 2003, 18(4), pp 193-198 9) Castelló A 외, Chemistry in crime investigation: sodium percarbonate effects on bloodstains detection, J Forensic Sci., 2012, 57(2), pp 500-502 10) Howard D 외, Detection of blood on clothing laundered with s odium percarbonate, Forensic Sci Int., 2019, 302, 109885 11) O'Sullivan CK, Aptasensors-the future of biosensing?, Anal Bioanal Chem., 2002, 372(1), pp 44-48 12) Bunka DHJ 외, Aptamers come of age-at last, Nature Reviews Microbiology, 2006, 4(8), pp 588-596 13) Kim JY 외, Identification of female-specific blood stains us ing a 17β-estradiol-targeted aptamer-based sensor, Int J Legal Med., 2018, 132(1), pp 91-98 14) Satoh T 외, Detection of prostate-specific antigen in semen using DNA aptamers: an application of nucleic acid aptamers in forensic body fluid identification, An alytical Methods, 2020, 12(21), pp 2703-2709드 검사 (enzyme-linked oligonucleotide assay)와 실시간 중합효소 연쇄 반응
+[p3 각주]   으로 선정하고 17β-에스트라다이올을 타겟하는 헤어핀 구조의 압타센서 (aptasensor)를
+[p3 각주]   (real-time polymerase chain reaction)을 수행한 결과, 정액 특이적으로 검출됨을 확인
+[p3 각주]   제작하였다. 제작된 압타센서는 여성 혈흔 특이적으로 발광함을 확인하여 압타센서를 이용
+[p3 각주]   하였다.
+[p3 각주]   한 여성 혈흔 특이적인 검출방법을 제시하였다.
+[p3 각주]   11) 12) 이러한 장점을 가
+[p3 각주]   13) 또한 Tetsuya Satoh 등은 정액반응 검
+[p4 각주]   (Sigma-Aldrich, USA)와 Manganese(II) chloride (Sigma-Aldrich, USA)를 증류수에 녹
+[p4 각주]   여 사용하였다. 양배추와 마늘은 즙을 내어 사용하였다. 표백제는 유한락스 (Korea) 제품을
+[p4 각주]   138 경찰학연구 제23권 제4호(통권 제76호) 보고된 바가 없으므로 본 연구를 수행하기로 하였다. 본 연구에서는 혈흔을 탐지하는 새로운 방법으로서 압타머를 이용하였다. 인간 면역글로 불린 G를 타겟하는 압타머를 이용하여 압타센서를 제작하였고 압타센서의 검증과 더불어 압타센서가 DNA 추출과 정량에 미치는 영향을 연구하였다. 이를 통해 본 논문에서 제시하 는 새로운 형태의 혈흔탐지방법에 대한 법과학 분야의 적용 가능성에 대해 고찰하였다. Ⅱ. 재료 및 방법 1. 시료 및 압타센서 제작 압타센서의 인간 혈액 특이적인 반응을 확인하기 위해 인간 면역글로불린 G (Sigma-Aldrich, USA)와 인간 감마글로불린 (Sigma-Aldrich, USA)는 PBS에 각 농도가 1μM가 되도록 혼합하여 사용하였다. 혈액은 Innovative research (USA)에서 구매하여 사 용하였다. 특이성 시험에 사용된 철과 망간은 각각 Iron(II) sulfate heptahydrate (Sigma-Aldrich, USA)와 Manganese(II) chloride (Sigma-Aldrich, USA)를 증류수에 녹 여 사용하였다. 양배추와 마늘은 즙을 내어 사용하였다. 표백제는 유한락스 (Korea) 제품을 사용하였고, 소와 고양이의 면역글로불린 G는 Bethyl Laboratories Inc. (USA)에서, 개의 면역글로불린 G는 Rockland Immunochemicals (USA)에서 구매하여 사용하였다. 인간 면역글로불린 G 압타머는 3’말단에 소광체 (quencher)인 BHQ1을 합성하였고, 압 타머와 상보적 결합을 하는 DNA는 5’말단에 형광체 (fluorophore)인 6-FAM을 합성하였 다. 상보적 DNA는 압타머의 3’말단을 기준으로 8 base pair에서부터 12 base pair까지 상보적 결합을 이루는 DNA를 만들었다. 음성대조군(Negative Control, NC)은 전체 길이 가 23mer인 압타머와 상보적결합을 하는 DNA를 만들었다. 모든 상보적 DNA는 바이오니 아 (Korea)에서 구매하여 사용하였다. 압타센서 제작시 음성대조군은 압타머의 농도 5nM, 상보적 DNA의 농도 50nM을 동량 혼합하여 사용하였고, AS-10과 AS-11은 압타머의 농 도는 5nM, 상보적 DNA의 농도는 350nM을 동량 혼합하여 사용하였다. 동량 섞은 압타머 와 상보적 DNA는 90℃의 온도에서 5분간 반응시키고 상온에서 식힌 후 사용하였다.
+[p4 각주]   사용하였고, 소와 고양이의 면역글로불린 G는 Bethyl Laboratories Inc. (USA)에서, 개의
+[p4 각주]   면역글로불린 G는 Rockland Immunochemicals (USA)에서 구매하여 사용하였다.
+[p4 각주]   인간 면역글로불린 G 압타머는 3’말단에 소광체 (quencher)인 BHQ1을 합성하였고, 압
+[p4 각주]   타머와 상보적 결합을 하는 DNA는 5’말단에 형광체 (fluorophore)인 6-FAM을 합성하였
+[p4 각주]   다. 상보적 DNA는 압타머의 3’말단을 기준으로 8 base pair에서부터 12 base pair까지
+[p4 각주]   상보적 결합을 이루는 DNA를 만들었다. 음성대조군(Negative Control, NC)은 전체 길이
+[p4 각주]   가 23mer인 압타머와 상보적결합을 하는 DNA를 만들었다. 모든 상보적 DNA는 바이오니
+[p4 각주]   아 (Korea)에서 구매하여 사용하였다. 압타센서 제작시 음성대조군은 압타머의 농도 5nM,
+[p4 각주]   상보적 DNA의 농도 50nM을 동량 혼합하여 사용하였고, AS-10과 AS-11은 압타머의 농
+[p4 각주]   도는 5nM, 상보적 DNA의 농도는 350nM을 동량 혼합하여 사용하였다. 동량 섞은 압타머
+[p4 각주]   와 상보적 DNA는 90℃의 온도에서 5분간 반응시키고 상온에서 식힌 후 사용하였다.
+[p5 각주]   GlobalFiler™ PCR Amplification Kit (Thermo Fisher Scientific, U SA)와
+[p5 각주]   PowerPlex® Fusion System (Promega, USA)를 이용하여 사용자 지침서대로 증폭하였
+[p5 각주]   로 혼합한 시료를 사용하였다. 추출한 DNA의 정량은 Quantifiler
+[p5 각주]   l의 압타센서를 총 부피가 100μl가 되도록 혼합하여 측정하였다. 혈흔 시료에서 압타센서의
+[p5 각주]   장비는 ABI 7500 RT-PCR (Thermo Fisher Scientific, USA) 장비를 사용하였다.
+[p5 각주]   5. 통계처리
+[p5 각주]   실험결과는 각 실험마다 3번의 독립적인 반복 실험결과를 평균 내어 계산한 값이다. 음성
+[p5 각주]   대조군과 압타센서 실험군간의 통계적 유의성은 student’s t-tests로 계산하였고, 3 그룹간
+[p5 각주]   다. 증폭 산물은 3500 genetic analyzer (Thermo Fisher Scientific, USA) 와
+[p5 각주]   GeneMapper ID-X v1.4 Software (Thermo Fisher Scientific, USA)로 분석하여 DNA
+[p5 각주]   효용성을 검증한 실험의 사진 촬영은 DCS5 시스템 (Foster + Freeman Ltd., United
+[p5 각주]   프로필을 분석하였다.
+[p5 각주]   압타머를 이용한 새로운 혈흔 탐지 방법의 개발 139 2. 압타센서 처리 및 형광 측정 압타센서의 활성을 측정하기 위하여 형광세기는 여기(excitation) 488nm과 방출 (emission) 520nm 파장대에서 측정하였다. 실험에 사용한 측정 장비로는 Varioskan LUX Multimode Microplate Reader (Thermo Fisher Scientific, USA)을 사용하였다. 형광측정을 위해 96well dark plate (SPL, Korea)에 50nM의 인간 면역글로불린 G와 5μ l의 압타센서를 총 부피가 100μl가 되도록 혼합하여 측정하였다. 혈흔 시료에서 압타센서의 효용성을 검증한 실험의 사진 촬영은 DCS5 시스템 (Foster + Freeman Ltd., United Kingdom)을 사용하여 촬영하였다. 3. DNA 추출 및 정량 DNA 추출 방법은 컬럼을 이용한 방식으로 QIAmp DNA micro kit (Qiagen, Germany)를 사용자 지침서에 따라 사용하였다. 실험 시료는 압타센서와 혈액을 1:5 비율 로 혼합한 시료를 사용하였다. 추출한 DNA의 정량은 Quantifiler TM Trio Quantification kit (Thermo Fisher Scientific, USA)를 사용하여 사용자 지침서대로 수행하였고, 측정 장비는 ABI 7500 RT-PCR (Thermo Fisher Scientific, USA) 장비를 사용하였다. 4. DNA 프로필 분석 압타센서가 DNA 프로필 분석에 영향을 미치는지 확인하기 위하여, 추출한 DNA를 각각 GlobalFiler™ PCR Amplification Kit (Thermo Fisher Scientific, U SA)와 PowerPlex® Fusion System (Promega, USA)를 이용하여 사용자 지침서대로 증폭하였 다. 증폭 산물은 3500 genetic analyzer (Thermo Fisher Scientific, USA) 와 GeneMapper ID-X v1.4 Software (Thermo Fisher Scientific, USA)로 분석하여 DNA 프로필을 분석하였다. 5. 통계처리 실험결과는 각 실험마다 3번의 독립적인 반복 실험결과를 평균 내어 계산한 값이다. 음성 대조군과 압타센서 실험군간의 통계적 유의성은 student’s t-tests로 계산하였고, 3 그룹간
+[p5 각주]   Kingdom)을 사용하여 촬영하였다.
+[p5 각주]   TM Trio Quantification
+[p7 각주]   15) Miyakawa S 외, Structural and molecular basis for hyperspeci ficity of RNA aptamer to human
+[p7 각주]   immunoglobulin G, RNA, 2008, 14(6), pp 1154-1163
+[p7 각주]   16) http://www.unafold.org (2023.10.27 검색)
+[p7 각주]   정압타머를 이용한 새로운 혈흔 탐지 방법의 개발 141 우선, 혼성화된 압타센서는 소광효과에 의해 형광을 내지 못하는데, 인간 면역글로불린 G 가 존재하면 압타머는 인간 면역글로불린 G와 높은 결합력으로 결합함으로써 압타센서가 풀리게 된다. 압타센서가 풀리면서 BHQ1에 의해 억제된 형광이 발광하게 되는 원리이다. 이미 보고가 되어 알려진 인간 면역글로불린 G 압타머에 15) 상보적 DNA을 혼성화하여 압 타센서를 제작하였다. 압타머와 상보적 결합을 하는 DNA는 총 5가지로, 압타머의 3’말단 을 기준으로 8 base pair에서부터 12 base pair까지 결합하는 총 5가지의 압타센서를 제 작하였다 (그림 1). 제작된 5가지의 압타센서는 mfold 프로그램을 16) 통해 타겟에 결합할 수 있는 최상의 조건을 확인하였다. 앞서 제작한 5가지 압타센서의 활성을 측정하기 위해 인간 면역글로불린 G를 이용하여 형광 세기를 측정해보았다. 인간 면역글로불린 G를 처리 하였을 때, AS-10과 AS-11의 압타센서 형광 세기가 유의미하게 증가함을 확인하였다 (그 림 3). <그림 3> 5가지 압타센서에 대한 형광 세기 측 정 따라서 총 5가지의 압타센서 중 형광 세기를 비교 판단한 결과 AS-10과 AS-11이 혈흔 탐지 압타센서로 가장 적절할 것으로 판단되었다. 15) Miyakawa S 외, Structural and molecular basis for hyperspeci ficity of RNA aptamer to human immunoglobulin G, RNA, 2008, 14(6), pp 1154-1163 16) http://www.unafold.org (2023.10.27 검색)
+[p7 각주]   림 3).
+[p7 각주]   15) 상보적 DNA을 혼성화하여 압
+[p7 각주]   16) 통해 타겟에 결합할
+[p7 각주]   형광 세기 측
+[p8 각주]   17) Miao D 외, Fluorescent aptasensor based on D-AMA/F-CSC for the sensitive and specific recognition of
+[p8 각주]   myoglobin, Spectrochim Acta A Mol Biomol Spectrosc., 2020, 228, 117714
+[p8 각주]   350nM 농도로 사용하였을 때 형광 세기가 가장 높은 것을 확인하였다. 본 결과를 통해 인
+[p8 각주]   광 세기를 측정해본 결과, AS-10과 AS-11 압타센서 모두 희석된 농도에 따라 형광 세기가
+[p8 각주]   142 경찰학연구 제23권 제4호(통권 제76호) 압타센서를 혼성화방법으로 제작할 시 압타센서의 최대 활성을 위하여 압타머에 대한 상 보적 DNA의 농도가 중요한 것으로 잘 알려져있다. 17) 압타센서 제작시 최적의 상보적 DNA의 농도를 도출하기 위해 상보적 DNA의 농도별 형광 세기를 분석하였다. 이를 위해, 압타머는 5nM의 농도로 고정하고 상보적 DNA의 농도는 각각 0, 50, 150, 350, 500nM 로 혼성화하여 압타센서를 제작하였다. AS-10과 AS-11, 두 가지 압타센서는 DNA을 350nM 농도로 사용하였을 때 형광 세기가 가장 높은 것을 확인하였다. 본 결과를 통해 인 간 면역글로불린 G의 5가지 압타센서 중 AS-10과 AS-11이 유효한 압타센서로, 상보적 DNA의 농도가 350nM일 때 충분히 잘 작동하는 것으로 확인하였다 (그림 4). <그림 4> 상보적 DNA에 따른 압타센서의 활성 측정 (A: AS-10, B: AS-11) 2. 압타센서의 검증 개발된 압타센서에 대해 압타센서의 농도 감소에 따라 형광 세기가 감소하는지 확인해보 았다. 압타센서의 농도를 1/10씩 희석하여 350, 35, 3.5, 0.35, 0.035nM로 처리하여 형 광 세기를 측정해본 결과, AS-10과 AS-11 압타센서 모두 희석된 농도에 따라 형광 세기가 감소함을 확인하였다 (그림 5). 17) Miao D 외, Fluorescent aptasensor based on D-AMA/F-CSC for the sensitive and specific recognition of myoglobin, Spectrochim Acta A Mol Biomol Spectrosc., 2020, 228, 117714
+[p8 각주]   간 면역글로불린 G의 5가지 압타센서 중 AS-10과 AS-11이 유효한 압타센서로, 상보적
+[p8 각주]   감소함을 확인하였다 (그림 5).
+[p8 각주]   DNA의 농도가 350nM일 때 충분히 잘 작동하는 것으로 확인하였다 (그림 4).
+[p8 각주]   AS-11)
+[p9 각주]   B: AS-11)
+[p9 각주]   측정
+[p10 각주]   18) Quickenden TI 외, Increasing the specificity of the forensic luminol test for blood, Luminescence, 2001,
+[p10 각주]   6(3), pp 251-253
+[p10 각주]   1 9 ) T o b e S S 외 , E v a l u a t i o n o f s i x p r e s u m p t i v e t e s t s f o r b l o o d , their specificity, sensitivity, and effect on
+[p10 각주]   high molecular-weight DNA, J Forensic Sci., 2007, 52(1), pp 102-109
+[p10 각주]   7A). 이와 더불어 혈액을 이용하여 압타센서의 형광 세기를 측정해보았을 때, AS-10과
+[p10 각주]   동물의 혈액과 같은 물질들이 루미놀에 위양성 반응을 보일 수 있다.
+[p10 각주]   한 AS-10과 AS-11의 압타센서에 금속이온인 철과 망간, 채소 중 가장 높은 위양성을 보인
+[p10 각주]   성 )144 경찰학연구 제23권 제4호(통권 제76호) 3. 압타센서의 활용가능성 범죄 현장에서 발견되는 혈액 증거물들은 대부분 혈흔 상태로 존재한다. 이러한 특징을 고려하여, 제작한 압타센서가 혈흔 상태에서도 발광하는지 확인하였다. 먼저, 인간 혈액을 실온에서 24시간 건조시켜 혈흔 상태로 만들고 압타센서를 처리하여 형광을 관찰하였다. 실험결과, AS-10과 AS-11을 처리한 혈흔에서 뚜렷하게 형광이 발광됨을 확인하였다 (그림 7A). 이와 더불어 혈액을 이용하여 압타센서의 형광 세기를 측정해보았을 때, AS-10과 AS-11에서 형광 세기가 증가하는 것을 확인하였다 (그림 7B). <그림 7> 인간 혈흔에 대한 압타센서의 활 성 측정 (A: 혈흔, B: 혈액 ) 혈액 예비시험의 가장 대표적인 방법으로 쓰이는 루미놀은 혈흔 이외에 비특이적인 반응 을 보이는 위양성 물질들이 잘 알려져 있다. 금속이온, 식물의 과산화효소, 가정용 표백제, 동물의 혈액과 같은 물질들이 루미놀에 위양성 반응을 보일 수 있다. 18)19) 이 러 한 이 유 로 , 본 연구에서 개발한 압타센서가 위양성 물질들에 반응하는지 관찰하였다. 먼저, 앞서 제작 한 AS-10과 AS-11의 압타센서에 금속이온인 철과 망간, 채소 중 가장 높은 위양성을 보인 다고 알려진 양배추와 마늘 20), 가정용 표백제를 처리하여 형광 세기를 측정해보았다. 그 결 18) Quickenden TI 외, Increasing the specificity of the forensic luminol test for blood, Luminescence, 2001, 6(3), pp 251-253 1 9 ) T o b e S S 외 , E v a l u a t i o n o f s i x p r e s u m p t i v e t e s t s f o r b l o o d , their specificity, sensitivity, and effect on high molecular-weight DNA, J Forensic Sci., 2007, 52(1), pp 102-109
+[p10 각주]   AS-11에서 형광 세기가 증가하는 것을 확인하였다 (그림 7B).
+[p10 각주]   다고 알려진 양배추와 마늘
+[p10 각주]   측정(A: 혈흔, B: 혈액
+[p10 각주]   18)19) 이 러 한 이 유 로 ,
+[p11 각주]   pp 71-77
+[p11 각주]   21) Miyakawa S 외, Structural and molecular basis for hyperspecif i c i t y o f R N A a p t a m e r t o h u m a n
+[p11 각주]   immunoglobulin G, RNA, 2008, 14(6), pp 1154-1163 (재인용)
+[p11 각주]   적 반응이 미미하고 인간 혈흔을 민감하게 탐지하므로 법과학 분야에서 혈흔을 탐지하는 새
+[p11 각주]   응 성압타머를 이용한 새로운 혈흔 탐지 방법의 개발 145 과, AS-10과 AS-11의 압타센서는 인간 면역글로불린 G에서만 특이적으로 형광 세기가 증 가함을 관찰하였다 (그림 8). 다만, 금속염인 철과 망간에서는 형광 세기가 음성대조군보다 더 감소함을 관찰하였는데, 이는 금속이온에 의한 형광 간섭으로 사료되었다. <그림 8> 루미놀 반 응시 위양성 요소에 대한 압타센서의 활 성 측정 다음으로, 제작한 압타센서가 인간 특이적인 반응을 나타내는지 확인하기 위하여 인간, 소, 개, 고양이의 면역글로불린 G를 처리하여 형광 세기를 측정해보았다. 그 결과, AS-10 과 AS-11에서 인간 면역글로불린 G뿐만 아니라 소, 개, 고양이의 면역글로불린 G에서도 형광 세기가 비특이적으로 증가함을 관찰하였으며, 인간, 고양이, 소, 개 순으로 형광 세기 의 증가를 보였다 (그림 9). 이는 본 연구에서 사용한 압타머가 인간 면역글로불린 G의 Fc 부분과 결합하는데, 다른 종과 인간이 가지고 있는 면역글로불린 G의 Fc 부분에 대한 높은 아미노산 유사성 때문에 다른 종간의 압타센서의 특이성이 상쇄되는 것으로 사료되었다. 21) 본 결과를 통해 개발된 압타센서가 비록 종 간 특이성은 낮지만, 위양성요소에 대한 비특이 적 반응이 미미하고 인간 혈흔을 민감하게 탐지하므로 법과학 분야에서 혈흔을 탐지하는 새 로운 방법으로 제시될 수 있을 것으로 판단되었다. 20) 정주연 외, 새로운 루미놀 기반 혈흔 탐지 시약이 디엔에이에 미치는 영향에 대한 연구. 분석과학, 2018, 31(2), pp 71-77 21) Miyakawa S 외, Structural and molecular basis for hyperspecif i c i t y o f R N A a p t a m e r t o h u m a n immunoglobulin G, RNA, 2008, 14(6), pp 1154-1163 (재인용)
+[p11 각주]   형광 세기가 비특이적으로 증가함을 관찰하였으며, 인간, 고양이, 소, 개 순으로 형광 세기
+[p11 각주]   로운 방법으로 제시될 수 있을 것으로 판단되었다.
+[p11 각주]   의 증가를 보였다 (그림 9). 이는 본 연구에서 사용한 압타머가 인간 면역글로불린 G의 Fc
+[p11 각주]   부분과 결합하는데, 다른 종과 인간이 가지고 있는 면역글로불린 G의 Fc 부분에 대한 높은
+[p11 각주]   아미노산 유사성 때문에 다른 종간의 압타센서의 특이성이 상쇄되는 것으로 사료되었다.
+[p11 각주]   측정
+[p11 각주]   21)
+[p12 각주]   (A: AS-10, B:
+[p12 각주]   성146 경찰학연구 제23권 제4호(통권 제76호) <그림 9> 인간, 소, 개, 고양이 면역글로불린 G에 대한 압타센서 활 성 측정 4. DNA 추출과 정량에 미치는 영향 범죄 현장에서 발견된 혈흔 증거물은 혈흔 예비검사를 통해 인체분비물 확정 후 신원확인 을 위해 DNA를 추출, 정량한 다음 유전자 분석을 수행한다. 이에 혈흔 식별에 따른 DNA 추출 및 정량에서 형광 간섭에 의한 위양성 여부를 확인하는 실험을 수행하였다. 압타센서 <그림 10> 혈액에 압타센서를 처리한 후 DNA 추출 결과 (A: AS-10, B: AS-11)
+[p12 각주]   측정
+[p12 각주]   AS-11)
+[p13 각주]   (A: AS-10, B:
+[p13 각주]   5. DNA 프로필 분석에 미치는 영향
+[p13 각주]   AS-10과 AS-11는 압타센서의 4가지 농도 (87.5, 175, 350, 700nM)에서 DNA의 추출과 DNA 프로필 분석에서 압타센서에 의한 형광 간섭이 보이는지 관찰하고자, 그림 10에서
+[p13 각주]   추출한 DNA로 GlobalFiler™ PCR Amplification Kit와 PowerPlex® Fusion System
+[p13 각주]   을 이용하여 증폭하였다. 그 결과, 전체 실험에서 음성대조군 대비 AS-10과 AS-11에서 유
+[p13 각주]   정량에 거의 영향을 미치지 않는 것으로 분석되었다 (그림 11).
+[p13 각주]   사한 경향성의 DNA 프로필이 검출되어 DNA 증폭과정에서 형광 간섭이 관찰되지 않은 것
+[p13 각주]   압타머를 이용한 새로운 혈흔 탐지 방법의 개발 147 와 혈액을 1:5 비율로 혼합하고 DNA를 추출하였다. 대표적인 DNA 추출 방법인 컬럼 유 형의 DNA 추출기법으로 DNA을 추출하고 정량값을 확인한 결과, AS-10과 AS-11에서 형 광 간섭이 관찰되지 않았다 (그림 10). 추가적으로, 압타센서의 농도에 따른 형광 간섭의 여부를 확인하기 위해 압타센서를 87.5, 175, 350, 700nM의 농도로 처리하고 DNA를 추출하여 정량 해 보았다. 실험결과, AS-10과 AS-11는 압타센서의 4가지 농도 (87.5, 175, 350, 700nM)에서 DNA의 추출과 정량에 거의 영향을 미치지 않는 것으로 분석되었다 (그림 11). <그림 11> 혈액에 농도별로 압타센서를 처리한 후 DNA 정량 결과 (A: AS-10, B: AS-11) 5. DNA 프로필 분석에 미치는 영향 DNA 프로필 분석에서 압타센서에 의한 형광 간섭이 보이는지 관찰하고자, 그림 10에서 추출한 DNA로 GlobalFiler™ PCR Amplification Kit와 PowerPlex® Fusion System 을 이용하여 증폭하였다. 그 결과, 전체 실험에서 음성대조군 대비 AS-10과 AS-11에서 유 사한 경향성의 DNA 프로필이 검출되어 DNA 증폭과정에서 형광 간섭이 관찰되지 않은 것 으로 판단하였다 (그림 12).
+[p13 각주]   으로 판단하였다 (그림 12).
+[p13 각주]   AS-11)
+[p14 각주]   , B: PowerPle® Fusion System)
+[p16 각주]   Bloodstain Detection Based on Luminol Chemiluminescence, Canadian
+[p16 각주]   Society of Forensic Science Journal, 2006, 39(3), pp 81-99
+[p16 각주]   Creamer JI 외, A comprehensive experimental study of industrial, d o m e s t i c
+[p16 각주]   and environmental interferences with the forensic luminol test for
+[p16 각주]   blood, Luminescence, 2003, 18(4), pp 193-198
+[p16 각주]   Castelló A 외, Chemistry in crime investigation: sodium percarbonate effe cts
+[p16 각주]   on bloodstains detection, J Forensic Sci., 2012, 57(2), pp 500- 502
+[p16 각주]   H o w a r d D 외 , D e t e c t i o n o f b l o o d o n c l o t h i n g l a u n d e r e d w i t h s o d i um
+[p16 각주]   percarbonate, Forensic Sci Int., 2019, 302, 109885
+[p16 각주]   O ' S u l l i v a n C K , A p t a s e n s o r s - - t h e f u t u r e o f b i o s e n s i n g ? , A n a l B i oanal Chem.,
+[p16 각주]   2002, 372(1), pp 44-48
+[p16 각주]   Bunka DHJ 외, Aptamers come of age
+[p16 각주]   2006, 4(8), pp 588-596
+[p16 각주]   Kim JY 외, Identification of female-specific blood stains using a 17β
+[p16 각주]   -estradiol-targeted aptamer-based sensor, Int J Legal Med., 201 8,
+[p16 각주]   132(1), pp 91-98.
+[p16 각주]   150 경찰학연구 제23권 제4호(통권 제76호) 참고문헌 Ⅰ. 논문 1. 국외문헌 Virkler K 외, Analysis of body fluids for forensic purposes: fro m laboratory testing to non-destructive rapid confirmatory identification at a c r i m e scene, Forensic Sci Int., 2009, 188(1-3), pp 1-17 L e e H Y 외 , R N A f o r B o d y F l u i d I d e n t i f i c a t i o n i n F o r e n s i c s , K o r e an J Leg Med., 2009, 33(1), pp 84-88 An JH 외, Body fluid identification in forensics, BMB Rep., 2012 , 45(10), pp 545-553 Blum LJ 외, A New High-Performance Reagent and Procedure for Lat ent Bloodstain Detection Based on Luminol Chemiluminescence, Canadian Society of Forensic Science Journal, 2006, 39(3), pp 81-99 Creamer JI 외, A comprehensive experimental study of industrial, d o m e s t i c and environmental interferences with the forensic luminol test for blood, Luminescence, 2003, 18(4), pp 193-198 Castelló A 외, Chemistry in crime investigation: sodium percarbonate effe cts on bloodstains detection, J Forensic Sci., 2012, 57(2), pp 500- 502 H o w a r d D 외 , D e t e c t i o n o f b l o o d o n c l o t h i n g l a u n d e r e d w i t h s o d i um percarbonate, Forensic Sci Int., 2019, 302, 109885 O ' S u l l i v a n C K , A p t a s e n s o r s - - t h e f u t u r e o f b i o s e n s i n g ? , A n a l B i oanal Chem., 2002, 372(1), pp 44-48 Bunka DHJ 외, Aptamers come of age – at last, Nature Reviews Microbiology, 2006, 4(8), pp 588-596 Kim JY 외, Identification of female-specific blood stains using a 17β -estradiol-targeted aptamer-based sensor, Int J Legal Med., 201 8, 132(1), pp 91-98.
+[p16 각주]   – at last, Nature Reviews Microbiology,
+[p17 각주]   31(5), pp 201-207
+[p17 각주]   정주연 외, 새로운 루미놀 기반 혈흔 탐지 시약이 디엔에이에 미치는 영향에 대한 연구,
+[p17 각주]   분석과학, 2018, 31(2), pp 71-77
+[p17 각주]   Ⅱ. 단행본
+[p17 각주]   1. 국외문헌
+[p17 각주]   Biomol Spectrosc., 2020, 228, 117714
+[p17 각주]   Siegel JA 외, Encyclopedia of forensic sciences (2nd ed.), Academic Press, 2013
+[p17 각주]   Q u i c k e n d e n T I 외 , I n c r e a s i n g t h e s p e c i f i c i t y o f t h e f o r e n s i c l u minol test for
+[p17 각주]   Richard Li, Forensic Biology (2nd ed.), CRC Press, 2015
+[p17 각주]   blood, Luminescence, 2001, 16(3), pp 251-253
+[p17 각주]   T o b e S S 외 , E v a l u a t i o n o f s i x p r e s u m p t i v e t e s t s f o r b l o o d , t h e i r s p e c i f i c i t y ,
+[p17 각주]   Ⅲ. 기타
+[p17 각주]   s e n s i t i v i t y , a n d e f f e c t o n h i g h m o l e c u l a r - w e i g h t D N A , J F o r e n s ic Sci.,
+[p17 각주]   2007, 52(1), pp 102-109
+[p17 각주]   http://www.unafold.org (2023.10.27. 검색)
+[p17 각주]   압타머를 이용한 새로운 혈흔 탐지 방법의 개발 151 Satoh T 외, Detection of prostate-specific antigen in semen usin g DNA aptamers: an application of nucleic acid aptamers in forensic b ody fluid identification, Analytical Methods, 2020, 12(21), pp 2703 -2709 M i y a k a w a S 외 , S t r u c t u r a l a n d m o l e c u l a r b a s i s f o r h y p e r s p e c i f i c ity of RNA aptamer to human immunoglobulin G, RNA, 2008, 14(6), pp 1154-1163 M i a o D 외 , F l u o r e s c e n t a p t a s e n s o r b a s e d o n D - A M A / F - C S C f o r t h e sensitive and specific recognition of myoglobin, Spectrochim Acta A Mol Biomol Spectrosc., 2020, 228, 117714 Q u i c k e n d e n T I 외 , I n c r e a s i n g t h e s p e c i f i c i t y o f t h e f o r e n s i c l u minol test for blood, Luminescence, 2001, 16(3), pp 251-253 T o b e S S 외 , E v a l u a t i o n o f s i x p r e s u m p t i v e t e s t s f o r b l o o d , t h e i r s p e c i f i c i t y , s e n s i t i v i t y , a n d e f f e c t o n h i g h m o l e c u l a r - w e i g h t D N A , J F o r e n s ic Sci., 2007, 52(1), pp 102-109 2. 국내문헌 이민지 외, 오래된 혈흔 시료에 대한 혈청학적 식별법의 비교 연구, 분석과학, 2018, 31(5), pp 201-207 정주연 외, 새로운 루미놀 기반 혈흔 탐지 시약이 디엔에이에 미치는 영향에 대한 연구, 분석과학, 2018, 31(2), pp 71-77 Ⅱ. 단행본 1. 국외문헌 Siegel JA 외, Encyclopedia of forensic sciences (2nd ed.), Academic Press, 2013 Richard Li, Forensic Biology (2nd ed.), CRC Press, 2015 Ⅲ. 기타 http://www.unafold.org (2023.10.27. 검색)
+[p18 각주]   f l u o r e s c e n c e s i g n a l o f t h e a c t i v a t a b l e a p t a s e n s o r w a s e n h a n c e d approximately
+[p18 각주]   twofold upon increasing the concentration of human immunoglobulin G, confirming
+[p18 각주]   that the aptasensor worked effectively. In the verification of the aptasensor’s
+[p18 각주]   detection capability in human blood, we observed that it was validated for its effective
+[p18 각주]   identification ability and found to be inactivated for various false positive factors of
+[p18 각주]   lum inol reaction. In addition, we showed that false positive factors by fluorescence
+[p18 각주]   interference were not found in DNA extraction and subsequent DNA profiling, which
+[p18 각주]   applies to bloodstain identification in evidence of forensic investigation. Collectively,
+[p18 각주]   these findings suggest that the novel aptasensor specifically t argeting human
+[p18 각주]   immunoglobulin G can be an effective alternative to identify human blood and
+[p18 각주]   bloodstain, which is expected to contribute toward solving crimes.
+[p18 각주]   Keywords : Aptamer, Human immunoglobulin G, Luminol, Bloodstain identification,
+[p18 각주]   DNA profile
+[p18 각주]   ❖ This work is supported by National Forensic Service (NFS2023D NA02), Ministry of the Interior and
+[p18 각주]   Safety, Republic of Korea.
+[p18 각주]   1) Forensic DNA Division, National Forensic Service, Wonju26460, Korea
+[p18 각주]   * Corresponding author
+[p18 각주]   152 경찰학연구 제23권 제4호(통권 제76호) Development of a novel detection method for the analysis of bloodstain using an aptamer❖ 22)MfMijin Park 1)·Myung Jin Park 1)·Hyun-Chul Park 1)·Joo-Young Kim 1) Personal identification through bloodstain analysis at a crime scene plays a pivotal role in reconstructing the crime, finding the suspect, and identifying perpetrators. Bloodstain analysis in forensic science is an important technique for biological evidence analysis, including serological methods, bloodstain pattern analysis and genetic analysis. However, there is a need for research on identification technology that can more effectively detect bloodstains at crime scenes. I n this study, we developed an aptasensor for bloodstain detection using human immunoglobulin G-targeted aptamer to suggest an efficient method for identifying bloodstains. The f l u o r e s c e n c e s i g n a l o f t h e a c t i v a t a b l e a p t a s e n s o r w a s e n h a n c e d approximately twofold upon increasing the concentration of human immunoglobulin G, confirming that the aptasensor worked effectively. In the verification of the aptasensor’s detection capability in human blood, we observed that it was validated for its effective identification ability and found to be inactivated for various false positive factors of lum inol reaction. In addition, we showed that false positive factors by fluorescence interference were not found in DNA extraction and subsequent DNA profiling, which applies to bloodstain identification in evidence of forensic investigation. Collectively, these findings suggest that the novel aptasensor specifically t argeting human immunoglobulin G can be an effective alternative to identify human blood and bloodstain, which is expected to contribute toward solving crimes. Keywords : Aptamer, Human immunoglobulin G, Luminol, Bloodstain identification, DNA profile ❖ This work is supported by National Forensic Service (NFS2023D NA02), Ministry of the Interior and Safety, Republic of Korea. 1) Forensic DNA Division, National Forensic Service, Wonju26460, Korea * Corresponding author
+[p18 각주]   ❖
+[p18 각주]   ·Hyun-Chul Park 1)·Joo-Young Kim 1)
+[띄어쓰기] 중장기과학수사감정기법연구개발  ->  중장기 과학 수사 감정 기법 연구 개발
+[띄어쓰기] 바이오센서로서의  ->  바이오 센서로서의
