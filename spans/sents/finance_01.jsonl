@@ -1,0 +1,424 @@
+{"sent_id": "s001", "text": "pISSN : 2465-9754 eISSN : 2508-1292 https://doi.org/10.30902/jrea.2026.12.2.159", "start": 0, "end": 79, "is_heading": false}
+{"sent_id": "s002", "text": "Journal of Real Estate Analysis http://www.ejrea.org July 2026, Vol.12, No.2, pp. 159~182", "start": 81, "end": 170, "is_heading": false}
+{"sent_id": "s003", "text": "CAPM에 기반한 주택시장 리스크 프리미엄 동학 분석 - EGARCH-in-Mean 모형을 이용하여 -", "start": 172, "end": 229, "is_heading": false}
+{"sent_id": "s004", "text": "Dynamic Analysis of the Housing Market Risk Premium Using a CAPM-Based EGARCH-in-Mean Model 김진호* 서병선** ․ ․ Jinho Kim Byeongseon Seo", "start": 231, "end": 362, "is_heading": false}
+{"sent_id": "s005", "text": "❙ Abstract ❙ This study empirically analyzes the dynamic characteristics of systematic risk and risk premiums in the Korean housing market using a capital asset pricing model (CAPM)-based exponential generalized autoregressive conditional heteroskedasticity (EGARCH)-in-Mean model. The market portfolio is constructed by weighting financial and housing assets according to household asset shares, thereby reflecting the actual asset composition of Korean households. Using monthly apartment sale price indices from November 2003 to December 2025, the empirical results show that market beta β is positive and statistically significant across all regions, confirming that the Korean apartment market is structurally linked to the financial market. The risk premium is significantly associated with volatility and exhibits time-varying dynamics. While the nationwide and metropolitan housing markets show a positive relationship between volatility and the risk premium, consistent with the conventional risk-return trade-off, the Seoul market exhibits an asymmetric response, with both volatility and the risk premium increasing following positive (price increase) shocks but declining after negative (price decrease) shocks. This pattern reflects a structural feature of the Seoul market, where contractions in transaction activity and adjustments in market expectations tend to precede price corrections. In the forecasting analysis for Seoul, the EGARCH-in-Mean model outperformed both the Random Walk and conventional CAPM models. Overall, these findings suggest that the Korean housing market exhibits characteristics of a financial asset market closely integrated with the broader financial market, while regional markets display heterogeneous risk structures and price adjustment mechanisms. The results further imply that housing market stabilization policies should consider not only price levels but also the time-varying nature of volatility and risk premiums.", "start": 364, "end": 2333, "is_heading": false}
+{"sent_id": "s006", "text": "Keywords: Risk premium, Asymmetry, Asset market portfolio, Housing market, Regional heterogeneity", "start": 2335, "end": 2432, "is_heading": false}
+{"sent_id": "s007", "text": "* 고려대학교 식품자원경제학과 박사과정(주저자) | Ph.D. Candidate, Department of Food and Resource Economics, Korea University | First Author | econometer7@gmail.com | ** 고려대학교 식품자원경제학과 교수(교신저자) | Professor,Department of Food and Resource Economics,Korea University | Corresponding Author | seomatteo@korea.ac.kr | © Copyright 2026 Korea Real Estate Board. This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (http://creativecommons.org/licenses/by-nc/4.0/) which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.", "start": 2434, "end": 3075, "is_heading": false}
+{"sent_id": "s008", "text": "Ⅰ. 서론", "start": 3077, "end": 3082, "is_heading": true}
+{"sent_id": "s009", "text": "주택시장은 전통적으로 거주와 소비의 기능을 수행하는 내구재 시장으로 이해되어 왔다.", "start": 3084, "end": 3130, "is_heading": false}
+{"sent_id": "s010", "text": "그러 나 최근에는 주택이 거주 서비스를 제공함과 함께실물자산 투자 및 자산축적 수단으로 인식되면서 금융시장과의 연계성에 대한 관심이 확대되고 있다.", "start": 3131, "end": 3213, "is_heading": false}
+{"sent_id": "s011", "text": "특히 한국은 가계자산에서 부동산이 차지하는 비중이 높은 국가로 평가되며, 주택가격의 변동은 소비 ․ 투자 ․ 신용시장뿐만 아니라 거시경제전반에 영향을 미치는 중요한 요인으로 작용한 다.", "start": 3214, "end": 3317, "is_heading": false}
+{"sent_id": "s012", "text": "이러한 점에서 한국 주택시장은 재화 및 서비스 시장과 자산시장의 성격이 동시에 공존하는 구조를 가진다고 볼 수 있다.", "start": 3318, "end": 3383, "is_heading": false}
+{"sent_id": "s013", "text": "자산시장 관점에서 주택가격을 설명하려는 시도는 자본자산가격결정모형(Capital Asset Pricing Model, CAPM)을 중심으로 발전해 왔다.", "start": 3384, "end": 3469, "is_heading": false}
+{"sent_id": "s014", "text": "Markowitz(1952)의 평균-분산 이론 이후 Sharpe(1964)와 Lintner(1965)에 의해 정립된 CAPM은 자산의 기대수익률이 시장포트폴리오에 대한 체계적 위험(systematic risk)에 의해 결정된다는 이론적 관계를 제시하였다.", "start": 3470, "end": 3612, "is_heading": false}
+{"sent_id": "s015", "text": "이후 부동산시장에서도 이러한 접근이 확대되었으며, Ibbotson and Siegel(1984)은 부동산이 포트폴리오 분산효과를 제공할 수 있는 자산임을 보였다.", "start": 3613, "end": 3703, "is_heading": false}
+{"sent_id": "s016", "text": "그러나 주택시장은 일반적인 금융자산시장과 는 상이한 구조적 특성을 가진다.", "start": 3704, "end": 3745, "is_heading": false}
+{"sent_id": "s017", "text": "주택은 거래비용이 높고 유동성이 낮으며, 가격조정 속도가 상대적으로 느리다(Case and Shiller, 1989).", "start": 3746, "end": 3812, "is_heading": false}
+{"sent_id": "s018", "text": "또한 지역별 이질성이 강하고 정보 비대칭성이 존재하기 때문에 동일한 거시충격이라 하더라도 지역", "start": 3813, "end": 3865, "is_heading": false}
+{"sent_id": "s019", "text": "별로 상이한 가격 반응이 나타날 수 있다(Genesove and Mayer, 2001).", "start": 3867, "end": 3916, "is_heading": false}
+{"sent_id": "s020", "text": "Himmelberg et al.(2005) 역시 주택시장이 금리 및 거시경제 충격에 대해 점진적인 조정경로를 보인다고 설명하였다.", "start": 3917, "end": 3989, "is_heading": false}
+{"sent_id": "s021", "text": "이러 한 특성은 주택시장의 위험과 기대수익률 간 관계가 일정한 값으로 고정되어 있기보다, 경제 상황과 정책 환경 변화에 따라 동태적으로 변할 가능성을 시사한다.", "start": 3990, "end": 4079, "is_heading": false}
+{"sent_id": "s022", "text": "특히 최근 한국 주택시장은 금융시장 충격과 정책 변화에 대한 민감도가 크게 확대되고 있다.", "start": 4080, "end": 4130, "is_heading": false}
+{"sent_id": "s023", "text": "최근 글로벌 금융위기, 저금리 기조, COVID-19 이후의 유동성 확대, 그리고 대출규제 및 보유세강화와 같은 정책 변화는 주택가격뿐만 아니라 시장참여자의 위험인식 구조에도 영향을 미쳤다.", "start": 4131, "end": 4237, "is_heading": false}
+{"sent_id": "s024", "text": "이는 주택시장의 기대수익률과 리스크 프리미엄이 시간에 따라 변화할 가능성을 의미하며, 전통적인 정태적(static) CAPM만으로는 이러한 변화를 충분히 설명하기 어렵다는 점을 시사한다.", "start": 4238, "end": 4342, "is_heading": false}
+{"sent_id": "s025", "text": "이와 관련하여 Engle et al.(1987)은 ARCHin-Mean 모형을 통해 위험과 기대수익률 간관계를 조건부 분산 구조로 설명할 수 있음을 제시하였다.", "start": 4343, "end": 4432, "is_heading": false}
+{"sent_id": "s026", "text": "이후 Nelson(1991)의 EGARCH (Exponential Generalized Autoregressive Conditional Heteroskedasticit) 모형은 변동성의 비대칭성과 충격의 지속성을 반영할 수 있는 분석틀을 제공하였으며, 금융시장에서는 리스크 프리미엄의 시간가변성과 비대칭 변동성을 분석하는 데 폭넓게 활용되어 왔다.", "start": 4433, "end": 4627, "is_heading": false}
+{"sent_id": "s027", "text": "국내 연구들 역시 GARCH (Generalized Autoregressive Conditional Heteroskedasticity) 계열 모형을 활용하여 주택수익률의 조건부 변동성과 리스크 프리미엄이", "start": 4628, "end": 4741, "is_heading": false}
+{"sent_id": "s028", "text": "․", "start": 4743, "end": 4744, "is_heading": false}
+{"sent_id": "s029", "text": "시간에 따라 변화할 가능성을 제시하였다(노상윤, 2014).", "start": 4746, "end": 4779, "is_heading": false}
+{"sent_id": "s030", "text": "그럼에도 불구하고 기존 연구는 몇 가지 한계를 가진다.", "start": 4780, "end": 4810, "is_heading": false}
+{"sent_id": "s031", "text": "첫째, 다수의 연구는 시장포트폴리오를 주식시장 수익률로 단순 대체함으로써, 한국가계자산에서 높은 비중을 차지하는 주택자산의 특성을 충분히 반영하지 못하고 있다.", "start": 4811, "end": 4900, "is_heading": false}
+{"sent_id": "s032", "text": "특히 한국과 같이 실물자산 비중이 높은 상황에서는 이러한 접근이 시장위험 측정에 편의를 초래할 가능성이 존재한다.", "start": 4901, "end": 4964, "is_heading": false}
+{"sent_id": "s033", "text": "둘째, 기존 CAPM 기반 연구는 대체로위험이 일정하다는 정태적 가정을 전제로 하기 때문에, 금융위기나 정책 충격과 같은 구조변화 상황에서 리스크 프리미엄의 동태적 조정과정을 충분히 설명하지 못한다.", "start": 4965, "end": 5076, "is_heading": false}
+{"sent_id": "s034", "text": "셋째, 국내 주택시장은 전국 ․ 수도권 ․ 서울 등 지역별로 시장 구조와 가격조정 메커니즘이 상이함에도 불구하고, 리스크 프리미엄과 변동성의 지역별 차이를 체계적으로 비교한 연구는 상대적으로 부족한 상황이다.", "start": 5077, "end": 5193, "is_heading": false}
+{"sent_id": "s035", "text": "따라서 본 연구는 한국 아파트 시장을 대상으로 CAPM 기반의 리스크 프리미엄 구조를 실증적으로 분석하고, 전통적 CAPM에 조건부 이분산 구조를 결합한 EGARCH-in-Mean 모형을 적용하고자 한다.", "start": 5194, "end": 5308, "is_heading": false}
+{"sent_id": "s036", "text": "특히 본 연구는 시장포트폴리오를 단순한 주식시장 수익률이 아니라, 금융자산과 주택 실물자산을 가계 자산의 비중으로 가중하여 확장된 자산시장 포트폴리오로 정의함으로 써 한국 가계의 실제 자산구조를 반영한다.", "start": 5309, "end": 5423, "is_heading": false}
+{"sent_id": "s037", "text": "또한 EGARCH-in-Mean 모형을 통해 주택시장 변동성의 비대칭성과 지속성을 동시에 고려함으로써, 위험과 기대수익률 간 관계가 경제환경 변화에 따 라 어떻게 달라지는지를 분석한다.", "start": 5424, "end": 5527, "is_heading": false}
+{"sent_id": "s038", "text": "본 연구의 학문적 기여는 다음과 같다.", "start": 5529, "end": 5550, "is_heading": false}
+{"sent_id": "s039", "text": "첫째, 주택시장과 금융시장을 결합한 확장된 시장포트폴리오를 제시함으로써 기존 CAPM 기반 주택시장연구의 한계를 보완한다.", "start": 5551, "end": 5619, "is_heading": false}
+{"sent_id": "s040", "text": "둘째, EGARCH-in- Mean 모형을 적용하여 주택시장 리스크 프리미엄의 시간가변성과 비대칭 변동성을 동시에 분석함으로써, 정태적 CAPM 접근을 확장한다.", "start": 5620, "end": 5710, "is_heading": false}
+{"sent_id": "s041", "text": "셋째, 전국 ․ 수도권 ․ 서울 등 지역별 시장을 구분하여 리스크 프리미엄과 변동성의 동태적 특성을 비교함 으로써 한국 주택시장의 지역적 이질성과 금융연계성을 실증적으로 밝힌다.", "start": 5711, "end": 5810, "is_heading": false}
+{"sent_id": "s042", "text": "이러한 분석은 향후주택시장 안정화 정책과 금융시스템 리스크 관리측면에서도 중요한 시사점을 제공할 수 있을 것으 로 기대된다.", "start": 5811, "end": 5880, "is_heading": false}
+{"sent_id": "s043", "text": "본 논문의 구성은 다음과 같다.", "start": 5881, "end": 5898, "is_heading": false}
+{"sent_id": "s044", "text": "제Ⅱ장에서는 관련 선행연구를 검토하고, 제Ⅲ장에서는 확장된 시장포트폴리오의 구성과 CAPM 모형 및 EGARCH-in-Mean 모형을 포함한 분석모형을 설명한다.", "start": 5899, "end": 5989, "is_heading": false}
+{"sent_id": "s045", "text": "제Ⅳ장에서는 자료와 실증분석 결과를 제시하며, 제Ⅴ장에서는 결론 및 정책적 시사점을 제시하고자 한다.", "start": 5990, "end": 6046, "is_heading": false}
+{"sent_id": "s046", "text": "Ⅱ. 선행연구", "start": 6048, "end": 6055, "is_heading": true}
+{"sent_id": "s047", "text": "주택시장을 하나의 투자자산으로 이해하려는 연구는 금융경제학과 부동산경제학의 교차 영역에서 지속적으로 발전해 왔다.", "start": 6057, "end": 6120, "is_heading": false}
+{"sent_id": "s048", "text": "초기 연구들은 부동산이 전통적인 금융자산과 함께 포트폴리오를 구성할 수 있는지에 초점을 두었다.", "start": 6121, "end": 6174, "is_heading": false}
+{"sent_id": "s049", "text": "Ibbotson and Siegel(1984)은 미국 자료를 이용하여 부동", "start": 6175, "end": 6216, "is_heading": false}
+{"sent_id": "s050", "text": "산 수익률이 주식 및 채권과 상이한 움직임을 보이며, 포트폴리오 구성 시 분산투자 효과를 제공할 수 있음을 제시하였다.", "start": 6218, "end": 6284, "is_heading": false}
+{"sent_id": "s051", "text": "이후 Flavin and Yamashita(2002)는 가계 자산구성에서 주택이 핵심적인 비중을 차지하며, 금융자산과 상호보완적인 투자대상으로 기능할 수 있음을 보였다.", "start": 6285, "end": 6379, "is_heading": false}
+{"sent_id": "s052", "text": "이러한 연구들은 주택이 단순한 소비재를 넘어 자산배분의 대상이 될 수 있음을 시사한다.", "start": 6380, "end": 6428, "is_heading": false}
+{"sent_id": "s053", "text": "CAPM을 주택시장에 적용하려는 연구도 확대되어 왔다.", "start": 6429, "end": 6459, "is_heading": false}
+{"sent_id": "s054", "text": "Gyourko and Keim(1992)은 부동산 수익률이 금리, 인플레이션, 경기변동 등 복수의 거시요인에 영향을 받는다고 분석하며, 단일요인 CAPM만으로는 주택시장의 위험구조를 충분히 설명하기 어렵다고 지적하였다.", "start": 6460, "end": 6582, "is_heading": false}
+{"sent_id": "s055", "text": "주택시장의 구조적 특성에 주목한 연구들도 중요한 흐름을 형성한다.", "start": 6583, "end": 6619, "is_heading": false}
+{"sent_id": "s056", "text": "Case and Shiller(1989) 는 주택시장이 주식시장에 비해 거래비용과 정보비용이 높고 가격조정 속도가 느리다는 점을 강조하였다.", "start": 6620, "end": 6698, "is_heading": false}
+{"sent_id": "s057", "text": "Genesove and Mayer(2001)는 정보비대칭성이 주택가격 결정 과정에 중요한 영향을 미친다고 분석하였으며, Himmelberg et al. (2005)은 주택가격이 금리 및 거시경제 충격에 대해 점진적인 조정경로를 보인다고 설명하였다.", "start": 6699, "end": 6837, "is_heading": false}
+{"sent_id": "s058", "text": "이러한 연구들은 주택시장이 일반적인 금융자산과 달리 비유동성, 정보 비대칭성, 제도적 규제 등의 영향을 크게 받는 시장임을 보여준다.", "start": 6838, "end": 6912, "is_heading": false}
+{"sent_id": "s059", "text": "최근에는 주택시장 수익률과 리스크 프리미엄의 시간가변성(time-varying dynamics)에 주목한 연구들이 증가하고 있다.", "start": 6913, "end": 6985, "is_heading": false}
+{"sent_id": "s060", "text": "Engle et al. (1987)은 ARCH-in-Mean 모형을 통해 위험과 기대수익률 간 관계를 조건부 분산으로 설명할 수", "start": 6986, "end": 7057, "is_heading": false}
+{"sent_id": "s061", "text": "있는 분석틀을 제시하였다.", "start": 7059, "end": 7073, "is_heading": false}
+{"sent_id": "s062", "text": "이후 Nelson(1991) 의 EGARCH 모형은 변동성의 비대칭성과 충격의 지속성을 동시에 반영할 수 있는 장점을 제공하였으며, 금융시장뿐만 아니라 부동산시장에도 점차 적용되고 있다.", "start": 7074, "end": 7178, "is_heading": false}
+{"sent_id": "s063", "text": "이는 주택시장의 위험구조가 경기국면에 따라 달라질 가능성을 시사한다.", "start": 7179, "end": 7217, "is_heading": false}
+{"sent_id": "s064", "text": "국내 연구에서도 주택시장을 자산시장 관점에 서 분석하려는 시도가 이루어져 왔다.", "start": 7218, "end": 7262, "is_heading": false}
+{"sent_id": "s065", "text": "또한 홍기석(2009)은 우리나라 주택가격과 CAPM을 검토하며, 주택시장에 자산가격결정모형을 적용할 수있는 가능성을 제시하였다.", "start": 7263, "end": 7335, "is_heading": false}
+{"sent_id": "s066", "text": "민성훈(2015)은 국내아파트시장에 소비기반 CAPM을 적용하여 기존 CAPM보다 적용 가능성이 높다는 것을 실증적으로 보였고, 서병덕 ․ 김종범(2006)은 전국주택가격변동률 자료를 이용해 한국주택시장에서 CAPM 적용 가능성 여부를 분석하였다.", "start": 7336, "end": 7474, "is_heading": false}
+{"sent_id": "s067", "text": "노상윤(2014)과 노상윤 ․ 민성훈(2014)은 국내 주택시장과 부동산시장에 EGARCH-in-Mean 모형을 적용하여 시간가변적 리스크 프리미엄의 존재 가능성을 실증적으로 분석하였다.", "start": 7475, "end": 7579, "is_heading": false}
+{"sent_id": "s068", "text": "그러나 기존 연구들은 몇 가지 한계를 가진다.", "start": 7580, "end": 7605, "is_heading": false}
+{"sent_id": "s069", "text": "첫째, 다수의 연구는 시장포트폴리오를 주식시장수익률로 단순 근사함으로써, 한국 가계자산에서 높은 비중을 차지하는 주택자산의 특성을 충분히반영하지 못하고 있다.", "start": 7606, "end": 7694, "is_heading": false}
+{"sent_id": "s070", "text": "둘째, 기존 연구들은 대체로 정태적 CAPM 구조에 기반하고 있어 금융위기, 정책 변화, 경기국면 전환 등에 따른 리스크프리미엄의 동태적 변화를 충분히 설명하지 못한 다.", "start": 7695, "end": 7790, "is_heading": false}
+{"sent_id": "s071", "text": "셋째, 주택시장 내부의 지역적 이질성에도 불구하고, 리스크 프리미엄과 변동성의 차이를 지역별로 체계적으로 비교한 연구는 상대적으로 제", "start": 7791, "end": 7865, "is_heading": false}
+{"sent_id": "s072", "text": "․", "start": 7867, "end": 7868, "is_heading": false}
+{"sent_id": "s073", "text": "한적이다.", "start": 7870, "end": 7875, "is_heading": false}
+{"sent_id": "s074", "text": "본 연구는 이러한 선행연구의 한계를 보완하고 자 한다.", "start": 7876, "end": 7906, "is_heading": false}
+{"sent_id": "s075", "text": "우선 가계 자산구성을 반영한 확장된 시장포트폴리오를 정의하고, CAPM에 EGARCHin-Mean 구조를 결합하여 한국 아파트 시장의 시간가변적 리스크 프리미엄을 추정한다.", "start": 7907, "end": 8003, "is_heading": false}
+{"sent_id": "s076", "text": "또한전국, 수도권, 서울 등 지역별 시장구조 차이를 비교함으로써, 한국 주택시장과 금융시장 간의 동태적 연계성과 비대칭적 변동성 구조를 실증적으로 분석하고자 한다.", "start": 8004, "end": 8095, "is_heading": false}
+{"sent_id": "s077", "text": "Ⅲ. 분석모형", "start": 8097, "end": 8104, "is_heading": true}
+{"sent_id": "s078", "text": "본 연구는 CAPM을 기반으로 한국 주택시장의 리스크 프리미엄과 변동성 구조를 분석한다.", "start": 8106, "end": 8155, "is_heading": false}
+{"sent_id": "s079", "text": "특히 기존 CAPM이 가정하는 정태적 위험구조의 한계를 보완하기 위해 조건부 이분산성 모형을 결합한 CAPM 기반 EGARCH-in-Mean 모형을 적용하여, 위험과 기대수익률 간의 동태적 관계를 실증적으로 추정하고자 한다.", "start": 8156, "end": 8281, "is_heading": false}
+{"sent_id": "s080", "text": "1. 자산가격결정모형(Capital Asset Pricing Model)", "start": 8283, "end": 8323, "is_heading": true}
+{"sent_id": "s081", "text": "Sharpe(1964)와 Lintner(1965)에 따르면 CAPM에서 개별 자산의 기대초과수익률은 시장", "start": 8325, "end": 8383, "is_heading": false}
+{"sent_id": "s082", "text": "1) CAPM(Capital Asset Pricing Model) 모형에서 설명변수인 시장여, 동 변수의 시차항을 도구변수로 하는 GMM(Generalized Me (Difference-in-Hansen test)을 도구변수 차수를 확장하며 반복 귀무가설(해당 변수가 외생적이라는 가설)이 기각되지 않아 내생성 문", "start": 8385, "end": 8560, "is_heading": false}
+{"sent_id": "s083", "text": "포트폴리오의 초과수익률에 대한 체계적 위험 (systematic risk)에 의해 결정된다.", "start": 8562, "end": 8613, "is_heading": false}
+{"sent_id": "s084", "text": "이를 주택시장에 적용하면 주택시장의 초과수익률은 다음과 같이 표현할 수 있다.", "start": 8614, "end": 8657, "is_heading": false}
+{"sent_id": "s085", "text": "         (식 1)", "start": 8659, "end": 8700, "is_heading": false}
+{"sent_id": "s086", "text": "여기서  와  은 각각 주택 기대수익률과 전체 자산시장의 시장수익률을 의미하며, 는 무위험수익률을 나타낸다.", "start": 8702, "end": 8770, "is_heading": false}
+{"sent_id": "s087", "text": "또한  는 시장수익률 변화에 대한 주택 수익률의 민감도를 나타내며, 주택시장의 체계적 위험을 의미한다.1) 기존 CAPM 연구에서는 시장포트폴리오를 주식시장 수익률로 근사하는 경우가 많았다. 그러 나 Roll(1977)은 실제 실증분석에서 관측 가능한 주가지수를 시장포트폴리오의 대리변수(proxy) 로 사용하는 경우 이론적 CAPM과 괴리가 발생할 수 있음을 지적하였다. 이는 시장포트폴리오를 보다 현실적인 자산구성으로 확장할 필요성을 시사한다. 특히 한국은 가계자산에서 실물자산, 특히 주택이 차지하는 비중이 높은 구조를 가진 다. Ibbotson and Siegel(1984)과 Flavin and Yamashita(2002) 역시 주택이 가계 포트폴리오에서 핵심적인 투자자산으로 기능할 수 있음을 제 시하였다. 이에 따라 본 연구는 시장포트폴리오를 단순한 주식시장 수익률이 아니라, 금융자산과 실물자산비중을 반영한 확장된 시장포트폴리오로 정의한", "start": 8771, "end": 9251, "is_heading": false}
+{"sent_id": "s088", "text": "장포트폴리오 리스크 프리미엄의 내생성 가능성을 검토하기 위하 ethod of Moments) 추정을 실시하였으며, GMM 기반 내생성 검정복 실시한 결과, 종합주택 및 아파트 기준 시장포트폴리오 모두에서 문제가 통계적으로 유의하지않음을확인하였다(<부록>의 <표 A-1>).", "start": 9253, "end": 9405, "is_heading": false}
+{"sent_id": "s089", "text": "다. 구체적으로 시장수익률은 KOSPI 수익률과 아파트2) 매매가격지수 수익률을 가계 자산비중으로 가중하여 다음과 같이 구성한다.", "start": 9407, "end": 9479, "is_heading": false}
+{"sent_id": "s090", "text": "    ×     ×  (식 2)", "start": 9481, "end": 9529, "is_heading": false}
+{"sent_id": "s091", "text": "여기서  와  는 각각 금융자산과 실물자 산의 비중을 의미한다.", "start": 9531, "end": 9574, "is_heading": false}
+{"sent_id": "s092", "text": "본 연구에서는 통계청 「가계금융복지조사」 자 료를 활용하여 연도별 자산구성 비중을 적용3)하였다. 이러한 접근은 한국 가계의 실제 자산구조를 보다 현실적으로 반영한다는 점에서 기존 연구와 차별성을 갖는다.", "start": 9575, "end": 9689, "is_heading": false}
+{"sent_id": "s093", "text": "2. EGARCH(Exponential Generalized Autoregressive Conditional Heteroskedasticity)-in-Mean 모형", "start": 9691, "end": 9782, "is_heading": false}
+{"sent_id": "s094", "text": "한편, 전통적인 CAPM은 위험이 시간에 따라 일정하다는 정태적 가정을 전제로 한다.", "start": 9784, "end": 9831, "is_heading": false}
+{"sent_id": "s095", "text": "그러나주택시장은 거래비용, 정보 비대칭성, 정책 규제등의 영향으로 변동성과 리스크 프리미엄이 시기별로 다르게 나타날 가능성이 크다(Case and", "start": 9832, "end": 9913, "is_heading": false}
+{"sent_id": "s096", "text": "2) 종합주택 기준이 아닌 아파트 기준을 적용한 이유는 ’24년 통계청대표성이 높고, 정부 부동산 정책의 주요 대상이자 표준화된 구조는 점에 기인한다. 3) 2025년 기준 금융자산과 실물자산의 비중은 각각 24.2%와 75.8 자산 보유에 영향을 미치는 가계 포트폴리오 구조를 실증적으로 배분이 시장포트폴리오를 보다 현실적으로 반영할 수 있음을 제 주체의 자산배분 구조를 반영한다는 점에서, 금융자산과 실물자 4) β(Rm – Rf )는 전통적 CAPM이 제시하는 시장위험 프리미엄으로 어 있다는 가정하에, 시장초과수익률(Rm – Rf )의 변화에 비례하 (σt )의 시간가변적 움직임에 따라 변화하는 동태적 위험보상으로 상을 의미한다.", "start": 9915, "end": 10272, "is_heading": false}
+{"sent_id": "s097", "text": "Shiller, 1989; Genesove and Mayer, 2001). 또한 금융위기와 같은 거시경제 충격은 주택시장의 변동성과 위험인식 구조를 변화시킬 수 있다. Himmelberg et al.(2005)는 주택가격이 거시경제 충격에 대해 점진적인 조정경로를 보인다고 설명하였으며, 이는 위험과 기대수익률 간 관계역시 시간에 따라 변화할 가능성을 시사한다. 이러한 점을 반영하기 위해 본 연구는 Engle et al.(1987)의 ARCH-in-Mean 구조와 Nelson (1991)의 EGARCH 모형을 결합한 CAPM에 기반한 EGARCH-in-Mean 모형을 적용한다. 평균방정식은 다음과 같다.", "start": 10274, "end": 10614, "is_heading": false}
+{"sent_id": "s098", "text": "                 (식 3)", "start": 10616, "end": 10674, "is_heading": false}
+{"sent_id": "s099", "text": "여기서  는 t 시점의 조건부 변동성(conditionally volatility)을 의미하며, 시장참여자가 인식하는 위험 수준을 나타낸다.", "start": 10676, "end": 10756, "is_heading": false}
+{"sent_id": "s100", "text": "는 조건부 변동성이 기대초과수익률에 미치는 영향을 의미하며, 위험 증가에 따라 요구수익률이 어떻게 변화하는 지를 나타내는 변동성-리스크 프리미엄의 계수로 해석할 수 있다.4) 또한  는 COVID-19 기간을 나타내는 더", "start": 10757, "end": 10887, "is_heading": false}
+{"sent_id": "s101", "text": "청 인구주택총조사 기준 전체 가구의 53.9%가 아파트에 거주하여 조와 빈번한 거래로 CAPM이 가정하는 동질적 자산군에 부합한다", "start": 10889, "end": 10961, "is_heading": false}
+{"sent_id": "s102", "text": "8%로 나타났다.", "start": 10963, "end": 10972, "is_heading": false}
+{"sent_id": "s103", "text": "Flavin and Yamashita(2002)는 주택 비중이 금융분석하였으며, Ibbotson and Siegel(1984)은 주택을 포함한 자산제시하였다.", "start": 10973, "end": 11061, "is_heading": false}
+{"sent_id": "s104", "text": "따라서 본 연구에서는 가계금융복지조사가 실제 경제자산 비중을 확장된 시장포트폴리오 구성에 적용하였다.", "start": 11062, "end": 11118, "is_heading": false}
+{"sent_id": "s105", "text": "로, 시장 전체와의 변동을 나타내는 베타(β)가 시간에 따라 고정되하여 결정되는 위험보상을 의미하는 반면, 반면 δσt는 조건부 분산로, 시장 불확실성이 확대되는 시기에 추가적으로 요구되는 위험보", "start": 11119, "end": 11228, "is_heading": false}
+{"sent_id": "s106", "text": "미변수이며, 조건부 분산방정식은 다음과 같다.", "start": 11230, "end": 11255, "is_heading": false}
+{"sent_id": "s107", "text": "        log            log           (식 4)", "start": 11257, "end": 11339, "is_heading": false}
+{"sent_id": "s108", "text": "EGARCH-in-Mean 모형은 로그 변환한 조건부 분산을 사용함으로써 분산의 비음수 제약 문제를 완화할 수 있으며, 양(+)의 충격과 음(–)의 충격이 변동성에 서로 다른 영향을 미치는 비대칭성 (asymmetric volatility effect)을 반영할 수 있다는 장점을 갖는다.5) 특히  계수는 충격의 비대칭성을 나타내며, 가격 하락(–)의 충격이 상승(+) 의 충격과 비교하여 변동성 효과가 다를 수 있음 을 보여준다. 이는 정책 충격이나 금융시장 불안과 같은 부정적 충격이 주택시장 변동성에 비대칭적으로 작용할 가능성을 분석하는 데 유용하다. 또한  계수는 변동성의 지속성을 의미하며, 충격이후 변동성이 얼마나 장기간 유지되는지를 나타낸다. 특히 EGARCH 모형은 음(–)의 충격과 양(+)의 충격이 변동성에 서로 다른 영향을 미칠 수 있는 비대칭성을 반영할 수 있다는 점에서, 정책 충격과 금융시장 변동에 민감하게 반응하는 주택시장의 특성을 분석하는 데 적합하다. 이는 서울과 같이 금융시장과의 연계성이 높은 지역에서 리스크프리미엄과 변동성의 동태적 반응이 다르게 나타날 가능성을 분석하는 데 중요한 의미를 가진다. 본 연구는 CAPM 기반 EGARCH-in-Mean 모형을 통해 한국 주택시장의 리스크 프리미엄과", "start": 11341, "end": 11977, "is_heading": false}
+{"sent_id": "s109", "text": "5) 특히 서울 지역에서는 GARCH ․ TARCH(threshold GARCH) 모양(+)으로 추정되었으며, AIC(Akaike information criterion)도 판단된다.", "start": 11979, "end": 12081, "is_heading": false}
+{"sent_id": "s110", "text": "조건부 변동성이 시간에 따라 어떻게 변화하는지 를 분석한다.", "start": 12083, "end": 12116, "is_heading": false}
+{"sent_id": "s111", "text": "특히 전국, 수도권, 서울 등 지역별시장을 구분하여 위험구조와 변동성 반응의 차이를 비교함으로써, 한국 주택시장의 지역적 이질성과 금융시장 연계성을 실증적으로 밝히고자 한다.", "start": 12117, "end": 12214, "is_heading": false}
+{"sent_id": "s112", "text": "Ⅳ. 분석자료 및 추정결과", "start": 12216, "end": 12230, "is_heading": true}
+{"sent_id": "s113", "text": "실증분석에서는 한국거래소(Korea Exchange, KRX)의 KOSPI 주가지수와 한국부동산원의 아파트매매가격지수를 사용하였다.", "start": 12232, "end": 12305, "is_heading": false}
+{"sent_id": "s114", "text": "전체 분석기간은 2003년 11월부터 2025년 12월까지이며, 주가지수는 월별 평균자료를 사용하였다.", "start": 12306, "end": 12363, "is_heading": false}
+{"sent_id": "s115", "text": "주택시장자료는 전국, 서울, 수도권, 5대광역시 아파트 매 매가격지수를 활용하였으며, 모든 수익률은 로그차분(log difference)을 이용하였다.", "start": 12364, "end": 12448, "is_heading": false}
+{"sent_id": "s116", "text": "무위험수익률은 국고채 3년 만기 수익률을 기준으로 사용하였다.", "start": 12449, "end": 12483, "is_heading": false}
+{"sent_id": "s117", "text": "실증분석에 사용된 변수의 기초통계량은 <표 1> 과 같다.", "start": 12484, "end": 12516, "is_heading": false}
+{"sent_id": "s118", "text": "표본 기간은 2005년 1월부터 2025년 12월까지이며, 각 변수의 수익률은 전년 동월 대비 연간 로그수익률 기준으로 산출하였다.", "start": 12517, "end": 12590, "is_heading": false}
+{"sent_id": "s119", "text": "기초통계량 분석 결과, 모든 지역에서 평균 수익률은 양(+)의 값을 보였으며, 서울이 가장 높고 5대광역시가 가장 낮게 나타나 지역별 기대수익구조에 차이가 존재함을 확인하였다.", "start": 12591, "end": 12689, "is_heading": false}
+{"sent_id": "s120", "text": "변동성 측면에서는 수도권과 서울의 표준편차가 상대적으 로 높게 나타나, 두 지역이 높은 기대수익과 함께", "start": 12690, "end": 12747, "is_heading": false}
+{"sent_id": "s121", "text": "모형과 달리 EGARCH-in-Mean 모형에서 조건부 변동성 계수 δ가 가장 낮아 변동성-수익 관계의 설명에 상대적으로 적합한 것으로", "start": 12749, "end": 12824, "is_heading": false}
+{"sent_id": "s122", "text": "<표 1> 기초통계 분석 결과", "start": 12826, "end": 12842, "is_heading": false}
+{"sent_id": "s123", "text": "변수 평균 표준편차 왜도 첨도 JB (prob)", "start": 12844, "end": 12870, "is_heading": false}
+{"sent_id": "s124", "text": "전국 2.51 5.09 -0.39 4.56 32.19 (0.00)", "start": 12872, "end": 12908, "is_heading": false}
+{"sent_id": "s125", "text": "서울 3.20 6.05 0.26 4.18 17.31 (0.00)", "start": 12910, "end": 12945, "is_heading": false}
+{"sent_id": "s126", "text": "수도권 2.92 7.03 0.26 4.34 21.61 (0.00)", "start": 12947, "end": 12983, "is_heading": false}
+{"sent_id": "s127", "text": "5대광역시 2.28 5.70 0.01 4.90 37.92 (0.00)", "start": 12985, "end": 13023, "is_heading": false}
+{"sent_id": "s128", "text": "주 : JB, Jaque Bera statistic.", "start": 13025, "end": 13054, "is_heading": false}
+{"sent_id": "s129", "text": "높은 위험을 동반하는 시장임을 시사한다.", "start": 13056, "end": 13078, "is_heading": false}
+{"sent_id": "s130", "text": "왜도 는 서울과 수도권이 양(+)의 값을, 전국은 음(–)의 값을 보여 분포의 비대칭 방향이 지역별로 상이하였으며, 모든 지역에서 첨도가 3을 상회하고 Jarque-Bera 정규성 검정에서 1% 유의수준에 서 정규성 가설이 기각되어 두꺼운 꼬리(fat-tail) 특성과 비정규성이 공통적으로 확인되었다. <표 2>는 ADF(augmented Dickey-Fuller) 단위근 검정을 실시한 결과를 나타낸다.", "start": 13079, "end": 13306, "is_heading": false}
+{"sent_id": "s131", "text": "전국, 서울, 수도권, 5대광역시 모두 수준변수에서 단위근이 존재한다는 귀무가설이 기각되었다.", "start": 13307, "end": 13359, "is_heading": false}
+{"sent_id": "s132", "text": "이는 분석에 사용된 네 지역의 수익률 시계열이 모두안정적(stationary)인 정상시계열임을 의미한", "start": 13360, "end": 13416, "is_heading": false}
+{"sent_id": "s133", "text": "<표 2> ADF 단위근 검정 및 ARCH-LM 검정 결과", "start": 13418, "end": 13450, "is_heading": false}
+{"sent_id": "s134", "text": "단위근검정 ARCH-LM 검정변수 (수준변수) (obs*R2)", "start": 13452, "end": 13486, "is_heading": false}
+{"sent_id": "s135", "text": "전국 -3.23** 28.81***", "start": 13488, "end": 13507, "is_heading": false}
+{"sent_id": "s136", "text": "서울 -2.65* 5.44**", "start": 13509, "end": 13525, "is_heading": false}
+{"sent_id": "s137", "text": "수도권 -3.02** 7.99***", "start": 13527, "end": 13546, "is_heading": false}
+{"sent_id": "s138", "text": "5대광역시 -2.63* 32.83***", "start": 13548, "end": 13569, "is_heading": false}
+{"sent_id": "s139", "text": "주 : 1) ***, **, *는 각각 1%, 5%, 10% 유의수준에서 통계적으로 유의함을 의미. 2) ADF, augmented Dickey-Fuller; ARCH-LM, autoregressive conditional heteroskedasticity-lagrange multiplier.", "start": 13571, "end": 13735, "is_heading": false}
+{"sent_id": "s140", "text": "다.", "start": 13737, "end": 13739, "is_heading": false}
+{"sent_id": "s141", "text": "ARCH-LM(autoregressive conditional heteroskedasticity-lagrange multiplier) 검정 결과에서도 모든 지역에 대해 ARCH 효과가 통계적으로 유의하였으므로 수익률의 분산이 시간에 따라 고정되어 있지 않고, 조건부 이분산성이 존재함을 확인할 수 있었다.", "start": 13740, "end": 13910, "is_heading": false}
+{"sent_id": "s142", "text": "이러한 결과는 주택수익률이 외부 충격에 대해 비선형적으로 반응할 가능성이 존재함을 시사한 다.", "start": 13911, "end": 13963, "is_heading": false}
+{"sent_id": "s143", "text": "특히 변동성 군집현상(volatility clustering) 과 비정규성은 정태적 CAPM만으로 설명하기 어려운 위험구조가 존재함을 의미하며, 조건부 이분산성과 비대칭 변동성을 동시에 고려하는 CAPM 기반 EGARCH-in-Mean 모형의 필요성을 뒷받침한다.", "start": 13964, "end": 14111, "is_heading": false}
+{"sent_id": "s144", "text": "1. CAPM(Capital Asset Pricing Model) 추정결과", "start": 14113, "end": 14154, "is_heading": true}
+{"sent_id": "s145", "text": "<표 3>은 전국, 서울 및 주요 지역별 CAPM 모형 추정 결과를 나타낸다.", "start": 14156, "end": 14199, "is_heading": false}
+{"sent_id": "s146", "text": "전국, 서울, 수도권 및 5 대광역시를 대상으로 주식 및 주택 자산 비중을 반영한 확장된 자산시장 포트폴리오를 이용하여 CAPM을 추정한 결과, 모든 지역에서 시장 초과수익률 계수(β)가 양(+)의 값을 가지며 통계적으 로 유의하게 나타났다.", "start": 14200, "end": 14335, "is_heading": false}
+{"sent_id": "s147", "text": "이는 한국 아파트 시장이 금융시장 및 전체 자산시장과 구조적으로 연계되어 있으며, 시장 위험이 확대될수록 투자자들이 보다 높은 초과수익률을 요구하는 체계적 리스크프리미엄 구조가 존재함을 시사한다.", "start": 14336, "end": 14445, "is_heading": false}
+{"sent_id": "s148", "text": "전국 아파트 시장의 베타값은 0.6065로 추정되었다.", "start": 14446, "end": 14476, "is_heading": false}
+{"sent_id": "s149", "text": "이는 시장포트폴리오 초과수익률이 1%p", "start": 14477, "end": 14498, "is_heading": false}
+{"sent_id": "s150", "text": "․", "start": 14500, "end": 14501, "is_heading": false}
+{"sent_id": "s151", "text": "<표 3> CAPM 베타(βapt) 추정 결과(전국, 서울, 수도권, 5대광역", "start": 14503, "end": 14546, "is_heading": false}
+{"sent_id": "s152", "text": "모수 전국 서울 *** -0.7047 0.01 상수 (0.2051) (0.30", "start": 14548, "end": 14591, "is_heading": false}
+{"sent_id": "s153", "text": "0.6065*** 0.530 βapt (0.0318) (0.04", "start": 14593, "end": 14628, "is_heading": true}
+{"sent_id": "s154", "text": "AIC 5.2033 5.99", "start": 14630, "end": 14645, "is_heading": false}
+{"sent_id": "s155", "text": "Log.L -653.615 -752.", "start": 14647, "end": 14667, "is_heading": false}
+{"sent_id": "s156", "text": "F-statistic 362.9265 126.4", "start": 14669, "end": 14695, "is_heading": false}
+{"sent_id": "s157", "text": "주 : 1) 추정기간은 2005년 1월~2025년 12월. 2) ***, **, *는 각각 1%, 5%, 10% 유의수준에서 통계적으로 유의", "start": 14697, "end": 14775, "is_heading": false}
+{"sent_id": "s158", "text": "증가할 경우 전국 아파트 초과수익률이 평균적으로 약 0.61%p 반응함을 의미한다.", "start": 14777, "end": 14823, "is_heading": false}
+{"sent_id": "s159", "text": "즉, 전국 주택시장은 자산시장 공통요인에 대해 비교적 높은 민감도를 가지는 통합적 시장 구조를 형성하고 있는 것으로 해석할 수 있다.", "start": 14824, "end": 14898, "is_heading": false}
+{"sent_id": "s160", "text": "지역별 분석 결과에서도 모든 지역에서 시장베타가 유의하게 나타났다.", "start": 14899, "end": 14936, "is_heading": false}
+{"sent_id": "s161", "text": "특히 수도권의 베타값이 가장 높게 추정되었으며, 전국과 5대광역시가 그 뒤를 따르는 것으로 나타났다.", "start": 14937, "end": 14993, "is_heading": false}
+{"sent_id": "s162", "text": "반면 서울의 전체 베타는 수도권 평균 대비 다소 낮은 수준으 로 확인되었다.", "start": 14994, "end": 15036, "is_heading": false}
+{"sent_id": "s163", "text": "이러한 결과는 수도권 주택시장이 금융시장 변동, 유동성 확대 및 투자수요 변화에 상대적으로 민감하게 반응하는 구조를 가진다 는 점을 시사한다.", "start": 15037, "end": 15116, "is_heading": false}
+{"sent_id": "s164", "text": "반면 5대광역시는 상대적으로 낮은 시장 민감도를 보여 수도권 대비 금융시장과 의 연계성이 제한적인 특성을 나타낸다.", "start": 15117, "end": 15181, "is_heading": false}
+{"sent_id": "s165", "text": "한편 서울 전체 수준에서는 시장 베타가 상대적으로 낮게 나타났으나, 구별 분석 결과(<부록>의 <표 A-2>)에서는 뚜렷한 이질성이 확인된다.", "start": 15182, "end": 15261, "is_heading": false}
+{"sent_id": "s166", "text": "강남구, 서초구, 송파구, 마포구 모두에서 시장 베타가 유의하게 나타났으며, 특히 송파구와 강남 ․ 서", "start": 15262, "end": 15319, "is_heading": false}
+{"sent_id": "s167", "text": "역시)", "start": 15321, "end": 15324, "is_heading": false}
+{"sent_id": "s168", "text": "울 수도권 5대광역시", "start": 15326, "end": 15337, "is_heading": false}
+{"sent_id": "s169", "text": "157 -0.3375 -0.9148*** 040) (0.3192) (0.2999)", "start": 15339, "end": 15384, "is_heading": false}
+{"sent_id": "s170", "text": "08*** 0.7519*** 0.5620*** 472) (0.0496) (0.0466)", "start": 15386, "end": 15434, "is_heading": false}
+{"sent_id": "s171", "text": "911 6.0885 5.9639", "start": 15436, "end": 15453, "is_heading": false}
+{"sent_id": "s172", "text": ".873 -765.157 -749.45", "start": 15455, "end": 15476, "is_heading": false}
+{"sent_id": "s173", "text": "4829 230.1618 145.6629", "start": 15478, "end": 15500, "is_heading": false}
+{"sent_id": "s174", "text": "의함을 의미.", "start": 15502, "end": 15509, "is_heading": false}
+{"sent_id": "s175", "text": "초 등 핵심지역에서 상대적으로 높은 베타값이 확인되었다.", "start": 15511, "end": 15542, "is_heading": false}
+{"sent_id": "s176", "text": "이는 서울 내부에서도 고가 ․ 핵심 입지지역일수록 금융시장 및 자산시장과의 연계성이 강하게 나타나는데, 다른 지역은 상대적으로 낮은 민감도를 보이는 구조적 차이가 존재함을 의미한다.", "start": 15543, "end": 15644, "is_heading": false}
+{"sent_id": "s177", "text": "또한 대부분 지역에서 시장 베타가 1보다 낮게 추정되었다는 점은 한국 아파트 시장이 금융시장과 연계되어 있으나, 주식시장과 비교할 때 상대적으로 완만한 가격조정 구조를 가진다는 점을 시사한다.", "start": 15645, "end": 15752, "is_heading": false}
+{"sent_id": "s178", "text": "이는 주택시장이 거래비용, 정보 비대칭성 및 낮은 유동성 등 실물자산 특유의 구조적 제약을 동시에 가지기 때문으로 해석할 수 있다.", "start": 15753, "end": 15826, "is_heading": false}
+{"sent_id": "s179", "text": "한국 아파트 시장은 전국 및 수도권을 중심으 로 전체 자산시장과 구조적으로 연계된 체계적 위험 구조를 가지며, 동시에 지역 간 및 지역 내부 수준에서 시장 민감도에 뚜렷한 이질성이 존재하는 것으로 나타났다.", "start": 15827, "end": 15942, "is_heading": false}
+{"sent_id": "s180", "text": "특히 수도권과 서울 핵심지역에서는 금융시장과의 동조성이 상대적으로 강하게 나타나는 반면, 5대광역시는 비교적 완만한 연계 구조를 보였다.", "start": 15943, "end": 16019, "is_heading": false}
+{"sent_id": "s181", "text": "이는 한국 주택시장이 단일한", "start": 16020, "end": 16035, "is_heading": false}
+{"sent_id": "s182", "text": "시장이 아니라 지역별로 상이한 위험구조와 가격결정 과정을 갖는다.", "start": 16037, "end": 16073, "is_heading": false}
+{"sent_id": "s183", "text": "2. EGARCH(Exponential Generalized Autoregressive Conditional Heteroskedasticity)-in-Mean 모형추정결과", "start": 16075, "end": 16170, "is_heading": false}
+{"sent_id": "s184", "text": "본 연구에서는 CAPM의 평균방정식에 EGARCH-in-Mean 모형을 결합하여 조건부 변동성이 기대수익률에 미치는 영향을 분석하였다.", "start": 16172, "end": 16247, "is_heading": false}
+{"sent_id": "s185", "text": "EGARCH 모형은 변동성의 비대칭성과 지속성을 동시에 반영할 수 있어, 시계열적으로 변화하는 주택시장 위험구조를 분석하는 데 적합하다. <표 4>는 전국, 서울, 수도권 및 5대광역시를 대 상으로 추정한 EGARCH-in-Mean 모형의 결과를 나타낸다.", "start": 16248, "end": 16391, "is_heading": false}
+{"sent_id": "s186", "text": "평균방정식 추정 결과, 모든 지역에서 시장 초과수익률 계수(  )가 양(+)의 값을 가지며 1% 유의수준에서 통계적으로 유의하게 나타났다.", "start": 16392, "end": 16473, "is_heading": false}
+{"sent_id": "s187", "text": "이는 한국 아파트 시장이 금융시장 및 전체 자산시장과 구조적으로 연계되어 있음을 의미한다.  는 서울과 수도권에서 상대적으로 높게 나", "start": 16474, "end": 16552, "is_heading": false}
+{"sent_id": "s188", "text": "타난 반면, 5대광역시는 비교적 낮은 수준으로 확인되었다.", "start": 16554, "end": 16586, "is_heading": false}
+{"sent_id": "s189", "text": "이는 서울 및 수도권 주택시장이 금융시장 변동과 유동성 변화에 상대적으로 민감하게 반응하는 구조를 갖는다.", "start": 16587, "end": 16646, "is_heading": false}
+{"sent_id": "s190", "text": "조건부 변동성 계수(δ)는 전국, 수도권 및 5대광역시에서 양(+)의 값으로 유의하게 나타났다.", "start": 16647, "end": 16700, "is_heading": false}
+{"sent_id": "s191", "text": "이는 시장 불확실성과 변동성이 확대될수록 투자자들이 보다 높은 기대수익률을 요구함을 의미한 다.", "start": 16701, "end": 16754, "is_heading": false}
+{"sent_id": "s192", "text": "특히, 서울의 경우 변동성 계수가 가장 크고", "start": 16755, "end": 16779, "is_heading": false}
+{"sent_id": "s193", "text": "유의하게 추정된다.", "start": 16781, "end": 16791, "is_heading": false}
+{"sent_id": "s194", "text": "따라서 서울 주택시장은 다른지역과 비교하여 위험 반응이 큰 구조를 가질 가능성을 보여준다.", "start": 16792, "end": 16842, "is_heading": false}
+{"sent_id": "s195", "text": "COVID-19 더미 변수는 모든 지역에서 정(+)의 값으로 나타났으며, 서울을 제외하고 유의함을 보였다.", "start": 16843, "end": 16902, "is_heading": false}
+{"sent_id": "s196", "text": "이는 팬데믹 기간의 양적완화와 저금리 기조를 반영하는 것으로 보인다.", "start": 16903, "end": 16941, "is_heading": false}
+{"sent_id": "s197", "text": "분산방정식 추정 결과, 충격(shock size) 계수는 전국, 수도권 및 5대광역시에서 양(+)의 값으 로 유의하게 나타나 외부 충격 발생 시 변동성이 확대되는 일반적인 EGARCH 특성이 확인되었다.", "start": 16942, "end": 17055, "is_heading": false}
+{"sent_id": "s198", "text": "이는 금융시장 충격이나 정책 변화가 발생할 경우 주택시장 변동성이 확대되는 위험반응 구조가 존재함을 의미한다.", "start": 17056, "end": 17117, "is_heading": false}
+{"sent_id": "s199", "text": "반면 서울에서는 충격의 계수가 음(–)의 값으로 유의하게 나타나면서 비대칭성 계수가 정(+)의 부호를 갖고 유의함을 보인다.", "start": 17118, "end": 17187, "is_heading": false}
+{"sent_id": "s200", "text": "이는 주택가격이 상승하는 충격에 대하여는 변동성이 증가하고 리스크 프리미엄이 상승하는 반면, 주택가격이 하락하는 충격에 대하여는 변동성이 하락하고 리스크 프리미엄을 낮추는 결과를 보여준다.", "start": 17188, "end": 17293, "is_heading": false}
+{"sent_id": "s201", "text": "따라서 서울 주택시장의 위험에 대한 반응은 다른 지역과 비교하여 비대칭적 상태 의존성을 보인다.", "start": 17294, "end": 17347, "is_heading": false}
+{"sent_id": "s202", "text": "일반적으로 금융시장에서는 자산 가격이 하락하는 충격에 대하여 가격 변동성이 더욱 확대되는 경향이 나타나지만, 서울 지역의 주택시장은 가격조정보다는 거래 감소와 기대조정 및 관망세가 우세하여 나타나는 특성을 보이고 있다.", "start": 17348, "end": 17470, "is_heading": false}
+{"sent_id": "s203", "text": "이러한 결과는 주택시장의 비유동성과 정보 비대칭성에 관한 기존 연구와도 부합한다.", "start": 17471, "end": 17516, "is_heading": false}
+{"sent_id": "s204", "text": "Case and Shiller(1989)는 주택시장이 주식시장에 비해 거래비용이 높고 가격조정 속도가 느리다는 점", "start": 17517, "end": 17580, "is_heading": false}
+{"sent_id": "s205", "text": "<표 4> EGARCH-in-Mean 모형 추정결과(전국, 서울, 수도권,", "start": 17582, "end": 17623, "is_heading": false}
+{"sent_id": "s206", "text": "Panel A. Mean equation(r", "start": 17625, "end": 17649, "is_heading": false}
+{"sent_id": "s207", "text": "rapt - rf = α + βapt(rm - r 구분 전국 서울 ** 0.1856 7.955 δ (0.0906) (0.13", "start": 17651, "end": 17720, "is_heading": false}
+{"sent_id": "s208", "text": "-1.4135*** -11.90 α (0.1352) (0.28", "start": 17722, "end": 17756, "is_heading": false}
+{"sent_id": "s209", "text": "0.3419*** 0.392 βapt (0.0140) (0.02", "start": 17758, "end": 17793, "is_heading": true}
+{"sent_id": "s210", "text": "3.7686*** 1.01 η (0.2294) (1.26", "start": 17795, "end": 17826, "is_heading": true}
+{"sent_id": "s211", "text": "AIC 4.0870 3.36", "start": 17828, "end": 17843, "is_heading": false}
+{"sent_id": "s212", "text": "Log L -506.97 -414", "start": 17845, "end": 17863, "is_heading": false}
+{"sent_id": "s213", "text": "Panel B. Variance equati", "start": 17865, "end": 17889, "is_heading": false}
+{"sent_id": "s214", "text": "     log         ", "start": 17891, "end": 17929, "is_heading": false}
+{"sent_id": "s215", "text": "구분 전국 서울 *** ω -1.2626 0.157 (level) (0.2073) (0.03", "start": 17931, "end": 17982, "is_heading": false}
+{"sent_id": "s216", "text": "γ 1.6791*** -0.11 (shock size) (0.3443) (0.02", "start": 17984, "end": 18029, "is_heading": false}
+{"sent_id": "s217", "text": "λ 0.2205 0.380 (asymmetry) (0.2018) (0.01", "start": 18031, "end": 18072, "is_heading": false}
+{"sent_id": "s218", "text": "φ 0.8106*** 0.820 (persistence) (0.0769) (0.02", "start": 18074, "end": 18120, "is_heading": false}
+{"sent_id": "s219", "text": "주 : 1) 추정기간은 2005년 1월~2025년 12월. 2) ***, **, *는 각각 1%, 5%, 10% 유의수준에서 통계적으로 유의 3) EGARCH, exponential generalized autoregressive cond", "start": 18122, "end": 18255, "is_heading": false}
+{"sent_id": "s220", "text": "을 지적하였으며, Genesove and Mayer(2001) 는 주택 보유자들이 손실 가능성이 존재할 경우매도를 지연시키는 경향이 있음을 보였다.", "start": 18257, "end": 18339, "is_heading": false}
+{"sent_id": "s221", "text": "특히 서울 지역의 일부 핵심 입지 시장에서는 시장참여자의 기대수익에 대한 확신이 상대적으로 강하게 형성되어 있어, 부정적 충격 발생 시 가격이 즉각", "start": 18340, "end": 18422, "is_heading": false}
+{"sent_id": "s222", "text": ", 5대광역시)", "start": 18424, "end": 18432, "is_heading": false}
+{"sent_id": "s223", "text": "risk-return relationship)", "start": 18434, "end": 18459, "is_heading": false}
+{"sent_id": "s224", "text": "rf ) + ηDcovid + δσt + εt 울 수도권 5대광역시 *** ** 54 0.1980 0.1046* 372) (0.0804) (0.0606)", "start": 18461, "end": 18546, "is_heading": false}
+{"sent_id": "s225", "text": "090*** -1.1171*** -1.9382*** 818) (0.0970) (0.0149)", "start": 18548, "end": 18599, "is_heading": false}
+{"sent_id": "s226", "text": "25*** 0.3919*** 0.1425*** 295) (0.0129) (0.0038)", "start": 18601, "end": 18649, "is_heading": false}
+{"sent_id": "s227", "text": "190 4.6729*** 3.1046*** 667) (0.3613) (0.0750)", "start": 18651, "end": 18697, "is_heading": false}
+{"sent_id": "s228", "text": "650 5.0720 4.2950", "start": 18699, "end": 18716, "is_heading": false}
+{"sent_id": "s229", "text": "4.54 -631.1 -533.17", "start": 18718, "end": 18737, "is_heading": true}
+{"sent_id": "s230", "text": "ion(EGARCH dynamics)", "start": 18739, "end": 18759, "is_heading": false}
+{"sent_id": "s231", "text": "       log      ", "start": 18761, "end": 18797, "is_heading": false}
+{"sent_id": "s232", "text": "울 수도권 5대광역시 *** *** 72 -1.3150 -1.9389*** 378) (0.2817) (0.2487)", "start": 18799, "end": 18863, "is_heading": false}
+{"sent_id": "s233", "text": "166*** 2.0955*** 2.3105*** 264) (0.3842) (0.3854)", "start": 18865, "end": 18914, "is_heading": false}
+{"sent_id": "s234", "text": "05*** 0.2461 0.2008 189) (0.2734) (0.2532)", "start": 18916, "end": 18958, "is_heading": false}
+{"sent_id": "s235", "text": "05*** 0.7284*** 0.8631*** 224) (0.1090) (0.0684)", "start": 18960, "end": 19008, "is_heading": false}
+{"sent_id": "s236", "text": "의함을 의미함.", "start": 19010, "end": 19018, "is_heading": false}
+{"sent_id": "s237", "text": "ditional heteroskedasticity; AIC, Akaike information criterion.", "start": 19019, "end": 19082, "is_heading": false}
+{"sent_id": "s238", "text": "적으로 조정되기보다 거래량 감소를 통해 충격이 흡수될 가능성이 존재한다.", "start": 19084, "end": 19124, "is_heading": false}
+{"sent_id": "s239", "text": "즉 서울 시장에서는 충격이 발생하더라도 단기적인 가격 급락보다는 거래량 위축을 통해 조정이 이루어지는 경향이 일부 관찰되며, 이 과정에서 가격 변동성이 상대적으로 제한되는 구조가 나타", "start": 19125, "end": 19227, "is_heading": false}
+{"sent_id": "s240", "text": "날 수 있다.6) 이러한 결과는 서울 주택시장이 금융자산과 달리 변동성과 가격조정에 있어 시장 상황에 따라 비대칭적 반응을 나타내는 특성을 가진다는 점을 시사한다. 이는 주택시장의 거래비용과 비유동성으로 인하여 가격조정의 속도가 느리고 하방 경직성을 갖는다는 점에서 Case and Shiller(1989)와 부합한다. 비대칭성(asymmetry) 계수는 서울에서만 유의하게 나타났다. 이는 서울 주택시장에서 양(+) ․ 음(–) 충격이 변동성에 서로 다른 영향을 미친다는 점을 의미한다. 또한 변동성 지속성(persistence) 계수는 모든 지역에서 유의하게 나타나, 주택시장 변동성이 커지면 그 효과가 지속되는 특성이 존재함을 보여준다(<부록>의 <표 A-3>). 한국 주택시장은 금융시장과 구조적으로 연계된 체계적 위험구조를 가지며, 변동성과 리스크프리미엄 역시 시간에 따라 변화하는 동태적 특성을 가지는 것으로 나타났다. 특히 서울 및 수도권에서는 금융시장과의 연계성이 상대적으로 강하게 나타나고 지역별로 변동성 반응과 비대칭성 구조에는 차이가 존재하는 것으로 확인되었다.", "start": 19229, "end": 19778, "is_heading": false}
+{"sent_id": "s241", "text": "3. 충격-반응 분석 결과", "start": 19780, "end": 19794, "is_heading": true}
+{"sent_id": "s242", "text": "앞서 EGARCH-in-Mean 모형 추정 결과를", "start": 19796, "end": 19823, "is_heading": false}
+{"sent_id": "s243", "text": "6) 한국부동산원 통계에 따르면, ’22~’23년 가격하락기 서울 아파트한 반면, 가격은 –12.9%p 하락에 그쳐 거래량이 가격에 비해 민 7) EGARCH-in-Mean 모형의 추정된 모수(          )를 고정한  (steady-state)값 ln        에서 안정화되어 있다고 가 2 구간에서는 추가 충격이 없다는 가정(  )하에 20기에 걸쳐 이후 추정된 계수 를 조건부 표준편차에 곱하여 리스크프리미 (baseline)와의 차이를 통해 양(+) ․ 음(–) 충격의 비대칭적 효과 8) 그 외 수도권, 서초지역 등의 충격반응 결과는 <부록>의 <그림", "start": 19825, "end": 20177, "is_heading": false}
+{"sent_id": "s244", "text": "바탕으로 주택시장 충격에 따른 조건부 변동성과 리스크 프리미엄의 동태적 충격반응을 산출7)하였다. <그림 1>은 EGARCH-in-Mean 모형 추정 결과를 바탕으로 표준화된 양(+) ․ 음(–) 충격이 조건부 변동성(standard deviation, SD)과 리스크 프리미엄(risk premium, RP)에 미치는 동태적 반응 경로를 나타낸다.8) 충격반응은 충격이후 20개월까지 측정하였다. 분석 결과 지역별로 다른 충격반응을 보이고 있으며 전국, 서울, 수도권 및 5대광역시 간에는 변동성과 리스크 프리미엄의 반응 경로에서 차이가 존재하는 것으로 나타났다. 우선 전국과 수도권에서는 양(+) ․ 음(–) 충격 모두에 대해 조건부 변동성과 리스크 프리미엄이 초기에 는 확대된 이후 점차 감소하며 안정 수준으로 수렴하는 전형적인 반응이 관찰된다. 이는 EGARCH 추정에서 충격 크기 계수(γ)가 양(+)으로 유의하게 나타난 결과와 부합하며, 가격 충격 발생 이후 위험인식과 요구수익률이 동시에 확대되는 일반적인 자산시장 반응으로 해석할 수 있다. 특히 변동성 확대 이후 리스크 프리미엄 역시 증가하는 모습은 위험과 기대수익률 간 상충적 관계를 보이는 점에서 금융이론과 일치하는 결과이다. 반면 서울은 전국 및 수도권과는 다른 비대칭적 반응 구조를 보인다. 서울의 경우 양(+) 충격에", "start": 20179, "end": 20845, "is_heading": false}
+{"sent_id": "s245", "text": "트 거래량은 전년 대비 –71.3%(’22년)에서 +182.5%(’23년) 급변민감하게 반응하는 모습을 보인다. 상태에서, 충격 발생 이전 시점의 조건부 분산은 모형의 정상상태가정하였다. t=1 시점에 표준화 충격  ± 을 1회 부여한 후, t≥ 쳐 반복 적용함으로써 조건부 표준편차 경로 {  }를 산출하였다.  }를 도출하고, 충격이 없는 기준경로  ×  미엄 경로 {      과를 비교하였다. 림 A-1>~<그림 A-4>에 추가하였음.", "start": 20847, "end": 21111, "is_heading": false}
+{"sent_id": "s246", "text": "구분 (-)의 충격 반응", "start": 21113, "end": 21126, "is_heading": false}
+{"sent_id": "s247", "text": "변동성 (SD)", "start": 21128, "end": 21136, "is_heading": false}
+{"sent_id": "s248", "text": "리스크프리미엄 (RP)", "start": 21138, "end": 21150, "is_heading": false}
+{"sent_id": "s249", "text": "<전국", "start": 21152, "end": 21155, "is_heading": false}
+{"sent_id": "s250", "text": "구분 (-)의 충격 반응", "start": 21157, "end": 21170, "is_heading": false}
+{"sent_id": "s251", "text": "변동성 (SD)", "start": 21172, "end": 21180, "is_heading": false}
+{"sent_id": "s252", "text": "리스크프리미엄 (RP)", "start": 21182, "end": 21194, "is_heading": false}
+{"sent_id": "s253", "text": "<서울주 : 1) 파란색 음영 처리된 부분은 95% 상하한 범위를 의미함. 2) SD, standard deviation; RP, risk premium.", "start": 21196, "end": 21282, "is_heading": false}
+{"sent_id": "s254", "text": "<그림 1> 충격반응 분석", "start": 21284, "end": 21298, "is_heading": false}
+{"sent_id": "s255", "text": "(+)의 충격 반응", "start": 21300, "end": 21310, "is_heading": false}
+{"sent_id": "s256", "text": "국>", "start": 21312, "end": 21314, "is_heading": false}
+{"sent_id": "s257", "text": "(+)의 충격 반응", "start": 21316, "end": 21326, "is_heading": false}
+{"sent_id": "s258", "text": "울>", "start": 21328, "end": 21330, "is_heading": false}
+{"sent_id": "s259", "text": "석 결과(전국 및 서울)", "start": 21332, "end": 21345, "is_heading": false}
+{"sent_id": "s260", "text": "대해서는 변동성과 리스크 프리미엄이 확대되는 반면, 음(–) 충격에 대해서는 변동성과 리스크 프리미엄이 오히려 축소되는 특징이 나타났다.", "start": 21347, "end": 21423, "is_heading": false}
+{"sent_id": "s261", "text": "이는 동일한 충격 크기에 대해서도 충격의 방향에 따라 위험 인식과 가격 보상 구조가 달라질 수 있음을 의미하며, 서울 주택시장이 다른 지역에 비해 기대심리와 투자수요의 영향을 보다 강하게 받는 자산시장적 특성을 가진다는 점을 시사한다.", "start": 21424, "end": 21555, "is_heading": false}
+{"sent_id": "s262", "text": "특히 이러한 결과는 앞선 EGARCH 추정에서 서울의 충격 크기 계수(γ)가 음(–)의 값으로 나타난 결과와도 연결된다.", "start": 21556, "end": 21623, "is_heading": false}
+{"sent_id": "s263", "text": "일반적으로 금융시장에서 는 부정적 충격 발생 시 변동성이 확대되는 경향이 나타나지만, 서울 핵심지역 주택시장은 가격조정보다는 거래 감소와 관망세가 나타나는 구조를 가질 가능성이 존재하며, 이는 앞서 확인한 바와 같이, 서울 아파트 시장에서 가격보다 거래량이 더 민감하게 반응하는 모습과도 부합하는 결과이다.", "start": 21624, "end": 21795, "is_heading": false}
+{"sent_id": "s264", "text": "Case and Shiller(1989)는 주택시장이 거래비용과 정보비용으로 인해 가격조정 속도가 느리다는 점을 지적하였으며, Genesove and Mayer (2001)는 손실회피(loss aversion)와 거래제약으로 인해 주택시장에서 가격조정이 지연될 수 있음을 보였다.", "start": 21796, "end": 21952, "is_heading": false}
+{"sent_id": "s265", "text": "또한 Stein(1995)은 금융제약과 거래비용으로 인해 충격이 즉각적인 가격조정보다 는 거래 감소 형태로 먼저 나타날 수 있음을 설명하였다.", "start": 21953, "end": 22032, "is_heading": false}
+{"sent_id": "s266", "text": "특히 서울과 같은 핵심 입지 시장에서는 기대수익에 대한 확신이 상대적으로 강하게 형성되어 있어, 상승기에는 위험보상이 확대되는 반면 하락기에는 거래 감소와 관망세가 우선적으로 나타나면서 리스크 프리미엄이 오히려 축소되는", "start": 22033, "end": 22155, "is_heading": false}
+{"sent_id": "s267", "text": "비대칭 구조가 나타날 가능성이 존재한다.", "start": 22157, "end": 22179, "is_heading": false}
+{"sent_id": "s268", "text": "한편 5대광역시는 전국 및 수도권과 유사하게 충격 직후 변동성과 리스크 프리미엄이 확대된 이후 점차 감소하는 경로를 보였다.", "start": 22180, "end": 22249, "is_heading": false}
+{"sent_id": "s269", "text": "또한 비대칭성계수(λ)가 유의하지 않다는 점에서, 충격의 방향자체보다는 충격의 크기에 의해 변동성이 결정되는 구조로 해석할 수 있다.", "start": 22250, "end": 22324, "is_heading": false}
+{"sent_id": "s270", "text": "한국 주택시장은 동일한 충격에 대해서도 지역별로 상이한 위험전파 구조와 가격동학을 가지는 것으로 나타났다.", "start": 22325, "end": 22384, "is_heading": false}
+{"sent_id": "s271", "text": "특히 서울은 전국 및 수도권과 달리 충격의 방향에 따라 리스크 프리미엄의 반응이 달라지는 비대칭적 자산시장 특성을 보였으며, 이는 기대심리, 거래제약 및 정책 민감성이 복합적으로 작용한 결과로 해석할 수 있다.", "start": 22385, "end": 22502, "is_heading": false}
+{"sent_id": "s272", "text": "이러한 결과는 한국 주택시장이 단일한 시장의 특성이 아니라 지역별로 상이한 위험구조와 가격조정 과정을 갖고 있음을 시사한다. <그림 2>는 EGARCH-in-Mean 모형 추정 결과를 바탕으로 산출한 전국 아파트 시장의 리스크프리미엄 시계열 추이를 나타낸다.", "start": 22503, "end": 22647, "is_heading": false}
+{"sent_id": "s273", "text": "전반적으로 리스크 프리미엄은 거시경제 환경과 금융시장 충격에 따라 시기별로 상이한 변동 패턴을 보이는 것으로 나타났다.", "start": 22648, "end": 22714, "is_heading": false}
+{"sent_id": "s274", "text": "2008년 글로벌 금융위기 전후에는 리스크 프리미엄이 큰 폭으로 하락하였다.", "start": 22715, "end": 22757, "is_heading": false}
+{"sent_id": "s275", "text": "이는 금융시장불안과 실물경제 둔화로 인해 주택시장 기대수익률이 약화되고 위험회피 성향이 확대된 결과로 해 석할 수 있다.", "start": 22758, "end": 22825, "is_heading": false}
+{"sent_id": "s276", "text": "반면 2010년부터 2016년까지는 저금리와 완화적 통화정책 기조 속에서 리스크 프리미엄이 비교적 안정적인 흐름을 보였다.", "start": 22826, "end": 22894, "is_heading": false}
+{"sent_id": "s277", "text": "2018년 이후에는 변동성이 다시 확대되는 모습", "start": 22895, "end": 22921, "is_heading": false}
+{"sent_id": "s278", "text": "․", "start": 22923, "end": 22924, "is_heading": false}
+{"sent_id": "s279", "text": "주 : 추정기간은 2005년 1월~2025년 12월.", "start": 22926, "end": 22955, "is_heading": false}
+{"sent_id": "s280", "text": "<그림 2> 리스크 프리미엄(전국)", "start": 22957, "end": 22976, "is_heading": false}
+{"sent_id": "s281", "text": "이 나타났으며, 특히 2020년 COVID-19 팬데믹으로 리스크 프리미엄이 급격히 하락하는 현상이 관찰되었다.", "start": 22978, "end": 23040, "is_heading": false}
+{"sent_id": "s282", "text": "이는 팬데믹 초기 경제활동 위축과 금융시장 불확실성 확대가 주택시장 기대수익률에 부정적인 영향을 미쳤기 때문으로 볼 수 있다.", "start": 23041, "end": 23111, "is_heading": false}
+{"sent_id": "s283", "text": "또한 2021년 이후 기준금리 인상과 통화긴축기조 전환 이후에는 리스크 프리미엄의 변동성이 다시 확대되는 흐름이 나타났다.", "start": 23112, "end": 23180, "is_heading": false}
+{"sent_id": "s284", "text": "금리 상승은 자금조달 비용과 레버리지 부담을 증가시키며 주택시장 위험보상 구조의 재조정을 유발할 가능성이 존재한다.", "start": 23181, "end": 23245, "is_heading": false}
+{"sent_id": "s285", "text": "요약하면, 한국 주택시장의 리스크 프리미엄은 거시경제 충격과 금융환경 변화에 따라 시간가변적으로 변화하는 특성을 가지는 것으로 나타났다.", "start": 23246, "end": 23322, "is_heading": false}
+{"sent_id": "s286", "text": "이는 주택시장이 금융시장과 연계된 자산시장적 특성을 가진다는 점을 시사한다.", "start": 23323, "end": 23365, "is_heading": false}
+{"sent_id": "s287", "text": "9) 표본 내 예측의 예측기간은 2005년 1월~2025년 12월이고, 표본고 2017~2019년에 대하여 예측이 이루어졌음.  10) RMSE            ", "start": 23367, "end": 23481, "is_heading": false}
+{"sent_id": "s288", "text": " 11) MAE        ", "start": 23483, "end": 23515, "is_heading": false}
+{"sent_id": "s289", "text": "4. 예측력 분석", "start": 23517, "end": 23526, "is_heading": true}
+{"sent_id": "s290", "text": "본 연구에서는 주택 수익률이 금융시장과 체계적으로 연계되어 있으며, 동시에 조건부 변동성에 따라 기대수익률이 변화하는 위험-수익 관계가 존재함을 확인하였다.", "start": 23528, "end": 23615, "is_heading": false}
+{"sent_id": "s291", "text": "CAPM 기반 EGARCH-in- Mean 모형의 추정결과에서 시장베타와 리스크프리미엄 계수가 통계적으로 유의하게 나타났으며, 이는 주택시장이 실물자산 특성과 함께 금융자산 성격을 동시에 가지는 것으로 해석될 수 있다.", "start": 23616, "end": 23738, "is_heading": false}
+{"sent_id": "s292", "text": "또한 EGARCH 분산방정식에서는 변동성이 높은 지속성과 비대칭적 반응을 보이는 것으로 나타나, 주택 수익률이 시간에 따라 변화하는 동태적 구조를 가질 가능성을 시사한다.", "start": 23739, "end": 23834, "is_heading": false}
+{"sent_id": "s293", "text": "이러한 결과는 주택 수익률의 동학이 단순한 선형 시계열 모형만으로 설명되기 어렵고, 금융시장 요인과 조건부 변동성을 동시에 고려하는 접근이 필요함을 보여준다.", "start": 23835, "end": 23923, "is_heading": false}
+{"sent_id": "s294", "text": "따라서 본 연구에서는 주택 수익률의 예측력을 비교하기 위하여 Random Walk 모형, CAPM 모형, 그리고 EGARCH-in-Mean 모형을 적용하였다.", "start": 23924, "end": 24012, "is_heading": false}
+{"sent_id": "s295", "text": "각 모형의 예측력을 비교하기 위하여 표본 내(in-sample), 표본 외(out-of-sample) 예측을 실시9)하였다. 각 모형의 예측력은 RMSE (root mean squared error)10)과 MAE(mean absolute error)11)를 기준으로 평가하였으며,", "start": 24013, "end": 24170, "is_heading": false}
+{"sent_id": "s296", "text": "본 외 예측에서는 2005년부터 2016년까지 자료를 이용하여 추정하", "start": 24172, "end": 24210, "is_heading": false}
+{"sent_id": "s297", "text": "그 결과는 <표 5>에 요약하였다.", "start": 24212, "end": 24231, "is_heading": false}
+{"sent_id": "s298", "text": "분석 결과, 서울 지역의 표본 내 예측에서 CAPM 기반 EGARCH-in-Mean 모형은 Random Walk 모형 및 기존 CAPM 모형에 비해 RMSE, MAE 가 모두 가장 낮게 나타나, 비교모형 가운데 가장 우수한 예측성과를 보였다.", "start": 24232, "end": 24367, "is_heading": false}
+{"sent_id": "s299", "text": "특히 EGARCHin-Mean 모형의 예측 정확성은 Random Walk 모형 대비 RMSE 52.6%, MAE 79.5% 향상을 나타낸다.", "start": 24368, "end": 24446, "is_heading": false}
+{"sent_id": "s300", "text": "이는 서울 주택시장의 수익률 및 리스크 프리미엄을 설명함에 있어 시장수익률에 대한 체계적 위험뿐만 아니라 조건부 변동성의 시간가변적 특성까지 함께 고려할 필요가 있음을 시사한다.", "start": 24447, "end": 24546, "is_heading": false}
+{"sent_id": "s301", "text": "반면, 기존 CAPM 모형은 표본 내에서는 Random Walk 모형보다 낮은 예측오차를 보였으나, EGARCHin-Mean 모형과 비교하면 예측성과의 개선 폭이 제한적이었다.", "start": 24547, "end": 24645, "is_heading": false}
+{"sent_id": "s302", "text": "이는 시장베타를 중심으로 한 정태적 CAPM 구조만으로는 주택시장 수익률에", "start": 24646, "end": 24687, "is_heading": false}
+{"sent_id": "s303", "text": "<표 5> 예측력 평가(in-sample forecast & out of sample fo", "start": 24689, "end": 24739, "is_heading": false}
+{"sent_id": "s304", "text": "[표본 내 예측결과] 전체기간(2", "start": 24741, "end": 24759, "is_heading": false}
+{"sent_id": "s305", "text": "Random Walk", "start": 24761, "end": 24772, "is_heading": false}
+{"sent_id": "s306", "text": "RMSE 5.7987 서울 MAE 4.3974", "start": 24774, "end": 24799, "is_heading": false}
+{"sent_id": "s307", "text": "[표본 외 예측결과] 추정기간(2005년 1월∼2016년", "start": 24801, "end": 24832, "is_heading": false}
+{"sent_id": "s308", "text": "Random Walk", "start": 24834, "end": 24845, "is_heading": false}
+{"sent_id": "s309", "text": "RMSE 3.6317 서울 MAE 3.0100", "start": 24847, "end": 24872, "is_heading": false}
+{"sent_id": "s310", "text": "주 : 1) 괄호 안의 값은 각각 Random Walk 모형의 RMSE 및 MAE를 2) CAPM, capital asset pricing model; EGARCH, exponenti RMSE, root mean squared error; MAE, mean absolute", "start": 24874, "end": 25026, "is_heading": false}
+{"sent_id": "s311", "text": "12) 표본 외 예측 검증은 서울 지역, 단일 예측구간(2017~2019년) 지역 및 복수의 예측구간(rolling window 등)을 포함한 보다 폭", "start": 25028, "end": 25112, "is_heading": false}
+{"sent_id": "s312", "text": "내재된 변동성의 변화와 충격 반응의 비대칭성을 충분히 포착하기 어려울 수 있음을 의미한다.", "start": 25114, "end": 25164, "is_heading": false}
+{"sent_id": "s313", "text": "표본 외 예측에서도 EGARCH-in-Mean 모형은 RMSE, MAE 모든 기준에서 Random Walk 모형보다 향상된 예측력을 보이며 비교적 안정적인 예측성을 유지하였다.12) 반면, 기존 CAPM 모형은 모든 지표에서 Random Walk 모형을 상회하는 예측오차를 나타내 표본 외 예측력 측면에서 상대적인 한계를 보였다. 요약하면, CAPM 기반 EGARCH-in-Mean 모형은 서울 주택시장 예측에서 정태적 CAPM 모형에 비해 표본 내 ․ 외 예측 모두에서 상대적으 로 우수한 예측력을 보였으며 이러한 예측력 결과를 통해 서울 주택시장의 리스크 프리미엄을 예측하는 과정에서 시장의 체계적 위험구조와 더불어 조건부 변동성 및 충격의 비대칭적 조정과정을 함 께 반영할 필요가 있음을 확인할 수 있었다.", "start": 25165, "end": 25563, "is_heading": false}
+{"sent_id": "s314", "text": "orecast)", "start": 25565, "end": 25573, "is_heading": false}
+{"sent_id": "s315", "text": "2005년 1월∼2025년 12월)", "start": 25575, "end": 25594, "is_heading": false}
+{"sent_id": "s316", "text": "CAPM EGARCH-in-Mean", "start": 25596, "end": 25615, "is_heading": false}
+{"sent_id": "s317", "text": "4.7686(0.822) 2.7494(0.474)", "start": 25617, "end": 25644, "is_heading": true}
+{"sent_id": "s318", "text": "3.8748(0.881) 0.9000(0.205)", "start": 25646, "end": 25673, "is_heading": true}
+{"sent_id": "s319", "text": "년 12월) / 예측기간(2017년 1월∼2019년 12월)", "start": 25675, "end": 25708, "is_heading": false}
+{"sent_id": "s320", "text": "CAPM EGARCH-in-Mean", "start": 25710, "end": 25729, "is_heading": false}
+{"sent_id": "s321", "text": "5.1364(1.414) 0.7896(0.217)", "start": 25731, "end": 25758, "is_heading": true}
+{"sent_id": "s322", "text": "4.0163(1.334) 0.5919(0.197)", "start": 25760, "end": 25787, "is_heading": true}
+{"sent_id": "s323", "text": "를 기준으로 나눈 값을 의미함.", "start": 25789, "end": 25806, "is_heading": false}
+{"sent_id": "s324", "text": "ial generalized autoregressive conditional heteroskedasticity; error.", "start": 25807, "end": 25876, "is_heading": false}
+{"sent_id": "s325", "text": ")에 한정되어 수행되었다는 한계가 있으며, 향후 연구에서는 다른폭넓은 표본 외 검증이 필요함.", "start": 25878, "end": 25930, "is_heading": false}
+{"sent_id": "s326", "text": "․", "start": 25932, "end": 25933, "is_heading": false}
+{"sent_id": "s327", "text": "Ⅴ. 결론", "start": 25935, "end": 25940, "is_heading": true}
+{"sent_id": "s328", "text": "본 연구는 한국 주택시장을 투자자산의 관점에 서 접근하여, CAPM을 확장한 CAPM EGARCHin-Mean 모형을 통해 주택시장의 체계적 위험과 리스크 프리미엄의 동태적 특성을 실증적으로 분석하였다.", "start": 25942, "end": 26055, "is_heading": false}
+{"sent_id": "s329", "text": "특히 기존 연구와 달리 시장포트폴리오를 단순한 주식시장 수익률이 아니라, 주식시장과 주택시장을 가계 자산비중으로 가중한 확장된 시장포트폴리오로 구성함으로써 한국 가계의 실제 자산구조를 보다 현실적으로 반영하고자 하였다.", "start": 26056, "end": 26178, "is_heading": false}
+{"sent_id": "s330", "text": "특히, 주택가격의 상승과 하락 충격이 변동성에 미치는 영향과 이후 주택시장의 리스크 프리미엄에 미치는 영향을 측정함으로써 시장의 체계적위험과 함께 시장 변동성에 의한 리스크 프리미엄의 변화 방향을 추정하고자 하였다.", "start": 26179, "end": 26299, "is_heading": false}
+{"sent_id": "s331", "text": "연구의 결과로 지역적 특성에 따라 주택가격의 하락 충격이 오면 변동성이 감소하고 주택시장의 리스크 프리미엄을 낮출 수 있는 결과를 얻을 수 있었다.", "start": 26300, "end": 26382, "is_heading": false}
+{"sent_id": "s332", "text": "따라 서 한국 주택시장의 현실을 반영하여 연구를 확장하면서 추진하는 주택 정책에 대하여 전체 자산시장과 관련하여 실증적 자료로 활용할 수 있을 것이다.", "start": 26383, "end": 26467, "is_heading": false}
+{"sent_id": "s333", "text": "이러한 점에서 본 연구는 노상윤(2014) 및 노상윤 ․ 민성훈(2014)과 같이 EGARCH-in-Mean 모형을 활용하여 시간가변적 리스크 프리미엄을 분석하였다는 점에서 공통점을 갖지만, 주식시장수익률뿐만 아니라 가계 자산비중을 반영한 확장된 시장 포트폴리오를 구성하였다는 점, 그리고 서울 주택시장에서 정보 충격에 따른 비대칭적 변", "start": 26468, "end": 26656, "is_heading": false}
+{"sent_id": "s334", "text": "동성 반응을 실증적으로 확인하였다는 점에서 기존 연구와 차별성을 갖는다.", "start": 26658, "end": 26698, "is_heading": false}
+{"sent_id": "s335", "text": "실증분석 결과, 모든 지역에서 시장베타(β)가 양(+)의 값으로 유의하게 나타나 한국 아파트 시장이 금융시장 및 전체 자산시장과 구조적으로 연계되어 있음을 확인하였다.", "start": 26699, "end": 26792, "is_heading": false}
+{"sent_id": "s336", "text": "특히 수도권의 시장베타값이 가장 높게 나타나 금융시장 변동과 유동성 변화에 대한 민감도가 상대적으로 크게 나타났으며, 서울 내부에서도 강남 ․ 서초 ․ 송파 등 핵심지역에서 높은 시장 민감도가 확인되었다.", "start": 26793, "end": 26907, "is_heading": false}
+{"sent_id": "s337", "text": "이는 한국 주택시장이 단일한 시장이 아니라 지역별로 상이한 위험구조와 가격조정 과정을 갖는 이질적시장임을 의미한다.", "start": 26908, "end": 26972, "is_heading": false}
+{"sent_id": "s338", "text": "EGARCH-in-Mean 모형 추정 결과에서는 조건부 변동성과 변동성 기반 리스크 프리미엄의 시간가변성이 확인되었다.", "start": 26973, "end": 27039, "is_heading": false}
+{"sent_id": "s339", "text": "전국 ․ 수도권 ․ 5대광역시에서는 조건부 변동성 계수가 양(+)의 값으로 유의하게 나타나 시장 불확실성이 확대될수록 투자자들이 보다 높은 기대수익률을 요구하는 일반적인 위험-수익 관계가 존재하는 것으로 나타났다.", "start": 27040, "end": 27159, "is_heading": false}
+{"sent_id": "s340", "text": "또한 변동성 지속성 계수 역시 모든 지역에서 유의하게 나타나 주택시장 변동성이 일정 기간 지속되는 특성이 존재함을 확인하였다.", "start": 27160, "end": 27230, "is_heading": false}
+{"sent_id": "s341", "text": "반면 서울은 다른 지역과 차별적인 비대칭 반응구조를 보였다.", "start": 27231, "end": 27264, "is_heading": false}
+{"sent_id": "s342", "text": "서울의 경우 충격 크기 계수가 음(–) 의 값으로 나타났으며, 충격반응분석에서도 음(–) 의 충격, 즉 주택가격 하락 충격 발생 시 변동성과 리스크 프리미엄이 오히려 축소되는 특징이 확인되었다.", "start": 27265, "end": 27373, "is_heading": false}
+{"sent_id": "s343", "text": "이는 일반적인 금융시장과 달리 서울 핵심지역 주택시장은 가격 급락보다는 거래 감소와 관망세가 우선적으로 나타나는 구조를 가질 가능성", "start": 27374, "end": 27447, "is_heading": false}
+{"sent_id": "s344", "text": "을 시사하며, 이러한 특성은 Case and Shiller (1989)의 거래비용 ․ 가격조정 속도, Genesove and Mayer(2001)의 손실회피 행동과도 부분적으로 부합한다.", "start": 27449, "end": 27553, "is_heading": false}
+{"sent_id": "s345", "text": "특히 서울과 같은 핵심 입지 시장에서는 기대수익에 대한 확신과 투자수요가 상대적으로 강하게 형성되어 있어, 부정적 충격 발생시 가격조정보다는 거래 위축을 통해 시장 충격이 흡수되는 특성이 존재할 가능성이 있다.", "start": 27554, "end": 27671, "is_heading": false}
+{"sent_id": "s346", "text": "한편 전국 아파트 시장의 리스크 프리미엄 시계열 추이 역시, 글로벌 금융위기와 COVID-19 시기의 급격한 하락, 이후 통화긴축 국면에서의 재확대 등 거시경제 환경과 금융시장 충격에 따라 시기별로 상이한 변동을 보였다.", "start": 27672, "end": 27795, "is_heading": false}
+{"sent_id": "s347", "text": "이는 한국 주택시장의 위험구조가 거시경제 환경과 금융시장 충격에 따라 시장 동조적으로 변화하고 있음을 의미한다.", "start": 27796, "end": 27858, "is_heading": false}
+{"sent_id": "s348", "text": "예측력 분석 결과에서도 CAPM 기반 EGARCHin-Mean 모형은 Random Walk 모형 및 CAPM 모형에 비해 상대적으로 우수한 예측 성과를 보였다.", "start": 27859, "end": 27948, "is_heading": false}
+{"sent_id": "s349", "text": "특히 서울 지역에서 RMSE, MAE 모든 지표에 서 가장 우수한 예측력을 보였다.", "start": 27949, "end": 27995, "is_heading": false}
+{"sent_id": "s350", "text": "이는 주택시장예측에서 시장위험뿐만 아니라 변동성의 동태적특성을 함께 고려하는 접근이 중요함을 의미한다.", "start": 27996, "end": 28053, "is_heading": false}
+{"sent_id": "s351", "text": "본 연구의 정책적 시사점은 다음과 같다.", "start": 28054, "end": 28076, "is_heading": false}
+{"sent_id": "s352", "text": "한국주택시장은 금융시장과 구조적으로 연계되어 통화정책 및 금융규제 변화에 직접 영향을 받을 수있다.", "start": 28077, "end": 28132, "is_heading": false}
+{"sent_id": "s353", "text": "또한 서울 핵심지역(강남 ․ 서초 ․ 송파 등)은 금융시장 변동에 대한 민감도가 상대적으로 높고, 서울은 가격 충격의 방향에 따라 변동성 ․ 리스크프리미엄이 비대칭적으로 반응하므로, 주택 정책은 가격 수준뿐만 아니라 이러한 지역별 위험구", "start": 28133, "end": 28265, "is_heading": false}
+{"sent_id": "s354", "text": "조의 차이와 변동성 ․ 리스크 프리미엄의 동학적변화까지 함께 고려한 차별적 접근이 필요하다.", "start": 28267, "end": 28318, "is_heading": false}
+{"sent_id": "s355", "text": "다만 본 연구는 아파트 매매가격지수를 중심으 로 분석을 수행하였다는 점에서 전세 ․ 임대시장, 가계부채와 금융레버리지, 주택공급 및 정책충격등 주택시장 가격결정에 영향을 미치는 다양한 구조적 요인을 충분히 반영하지 못한 한계가 존재한 다.", "start": 28319, "end": 28452, "is_heading": false}
+{"sent_id": "s356", "text": "또한 지역별 ․ 주택유형별 이질성과 개별 가계의 재무여건을 반영한 미시적 분석 역시 제한적이었다.", "start": 28453, "end": 28507, "is_heading": false}
+{"sent_id": "s357", "text": "향후 연구에서는 전세시장, 금융레버리지, 공급충격 및 거시금융 변수를 함께 고려하는 다변량 연립방정식 모형을 구축하고, 가계 재무자료등 미시자료를 이용함으로써 주택시장 위험구조와 다양한 요인 간의 상호작용을 보다 종합적으로 분석할 필요가 있다.", "start": 28508, "end": 28644, "is_heading": false}
+{"sent_id": "s358", "text": "또한 지역적 이질성에 대한 분석을 체계화하면서 주택시장 리스크 프리미엄의 구조와 상호 연계에 대한 분석은 향후 연구로 남긴다.", "start": 28645, "end": 28715, "is_heading": false}
+{"sent_id": "s359", "text": "ORCID 김진호 https://orcid.org/0009-0006-9064-5356 서병선 https://orcid.org/0000-0001-6112-4910", "start": 28717, "end": 28806, "is_heading": false}
+{"sent_id": "s360", "text": "참고문헌", "start": 28808, "end": 28812, "is_heading": false}
+{"sent_id": "s361", "text": "1. 노상윤. (2014). 국내 주택시장의 시차가변적 위험프리미엄 존재에 관한 연구.", "start": 28814, "end": 28862, "is_heading": false}
+{"sent_id": "s362", "text": "경제연구, 32(2), 29-52.", "start": 28863, "end": 28882, "is_heading": false}
+{"sent_id": "s363", "text": "2. 노상윤, 민성훈. (2014). 부동산시장에 대한 CAPM 적용에 있어서 EGARCH-M 모형의 활용. 부동산", "start": 28883, "end": 28947, "is_heading": false}
+{"sent_id": "s364", "text": "국문초록", "start": 28949, "end": 28953, "is_heading": false}
+{"sent_id": "s365", "text": "본 연구는 CAPM(Capital Asset Pricing Model)에 기반한 EGARCH(Exponential Generalized Autoregressive Conditional Heteroskedasticity)-in-Mean 모형을 이용하여 주택시장의 체계적 위험과 리스크 프리미엄의 동태적특성을 실증적으로 분석하였다.", "start": 28955, "end": 29138, "is_heading": false}
+{"sent_id": "s366", "text": "특히 시장포트폴리오를 금융자산과 주택 실물자산을 가계 자산비중으로 가중해 구성함으로써 한국 가계의 실제 자산구조를 반영하였다.", "start": 29139, "end": 29209, "is_heading": false}
+{"sent_id": "s367", "text": "2003년 11월~2025년 12월 월별 아파트매매가격지수를 이용하여 분석 결과, 모든 지역에서 시장베타(β)가 양(+)의 값으로 유의하게 나타나 한국 아파트 시장이 금융시장과 구조적으로 연계되어 있음을 확인하였다.", "start": 29210, "end": 29330, "is_heading": false}
+{"sent_id": "s368", "text": "리스크 프리미엄은 변동성과 유의한 관계를 갖고 시간에 따라 변화하는 동태적특성을 보였다.", "start": 29331, "end": 29380, "is_heading": false}
+{"sent_id": "s369", "text": "전국과 수도권에서는 변동성과 리스크 프리미엄이 정(+)의 관계로서 위험–수익 관계가 확인된 반면, 서울에서는 가격 상승 충격에는 증가하고 하락 충격에는 오히려 하락하는 비대칭적 반응을 보였는데, 이는 가격조정보다 거래량 위축과 기대조정이 우선하는 서울 시장의 구조적 특성을 반영한다.", "start": 29381, "end": 29539, "is_heading": false}
+{"sent_id": "s370", "text": "서울 예측력 분석에서는 EGARCH-in-Mean 모형이 Random Walk 모형과 CAPM 기본 모형보다 우수한 예측력을 보였다.", "start": 29540, "end": 29614, "is_heading": false}
+{"sent_id": "s371", "text": "이러한 결과는 한국 주택시장이 금융시장과 연계된 자산시장적 특성을 가지며 지역별로 상이한 위험구조와 가격조정 과정이 존재함을 시사하며, 향후 주택시장 안정화 정책은 가격 수준뿐만 아니라 변동성과 리스크 프리미엄의 상태 의존성도 함께 고려할 필요가 있음을 보여준다.", "start": 29615, "end": 29762, "is_heading": false}
+{"sent_id": "s372", "text": "주제어 : 리스크 프리미엄, 비대칭성, 자산시장 포트폴리오, 주택시장, 지역 이질성", "start": 29764, "end": 29810, "is_heading": false}
+{"sent_id": "s373", "text": "․", "start": 29812, "end": 29813, "is_heading": false}
+{"sent_id": "s374", "text": "부록", "start": 29815, "end": 29817, "is_heading": false}
+{"sent_id": "s375", "text": "<표 A-1> 시장포트폴리오 리스크 프리미엄의 내생성 검정 결과", "start": 29819, "end": 29854, "is_heading": false}
+{"sent_id": "s376", "text": "시장포트폴리오 추정방법 내생성 검정(Difference-in-Hansen test) 상수항 βapt 구성 (도구변수 차수) Difference in J-stats Prob. ** *** -0.832 0.458 OLS - - (0.388) (0.086)", "start": 29856, "end": 29996, "is_heading": false}
+{"sent_id": "s377", "text": "-0.879** 0.454*** GMM(1∼2차) 0.0775 0.7807 (0.388) (0.087) 주택종합기준 -0.860** 0.452*** GMM(1∼3차) 0.1310 0.7174 (0.389) (0.086)", "start": 29998, "end": 30120, "is_heading": false}
+{"sent_id": "s378", "text": "-0.841** 0.437*** GMM(1∼4차) 0.0002 0.9902 (0.389) (0.085)", "start": 30122, "end": 30179, "is_heading": false}
+{"sent_id": "s379", "text": "-0.705*** 0.606*** OLS - - (0.205) (0.032)", "start": 30181, "end": 30223, "is_heading": false}
+{"sent_id": "s380", "text": "-0.986** 0.656*** GMM(1∼2차) 0.1896 0.6633 (0.413) (0.088) 아파트기준 -0.800* 0.575*** GMM(1∼3차) 0.1274 0.7211 (0.443) (0.088)", "start": 30225, "end": 30345, "is_heading": false}
+{"sent_id": "s381", "text": "-0.795* 0.565*** GMM(1∼4차) 0.0016 0.9683 (0.446) (0.089)", "start": 30347, "end": 30403, "is_heading": false}
+{"sent_id": "s382", "text": "주 : 1) 괄호 안은 표준오차(standard error)를 의미하며, ***, **, *는 각각 1%, 5%, 10% 수준에서 통계적으로 유의함을 의미함. 2) 표본기간은 2005년 1월~2025년 12월, GMM 추정 시 도구변수 차수 확장에 따라 표본 시작월이 일부 조정됨. 3) HAC(Newey-West, Bartlett kernel) 표준오차를 적용함. 4) 내생성 검정(Difference-in-Hansen test)의 귀무가설은 “시장포트폴리오 리스크 프리미엄이 외생적이다”임. 5) OLS, ordinary least squares; GMM, generalized method of moments.", "start": 30405, "end": 30749, "is_heading": false}
+{"sent_id": "s383", "text": "<표 A-2> CAPM 베타(βapt) 추정 결과(강남구, 서초구, 송파구, 마포구)", "start": 30751, "end": 30798, "is_heading": false}
+{"sent_id": "s384", "text": "모수 강남구 서초구 송파구 마포구 *** 0.5527 1.0797 0.4852 0.4599 상수 (0.3898) (0.3820) (0.3966) (0.3080)", "start": 30800, "end": 30889, "is_heading": false}
+{"sent_id": "s385", "text": "0.6380*** 0.6185*** 0.7122*** 0.5202*** βapt (0.0605) (0.0593) (0.0614) (0.0478)", "start": 30891, "end": 30971, "is_heading": false}
+{"sent_id": "s386", "text": "AIC 6.4881 6.4475 6.5178 6.0168", "start": 30973, "end": 31004, "is_heading": false}
+{"sent_id": "s387", "text": "Log.L -815.502 -810.385 -819.247 -756.117", "start": 31006, "end": 31047, "is_heading": false}
+{"sent_id": "s388", "text": "F-Statistic 111.1435 108.7635 134.4338 118.3536 *** ** * 주 : 1) 추정기간은 2005년 1월~2025년 12월, , , 는 각각 1%, 5%, 10% 유의수준에서 통계적으로 유의함을 의미함. 2) AIC, Akaike information criterion.", "start": 31049, "end": 31220, "is_heading": false}
+{"sent_id": "s389", "text": "<표 A-3> EGARCH-in-Mean Model 추정결과(강남구, 서초구, 송파구, 마포구)", "start": 31222, "end": 31275, "is_heading": false}
+{"sent_id": "s390", "text": "Panel A. Mean Equation(Risk-Return Relationship)", "start": 31277, "end": 31325, "is_heading": false}
+{"sent_id": "s391", "text": "rapt - rf = α + βapt (rm - rf ) + ηDcovid + δσt + εt 구분 강남구 서초구 송파구 마포구 *** 0.0649 2.5750 -0.0942 7.4618*** δ (0.0810) (0.0004) (0.0942) (0.1329)", "start": 31327, "end": 31472, "is_heading": false}
+{"sent_id": "s392", "text": "0.0997 -10.7111*** 0.7021*** -10.8332 α (0.1671) (0.0019) (0.2393) (0.3000)", "start": 31474, "end": 31549, "is_heading": false}
+{"sent_id": "s393", "text": "0.6248*** 0.4108*** 0.9122*** 0.4952*** βapt (0.0153) (0.0001) (0.0253) (0.0295)", "start": 31551, "end": 31631, "is_heading": false}
+{"sent_id": "s394", "text": "-1.6648*** 0.4979*** -2.9042*** 0.3828 η (0.2686) (0.0028) (0.3701) (1.0228)", "start": 31633, "end": 31709, "is_heading": false}
+{"sent_id": "s395", "text": "AIC 5.7149 4.9158 5.6927 3.4569", "start": 31711, "end": 31742, "is_heading": false}
+{"sent_id": "s396", "text": "Log L -712.08 -611.4 -709.29 -427.57", "start": 31744, "end": 31780, "is_heading": false}
+{"sent_id": "s397", "text": "Panel B. Variance Equation(EGARCH Dynamics)", "start": 31782, "end": 31825, "is_heading": false}
+{"sent_id": "s398", "text": "     log                log      ", "start": 31827, "end": 31900, "is_heading": false}
+{"sent_id": "s399", "text": "구분 강남구 서초구 송파구 마포구 *** *** *** ω -1.2794 -0.1862 -0.9722 0.1465*** (Level) (0.3762) (0.00004) (0.3024) (0.0372)", "start": 31902, "end": 32013, "is_heading": false}
+{"sent_id": "s400", "text": "γ 2.1900*** 0.7223*** 1.8271*** -0.0976*** (Shock Size) (0.4098) (0.00011) (0.3341) (0.0259)", "start": 32015, "end": 32107, "is_heading": false}
+{"sent_id": "s401", "text": "λ 0.1473 0.5296*** -0.0585 0.3739*** (Asymmetry) (0.2645) (0.00006) (0.2085) (0.0182)", "start": 32109, "end": 32194, "is_heading": false}
+{"sent_id": "s402", "text": "φ 0.7292*** 0.8343*** 0.7559*** 0.8389*** (Persistence) (0.1405) (0.00009) (0.1263) (0.0218)", "start": 32196, "end": 32288, "is_heading": false}
+{"sent_id": "s403", "text": "주 : 추정기간은 2005년 1월~2025년 12월, ***, **, *는 각각 1%, 5%, 10% 유의수준에서 통계적으로 유의함을 의미함.", "start": 32290, "end": 32369, "is_heading": false}
+{"sent_id": "s404", "text": "․", "start": 32371, "end": 32372, "is_heading": false}
+{"sent_id": "s405", "text": "구분 (-)의 충격 반응 (+)의 충격 반응", "start": 32374, "end": 32398, "is_heading": false}
+{"sent_id": "s406", "text": "변동성 (SD)", "start": 32400, "end": 32408, "is_heading": false}
+{"sent_id": "s407", "text": "리스크프리미엄 (RP)", "start": 32410, "end": 32422, "is_heading": false}
+{"sent_id": "s408", "text": "주 : SD, standard deviation; RP, risk premium.", "start": 32424, "end": 32469, "is_heading": false}
+{"sent_id": "s409", "text": "<그림 A-1> 충격반응 분석 결과(수도권)", "start": 32471, "end": 32495, "is_heading": false}
+{"sent_id": "s410", "text": "구분 (-)의 충격 반응 (+)의 충격 반응", "start": 32497, "end": 32521, "is_heading": false}
+{"sent_id": "s411", "text": "변동성 (SD)", "start": 32523, "end": 32531, "is_heading": false}
+{"sent_id": "s412", "text": "리스크프리미엄 (RP)", "start": 32533, "end": 32545, "is_heading": false}
+{"sent_id": "s413", "text": "주 : SD, standard deviation; RP, risk premium.", "start": 32547, "end": 32592, "is_heading": false}
+{"sent_id": "s414", "text": "<그림 A-2> 충격반응 분석 결과(5대광역시)", "start": 32594, "end": 32620, "is_heading": false}
+{"sent_id": "s415", "text": "구분 (-)의 충격 반응 (+)의 충격 반응", "start": 32622, "end": 32646, "is_heading": false}
+{"sent_id": "s416", "text": "변동성 (SD)", "start": 32648, "end": 32656, "is_heading": false}
+{"sent_id": "s417", "text": "리스크프리미엄 (RP)", "start": 32658, "end": 32670, "is_heading": false}
+{"sent_id": "s418", "text": "주 : SD, standard deviation; RP, risk premium.", "start": 32672, "end": 32717, "is_heading": false}
+{"sent_id": "s419", "text": "<그림 A-3> 충격반응 분석 결과(서초)", "start": 32719, "end": 32742, "is_heading": false}
+{"sent_id": "s420", "text": "구분 (-)의 충격 반응 (+)의 충격 반응", "start": 32744, "end": 32768, "is_heading": false}
+{"sent_id": "s421", "text": "변동성 (SD)", "start": 32770, "end": 32778, "is_heading": false}
+{"sent_id": "s422", "text": "리스크프리미엄 (RP)", "start": 32780, "end": 32792, "is_heading": false}
+{"sent_id": "s423", "text": "주 : SD, standard deviation; RP, risk premium.", "start": 32794, "end": 32839, "is_heading": false}
+{"sent_id": "s424", "text": "<그림 A-4> 충격반응 분석 결과(마포)", "start": 32841, "end": 32864, "is_heading": false}

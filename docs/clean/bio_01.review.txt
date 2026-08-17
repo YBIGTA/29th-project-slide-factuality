@@ -1,0 +1,219 @@
+[p1 머리말] December 2013 | Vol. 41 | No. 4
+[p1 각주]   Pseudozyma was noted as being dominant. A total of thirty two strains were isolated from Songaksan and Seongsan-ilchul-
+[p1 각주]   bong in Jeju island and Sporobolomyces ruberrimus was seen to be dominant. The anti-gout xanthine oxidase inhibitory activi-
+[p1 각주]   ties of the culture broths and cell-free extracts from eighty six yeast strains were then determined. The cell-free extracts of
+[p1 각주]   Pseudozyma hubeiensis 228-S-1 exhibited the highest xanthine oxidase inhibitory activity of 19.6%. The XOD inhibitor was
+[p1 각주]   also maximally produced when Pseudozyma hubeiensis 228-S-1 was cultured at 30oC for 36h in YEPD medium.
+[p1 각주]   Keywords: 26S rDNA, ITS 1/5.8S rDNA/ITS2, wild flowers, yeasts, anti-gout xanthine oxidase inhibitor
+[p1 각주]   서론 우수한 Pichia burtonii 등이 분리 동정되었고[21], killer
+[p1 각주]   toxin[17], 효소생산 효모[18] 등이 분리, 선별되어 일부가 산
+[p1 각주]   효모는 유성생식과 무성생식을 하며 진핵세포를 갖고 있 업적으로 이용되고 있다. 또한, 효모의 각종 대사산물의 생
+[p1 각주]   는 진균류로서 일반적으로 자낭균류와 일부 담자균류에 속 성, 분비 기작이 규명되었고 빠른 생육과 배양이 용이한 잇
+[p1 각주]   하는 유포자 효모와 불완전균류에 속하는 무포자 효모로 크 점 등이 있어 유전공학 연구에서 귀중한 숙주로도 이용되고
+[p1 각주]   게 구분된다. 효모는 대부분이 GRAS 균주로서 오래 전부터 있다[11].
+[p1 각주]   주류와 장류 등의 발효 식품 제조에 이용되고 있고 근래 건 지금까지 국내에서 효모는 주로 전통 발효식품이나 누룩,
+[p1 각주]   강식품 소비의 증가에 따라 효모에서 항고혈압성 안지오텐 곡자, 발효제 등에서 분리, 동정되어 이들의 일부가 산업적
+[p1 각주]   신 전환효소 저해물질[10, 12], 항치매성 β-secretase 저해물 으로 이용되고 있을 뿐 우리나라 자연환경에 분포하고 있는
+[p1 각주]   질[14]과 acetylcholinesterase 저해물질[15], 혈전용해물질 야생 효모들을 분리, 동정하고 이들을 산업적으로 응용하는
+[p1 각주]   [8], 혈관신생억제물질[9], 미백성 tyrosinase 저해물질[7], 정 연구는 거의 실시되지 않았다. 따라서 필자 등은 전국 각지
+[p1 각주]   미성 리보핵산물질[16]과 같은 다양한 대체 의약소재들이 개 의 자연환경에 서식하고 있는 야생 효모들을 분리, 동정하여
+[p1 각주]   발되어 보고되었다. 최근 시판 막걸리에서 항고혈압활성이 다양한 효모 균주들을 확보하기 위해 전보[20]에서 대전과
+[p1 각주]   충남 일부 지역에서 서식하고 있는 야생화들로부터 효모들
+[p1 각주]   *Corresponding author 을 분리, 동정하여 보고하였고 우리나라 해안 근접지역과 금
+[p1 각주]   Tel: +82-42-520-5388, Fax: +82-42-520-5388 산군, 안동시 등의 일부 내륙지역 야생화들로부터 국내 미기
+[p1 각주]   E-mail: biotech8@pcu.ac.kr
+[p1 각주]   © 2013, The Korean Society for Microbiology and Biotechnology 록 효모들을 분리하여 특성을 보고하였다[5]. 본 연구에서는
+[p2 머리말] [1 − {A(시료구) − B(시료구 Blank)/C(대조구)}] × 100
+[p2 각주]   를 1 mM xanthine 용액 200 μl와 xanthine oxidase Sporobolomyces ruberrimus가 6균주, Pseudozyma aphidis
+[p2 각주]   (0.1 U/ml) 100 μl에 혼합하고 0.1 M potassium phosphate4균주를 포함한 Pseudozyma sp.가 8균주, Candida sp.가 5
+[p2 각주]   buffer (pH7.5) 600 μl 첨가하여 1ml 로 정용한 후 37oC에서균주 등으로 우점균을 이루고 있었다. Fell 등[3]은 D1, D2
+[p2 각주]   http://dx.doi.org/10.4014/kjmb.1309.09002
+[p3 머리말] December 2013 | Vol. 41 | No. 4
+[p3 각주]   271-GG1-1 JN940523.1 648/648 (100%)
+[p3 각주]   14 Rhodosporidium fluviale 281-GG1-1 FJ515261.1 612/616 (99%)
+[p3 각주]   15 Rhodotorula graminis 282-GG1-1 EU563930.1 617/617 (100%)
+[p3 각주]   16 Saccharomyces cerevisiae 272-GG1-1 JX103177.1 607/608 (99%)
+[p3 각주]   274-GG1-2 JX103177.1 608/608 (100%)
+[p3 각주]   17 Sporidiobolus pararoseus 270-GG1-2 FJ755245.1 574/577 (99%)
+[p3 각주]   18 Hanseniaspora uvarum 319-GS-1 AM160628.1 614/615 (99%)
+[p3 각주]   325-GS-1 AM160628.1 615/615 (100%)
+[p3 각주]   326-GS-1 AM160628.1 615/615 (100%)
+[p3 각주]   327-GS-1 AM160628.1 613/615 (99%)
+[p3 각주]   19 Metschnikowia reukaufii 324-GS-1 JX067756.1 545/557 (98%) Seongnam
+[p3 각주]   20 Metschnikowia viticola 326-GS-2 JN544019.1 443/529 (84%) city
+[p3 각주]   21 Pichia guilliermondii 321-GS-1 FJ432597.1 613/613 (100%)
+[p3 각주]   22 Pseudozyma rugulosa 323-GS-1 JN940523.1 648/648 (100%)
+[p3 각주]   23 Saccharomyces cerevisiae 322-GS-2 JX103177.1 607/608 (99%)
+[p3 각주]   24 Sporidiobolus pararoseus 323-GS-2 JQ219312.1 575/576 (99%)
+[p3 각주]   25 Cryptococcus flavescens 330-GY-1 FJ743610.1 640/640 (100%)
+[p3 각주]   26 Pichia fermentans 331-GY-2 DQ377652.1 598/599 (99%)
+[p3 각주]   27 Pseudozyma rugulosa 328-GY-3 JN940523.1 644/644 (100%)
+[p3 각주]   329-GY-2 JN940523.1 644/644 (100%)
+[p3 각주]   330-GY-2 JN940523.1 647/648 (99%) Yongin
+[p3 각주]   28 Rhodosporidium paludigenum 328-GY-1 HQ670686.1 617/617 (100%) city
+[p3 각주]   329-GY-1 FJ794995.1 617/617 (100%
+[p3 각주]   29 Rhodotorula mucilaginosa 331-GY-4 HQ871906.1 576/577 (99%)
+[p3 각주]   30 Rhodotorula sp. 332-GY-2 EU678938.1 622/627 (99%)
+[p3 각주]   31 Saccharomyces cerevisiae 328-GY-2 JX103177.1 605/608 (99%)
+[p3 각주]   32 Sporisorium loudetiae-pedicellatae 332-GY-3 AY740106.1 645/649 (99%)
+[p3 각주]   33 Candida sp. 333-GW-1 AY833088.1 647/648 (99%)
+[p3 각주]   334-GW-1 AY833088.1 647/648 (99%)
+[p3 각주]   34 Cryptococcus sp. 339-GW-1 FM178286.1 606/607 (99%)
+[p3 각주]   337-GW-1 GQ181170.1 633/639 (99%) Anseong
+[p3 각주]   35 Pseudozyma rugulosa 335-GW-1 JN940523.1 604/607 (99%) city
+[p3 각주]   337-GW-2 JN940523.1 604/607 (99%)
+[p3 각주]   36 Rhodosporidium fluviale 340-GW-2 FJ515261.1 612/616 (99%)
+[p3 각주]   37 Rhodotorula mucilaginosa 340-GW-1 JX310560.1 607/613 (99%)
+[p4 머리말] 2 Candida sp. 80-J-3 DQ655679.1 588/592 (99)
+[p4 각주]   10 Pseudozyma rugulosa 84-J-1 JN942670.1 726/737 (98)
+[p4 각주]   86-J-2 AF294697.1 718/742 (96)
+[p4 각주]   90-J-2 AF294697.1 726/728 (99)
+[p4 각주]   11 Pseudozyma sp. 71-J-1 AM160637.1 441/442 (99)
+[p4 각주]   12 Rhodosporidium paludigenum 86-J-1 HQ670676.1 605/607 (99)
+[p4 각주]   89-J-3 HQ670676.1 607/607 (100)
+[p4 각주]   92-J-2 HQ670676.1 605/607 (99)
+[p4 각주]   94-J-2 HQ670676.1 607/607 (100)
+[p4 각주]   13 Sporobolomyces ruberrimus 63-J-2 AY015439.1 595/598 (99)
+[p4 각주]   65-J-1 AY015439.1 588/602 (97)
+[p4 각주]   70-J-1 AY015439.1 588/602 (97)
+[p4 각주]   87-J-1 AY015439.1 588/602 (97)
+[p4 각주]   94-J-1 AY015439.1 588/602 (97)
+[p4 각주]   95-J-2 AY015439.1 588/602 (97)
+[p4 각주]   14 Starmerella bombicola 80-J-1 HQ111046.1 504/506(99)
+[p4 각주]   와 ITS 영역에 있는 rDNA 염기 조성과 형태적 특성 등을 토 것으로 사료된다.
+[p4 각주]   대로 Sporobolomyces ruberrimus를 분리, 동정하여 보고하
+[p4 각주]   였고, Razavi 등[26]은 Sporobolomyces ruberrimus로부터 항통풍성 x a n t h i n e o x i d a s e 저해물질 생산 균주의 선발
+[p4 각주]   글리세롤과 암모니움 아세테이트를 사용하여 카로티노이드 경기도와 제주도 야생화들로부터 분리, 동정한 86균주들
+[p4 각주]   와 지방산 등을 생산한 연구결과를 보고하였다. 또한 에 대한 배양 상등액과 무세포 추출물들의 xanthine oxidase
+[p4 각주]   Pseudozyma aphidis 균에 대하여 최근 Parahym 등[24]은 저해활성을 측정한 결과는 Table 3과 같다. 먼저 86균주 중
+[p4 각주]   폐 감염 균종으로, Chen 등[2]은 다리 감염 균종으로 각각 보 26균주들의 배양 상등액에서 xanthine oxidase 저해활성을
+[p4 각주]   고하였다. 보였고, 이들 중 특히 Rhodosporidium paludigenum 328-
+[p4 각주]   한편, 필자 등[20]은 대전지역 공단 주위와 야산의 야생화 GY-1의 배양 상등액이 18.1%로 가장 높은 활성을 보였다.
+[p4 각주]   로부터 희귀성 균주들인 Metschnikowia sp.와 Starmerella 무세포 추출물의 경우 모두 24 효모 균주들에서 저해활성
+[p4 각주]   sp.들이 Sporobolomyces rubberimus, Cryptococcus magnus 을 보였고 특히 Pseudozyma hubeiensis 228-S-1의 무세포
+[p4 각주]   등을 분리, 보고하였는데 위와 같이 동일한 야생화라도 경기 추출물이 19.6%로 가장 높아 최종적으로 항통풍성 xanthine
+[p4 각주]   도, 대전, 제주도 등 지역간의 기후적 차이와 이로 인한 개 oxidase 저해물질 생산 균주로 선발하였다.
+[p4 각주]   화시기 차이 등에 의해 일부 다른 효모들이 분포하고 있는 항통풍성 xanthine oxidase 저해물질 생산균주로 선발된
+[p4 각주]   http://dx.doi.org/10.4014/kjmb.1309.09002
+[p5 머리말] 1 Candida parapsilosis 78-J-1 4.4(±0.5) n.da
+[p5 머리말] 2 Candida sp. 277-GG1-2 n.d n.d
+[p5 머리말] 3 Cryptococcus aureus 86-J-3 n.d n.d
+[p5 머리말] 4 Cryptococcus flavescens 330-GY-1 n.d n.d
+[p5 머리말] 5 Cryptococcus flavus 274-GG1-1 7.3(±0.2) n.d
+[p5 머리말] 7 Cryptococcus sp. 337-GW-1 7.8(±0.9) n.d
+[p5 머리말] 8 Debaryomyces hansenii 80-J-2 n.d n.d
+[p5 머리말] 9 Hanseniaspora uvarum 319-GS-1 5.2(±0.2) n.d
+[p5 머리말] 13 Metschnikowia reukaufii 67-J-3 n.d n.d
+[p5 머리말] 15 Nakazawaea holstii 63-J-1 n.d n.d
+[p5 머리말] 16 Pichia fermentans 331-GY-2 n.d n.d
+[p5 머리말] 17 Pichia guilliermondii 89-J-1 n.d n.d
+[p5 머리말] 18 Pseudozyma aphidis 64-J-1 n.d n.d
+[p5 머리말] 19 Pseudozyma hubeiensis 222-S-1 n.d n.d
+[p5 머리말] December 2013 | Vol. 41 | No. 4
+[p5 각주]   10 Lachancea thermotolerans 225-S-1 13.4(±0.4) 9.7(±0.8)
+[p5 각주]   227-S-2 9.9(±0.5) 8.5(±0.4)
+[p5 각주]   11 Metschnikowia koreensis 277-GG1-1 16.8(±0.9) n.d(±0.6)
+[p5 각주]   12 Metschnikowia pulcherrima 66-J-1 6.8(±0.3) n.d
+[p5 각주]   324-GS-1 n.d n.d
+[p5 각주]   14 Metschnikowia viticola 326-GS-2 13.1(±0.5) 17.8(±0.9)
+[p5 각주]   83-J-1 n.d n.d
+[p5 각주]   321-GS-1 n.d n.d
+[p5 각주]   66-J-2 9.4(±0.5) n.d
+[p5 각주]   77-J-1 15.2(±0.6) n.d
+[p5 각주]   94-J-3 n.d
+[p5 각주]   228-S-1 n.d 19.6(±0.8)
+[p5 각주]   20 Pseudozyma rugulosa 269-GG1-1 n.d 4.1(±0.3)
+[p5 각주]   269-GG1-2 n.d n.d
+[p5 각주]   269-GG1-3 n.d n.d
+[p5 각주]   270-GG1-1 n.d 7.5(±0.5)
+[p5 각주]   271-GG1-1 n.d 12.4(±0.7)
+[p5 각주]   323-GS-1 5.1(±0.5) 17.8(±0.5)
+[p5 각주]   328-GY-3 n.d n.d
+[p5 각주]   329-GY-2 n.d n.d
+[p5 각주]   330-GY-2 n.d n.d
+[p5 각주]   335-GW-1 12.9(±0.8) 15.8(±0.6)
+[p5 각주]   337-GW-2 n.d n.d
+[p5 각주]   84-J-1 n.d n.d
+[p5 각주]   86-J-2 1.8(±0.9) 9.5(±0.9)
+[p5 각주]   90-J-2 n.d n.d
+[p6 머리말] 21 Pseudozyma sp. 71-J-1 n.d n.d
+[p6 머리말] 23 Rhodosporidium paludigenum 86-J-1 n.d n.d
+[p6 머리말] 24 Rhodotorula glutinis 222-S-3 6.1(±0.5) n.d
+[p6 머리말] 30 Sporobolomyces carnicolor 226-S-1 n.d n.d
+[p6 머리말] 31 Sporobolomyces phaffii 223-S-3 n.d n.d
+[p6 머리말] 32 Sporobolomyces ruberrimus 63-J-2 n.d
+[p6 각주]   328-GY-2 n.d 1.9(±0.9)
+[p6 각주]   28 Sporidiobolus pararoseus 270-GG1-2 11.8(±0.9) 7.7(±0.8)
+[p6 각주]   323-GS-2 n.d n.d
+[p6 각주]   29 Sporisorium loudetiae-pedicel-latae 332-GY-3 n.d 18.6(±0.5)
+[p6 각주]   228-S-2 9.8(±0.9) n.d
+[p6 각주]   224-S-2 n.d n.d
+[p6 각주]   65-J-1 n.d n.d
+[p6 각주]   70-J-1 n.d n.d
+[p6 각주]   87-J-1 n.d n.d
+[p6 각주]   94-J-1 n.d n.d
+[p6 각주]   95-J-2 n.d n.d
+[p6 각주]   33 Starmerella bombicola 80-J-1 n.d 17.8(±0.9)
+[p6 각주]   an.d; not detected.
+[p6 각주]   Pseudozyma hubeiensis 228-S-1은 필자 등이 국내 미기록
+[p6 각주]   효모로 보고[5]한 균주로서 국내에서는 이 균의 특성이나 산
+[p6 각주]   업적 응용성에 관한 연구는 실시되지 않았고 다만 Takahashi
+[p6 각주]   등[27]이 Pseudozyma hubeiensis의 대두유 배양물에 함유된
+[p6 각주]   mannosylerythritol과 이들의 유도체가 항산화활성과 SOD
+[p6 각주]   활성이 우수하였음을 보고하였을 뿐이다.
+[p6 각주]   Xanthine oxidase 저해물질 생산조건
+[p6 각주]   Pseudozyma hubeiensis 228-S-1의 xanthine oxidase 저
+[p6 각주]   해물질 생산에 미치는 배양시간의 영향을 조사한 결과는 Fig.
+[p6 각주]   1과 같다. Pseudozyma hubeiensis 228-S-1을 YEPD 배지에
+[p6 각주]   접종하여 30oC에서 배양하였을 때 생육은 48시간에 최고를
+[p6 각주]   보였으나 항통풍성 XOD 저해물질은 대수기 말기인 36시간 Fig. 1. Effect of cultural time on the xathine oxidse (XOD)
+[p6 각주]   배양한 무세포 추출물에서 제일 높았다. inhibitory activity of Pseudozyma hubeiensis 228-S-1.
+[p6 각주]   http://dx.doi.org/10.4014/kjmb.1309.09002
+[p7 머리말] December 2013 | Vol. 41 | No. 4
+[p7 각주]   new fibrinolytic substances-producing yeast. Korean J. Mycol.
+[p7 각주]   26종, 54균주의 효모들을 분리, 동정하였고 이들 중 39: 227-228.
+[p7 각주]   Pseudozyma sp.가 13종으로 가장 많이 분리되었다. 제주도 9. Jeong SC, Lee DH, Lee JS. 2006. Production and character-
+[p7 각주]   송악산과 성산 일출봉 지역의 야생화 21점에서 모두 14종, ization of an anti-angiogenic agent from Saccharomyces cere-
+[p7 각주]   32균주의 효모들을 분리, 동정하였고, 이들 균 중에서 visiae K-7. J. Micriobiol. Biotechnol. 16: 1904-1911.
+[p7 각주]   Sporobolomyces ruberrimus가 6종으로 가장 많이 분리되 10. Jeong SC, Kim JH, Kim NM, Lee JS. 2005. Production of anti-
+[p7 각주]   었다. hypertensive angiotensin I-converting enzyme inhibitor from
+[p7 각주]   Malassezia pachydermatis G-14. Mycobiol. 33: 142-146.
+[p7 각주]   86효모 균주들을 YEPD 배지에서 2일간 배양하여 각각의 11. Kang NY, Park JN, Chin JE, Lee HB, Im SY, Bai S. 2003. Con-
+[p7 각주]   배양 상등액과 무세포 추출물을 제조한 후 이들의 항통풍성 struction of an amylolytic industrial strain of Saccharomyces
+[p7 각주]   Xanthine oxidase 저해활성을 측정한 결과, Pseudozyma cerevisiae containing the Schwanniomyces occidentalis α-
+[p7 각주]   hubeiensis 228-S-1의 무세포 추출물이 19.5%의 가장 높은 amylase gene. Biotechnol. Lett. 25: 1847-1851.
+[p7 각주]   Xanthine oxidase 저해활성을 보였다. 또한 Pseudozyma 12. Kim JH, Lee DH, Jeong SC, Chung KS, Lee JS. 2004. Char-
+[p7 각주]   acterization of antihypertensive angiotensin I-converting
+[p7 각주]   hubeiensis 228-S-1을 YEPD 배지에 접종하여 30 oC에서 enzyme inhinitor from Saccharomyces cerevisiae. J. Micrio-
+[p7 각주]   36시간 배양하였을 때, 세포내 항통풍성 xanthine oxidase biol. Biotechnol. 14: 1318-1323.
+[p7 각주]   저해물질을 가장 많이 생산하였다. 13. Kwon SC, Jeon TW, Park JS, Kwak JS, Kim TY. 2012. Inhibi-
+[p7 각주]   tory effect on tyrosinase, ACE and xanthine oxidase, and
+[p7 각주]   Acknowledgments nitrite scavenging activities of Jubak (Alcohol filter cake)
+[p7 각주]   extracts. J. Korean Soc. Food Sci. Nutr. 41: 1191-1196.
+[p7 각주]   This study was funded by the project on survey and excavation 14. Lee DH, Lee DH, Lee JS. 2007. Characterization of a new
+[p7 각주]   of Korean indigenous species of NIBR under the Ministry of Envi- antidementia β-secretase inhibitory peptide from Saccharo-
+[p7 각주]   ronment, Republic of Korea. myces cerevisiae. Enzyme Mucrib. Tech. 42: 83-88.
+[p7 각주]   15. Lee DH, Lee JS, Yi SH, Lee JS. 2008. Production of the
+[p7 각주]   acetycholinesterase inhibitor from Yarrowia lipolytica S-3.
+[p7 각주]   References Mycobiology 36: 102-105.
+[p7 각주]   16. Lee JS, Hyun KW, Jeong SC, Kim JH, Choi YJ, Miguez CB.
+[p7 각주]   1. Cao TS, Wang GY, Chi Z, Wang ZP, Chi ZM. 2013. Cloning, 2004. Production of ribonucleotides by autolysis of Pichia
+[p7 각주]   characterization and heterelogous expression of the INU1 anomala mutant and physiological activites. Can. J. Microbiol.
+[p7 각주]   gene from Cryptococcus aureus HYA. Gene 516: 255-262. 50: 489-492.
+[p8 각주]   strains. Korean J. Food Nutr. 25: 807-819. 25. Song YS, Kim SH, Sa JH, Jin CB, Lim CJ, Park EH. 2003.
+[p8 각주]   20. Min JH, Hyun SH, Kang MG, Lee HB, Kim CM, Kim HK, et al. Anti-angiogenic, antioxidant and xanthine oxidase inhibition
+[p8 각주]   2012. Isolation and identification of yeasts from wild flowers of activities of the mushroom Phellinus linteus. J. Ethnopharma-
+[p8 각주]   Daejeon city and Chungcheongnam-do in Korea. Korean J. col. 88: 113-116.
+[p8 각주]   Mycol. 40: 141-144. 26. Razavi SH, Mousavi SM, Yeganeh HM, Marc I. 2007. Fatty
+[p8 각주]   21. Min JH, Kim YH, Kim JH, Choi SY, Lee JS, Kim HK. 2012. acid and carotenoid production by Sporobolomyces ruberri-
+[p8 각주]   Comparison of microbial diversity of Korean commercial Mak- mus when using technical glycerol and ammonium sulfate. J.
+[p8 각주]   geolli showing high β-glucan content and high antihyperten- Microbiol. Biotechnol. 17: 1591-1597.
+[p8 각주]   sive activity, respectively. Mycobiology 40: 138-141. 27. Takahashi M, Morita T, Fukuoka T, Imura T, Kitamoto D. 2012.
+[p8 각주]   22. Morita T, Konishi M, Fukuoka T, Imura T, Kitamoto D. 2006. Glycolipid biosurfactants, mannosylerythritol lipids, show anti-
+[p8 각주]   Discovery of Pseudozyma rugulosa NBRC 10877 as a novel oxidant and protective effects against H2O2-induced oxidative
+[p8 각주]   producer of the glycolipid biosurfactants, mannosylerythritol stress in cultured human skin fibroblasts. J. Oleo. Sci. 61:
+[p8 각주]   lipids, based on rDNA sequence. Appl. Microbiol. Biotechnol. 457-464.
+[p8 각주]   73: 305-313.
+[p8 각주]   http://dx.doi.org/10.4014/kjmb.1309.09002
+# 수동 검수 완료: 2단 원문을 페이지별 좌→우 열 순서로 재구성했다.
+# 자동 추출이 각주로 오인한 초록·본문은 PDF와 대조해 복원했고, 본문에 동일 결과가 서술된 대형 표와 참고문헌은 검색 문장 품질을 위해 제외했다.

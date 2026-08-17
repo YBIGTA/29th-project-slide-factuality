@@ -102,10 +102,10 @@ def split_sentences(text: str, min_len: int = 6) -> list[Sentence]:
     문단 경계는 사람이 만든 것이라 kiwi 의 추측보다 정확하다.
     """
     k = kiwi()
-    out: list[tuple[str, int, int, bool]] = []
+    out: list[tuple[str, int, int, bool, int]] = []
 
     pos = 0
-    for para in text.split("\n\n"):
+    for para_id, para in enumerate(text.split("\n\n")):
         block = para.strip()
         if not block:
             pos += len(para) + 2
@@ -113,29 +113,29 @@ def split_sentences(text: str, min_len: int = 6) -> list[Sentence]:
         base = text.index(block, pos)
 
         if is_heading(block):
-            out.append((block, base, base + len(block), True))
+            out.append((block, base, base + len(block), True, para_id))
         else:
             for s in k.split_into_sents(_mask_dots(block)):
                 raw = text[base + s.start: base + s.end]
-                out.append((raw, base + s.start, base + s.end, False))
+                out.append((raw, base + s.start, base + s.end, False, para_id))
         pos = base + len(block)
 
     # ── 후처리: 잘못 잘린 조각을 앞 문장에 되붙인다
-    merged: list[tuple[str, int, int, bool]] = []
+    merged: list[tuple[str, int, int, bool, int]] = []
     for item in out:
-        txt, st, en, head = item
-        if merged and not head and not merged[-1][3]:
-            ptxt, pst, _, phead = merged[-1]
+        txt, st, en, head, para_id = item
+        if merged and para_id == merged[-1][4] and not head and not merged[-1][3]:
+            ptxt, pst, _, phead, _ = merged[-1]
             too_short = len(txt.strip()) < min_len
             prev_open = _unbalanced(ptxt)
             prev_unfinished = not ptxt.rstrip().endswith(_SENT_END)
             if too_short or prev_open or prev_unfinished:
-                merged[-1] = (text[pst:en], pst, en, phead)
+                merged[-1] = (text[pst:en], pst, en, phead, para_id)
                 continue
         merged.append(item)
 
     return [Sentence(f"s{i:03d}", t.strip(), st, en, h)
-            for i, (t, st, en, h) in enumerate(merged, 1)]
+            for i, (t, st, en, h, _) in enumerate(merged, 1)]
 
 
 # ─────────────────────────────────────────────────────────────

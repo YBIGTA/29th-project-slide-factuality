@@ -1,0 +1,657 @@
+{"sent_id": "s001", "text": "Issue Comment", "start": 0, "end": 13, "is_heading": false}
+{"sent_id": "s002", "text": "부동산 세제개편 영향:", "start": 15, "end": 27, "is_heading": false}
+{"sent_id": "s003", "text": "부동산 늘어나는 매도물량만큼", "start": 29, "end": 44, "is_heading": false}
+{"sent_id": "s004", "text": "줄어들 임대물량", "start": 46, "end": 54, "is_heading": false}
+{"sent_id": "s005", "text": "◼ 핵심: ① 실거주강화, ② 공제한도제한, ③ 양도세 혜택 조기일몰", "start": 56, "end": 94, "is_heading": false}
+{"sent_id": "s006", "text": "◼ 영향: 실거주 강화로 고가시장 임대료 상승 지속, 40억원 이상 주택의 양도/보유 세부담 증가, 전반적인 매도물량 출회 가능성 有", "start": 96, "end": 170, "is_heading": false}
+{"sent_id": "s007", "text": "◼ 한계: 임대 공급/운영의 체계/주체/자금유입 유도하는 개편 부재", "start": 172, "end": 209, "is_heading": false}
+{"sent_id": "s008", "text": "세제개편 방향: 종부세/양도세 중심으로 초고가 부담증가, 실거주강화", "start": 211, "end": 248, "is_heading": false}
+{"sent_id": "s009", "text": "종부세: 30억원대 초반부터 세부담 증가, 고가일수록 증가폭 커지는 구조로 개편", "start": 250, "end": 294, "is_heading": false}
+{"sent_id": "s010", "text": "(1가구1주택 실거주).", "start": 296, "end": 309, "is_heading": false}
+{"sent_id": "s011", "text": "공제에서도 거주요건 강화 및 한도 설정.", "start": 310, "end": 332, "is_heading": false}
+{"sent_id": "s012", "text": "비거주자 페널티 부여", "start": 333, "end": 344, "is_heading": false}
+{"sent_id": "s013", "text": "양도소득세: 장기보유특별공제의 장기 거주 공제로의 전환과 공제금액 제한이 핵심.", "start": 346, "end": 390, "is_heading": false}
+{"sent_id": "s014", "text": "현재는 10년 거주 시 양도차익이 커져도 실효세율 9% 수준이나, 개편이후에는", "start": 392, "end": 435, "is_heading": false}
+{"sent_id": "s015", "text": "양도차익 클수록 실효세율이 상승하는 구조", "start": 437, "end": 459, "is_heading": false}
+{"sent_id": "s016", "text": "그 외: 주임사 물량의 양도세 혜택 조기종료, 지방 이전 1주택자에 대해 양도세", "start": 461, "end": 505, "is_heading": false}
+{"sent_id": "s017", "text": "혜택, 다주택자 양도세 중과 한시 완화 및 단계적 제도 개편 포함", "start": 507, "end": 543, "is_heading": false}
+{"sent_id": "s018", "text": "핵심변화 : 실거주강화, 공제한도설정, 주임사 등 혜택 조기일몰", "start": 545, "end": 580, "is_heading": false}
+{"sent_id": "s019", "text": "시장에 영향을 미칠 핵심변화는 (1) 실거주 강화, (2) 종부세/양도세 공제한도제한", "start": 582, "end": 629, "is_heading": false}
+{"sent_id": "s020", "text": "으로 초고가주택 부담강화(양도세, 보유세), (3) 주임사 등 양도세 혜택 조기일몰", "start": 631, "end": 677, "is_heading": false}
+{"sent_id": "s021", "text": "실거주강화: 고가주택의 자가거주 전환이 늘면서 임대 공급은 감소할 가능성이", "start": 679, "end": 720, "is_heading": false}
+{"sent_id": "s022", "text": "높음.", "start": 722, "end": 725, "is_heading": false}
+{"sent_id": "s023", "text": "초고가 지역 전월세 물량감소 및 가격상승세 강화는 인접 고가 지역 전월세", "start": 726, "end": 766, "is_heading": false}
+{"sent_id": "s024", "text": "강세로 확산될 것으로 전망(세제상 실거주강화=시장 내 임대물량 감소)", "start": 768, "end": 806, "is_heading": false}
+{"sent_id": "s025", "text": "공제한도설정: 종부세 공제율이 높은 가구 중심으로 보유세 부담이 급증하고,", "start": 808, "end": 849, "is_heading": false}
+{"sent_id": "s026", "text": "양도세 공제한도 설정으로 40억원 이상의 고가주택 매도 유인 확대. 교환이나", "start": 851, "end": 893, "is_heading": false}
+{"sent_id": "s027", "text": "특수관계인 간 거래 등 현행 세제에서 양도세 정산하려는 거래도 증가할 것", "start": 895, "end": 935, "is_heading": false}
+{"sent_id": "s028", "text": "주임사 등 혜택 조기일몰: 향후 2-3 년간 물량 출회 가능성 높아지며, 매매시장", "start": 937, "end": 982, "is_heading": false}
+{"sent_id": "s029", "text": "상승세 둔화에 기여하나 임대주택 감소로 임대시장 상승 압력 높일 것", "start": 984, "end": 1021, "is_heading": false}
+{"sent_id": "s030", "text": "시장 영향 및 한계: 매매물량 증가할 수 있으나, 전월세 상승도 가속화", "start": 1023, "end": 1062, "is_heading": false}
+{"sent_id": "s031", "text": "영향: 매도물량 증가(① 세제강화로 인한 고가주택 매도 물량, ② 주임사 혜택 조기일몰로 전반적인 매도", "start": 1064, "end": 1121, "is_heading": false}
+{"sent_id": "s032", "text": "물량 증가)로 매매시장 하방 압력 확대 전망. 영향은 중저가보다는 초고가 시장에서", "start": 1123, "end": 1168, "is_heading": false}
+{"sent_id": "s033", "text": "클 것으로 예상.", "start": 1170, "end": 1179, "is_heading": false}
+{"sent_id": "s034", "text": "반면 실거주 강화로 임대물량 감소하여 서울 전반의 임대시장", "start": 1180, "end": 1212, "is_heading": false}
+{"sent_id": "s035", "text": "강세 지속/확대 전망.", "start": 1214, "end": 1226, "is_heading": false}
+{"sent_id": "s036", "text": "이번 세제개편이 잘 작동할수록 매매 물량은 증가하는만큼,", "start": 1227, "end": 1258, "is_heading": false}
+{"sent_id": "s037", "text": "임대물량은 감소해, 매매시장 둔화와 전월세 상승이 동시에 나타나는 구조 형성.", "start": 1260, "end": 1303, "is_heading": false}
+{"sent_id": "s038", "text": "현재도 전세가율이 높은 서울 중저가 시장은 상대적으로 매매가격의 하방", "start": 1305, "end": 1343, "is_heading": false}
+{"sent_id": "s039", "text": "경직성이 높고 오히려 견조한 흐름 전망", "start": 1345, "end": 1366, "is_heading": false}
+{"sent_id": "s040", "text": "한계: 개편 세제에서 다주택자를 대체해 임대주택 공급을 할 운영 주체가 부재한", "start": 1368, "end": 1411, "is_heading": false}
+{"sent_id": "s041", "text": "것은 한계.", "start": 1413, "end": 1419, "is_heading": false}
+{"sent_id": "s042", "text": "단기 공급이 가능한 非아파트를 중심으로라도 새로운 임대주택 공급", "start": 1420, "end": 1455, "is_heading": false}
+{"sent_id": "s043", "text": "주체(기관투자자,공공)를 제시하고 투자/대출 자금을 유도하는 세제 완화/규제완화를", "start": 1457, "end": 1502, "is_heading": false}
+{"sent_id": "s044", "text": "병행할 필요.", "start": 1504, "end": 1511, "is_heading": false}
+{"sent_id": "s045", "text": "이러한 임대주택 공급 방안이 병행되지 않는다면, 시장 안정 효과는", "start": 1512, "end": 1548, "is_heading": false}
+{"sent_id": "s046", "text": "일시적일 가능성이 높으며.", "start": 1550, "end": 1564, "is_heading": false}
+{"sent_id": "s047", "text": "시장은 향후 전월세 상승 등 부작용의 크기와 여론을", "start": 1565, "end": 1593, "is_heading": false}
+{"sent_id": "s048", "text": "확인하면서, 개편 세제의 지속 가능성을 판단할 것으로 예상", "start": 1595, "end": 1627, "is_heading": false}
+{"sent_id": "s049", "text": "시장 전망: 부동산 공급정책 발표 후 시장외부 요인(금리, 소득증가) 고려하여", "start": 1629, "end": 1672, "is_heading": false}
+{"sent_id": "s050", "text": "제시 예정", "start": 1674, "end": 1679, "is_heading": false}
+{"sent_id": "s051", "text": ".", "start": 1681, "end": 1682, "is_heading": false}
+{"sent_id": "s052", "text": "Intro. 연초부터 관심이 높았던 세제 개편", "start": 1683, "end": 1708, "is_heading": false}
+{"sent_id": "s053", "text": "연초부터 관심이 높았던 세제 개편 구체화반년 넘게 이어진 2026년 8월 3일 정부의 세제개편안이 발표되었다.", "start": 1710, "end": 1771, "is_heading": false}
+{"sent_id": "s054", "text": "지난해부터 이어진 부동산 세제 관련부동산 세제논란 정부 인사들의 발언과 올해 초부터 본격적으로 제기된 ‘비거주’, ‘초고가’ 부동산에 대한", "start": 1772, "end": 1849, "is_heading": false}
+{"sent_id": "s055", "text": "세제 변화 가능성이 구체화된 셈이다.", "start": 1851, "end": 1871, "is_heading": false}
+{"sent_id": "s056", "text": "이재명 대통령은 1월 23일 엑스(X·옛 트위터)에 “1주택도 1주택 나름”이라면서 “만약", "start": 1873, "end": 1923, "is_heading": false}
+{"sent_id": "s057", "text": "부득이 세제를 손보게 된다면 비거주용과 거주용은 달리 취급해야 공정하지 않을까”라고", "start": 1925, "end": 1971, "is_heading": false}
+{"sent_id": "s058", "text": "언급하며, 거주와 비거주를 구분할 필요성을 제기했다.", "start": 1973, "end": 2002, "is_heading": false}
+{"sent_id": "s059", "text": "이에 대해 언론과 시장에서는 장", "start": 2003, "end": 2020, "is_heading": false}
+{"sent_id": "s060", "text": "장기보유특별공제의 보유 공제 부분을 지적한 것이 아니냐는 해석이 나오기도 했다.", "start": 2022, "end": 2066, "is_heading": false}
+{"sent_id": "s061", "text": "구윤철 부총리 겸 재정경제부 장관은 “미국처럼 재산세를 1% 매긴다고 치면, 집값이 50", "start": 2068, "end": 2117, "is_heading": false}
+{"sent_id": "s062", "text": "억이면 1년에 5,000만원씩 보유세를 내야 하는데 연봉의 절반이 세금으로 나간다면 버", "start": 2119, "end": 2167, "is_heading": false}
+{"sent_id": "s063", "text": "티기 어려울 것”이라고 말하기도 했다.", "start": 2169, "end": 2190, "is_heading": false}
+{"sent_id": "s064", "text": "실제 정부의 세제개편안은 이러한 정부 인사들의 예고, 즉 거주요건 강화와 초고가 주택", "start": 2192, "end": 2239, "is_heading": false}
+{"sent_id": "s065", "text": "의 세 부담 강화에서 크게 벗어나지 않는 모습으로 나타났다.", "start": 2241, "end": 2274, "is_heading": false}
+{"sent_id": "s066", "text": "그림 1. 부동산 정책 보다는 부동산을 둘러싼 환경 변화에 대한 정책에 방점", "start": 2275, "end": 2317, "is_heading": false}
+{"sent_id": "s067", "text": "자료: X, 대신증권 Research Center", "start": 2319, "end": 2346, "is_heading": false}
+{"sent_id": "s068", "text": "3 부동산똘똘한 한채 유도한 초고가 주택에 대한 부담 강화는 똘똘한 한 채의 정점을 타깃으로 한 것으로 보인다.", "start": 2348, "end": 2410, "is_heading": false}
+{"sent_id": "s069", "text": "기존 세제구조 왜 똘똘한 한 채였는가?", "start": 2411, "end": 2432, "is_heading": false}
+{"sent_id": "s070", "text": "만약 공급 부족이 원인이라면 다주택 보유 또한 하나의 대안이 될 수 있고, 다주택자의", "start": 2434, "end": 2481, "is_heading": false}
+{"sent_id": "s071", "text": "수익률을 낮추는 차별적인 세제가 원인이라면 주택이 아니더라도 상업용 부동산이나 그", "start": 2483, "end": 2528, "is_heading": false}
+{"sent_id": "s072", "text": "외 다양한 자산군이 대안이 될 수 있다.", "start": 2530, "end": 2552, "is_heading": false}
+{"sent_id": "s073", "text": "그러나 최근의 시장 트렌드는 ‘꼬마빌딩’보다", "start": 2553, "end": 2577, "is_heading": false}
+{"sent_id": "s074", "text": "‘똘똘한 한 채’에 가까운 흐름으로 나타났다.", "start": 2579, "end": 2604, "is_heading": false}
+{"sent_id": "s075", "text": "이러한 시장 트렌드의 주요 원인 중 하나는 1주택에 대한 세제상 우대에 있었다고 판단", "start": 2606, "end": 2653, "is_heading": false}
+{"sent_id": "s076", "text": "한다.", "start": 2655, "end": 2658, "is_heading": false}
+{"sent_id": "s077", "text": "보유세 수준에 대해서는 다양한 견해가 있으나, 1주택자의 세 부담은 상대적으로", "start": 2659, "end": 2702, "is_heading": false}
+{"sent_id": "s078", "text": "높은 편은 아니며, 특히 고가주택이라 하더라도 종합부동산세에서 최대 80%의 세액공", "start": 2704, "end": 2750, "is_heading": false}
+{"sent_id": "s079", "text": "제를 받는 경우 세 부담이 크게 경감된다.", "start": 2752, "end": 2775, "is_heading": false}
+{"sent_id": "s080", "text": "양도소득세 역시 장기보유특별공제 80%를 적", "start": 2776, "end": 2800, "is_heading": false}
+{"sent_id": "s081", "text": "용받는 경우 수백억원의 양도차익이 발생하더라도 실효세율은 9%를 하회할 수 있어 낮", "start": 2802, "end": 2848, "is_heading": false}
+{"sent_id": "s082", "text": "은 편이다.", "start": 2850, "end": 2856, "is_heading": false}
+{"sent_id": "s083", "text": "임대소득세나 양도소득세 측면에서도 다른 자산에 비해 세제상 상당히 우월", "start": 2857, "end": 2896, "is_heading": false}
+{"sent_id": "s084", "text": "한 지위에 있는 편이다.", "start": 2898, "end": 2911, "is_heading": false}
+{"sent_id": "s085", "text": "이러한 1주택의 세제상 우월성은 매수자에게 상당히 매력적인 인센티브로 작용했고, 다", "start": 2913, "end": 2959, "is_heading": false}
+{"sent_id": "s086", "text": "주택 규제와 맞물리면서 ‘똘똘한 한 채’라는 트렌드를 만들어낸 것은 사실이다.", "start": 2961, "end": 3004, "is_heading": false}
+{"sent_id": "s087", "text": "실거주 강화는 실거주 요건 강화 기조는 다주택 규제의 연장선으로 판단된다.", "start": 3005, "end": 3046, "is_heading": false}
+{"sent_id": "s088", "text": "다주택 규제의 연장 한국의 주택 규제는 시장 원리보다는 정책적 판단에 의해 결정되는 경향이 있는데, 실제으로 판단 거주용 주택에서 발생하는 자본차익과 투자 목적의 주택에서 발생하는 자본차익을 다르", "start": 3047, "end": 3156, "is_heading": false}
+{"sent_id": "s089", "text": "게 바라보는 경향이 강했다.", "start": 3158, "end": 3173, "is_heading": false}
+{"sent_id": "s090", "text": "이러한 인식에 따라 다주택자에게 상대적으로 높은 세부담을 부과해 왔으며, 1 주택자라", "start": 3175, "end": 3222, "is_heading": false}
+{"sent_id": "s091", "text": "하더라도 해당 주택에 실제 거주하지 않는 경우에는 투자 목적의 주택과 본질적으로 다", "start": 3224, "end": 3270, "is_heading": false}
+{"sent_id": "s092", "text": "르지 않다는 시각이 이번 제도 개편에 반영된 것으로 보인다.", "start": 3272, "end": 3305, "is_heading": false}
+{"sent_id": "s093", "text": "또한 ‘똘똘한 한 채’ 현상이 장기화되면서 1주택자 역시 거주와 소유를 분리해 투자 목", "start": 3307, "end": 3355, "is_heading": false}
+{"sent_id": "s094", "text": "적으로 주택을 매입하거나, 지방 거주자의 수도권 주택 매입 등 이른바 ‘상경 투자’가 확", "start": 3357, "end": 3406, "is_heading": false}
+{"sent_id": "s095", "text": "대된 점도 거주 요건 강화의 배경으로 작용한 것으로 추정된다.", "start": 3408, "end": 3442, "is_heading": false}
+{"sent_id": "s096", "text": "전례없는 토론회 세제개편안이 도출되는 과정 역시 이례적이었다 .", "start": 3443, "end": 3478, "is_heading": false}
+{"sent_id": "s097", "text": "국토부(공급), 금융위(대출), 재경부(세제)가 각각 주관하는 주제별 토론에 이어 대통령", "start": 3480, "end": 3529, "is_heading": false}
+{"sent_id": "s098", "text": "과 총리 주관의 종합토론회가 열렸다.", "start": 3531, "end": 3551, "is_heading": false}
+{"sent_id": "s099", "text": "이 가운데 세제개편안은 국회 제출 시한을 고려해", "start": 3552, "end": 3578, "is_heading": false}
+{"sent_id": "s100", "text": "가장 먼저 발표된 것으로 판단된다.", "start": 3580, "end": 3599, "is_heading": false}
+{"sent_id": "s101", "text": "향후 부동산 공급 대책과 대출 규제 보완책 등도 순", "start": 3600, "end": 3628, "is_heading": false}
+{"sent_id": "s102", "text": "차적으로 발표될 것으로 예상된다.", "start": 3630, "end": 3648, "is_heading": false}
+{"sent_id": "s103", "text": "토론회를 통해 엿볼 수 있었던 세제 개편의 주요 방향 역시 ‘초고가 주택’의 기준 설정,", "start": 3650, "end": 3699, "is_heading": false}
+{"sent_id": "s104", "text": "비거주 주택에 대한 페널티 부과, 양도소득세 장기보유특별공제 혜택 제한 등이었다.", "start": 3701, "end": 3746, "is_heading": false}
+{"sent_id": "s105", "text": "반면 임대 공급 확대를 유도하기 위한 세제 혜택은 토론 과정에서 거의 언급되지 않았", "start": 3748, "end": 3794, "is_heading": false}
+{"sent_id": "s106", "text": "으며, 실제 세제개편안에도 포함되지 않았다.", "start": 3796, "end": 3820, "is_heading": false}
+{"sent_id": "s107", "text": "그림 2. 부동산 정책 보다는 부동산을 둘러싼 환경 변화에 대한 정책에 방점자료: X, 대신증권 Research Center 그림 3. 부동산 세제 부분 토론회 주제자료: 재정경제부 대신증권 Research Center", "start": 3823, "end": 3945, "is_heading": false}
+{"sent_id": "s108", "text": "이번 정부 부동산 정책방향에서의 세제의 역할핵심은 세후수익률 필자는 이번 정부 출범 이후의 정책 방향을 지난해 7월부터 네 가지로 구분해 전망해 왔하락 으며, 그중 하나로 세제 강화를 통해 부동산의 세후수익률 하락을 유도할 것으로 예상한", "start": 3947, "end": 4079, "is_heading": false}
+{"sent_id": "s109", "text": "바 있다.", "start": 4081, "end": 4086, "is_heading": false}
+{"sent_id": "s110", "text": "이미 다주택자에 대한 세제 강화로 부동산의 세후수익률을 낮추는 제도적 장치가 마련되", "start": 4088, "end": 4134, "is_heading": false}
+{"sent_id": "s111", "text": "어 세제강화가 나타나지 않을 것이라는 목소리도 있었다.", "start": 4136, "end": 4166, "is_heading": false}
+{"sent_id": "s112", "text": "그러나 시장 참여자의 대부분", "start": 4167, "end": 4182, "is_heading": false}
+{"sent_id": "s113", "text": "이 1주택자이고, 상당수가 실거주를 겸하고 있는 시장에서는 다주택자에 대한 과세 강화", "start": 4184, "end": 4231, "is_heading": false}
+{"sent_id": "s114", "text": "만으로 평균적인 세후수익률을 낮추는 추가 세제강화가 나올 것으로 예상했다 .", "start": 4233, "end": 4275, "is_heading": false}
+{"sent_id": "s115", "text": "또한 올해 4월 발간한 자료를 통해 향후 정책 변수는 다주택자에 대한 양도소득세 중과", "start": 4277, "end": 4324, "is_heading": false}
+{"sent_id": "s116", "text": "가 아니라 1주택자에 대한 세제 강화가 될 것으로 전망한 바 있다.", "start": 4326, "end": 4363, "is_heading": false}
+{"sent_id": "s117", "text": "이렇게 판단한 이유 중 하나는 현행 세제가 1주택자에게 상대적으로 낮은 세 부담을 제", "start": 4365, "end": 4412, "is_heading": false}
+{"sent_id": "s118", "text": "공하고 있으며, 주택 보유에 따른 비용 역시 고령자·장기보유 세액공제를 통해 상당 부분", "start": 4414, "end": 4462, "is_heading": false}
+{"sent_id": "s119", "text": "줄일 수 있기 때문이다.", "start": 4464, "end": 4477, "is_heading": false}
+{"sent_id": "s120", "text": "시장 참여자들은 주택의 보유 방식이나 형태를 결정하는 과정에", "start": 4478, "end": 4511, "is_heading": false}
+{"sent_id": "s121", "text": "서 세제상 가장 유리한 방식을 선택할 가능성이 높다.", "start": 4513, "end": 4542, "is_heading": false}
+{"sent_id": "s122", "text": "이 경우 보유세는 장기보유와 고", "start": 4543, "end": 4560, "is_heading": false}
+{"sent_id": "s123", "text": "령에 따른 공제가 확대되면서 부담이 낮아져 양도차익이 크더라도 9% 수준의 실효세율", "start": 4562, "end": 4608, "is_heading": false}
+{"sent_id": "s124", "text": "이 나타났다 .", "start": 4610, "end": 4618, "is_heading": false}
+{"sent_id": "s125", "text": "기존 세제하에서는 가능하면 고가주택을 매입해 10년 이상 장기 보유하고, 고령이 된 이", "start": 4620, "end": 4668, "is_heading": false}
+{"sent_id": "s126", "text": "후에도 계속 보유하는 방식이 세제상 가장 유리한 구조였다.", "start": 4670, "end": 4702, "is_heading": false}
+{"sent_id": "s127", "text": "이러한 구조가 시장의 ‘똘똘", "start": 4703, "end": 4718, "is_heading": false}
+{"sent_id": "s128", "text": "한 한 채’ 선호 현상을 장기화한 원인 중 하나로 작용했다고 판단한다. 이번 세제개편 역", "start": 4720, "end": 4769, "is_heading": false}
+{"sent_id": "s129", "text": "시 부동산 시장의 관점에서 보면, 주택 보유자의 평균적인 세후수익률을 낮추려는 정책", "start": 4771, "end": 4817, "is_heading": false}
+{"sent_id": "s130", "text": "방향의 연장선상에서 이루어진 것으로 볼 수 있다.", "start": 4819, "end": 4846, "is_heading": false}
+{"sent_id": "s131", "text": "그림 4. 부동산 정책 보다는 부동산을 둘러싼 환경 변화에 대한 정책에 방점(25 년 자료 재인용)", "start": 4847, "end": 4902, "is_heading": false}
+{"sent_id": "s132", "text": "자료: 대신증권 Research Center", "start": 4904, "end": 4928, "is_heading": false}
+{"sent_id": "s133", "text": "Ⅰ. 2026 세제 개편안 분석", "start": 4930, "end": 4947, "is_heading": true}
+{"sent_id": "s134", "text": "부동산 세제 개편안 배경 및 주요 내용 2026 부동산 이번 세제개편에서 부동산 관련 세제는 ‘공정과세를 위한 조세개혁 추진’이라는 대항목 세제 개편안 배경 아래 ‘부동산 세제 합리화’라는 소항목으로 발표되었다.", "start": 4949, "end": 5067, "is_heading": false}
+{"sent_id": "s135", "text": "개편 배경으로는 다음과 같은 내용을 제시했다.", "start": 5069, "end": 5094, "is_heading": false}
+{"sent_id": "s136", "text": "“부동산세제의 합리화를 위해 비거주주택 및 일정가액 이상의 주택등에 대한 종부세 양", "start": 5096, "end": 5142, "is_heading": false}
+{"sent_id": "s137", "text": "도세 부담을 정상화하되, 거주용 1주택은 지속보호, 비거주주택 및 일정가액 이상의 주", "start": 5144, "end": 5191, "is_heading": false}
+{"sent_id": "s138", "text": "택 등에 대한 종부세 양도세 개편은 단계적 시행으로 설계”", "start": 5193, "end": 5225, "is_heading": false}
+{"sent_id": "s139", "text": "대항목과 소항목, 개편 배경을 종합하면 비거주 주택과 고가주택에 대한 종합부동산세와", "start": 5227, "end": 5273, "is_heading": false}
+{"sent_id": "s140", "text": "양도소득세 부담을 높이는 방향임을 알 수 있다.", "start": 5275, "end": 5301, "is_heading": false}
+{"sent_id": "s141", "text": "이는 보유세와 양도소득세를 부과하는", "start": 5302, "end": 5321, "is_heading": false}
+{"sent_id": "s142", "text": "과정에서 적용되는 각종 공제와 세제 혜택으로 인해 이들 주택의 실효세율이 다른 부동", "start": 5323, "end": 5369, "is_heading": false}
+{"sent_id": "s143", "text": "산 자산이나 소득에 비해 과도하게 낮아진 부분을 조정하고, 과세 형평성을 높이려는 의", "start": 5371, "end": 5418, "is_heading": false}
+{"sent_id": "s144", "text": "도로 읽힌다.", "start": 5420, "end": 5427, "is_heading": false}
+{"sent_id": "s145", "text": "다만 이 과정에서도 일정 가액 이하의 1주택자에 대해서는 기존의 세제상", "start": 5428, "end": 5467, "is_heading": false}
+{"sent_id": "s146", "text": "혜택을 유지하는 방향으로 설계한 것으로 해석된다.", "start": 5469, "end": 5496, "is_heading": false}
+{"sent_id": "s147", "text": "양도소득세 부문에서는 장기보유특별공제 제도의 산식 변경, 공제금액 제한 및 명칭 변경(장기거주소득공제 ) 등을 제시했다.", "start": 5497, "end": 5564, "is_heading": false}
+{"sent_id": "s148", "text": "종합부동산세 부문에서는 과세대상 및 기본공제금액 조정, 공정시장가액비율 인상, 주택", "start": 5566, "end": 5612, "is_heading": false}
+{"sent_id": "s149", "text": "수 기준에서 주택가액 기준으로의 일원화, 공제 제도 개편 및 한도 설정 등을 제시했다 .", "start": 5614, "end": 5663, "is_heading": false}
+{"sent_id": "s150", "text": "그 외 장기거주 ·고령자·지방주택에 대한 지원과 다주택자의 매도 기회 부여 방안으로는", "start": 5665, "end": 5712, "is_heading": false}
+{"sent_id": "s151", "text": "장기거주 1주택자의 양도소득세 기본공제 확대, 고령 1주택자에 대한 한시적 양도소득세", "start": 5714, "end": 5761, "is_heading": false}
+{"sent_id": "s152", "text": "과세특례 신설, 지방 세컨드홈에 대한 양도소득세 ·종합부동산세 과세특례 확대, 다주택자", "start": 5763, "end": 5811, "is_heading": false}
+{"sent_id": "s153", "text": "의 조정대상지역 주택에 대한 양도소득세 중과 한시 완화 등을 제시했다.", "start": 5813, "end": 5852, "is_heading": false}
+{"sent_id": "s154", "text": "과세특례 요건 합리화 방안으로는 조정대상지역 내 일시적 2주택 특례기간 단축, 조정대", "start": 5854, "end": 5901, "is_heading": false}
+{"sent_id": "s155", "text": "상지역 매입 임대 아파트에 대한 양도소득세 중과 배제 등의 단계적 폐지, 상생임대주택의", "start": 5903, "end": 5951, "is_heading": false}
+{"sent_id": "s156", "text": "거주요건 면제 혜택 조정, 임대주택·미분양주택 등에 대한 양도소득세 과세특례 정비 등", "start": 5953, "end": 6000, "is_heading": false}
+{"sent_id": "s157", "text": "을 제시했다 .", "start": 6002, "end": 6010, "is_heading": false}
+{"sent_id": "s158", "text": "그 외에도 비거주 기간을 거주 기간으로 간주하는 사유의 정비, 주택 공급 지원, 비사업", "start": 6012, "end": 6060, "is_heading": false}
+{"sent_id": "s159", "text": "용 토지에 대한 과세 정상화 등이 포함되었다.", "start": 6062, "end": 6087, "is_heading": false}
+{"sent_id": "s160", "text": "주택시장에 미치는 핵심적인 개편 내용은 양도소득세와 종합부동산세 변화로 볼 수 있", "start": 6089, "end": 6134, "is_heading": false}
+{"sent_id": "s161", "text": "다. 이와 함께 다주택자의 조정대상지역 주택에 대한 양도소득세 중과 한시 완화, 임대주", "start": 6136, "end": 6184, "is_heading": true}
+{"sent_id": "s162", "text": "택·미분양주택에 대한 양도소득세 과세특례 정비 등도 시장의 매물량에 영향을 미칠 수", "start": 6186, "end": 6232, "is_heading": false}
+{"sent_id": "s163", "text": "있는 내용으로 판단된다 .", "start": 6234, "end": 6248, "is_heading": false}
+{"sent_id": "s164", "text": "그림 5. 2026년 세제개편안 전체 주요추진과제와 부동산세제 개편 개별 항목 목차자료: 재정경제부, 대신증권 Research Center", "start": 6250, "end": 6327, "is_heading": false}
+{"sent_id": "s165", "text": "양도소득세 : 실거주 중심이나 세후 수익률은 하락공제만 개편 주택 양도소득세 세제개편의 가장 큰 변화는 장기보유특별공제 제도의 개편이다 .", "start": 6330, "end": 6407, "is_heading": false}
+{"sent_id": "s166", "text": "고가/비거주 핵심 변화는 두 가지로, (1) 공제 기준이 보유에서 거주 중심으로 전환되는 점과 (2) 공세후수익률 하락 제금액에 10억원의 한도가 설정되는 점이다.", "start": 6408, "end": 6499, "is_heading": false}
+{"sent_id": "s167", "text": "공제금액 한도는 2029년부터 적용된다.", "start": 6500, "end": 6522, "is_heading": false}
+{"sent_id": "s168", "text": "기존 장기보유특별공제는 ‘장기거주소득공제 ’와 ‘장기보유소득공제 ’로 이원화된다 . 주택", "start": 6524, "end": 6573, "is_heading": false}
+{"sent_id": "s169", "text": "및 조합원입주권은 장기거주소득공제만 적용받도록 개편하고, 토지 및 주택 외 건물에", "start": 6575, "end": 6620, "is_heading": false}
+{"sent_id": "s170", "text": "대해서는 장기보유소득공제를 적용한다.", "start": 6622, "end": 6642, "is_heading": false}
+{"sent_id": "s171", "text": "제도 개편은 단계적으로 시행된다.", "start": 6643, "end": 6661, "is_heading": false}
+{"sent_id": "s172", "text": "2027 년까지", "start": 6662, "end": 6670, "is_heading": false}
+{"sent_id": "s173", "text": "는 현행 제도를 유지하고, 2028 년에는 과도기적 중간 단계를 거쳐 2029년부터 개편된 제", "start": 6672, "end": 6724, "is_heading": false}
+{"sent_id": "s174", "text": "도를 본격 시행한다. (현행) 현재 1주택자에 대한 양도소득세제는 1주택자 보호를 기본적인 정책 방향으로 유지해 가구 주택 양도소득세 왔다.", "start": 6726, "end": 6804, "is_heading": false}
+{"sent_id": "s175", "text": "일정 보유·거주 요건을 충족하면 양도가액 12억원까지 비과세가 적용되며, 10년 이실효세율은 초고가주택 상 보유·거주하는 경우 양도차익에 대해 최대 80%의 장기보유특별공제를 적용받을 수 9%까지 낮아져 있다.", "start": 6805, "end": 6922, "is_heading": false}
+{"sent_id": "s176", "text": "이에 따라 최대 공제율을 적용받는 경우 과세 대상 양도차익이 크게 줄어들면서 ,", "start": 6923, "end": 6967, "is_heading": false}
+{"sent_id": "s177", "text": "양도차익 규모가 크더라도 실효세율은 약 9% 수준까지 낮아질 수 있다.", "start": 6969, "end": 7008, "is_heading": false}
+{"sent_id": "s178", "text": "장기보유특별공제의 도입 취지 가운데 하나가 중산층의 안정적인 자산 형성을 지원하는", "start": 7010, "end": 7055, "is_heading": false}
+{"sent_id": "s179", "text": "데 있다는 점을 고려하면, 공제금액에 별도의 한도 없이 적용하는 것이 타당한가에 대한", "start": 7057, "end": 7104, "is_heading": false}
+{"sent_id": "s180", "text": "지적도 있었다.", "start": 7106, "end": 7114, "is_heading": false}
+{"sent_id": "s181", "text": "특히 한국 가구의 순자산과 소득 수준을 감안할 때 고액의 양도차익에", "start": 7115, "end": 7152, "is_heading": false}
+{"sent_id": "s182", "text": "대해서까지 공제를 제한 없이 적용하는 것이 제도의 본래 취지에 부합하는가에 대한 논", "start": 7154, "end": 7200, "is_heading": false}
+{"sent_id": "s183", "text": "란도 있었다(2024년 기준 가구 순자산은 10분위 평균 약 20억원, 9분위 평균 약 8.4억원 수준).", "start": 7202, "end": 7261, "is_heading": false}
+{"sent_id": "s184", "text": "한편 주택가격 급", "start": 7262, "end": 7271, "is_heading": false}
+{"sent_id": "s185", "text": "등과 맞물리면서 현행 세제가 ‘똘똘한 한 채’를 장기간 보유하도록 유도하고, 결과적으로", "start": 7273, "end": 7321, "is_heading": false}
+{"sent_id": "s186", "text": "주택의 매각과 이동을 제약하는 것 아니냐는 분석도 있었다.", "start": 7323, "end": 7355, "is_heading": false}
+{"sent_id": "s187", "text": "결국 이번 개편은 이러한 지적을 반영하고.", "start": 7357, "end": 7380, "is_heading": false}
+{"sent_id": "s188", "text": "이에 더해 실제 거주하지 않는 경우에는 이", "start": 7381, "end": 7404, "is_heading": false}
+{"sent_id": "s189", "text": "를 일정 부분 ‘투자 목적’의 주택으로 바라보는 정책적 시각도 반영된 것으로 판단된다 .", "start": 7406, "end": 7455, "is_heading": false}
+{"sent_id": "s190", "text": "그림 6. 가구 순자산 상위 분위 및 평균 그림 7. 가구 소득 상위 분위 및 평균", "start": 7457, "end": 7503, "is_heading": false}
+{"sent_id": "s191", "text": "(억원) 전체 8분위 (억원) 전체 8분위", "start": 7505, "end": 7528, "is_heading": false}
+{"sent_id": "s192", "text": "2.5", "start": 7530, "end": 7533, "is_heading": true}
+{"sent_id": "s193", "text": "19.6 20.0 2.1", "start": 7535, "end": 7548, "is_heading": true}
+{"sent_id": "s194", "text": "18.9 1.9 2.0", "start": 7550, "end": 7562, "is_heading": true}
+{"sent_id": "s195", "text": "1.0 1.1 1.1", "start": 7564, "end": 7575, "is_heading": true}
+{"sent_id": "s196", "text": "0.8", "start": 7577, "end": 7580, "is_heading": true}
+{"sent_id": "s197", "text": "5.3 5.9 5.5 5.5", "start": 7582, "end": 7597, "is_heading": true}
+{"sent_id": "s198", "text": "4.1 4.6 4.4 4.5", "start": 7599, "end": 7614, "is_heading": true}
+{"sent_id": "s199", "text": "자료: 통계청, 대신증권 Research Center 자료: 통계청, 대신증권 Research Center", "start": 7616, "end": 7675, "is_heading": false}
+{"sent_id": "s200", "text": "그림 8. 양도소득세 개편안 및 정부 제시 적용사례자료: 재정경제부, 대신증권 Research Center", "start": 7677, "end": 7736, "is_heading": false}
+{"sent_id": "s201", "text": "양도소득세 : 개편의 핵심은 장기거주공제액 10 억원 제한양도차익 12억까지는 주택 양도소득세 개편에서 가장 큰 변화는 공제금액에 10억원의 한도를 설정한 것이다.", "start": 7739, "end": 7830, "is_heading": false}
+{"sent_id": "s202", "text": "비슷한 수준 아래 차트는 매도가가 매입가의 2배인 경우를 가정해 추정한 양도소득세 실효세율과 납 20억원은 +2.5 억 부세액이다.", "start": 7831, "end": 7904, "is_heading": false}
+{"sent_id": "s203", "text": "양도차익뿐만 아니라 매입가 역시 납부세액에 영향을 미친다는 점을 고려해 30억원은 +6억원", "start": 7905, "end": 7955, "is_heading": false}
+{"sent_id": "s204", "text": "매도가와 매입가의 관계를 일정하게 가정했다.", "start": 7957, "end": 7981, "is_heading": false}
+{"sent_id": "s205", "text": "2029년 적용안을 기준으로 양도차익이 12억원까지는 현행과 유사한 수준으로 , 양도차익", "start": 7983, "end": 8032, "is_heading": false}
+{"sent_id": "s206", "text": "대비 약 7%의 실효세율이 나타난다.", "start": 8034, "end": 8054, "is_heading": false}
+{"sent_id": "s207", "text": "양도차익이 15억원인 경우 현행 실효세율은 6.4%", "start": 8055, "end": 8083, "is_heading": false}
+{"sent_id": "s208", "text": "수준으로 추정되나, 개편안에서는 11.6%로 상승한다.", "start": 8085, "end": 8115, "is_heading": false}
+{"sent_id": "s209", "text": "양도차익이 30억원인 경우에는 개", "start": 8116, "end": 8134, "is_heading": false}
+{"sent_id": "s210", "text": "편안의 실효세율이 27.8%까지 상승하며, 현행 대비 추가 세 부담도 6억원 이상으로 확", "start": 8136, "end": 8185, "is_heading": false}
+{"sent_id": "s211", "text": "대된다.", "start": 8187, "end": 8191, "is_heading": false}
+{"sent_id": "s212", "text": "이는 매입가가 매도가의 50%인 경우를 가정한 결과로, 실제 납부세액과 실효세", "start": 8192, "end": 8235, "is_heading": false}
+{"sent_id": "s213", "text": "율은 매입가에 따라 달라질 수 있다.", "start": 8237, "end": 8257, "is_heading": false}
+{"sent_id": "s214", "text": "그림 9. 현행 제도상의 양도세 실효세율, 세액 추정치 그림 10. 개편안 양도세 실효세율, 세액 추정치", "start": 8259, "end": 8317, "is_heading": false}
+{"sent_id": "s215", "text": "(억원) (억원)", "start": 8319, "end": 8328, "is_heading": false}
+{"sent_id": "s216", "text": "20", "start": 8330, "end": 8332, "is_heading": false}
+{"sent_id": "s217", "text": "1 11 21 31 41 51 61 71 81 91 101111 1 11 21 31 41 51 61 71 81 91 101111", "start": 8334, "end": 8405, "is_heading": false}
+{"sent_id": "s218", "text": "주 : 1가구 1주택 10년 보유/실거주 및 주택가격은 매입가 대비 100% 상승 가정, 주 : 1가구 1주택 10년 보유/실거주 및 주택가격은 매입가 대비 100% 상승 가정,", "start": 8407, "end": 8506, "is_heading": false}
+{"sent_id": "s219", "text": "기타 비용공제 미반영(1억원 양도차익은 매입가 1억원 매도가 2억원, 10억원 양도 기타 비용공제 미반영(1억원 양도차익은 매입가 1억원 매도가 2억원, 10억원 양도", "start": 8508, "end": 8601, "is_heading": false}
+{"sent_id": "s220", "text": "차익은 매입가 10억원, 매도가 20억원) 차익은 매입가 10억원, 매도가 20억원)", "start": 8603, "end": 8650, "is_heading": false}
+{"sent_id": "s221", "text": "자료: 대신증권 Research Center 자료: 대신증권 Research Center", "start": 8652, "end": 8701, "is_heading": false}
+{"sent_id": "s222", "text": "그림 11.양도차익 별 양도소득세 세율 및 개편시 납부액 증감", "start": 8703, "end": 8737, "is_heading": false}
+{"sent_id": "s223", "text": "(억원)", "start": 8739, "end": 8743, "is_heading": false}
+{"sent_id": "s224", "text": "25%", "start": 8745, "end": 8748, "is_heading": false}
+{"sent_id": "s225", "text": "20", "start": 8750, "end": 8752, "is_heading": false}
+{"sent_id": "s226", "text": "20%", "start": 8754, "end": 8757, "is_heading": false}
+{"sent_id": "s227", "text": "주 : 1가구 1주택 10년 보유/실거주 및 주택가격은 매입가 대비 100% 상승 가정, 기타 비용공제 미반영(1억원 양도차익은 매입가 1억원 매도가 2억원, 10억원 양도차익은 매입", "start": 8759, "end": 8861, "is_heading": false}
+{"sent_id": "s228", "text": "가 10억원, 매도가 20억원)", "start": 8863, "end": 8880, "is_heading": false}
+{"sent_id": "s229", "text": "자료: 대신증권 Research Center", "start": 8882, "end": 8906, "is_heading": false}
+{"sent_id": "s230", "text": "양도소득세 : 고가주택일수록 양도차익 클수록 양도소득세 증가폭 커 고가주택일수록 1세대 1주택의 경우 양도가액 12억원까지 비과세가 적용되기 때문에 매도가액에 따라서 많이 오를수록 도 개편에 따른 세 부담의 차이가 나타난다 .", "start": 8908, "end": 9034, "is_heading": false}
+{"sent_id": "s231", "text": "세부담 높아져 매도가액이 20억원인 경우에는 매입가와 무관하게 세액 변화가 없으며, 매도가액이 30", "start": 9035, "end": 9090, "is_heading": false}
+{"sent_id": "s232", "text": "억원이고 매입가가 12억원인 경우에는 약 1.8억원의 추가 납부가 추정된다. 매도가액이", "start": 9092, "end": 9140, "is_heading": false}
+{"sent_id": "s233", "text": "40억원이고 매입가가 12억원인 경우에는 약 5.4억원, 매도가액이 50억원이고 매입가가", "start": 9142, "end": 9191, "is_heading": false}
+{"sent_id": "s234", "text": "12억원인 경우에는 약 9.12억원의 추가 납부가 예상된다 .", "start": 9193, "end": 9227, "is_heading": false}
+{"sent_id": "s235", "text": "결국 주택가격이 높고 양도차익이 클수록 양도소득세 개편에 따른 추가 세 부담이 커지", "start": 9229, "end": 9275, "is_heading": false}
+{"sent_id": "s236", "text": "는 구조다.", "start": 9277, "end": 9283, "is_heading": false}
+{"sent_id": "s237", "text": "특히 고가주택이면서 장기보유에 따른 공제 혜택이 큰 경우 개편의 영향도", "start": 9284, "end": 9323, "is_heading": false}
+{"sent_id": "s238", "text": "상대적으로 커질 것으로 예상된다.", "start": 9325, "end": 9343, "is_heading": false}
+{"sent_id": "s239", "text": "이에 따라 개편안 시행을 앞두고 일부 고가주택을 중", "start": 9344, "end": 9372, "is_heading": false}
+{"sent_id": "s240", "text": "심으로 매도 유인이 높아지면서 거래가 증가할 가능성이 있다.", "start": 9374, "end": 9407, "is_heading": false}
+{"sent_id": "s241", "text": "다만 이러한 거래가 일반적인 매매에만 집중되기보다는 교환이나 특수관계인 간 거래 등", "start": 9409, "end": 9455, "is_heading": false}
+{"sent_id": "s242", "text": "다양한 형태로 나타날 가능성도 있다.", "start": 9457, "end": 9477, "is_heading": false}
+{"sent_id": "s243", "text": "그림 12.20억원 주택의 매입가 별 현행/개편안 납부액 증감 및 실효세율 (차이 없음)", "start": 9479, "end": 9528, "is_heading": false}
+{"sent_id": "s244", "text": "(억원)", "start": 9530, "end": 9534, "is_heading": false}
+{"sent_id": "s245", "text": "1.0 납부액 증감 현행 세율 개편안 세율 6%", "start": 9536, "end": 9562, "is_heading": true}
+{"sent_id": "s246", "text": "0.9", "start": 9564, "end": 9567, "is_heading": true}
+{"sent_id": "s247", "text": "0.8 5%", "start": 9569, "end": 9575, "is_heading": true}
+{"sent_id": "s248", "text": "0.7 4%", "start": 9577, "end": 9583, "is_heading": true}
+{"sent_id": "s249", "text": "0.6", "start": 9585, "end": 9588, "is_heading": true}
+{"sent_id": "s250", "text": "0.5 3%", "start": 9590, "end": 9596, "is_heading": true}
+{"sent_id": "s251", "text": "0.4", "start": 9598, "end": 9601, "is_heading": true}
+{"sent_id": "s252", "text": "0.3 2%", "start": 9603, "end": 9609, "is_heading": true}
+{"sent_id": "s253", "text": "0.2 1%", "start": 9611, "end": 9617, "is_heading": true}
+{"sent_id": "s254", "text": "0.1", "start": 9619, "end": 9622, "is_heading": true}
+{"sent_id": "s255", "text": "0.0 0%", "start": 9624, "end": 9630, "is_heading": true}
+{"sent_id": "s256", "text": "주 : 1가구 1주택 10년 보유/실거주 및 주택가격은, 기타 비용공제 미반영(매도가 20억원), 개편안은 29년 1월 1일 적용안 반영", "start": 9632, "end": 9708, "is_heading": false}
+{"sent_id": "s257", "text": "자료: 대신증권 Research Center", "start": 9710, "end": 9734, "is_heading": false}
+{"sent_id": "s258", "text": "그림 13.30억원 주택의 매입가 별 현행/개편안 납부액 증감 및 실효세율 (매입가 18 억 이하부터 최대 1.8 억원 증가)", "start": 9736, "end": 9806, "is_heading": false}
+{"sent_id": "s259", "text": "(억원)", "start": 9808, "end": 9812, "is_heading": false}
+{"sent_id": "s260", "text": "2.0 납부액 증감 현행 세율 개편안 세율 18%", "start": 9814, "end": 9841, "is_heading": true}
+{"sent_id": "s261", "text": "1.8 16%", "start": 9843, "end": 9850, "is_heading": true}
+{"sent_id": "s262", "text": "1.6 14%", "start": 9852, "end": 9859, "is_heading": true}
+{"sent_id": "s263", "text": "1.4 12%", "start": 9861, "end": 9868, "is_heading": true}
+{"sent_id": "s264", "text": "1.2 10%", "start": 9870, "end": 9877, "is_heading": true}
+{"sent_id": "s265", "text": "1.0 8%", "start": 9879, "end": 9885, "is_heading": true}
+{"sent_id": "s266", "text": "0.8", "start": 9887, "end": 9890, "is_heading": true}
+{"sent_id": "s267", "text": "0.6 6%", "start": 9892, "end": 9898, "is_heading": true}
+{"sent_id": "s268", "text": "0.4 4%", "start": 9900, "end": 9906, "is_heading": true}
+{"sent_id": "s269", "text": "0.2 2%", "start": 9908, "end": 9914, "is_heading": true}
+{"sent_id": "s270", "text": "0.0 0%", "start": 9916, "end": 9922, "is_heading": true}
+{"sent_id": "s271", "text": "주 : 1가구 1주택 10년 보유/실거주 및 주택가격은, 기타 비용공제 미반영(매도가 30억원), 개편안은 29년 1월 1일 적용안 반영", "start": 9924, "end": 10000, "is_heading": false}
+{"sent_id": "s272", "text": "자료: 대신증권 Research Center", "start": 10002, "end": 10026, "is_heading": false}
+{"sent_id": "s273", "text": "그림 14.40억원 주택의 매입가 별 현행/개편안 납부액 증감 및 실효세율 (매입가 27 억 이하부터 최대 5.4 억원 증가)", "start": 10029, "end": 10099, "is_heading": false}
+{"sent_id": "s274", "text": "(억원)", "start": 10101, "end": 10105, "is_heading": false}
+{"sent_id": "s275", "text": "6.0 납부액 증감 현행 세율 개편안 세율 30%", "start": 10107, "end": 10134, "is_heading": true}
+{"sent_id": "s276", "text": "5.0 25%", "start": 10136, "end": 10143, "is_heading": true}
+{"sent_id": "s277", "text": "4.0 20%", "start": 10145, "end": 10152, "is_heading": true}
+{"sent_id": "s278", "text": "3.0 15%", "start": 10154, "end": 10161, "is_heading": true}
+{"sent_id": "s279", "text": "2.0 10%", "start": 10163, "end": 10170, "is_heading": true}
+{"sent_id": "s280", "text": "1.0 5%", "start": 10172, "end": 10178, "is_heading": true}
+{"sent_id": "s281", "text": "0.0 0%", "start": 10180, "end": 10186, "is_heading": true}
+{"sent_id": "s282", "text": "주 : 1가구 1주택 10년 보유/실거주 및 주택가격은, 기타 비용공제 미반영(매도가 30억원), 개편안은 29년 1월 1일 적용안 반영자료: 대신증권 Research Center 그림 15.50억원 주택의 매입가 별 현행/개편안 납부액 증감 및 실효세율 (매입가 38 억 이하부터 최대 9.1 억원 증가)", "start": 10188, "end": 10359, "is_heading": false}
+{"sent_id": "s283", "text": "(억원)", "start": 10361, "end": 10365, "is_heading": false}
+{"sent_id": "s284", "text": "10.0 납부액 증감 현행 세율 개편안 세율 35%", "start": 10367, "end": 10395, "is_heading": true}
+{"sent_id": "s285", "text": "9.0 30%", "start": 10397, "end": 10404, "is_heading": true}
+{"sent_id": "s286", "text": "8.0", "start": 10406, "end": 10409, "is_heading": true}
+{"sent_id": "s287", "text": "7.0 25%", "start": 10411, "end": 10418, "is_heading": true}
+{"sent_id": "s288", "text": "6.0 20%", "start": 10420, "end": 10427, "is_heading": true}
+{"sent_id": "s289", "text": "5.0", "start": 10429, "end": 10432, "is_heading": true}
+{"sent_id": "s290", "text": "4.0 15%", "start": 10434, "end": 10441, "is_heading": true}
+{"sent_id": "s291", "text": "3.0 10%", "start": 10443, "end": 10450, "is_heading": true}
+{"sent_id": "s292", "text": "2.0", "start": 10452, "end": 10455, "is_heading": true}
+{"sent_id": "s293", "text": "1.0 5%", "start": 10457, "end": 10463, "is_heading": true}
+{"sent_id": "s294", "text": "0.0 0%", "start": 10465, "end": 10471, "is_heading": true}
+{"sent_id": "s295", "text": "주 : 1가구 1주택 10년 보유/실거주 및 주택가격은, 기타 비용공제 미반영(매도가 30억원), 개편안은 29년 1월 1일 적용안 반영자료: 대신증권 Research Center", "start": 10473, "end": 10573, "is_heading": false}
+{"sent_id": "s296", "text": "그림 16.금액대별 양도소득세 증감", "start": 10575, "end": 10594, "is_heading": false}
+{"sent_id": "s297", "text": "(억원)", "start": 10596, "end": 10600, "is_heading": false}
+{"sent_id": "s298", "text": "35", "start": 10602, "end": 10604, "is_heading": false}
+{"sent_id": "s299", "text": "15", "start": 10606, "end": 10608, "is_heading": false}
+{"sent_id": "s300", "text": "5.4", "start": 10610, "end": 10613, "is_heading": true}
+{"sent_id": "s301", "text": "0", "start": 10615, "end": 10616, "is_heading": false}
+{"sent_id": "s302", "text": "20억원 30억원 40억원 50억원 75억원 100억원 125억원", "start": 10618, "end": 10654, "is_heading": false}
+{"sent_id": "s303", "text": "주 : 주택가격은 300%로 수익 가정(20억원 주택 매입가 5억원 가정)1가구 1주택 10년 보유/실거주 및 주택가격은 , 기타 비용공제 미반영 개편안", "start": 10656, "end": 10741, "is_heading": false}
+{"sent_id": "s304", "text": "은 29년 1월 1일 적용안 반영", "start": 10743, "end": 10761, "is_heading": false}
+{"sent_id": "s305", "text": "자료: 대신증권 Research Center", "start": 10763, "end": 10787, "is_heading": false}
+{"sent_id": "s306", "text": "종합부동산세 : 총체적인 개편, 공제 제한과 초고가 부담강화가 핵심총체적인 변화 맞은 종합부동산세는 이번 세제개편에서 개편 폭이 큰 부문 중 하나다.", "start": 10789, "end": 10872, "is_heading": false}
+{"sent_id": "s307", "text": "주요 방향은 시가 30 종합부동산세 억원대 이상의 고가주택에 대한 세 부담을 강화하는 한편, 각종 공제 혜택을 실거주 중", "start": 10873, "end": 10940, "is_heading": false}
+{"sent_id": "s308", "text": "심으로 재편하는 데 있다.", "start": 10942, "end": 10956, "is_heading": false}
+{"sent_id": "s309", "text": "주요 개정 내용은 (1) 기본공제금액 상향, (2) 공정시장가액비율 상향, (3) 세율 체계 개", "start": 10958, "end": 11011, "is_heading": false}
+{"sent_id": "s310", "text": "편, (4) 세 부담 상한비율 상향, (5) 공제 요건의 거주 중심 전환, (6) 공제금액 한도 설정", "start": 11013, "end": 11069, "is_heading": false}
+{"sent_id": "s311", "text": "등으로 구성되어 있다.", "start": 11071, "end": 11083, "is_heading": false}
+{"sent_id": "s312", "text": "산식변화 종합부동산세 계산 시 1주택자의 기본공제금액은 실거주 여부에 따라 차등 적용된다.", "start": 11084, "end": 11134, "is_heading": false}
+{"sent_id": "s313", "text": "기본공제금액 조정 실거주 1주택자의 기본공제금액은 12억원에서 14억원으로 상향하고, 비거주 1주택자는 공시가격 현실화율 12억원에서 9억원으로 하향해 비거주 주택에 대한 세 부담을 강화한다.", "start": 11135, "end": 11242, "is_heading": false}
+{"sent_id": "s314", "text": "다주택자의 경우상향", "start": 11243, "end": 11253, "is_heading": false}
+{"sent_id": "s315", "text": "4억원을 기본공제한 뒤, 보유 주택 전체에서 거주 주택이 차지하는 비율에 따라 최대 5", "start": 11255, "end": 11303, "is_heading": false}
+{"sent_id": "s316", "text": "억원을 추가로 공제한다 .", "start": 11305, "end": 11319, "is_heading": false}
+{"sent_id": "s317", "text": "이에 따라 1세대 1주택 실거주자는 14억원, 1세대 1주택 비거", "start": 11320, "end": 11356, "is_heading": false}
+{"sent_id": "s318", "text": "주자는 9억원, 다주택자는 거주 주택 비율에 따라 4억~9억원의 기본공제를 적용받는다.", "start": 11358, "end": 11406, "is_heading": false}
+{"sent_id": "s319", "text": "또한 지난 정부에서 60%까지 하향되었던 공정시장가액비율은 단계적으로 상향해 2029", "start": 11408, "end": 11455, "is_heading": false}
+{"sent_id": "s320", "text": "년 70%까지 높인다.", "start": 11457, "end": 11469, "is_heading": false}
+{"sent_id": "s321", "text": "다만 3주택 이상 보유자나 조정대상지역 주택 보유자의 경우에는", "start": 11470, "end": 11504, "is_heading": false}
+{"sent_id": "s322", "text": "80%까지 상향된다.", "start": 11506, "end": 11517, "is_heading": false}
+{"sent_id": "s323", "text": "기본공제금액 상향과 공정시장가액비율 인상은 각각 세 부담 완화와 강화라는 상반된 효", "start": 11519, "end": 11565, "is_heading": false}
+{"sent_id": "s324", "text": "과를 가져온다 .", "start": 11567, "end": 11576, "is_heading": false}
+{"sent_id": "s325", "text": "실거주 1주택자의 경우 두 효과가 일부 상쇄되면서 시가 30억원대 초반", "start": 11577, "end": 11616, "is_heading": false}
+{"sent_id": "s326", "text": "이하에서는 세 부담이 소폭 완화되지만 , 고가주택에서는 세 부담이 강화된다. 반면 비거", "start": 11618, "end": 11666, "is_heading": false}
+{"sent_id": "s327", "text": "주 1주택의 경우 기본공제금액이 3억원 줄어들면서 전반적으로 세 부담이 강화될 것으", "start": 11668, "end": 11714, "is_heading": false}
+{"sent_id": "s328", "text": "로 예상된다", "start": 11716, "end": 11722, "is_heading": false}
+{"sent_id": "s329", "text": "그림 17.공제금액 변화 및 적용사례", "start": 11723, "end": 11743, "is_heading": false}
+{"sent_id": "s330", "text": "자료: 재정경제부, 대신증권 Research Center", "start": 11745, "end": 11776, "is_heading": false}
+{"sent_id": "s331", "text": "세율 체계 변화 세율 체계 개편 역시 고가주택을 중심으로 세 부담을 강화하는 방향이다.", "start": 11779, "end": 11827, "is_heading": false}
+{"sent_id": "s332", "text": "과세표준 6억", "start": 11828, "end": 11835, "is_heading": false}
+{"sent_id": "s333", "text": "원 이하 구간은 현행과 동일한 세율을 유지하지만 , 6억~12억원 구간은 0.3%p 상향된", "start": 11837, "end": 11887, "is_heading": false}
+{"sent_id": "s334", "text": "1.3%의 세율이 적용된다. 그 이상의 구간에서도 세율이 각각 0.7%p, 1.5%p, 2.0%p,", "start": 11889, "end": 11944, "is_heading": true}
+{"sent_id": "s335", "text": "2.3%p 상향되며, 최고세율은 5%까지 높아진다 .", "start": 11946, "end": 11975, "is_heading": true}
+{"sent_id": "s336", "text": "부과 과정에서 주택 수와 무관하게 가액으로 부과하며 공제액 부분에서 차등을 둔다.", "start": 11977, "end": 12022, "is_heading": false}
+{"sent_id": "s337", "text": "이는 그동안 지적되어 왔던 동일한 금액의 자산을 보유하고 있는 것에 대해 차별적인 세", "start": 12024, "end": 12071, "is_heading": false}
+{"sent_id": "s338", "text": "부담을 주는 것에 대한 시정방안으로 보인다.", "start": 12073, "end": 12097, "is_heading": false}
+{"sent_id": "s339", "text": "그러나, 공제액 변화 등으로 인하여 비거주", "start": 12098, "end": 12121, "is_heading": false}
+{"sent_id": "s340", "text": "1주택자의 세부담이 증가하나 다주택자의 세부담이 줄어들지는 않는다.", "start": 12123, "end": 12160, "is_heading": false}
+{"sent_id": "s341", "text": "가액기준이긴 하", "start": 12161, "end": 12169, "is_heading": false}
+{"sent_id": "s342", "text": "나 실질적으로 세부담이 감경되는 효과는 없어 임대 유인이 사라진다 .", "start": 12171, "end": 12209, "is_heading": false}
+{"sent_id": "s343", "text": "또한 세 부담 상한비율을 150%에서 200% 로 상향하면서 종합부동산세 부담이 전년 대", "start": 12211, "end": 12260, "is_heading": false}
+{"sent_id": "s344", "text": "비 최대 2배까지 증가할 수 있도록 개정하였다 .", "start": 12262, "end": 12289, "is_heading": false}
+{"sent_id": "s345", "text": "이는 종합부동산세 체계 개편으로 세 부", "start": 12290, "end": 12311, "is_heading": false}
+{"sent_id": "s346", "text": "담이 크게 높아지는 경우 일정 기간 내 매각할 수 있는 기회를 제공하는 한편, 보유를", "start": 12313, "end": 12360, "is_heading": false}
+{"sent_id": "s347", "text": "지속할 경우 2028~2029년에는 개편에 따른 세 부담 증가분이 상당 부분 반영되도록 해", "start": 12362, "end": 12412, "is_heading": false}
+{"sent_id": "s348", "text": "제도 개편의 효과가 조기에 나타나도록 설계한 것으로 보인다.", "start": 12414, "end": 12447, "is_heading": false}
+{"sent_id": "s349", "text": "거주공제 개편 거주 공제 또한 개편되었다 .", "start": 12448, "end": 12472, "is_heading": false}
+{"sent_id": "s350", "text": "연령별 공제 40%는 그대로 유지되며, 보유 공제 50%는 거주 공제 50%로 전환된다. 공", "start": 12474, "end": 12525, "is_heading": false}
+{"sent_id": "s351", "text": "제의 구성보다 더 큰 부분은 공제 금액 제한이다.", "start": 12527, "end": 12554, "is_heading": false}
+{"sent_id": "s352", "text": "2028 년 이후 공제금액은 600만원으로", "start": 12555, "end": 12578, "is_heading": false}
+{"sent_id": "s353", "text": "제한된다.", "start": 12580, "end": 12585, "is_heading": false}
+{"sent_id": "s354", "text": "현재 종합부동산세가 수천만원이 부과되는 초고가 주택이라 하더라도 장기 보", "start": 12586, "end": 12626, "is_heading": false}
+{"sent_id": "s355", "text": "유 및 연령공제를 80% 받는 경우 부과세액은 1/5로 감경된다.", "start": 12628, "end": 12664, "is_heading": false}
+{"sent_id": "s356", "text": "향후에는 이러한 공제 금", "start": 12665, "end": 12678, "is_heading": false}
+{"sent_id": "s357", "text": "액을 600만원으로 한정지으면서 1,000만원 이상의 종부세 부과 대상 주택의 세부담 감", "start": 12680, "end": 12729, "is_heading": false}
+{"sent_id": "s358", "text": "경 폭이 줄어들 것으로 전망된다.", "start": 12731, "end": 12749, "is_heading": false}
+{"sent_id": "s359", "text": "그림 18.종합부동산세 세율 변화 및 세부담 상한비율 상향", "start": 12751, "end": 12783, "is_heading": false}
+{"sent_id": "s360", "text": "자료: 재정경제부, 대신증권 Research Center", "start": 12785, "end": 12816, "is_heading": false}
+{"sent_id": "s361", "text": "그림 20.종합부동산세 공제 개편안 및 한도제한", "start": 12818, "end": 12844, "is_heading": false}
+{"sent_id": "s362", "text": "자료: 재정경제부, 대신증권 Research Center  그림 21.종합부동산세 개편안 및 정부 제시 적용사례", "start": 12846, "end": 12908, "is_heading": false}
+{"sent_id": "s363", "text": "자료: 재정경제부, 대신증권 Research Center", "start": 12910, "end": 12941, "is_heading": false}
+{"sent_id": "s364", "text": "종합부동산세 : 30 억원대 초반부터 부담 높아지는 그림세율구간 변화 효과는 종합부동산세 개편으로 2028년부터 시가 30억원대 이상의 아파트를 중심으로 종부세 부 39억원부터 +10% 담이 증가할 것으로 예상된다.", "start": 12943, "end": 13063, "is_heading": false}
+{"sent_id": "s365", "text": "2028 년부터는 시가 30억원원대 초반 이상의 아파트 전반 46억원부터 +20% 에서 종부세 부담이 증가한다.", "start": 13064, "end": 13126, "is_heading": false}
+{"sent_id": "s366", "text": "52억원부터 +30% 75억원부터 +50% 시가 50억원 주택의 경우 현행 약 1,700만원 수준의 보유세가 약 2,200 만원으로 증가해,", "start": 13127, "end": 13205, "is_heading": false}
+{"sent_id": "s367", "text": "세제개편에 따른 보유세 증가율은 약 27% 수준으로 추정된다.", "start": 13207, "end": 13241, "is_heading": false}
+{"sent_id": "s368", "text": "세율 구간 변화까지 고려할 경우 재산세를 포함한 보유세 증가율이 실질적으로 30%를", "start": 13243, "end": 13289, "is_heading": false}
+{"sent_id": "s369", "text": "넘어서는 구간은 시가 약 52억원부터이며, 시가 75억원대에서는 50% 이상 증가한다 . 시", "start": 13291, "end": 13342, "is_heading": false}
+{"sent_id": "s370", "text": "가 100억원대에서는 증가율이 73% 이상으로 확대된다.", "start": 13344, "end": 13375, "is_heading": false}
+{"sent_id": "s371", "text": "다만 고령자·장기보유 세액공제의 적용 여부와 향후 시장가격 상승에 따른 공시가격 상", "start": 13377, "end": 13423, "is_heading": false}
+{"sent_id": "s372", "text": "승 등을 고려하면 실제 납세자가 체감하는 세액 변화는 이보다 크게 나타날 수 있다.", "start": 13425, "end": 13471, "is_heading": false}
+{"sent_id": "s373", "text": "그림 22. 종부세 개편에 따른 세액 변화 추이 그림 23. 종부세 개편에 따른 세율 변화 추이", "start": 13473, "end": 13526, "is_heading": false}
+{"sent_id": "s374", "text": "(만원) 0.70%", "start": 13528, "end": 13538, "is_heading": false}
+{"sent_id": "s375", "text": "4,000 현행 현행", "start": 13540, "end": 13551, "is_heading": false}
+{"sent_id": "s376", "text": "3,500 27년 종부세 개편 0.60% 27년 종부세 개편", "start": 13553, "end": 13586, "is_heading": false}
+{"sent_id": "s377", "text": "28년 종부세 개편 28년 종부세 개편", "start": 13588, "end": 13609, "is_heading": false}
+{"sent_id": "s378", "text": "3,000 0.50%", "start": 13611, "end": 13622, "is_heading": false}
+{"sent_id": "s379", "text": "2,500 0.40%", "start": 13624, "end": 13635, "is_heading": false}
+{"sent_id": "s380", "text": "2,000 0.30%", "start": 13637, "end": 13648, "is_heading": false}
+{"sent_id": "s381", "text": "1,500", "start": 13650, "end": 13655, "is_heading": false}
+{"sent_id": "s382", "text": "0.20%", "start": 13657, "end": 13662, "is_heading": true}
+{"sent_id": "s383", "text": "1,000", "start": 13664, "end": 13669, "is_heading": false}
+{"sent_id": "s384", "text": "1 6 11 16 21 26 31 36 41 46 51 56 61(억원) 1 6 11 16 21 26 31 36 41 46 51 56 61", "start": 13671, "end": 13748, "is_heading": false}
+{"sent_id": "s385", "text": "주: 1가구 1주택, 종부세 공제 0%, 재산세 공제, 농특세 미반영,, 총보유세 추정치 주: 1가구 1주택, 종부세 공제 0%, 재산세 공제, 농특세 미반영,, 총보유세 추정치", "start": 13750, "end": 13849, "is_heading": false}
+{"sent_id": "s386", "text": "자료: 대신증권 Research Center 자료: 대신증권 Research Center", "start": 13851, "end": 13900, "is_heading": false}
+{"sent_id": "s387", "text": "그림 24.종합부동산세 개편안을 반영한 금액대별 1 주택 실거주자 보유세 추정액", "start": 13902, "end": 13946, "is_heading": false}
+{"sent_id": "s388", "text": "(만원) (%)", "start": 13948, "end": 13956, "is_heading": false}
+{"sent_id": "s389", "text": "2,000", "start": 13958, "end": 13963, "is_heading": false}
+{"sent_id": "s390", "text": "10", "start": 13965, "end": 13967, "is_heading": false}
+{"sent_id": "s391", "text": "1,500", "start": 13969, "end": 13974, "is_heading": false}
+{"sent_id": "s392", "text": "1,000 486.0", "start": 13976, "end": 13987, "is_heading": false}
+{"sent_id": "s393", "text": "0.0", "start": 13989, "end": 13992, "is_heading": true}
+{"sent_id": "s394", "text": "(500) (60. (35. (30)", "start": 13994, "end": 14014, "is_heading": false}
+{"sent_id": "s395", "text": "10억 20억 30억 40억원 50억원 60억원", "start": 14016, "end": 14042, "is_heading": false}
+{"sent_id": "s396", "text": "주: 1가구 1주택, 종부세 공제 0%, 재산세 공제, 농특세 미반영,, 총보유세 추정치", "start": 14044, "end": 14093, "is_heading": false}
+{"sent_id": "s397", "text": "자료: 대신증권 Research Center", "start": 14095, "end": 14119, "is_heading": false}
+{"sent_id": "s398", "text": "그림 25.종합부동산세 개편안을 반영한 금액대별 1 주택 실거주자 보유세액 및 증가율", "start": 14122, "end": 14169, "is_heading": false}
+{"sent_id": "s399", "text": "(만원) 증감률(우) 개편안(공제0%) 현행(공제0%) (%)", "start": 14171, "end": 14205, "is_heading": false}
+{"sent_id": "s400", "text": "14,000", "start": 14207, "end": 14213, "is_heading": false}
+{"sent_id": "s401", "text": "6,000", "start": 14215, "end": 14220, "is_heading": false}
+{"sent_id": "s402", "text": "2,000 (20)", "start": 14222, "end": 14232, "is_heading": false}
+{"sent_id": "s403", "text": "1 6 11 16 21 26 31 36 41 46 51 56 61 66 80 150 주: 1가구 1주택, 종부세 공제 0%, 재산세 공제, 농특세 미반영,, 총보유세 추정치자료: 대신증권 Research Center", "start": 14234, "end": 14354, "is_heading": false}
+{"sent_id": "s404", "text": "종합부동산세 : 놓치지 말아야할 디테일은 공제 상한 설정종부세 공제상한 설정 세율 자체만 놓고보면, 시가 50억원 이상의 주택에만 의미있게 해당되는 세제 개편인 것 27년 800만원 처럼 보일 수 있으나, 놓치지 말아야할 디테일은 공제 상한 설정이다.", "start": 14356, "end": 14496, "is_heading": false}
+{"sent_id": "s405", "text": "28년 600만원 현재 주택시장의 가장 높은 비율을 차지하는 것이 1가구 1주택 실거주자로 생각되며 , 주", "start": 14497, "end": 14556, "is_heading": false}
+{"sent_id": "s406", "text": "택의 세후수익률이 높은 핵심은 1가구 1주택자 실거주자에 대한 차별적인 세제이다. 이", "start": 14558, "end": 14605, "is_heading": false}
+{"sent_id": "s407", "text": "과정에서 가장 큰 역할을 하는 두 가지가 양도소득세의 장기보유특별공제 80%와 종합", "start": 14607, "end": 14653, "is_heading": false}
+{"sent_id": "s408", "text": "부동산세 연령/보유 공제 80%다.", "start": 14655, "end": 14674, "is_heading": false}
+{"sent_id": "s409", "text": "이는 표준세율과 별도로 세부담을 크게 낮추는 역할을 해왔고, 특히 고가주택의 세율을", "start": 14676, "end": 14722, "is_heading": false}
+{"sent_id": "s410", "text": "낮추는 역할을 해왔다.", "start": 14724, "end": 14736, "is_heading": false}
+{"sent_id": "s411", "text": "종부세 공제 상한 설정은 고가주택일수록 큰 영향을 미치는 것으", "start": 14737, "end": 14771, "is_heading": false}
+{"sent_id": "s412", "text": "로 분석된다 .", "start": 14773, "end": 14781, "is_heading": false}
+{"sent_id": "s413", "text": "그림 26.현행 세제 하에서의 종부세 공제 비율에 따른 가격대별 보유세 추정치, 공제에 따라 고가에서는 2.5배", "start": 14783, "end": 14845, "is_heading": false}
+{"sent_id": "s414", "text": "(만원) 공제0%", "start": 14847, "end": 14856, "is_heading": false}
+{"sent_id": "s415", "text": "3,000", "start": 14858, "end": 14863, "is_heading": false}
+{"sent_id": "s416", "text": "공제20%", "start": 14865, "end": 14870, "is_heading": false}
+{"sent_id": "s417", "text": "2,500 공제40%", "start": 14872, "end": 14883, "is_heading": false}
+{"sent_id": "s418", "text": "2,000 공제60%", "start": 14885, "end": 14896, "is_heading": false}
+{"sent_id": "s419", "text": "공제80%", "start": 14898, "end": 14903, "is_heading": false}
+{"sent_id": "s420", "text": "1,500", "start": 14905, "end": 14910, "is_heading": false}
+{"sent_id": "s421", "text": "1,000", "start": 14912, "end": 14917, "is_heading": false}
+{"sent_id": "s422", "text": "500", "start": 14919, "end": 14922, "is_heading": false}
+{"sent_id": "s423", "text": "(억원)", "start": 14924, "end": 14928, "is_heading": false}
+{"sent_id": "s424", "text": "0", "start": 14930, "end": 14931, "is_heading": false}
+{"sent_id": "s425", "text": "1 3 5 7 9 11 13 15 17 19 21 23 2527 29 31 33 35 37 39 41 43 45 47 49 51 5355 57 59 61", "start": 14933, "end": 15018, "is_heading": false}
+{"sent_id": "s426", "text": "주: 1가구 1주택, 종부세 공제 0%, 재산세 공제, 농특세 미반영,, 총보유세 추정치", "start": 15020, "end": 15069, "is_heading": false}
+{"sent_id": "s427", "text": "자료: 대신증권 Research Center", "start": 15071, "end": 15095, "is_heading": false}
+{"sent_id": "s428", "text": "그림 27.종합부동산세 개편안 및 공제한도 설정의 효과, 공제비율 및 가격대별 보유세", "start": 15097, "end": 15144, "is_heading": false}
+{"sent_id": "s429", "text": "(만원) 공제0% 공제20% 공제40% 공제60% 공제80%", "start": 15146, "end": 15179, "is_heading": false}
+{"sent_id": "s430", "text": "2,000", "start": 15181, "end": 15186, "is_heading": false}
+{"sent_id": "s431", "text": "1,800", "start": 15188, "end": 15193, "is_heading": false}
+{"sent_id": "s432", "text": "1,600", "start": 15195, "end": 15200, "is_heading": false}
+{"sent_id": "s433", "text": "1,400", "start": 15202, "end": 15207, "is_heading": false}
+{"sent_id": "s434", "text": "1,200", "start": 15209, "end": 15214, "is_heading": false}
+{"sent_id": "s435", "text": "1,000", "start": 15216, "end": 15221, "is_heading": false}
+{"sent_id": "s436", "text": "800", "start": 15223, "end": 15226, "is_heading": false}
+{"sent_id": "s437", "text": "600", "start": 15228, "end": 15231, "is_heading": false}
+{"sent_id": "s438", "text": "400", "start": 15233, "end": 15236, "is_heading": false}
+{"sent_id": "s439", "text": "200", "start": 15238, "end": 15241, "is_heading": false}
+{"sent_id": "s440", "text": "0", "start": 15243, "end": 15244, "is_heading": false}
+{"sent_id": "s441", "text": "(200)", "start": 15246, "end": 15251, "is_heading": false}
+{"sent_id": "s442", "text": "20억원 30억원 40억원 50억원 60억원", "start": 15253, "end": 15277, "is_heading": false}
+{"sent_id": "s443", "text": "주: 1가구 1주택, 종부세 공제 0%, 재산세 공제, 농특세 미반영,, 총보유세 추정치", "start": 15279, "end": 15328, "is_heading": false}
+{"sent_id": "s444", "text": "자료: 대신증권 Research Center", "start": 15330, "end": 15354, "is_heading": false}
+{"sent_id": "s445", "text": "그림 28.종합부동산세 개편안 및 공제한도 설정의 효과, 공제비율 및 가격대별", "start": 15357, "end": 15400, "is_heading": false}
+{"sent_id": "s446", "text": "(%)", "start": 15402, "end": 15405, "is_heading": false}
+{"sent_id": "s447", "text": "164.5", "start": 15407, "end": 15412, "is_heading": true}
+{"sent_id": "s448", "text": "150", "start": 15414, "end": 15417, "is_heading": false}
+{"sent_id": "s449", "text": "98.2", "start": 15419, "end": 15423, "is_heading": true}
+{"sent_id": "s450", "text": "100", "start": 15425, "end": 15428, "is_heading": false}
+{"sent_id": "s451", "text": "58.5", "start": 15430, "end": 15434, "is_heading": true}
+{"sent_id": "s452", "text": "11.5 10.5 9.2 19.1 18.8", "start": 15436, "end": 15459, "is_heading": true}
+{"sent_id": "s453", "text": "0", "start": 15461, "end": 15462, "is_heading": false}
+{"sent_id": "s454", "text": "(50)", "start": 15464, "end": 15468, "is_heading": false}
+{"sent_id": "s455", "text": "공제0% 공제20% 공제40% 공제60% 공제80% 주 : 1가구 1주택, 재산세 공제 농특세 미반영 기준으로 현행 세제와 28년도 안 기준으로 증가율 추정, 재산세를 포함한 금액으로 계산자료: 대신증권 Research Center", "start": 15470, "end": 15599, "is_heading": false}
+{"sent_id": "s456", "text": "종합부동산세 : 비거주 부담 증가비거주 요건 강화 거주 요건으로 인해 비거주자의 보유세 부담 증가는 20억원대부터 시작된다.", "start": 15601, "end": 15670, "is_heading": false}
+{"sent_id": "s457", "text": "거주자의 종부세 기본공제는 14억원으로 상향되었지만, 비거주자의 경우 9억원으로 오히", "start": 15672, "end": 15719, "is_heading": false}
+{"sent_id": "s458", "text": "려 하향되었기 때문이다 .", "start": 15721, "end": 15735, "is_heading": false}
+{"sent_id": "s459", "text": "공제 0%를 기준으로 30억원대는 약 350만원, 40억원대는 약 680만원, 50 억원대는 1,186", "start": 15737, "end": 15794, "is_heading": false}
+{"sent_id": "s460", "text": "만원의 세액 부담 증가가 예상된다.", "start": 15796, "end": 15815, "is_heading": false}
+{"sent_id": "s461", "text": "양도소득세의 거주요건 강화를 고려할 때 1가구 1주택 임대가구의 경우 상대적으로 자", "start": 15817, "end": 15863, "is_heading": false}
+{"sent_id": "s462", "text": "가입주할 요인이 큰 셈이다.", "start": 15865, "end": 15880, "is_heading": false}
+{"sent_id": "s463", "text": "그림 29. 종부세 개편에 따른 세액 변화 추이 그림 30. 종부세 개편에 따른 보유세 세율 변화", "start": 15882, "end": 15936, "is_heading": false}
+{"sent_id": "s464", "text": "(만원) 0.80%", "start": 15938, "end": 15948, "is_heading": false}
+{"sent_id": "s465", "text": "4,500 현행 현행", "start": 15950, "end": 15961, "is_heading": false}
+{"sent_id": "s466", "text": "4,000 28년 종부세 개편(비거주) 0.70% 28년 종부세 개편(비거주)", "start": 15963, "end": 16006, "is_heading": false}
+{"sent_id": "s467", "text": "3,500 28년 종부세 개편(거주) 0.60% 28년 종부세 개편(거주)", "start": 16008, "end": 16049, "is_heading": false}
+{"sent_id": "s468", "text": "3,000", "start": 16051, "end": 16056, "is_heading": false}
+{"sent_id": "s469", "text": "0.50%", "start": 16058, "end": 16063, "is_heading": true}
+{"sent_id": "s470", "text": "2,500", "start": 16065, "end": 16070, "is_heading": false}
+{"sent_id": "s471", "text": "2,000 0.40%", "start": 16072, "end": 16083, "is_heading": false}
+{"sent_id": "s472", "text": "1,500 0.30%", "start": 16085, "end": 16096, "is_heading": false}
+{"sent_id": "s473", "text": "1,000 0.20%", "start": 16098, "end": 16109, "is_heading": false}
+{"sent_id": "s474", "text": "주: 1가구 1주택, 종부세 공제 0%, 재산세 공제, 농특세 미반영,, 총보유세 추정치 주: 1가구 1주택, 종부세 공제 0%, 재산세 공제, 농특세 미반영,, 총보유세 추정치", "start": 16111, "end": 16210, "is_heading": false}
+{"sent_id": "s475", "text": "자료: 대신증권 Research Center 자료: 대신증권 Research Center", "start": 16212, "end": 16261, "is_heading": false}
+{"sent_id": "s476", "text": "그림 31.종합부동산세 개편안 비거주자의 보유세 부담 증가", "start": 16263, "end": 16295, "is_heading": false}
+{"sent_id": "s477", "text": "(만원) 현행 28년 종부세 개편(비거주) (%)", "start": 16297, "end": 16324, "is_heading": false}
+{"sent_id": "s478", "text": "4,000 증감액 증감률(%)(우)", "start": 16326, "end": 16345, "is_heading": false}
+{"sent_id": "s479", "text": "70", "start": 16347, "end": 16349, "is_heading": false}
+{"sent_id": "s480", "text": "2,500", "start": 16351, "end": 16356, "is_heading": false}
+{"sent_id": "s481", "text": "40", "start": 16358, "end": 16360, "is_heading": false}
+{"sent_id": "s482", "text": "2,000 1620.0", "start": 16362, "end": 16374, "is_heading": false}
+{"sent_id": "s483", "text": "0.0 125.0", "start": 16376, "end": 16385, "is_heading": true}
+{"sent_id": "s484", "text": "10억 20억 30억 40억원 50억원 60억원", "start": 16387, "end": 16413, "is_heading": false}
+{"sent_id": "s485", "text": "주: 1가구 1주택, 종부세 공제 0%, 재산세 공제, 농특세 미반영,, 총보유세 추정치", "start": 16415, "end": 16464, "is_heading": false}
+{"sent_id": "s486", "text": "자료: 대신증권 Research Center", "start": 16466, "end": 16490, "is_heading": false}
+{"sent_id": "s487", "text": "종합부동산세 : 공제 80% 및 비거주, 가장 취약비거주, 공제 80% 이번 개편에서 세 부담이 급증하는 계층은 고가주택을 오랜기간 보유하고, 공제 80%를 고가보유자 받고 있는 비거주자로 분석된다.", "start": 16492, "end": 16603, "is_heading": false}
+{"sent_id": "s488", "text": "세액증가폭 가장 커 공제 80%를 받는 덕에 30억원대 까지는 공제 0% 소유자 대비 세액 증가폭이 감소하나", "start": 16604, "end": 16664, "is_heading": false}
+{"sent_id": "s489", "text": "50억원대부터 증가액이 더 커지고, 50억원대에는 1,541만원, 60 억원대에는 2,412만원 수", "start": 16666, "end": 16721, "is_heading": false}
+{"sent_id": "s490", "text": "준의 세액이 증가하면서 보유세 증가율이 200%를 상회한다.", "start": 16723, "end": 16756, "is_heading": false}
+{"sent_id": "s491", "text": "이번 개편이 거주요건 강화 및 공제 금액 제한이 핵심인 만큼 이 두개의 개편의 대상이", "start": 16758, "end": 16805, "is_heading": false}
+{"sent_id": "s492", "text": "되는 공제80%, 초고가주택 비거주 소유자의 세액 부담 폭이 큰 셈이다.", "start": 16807, "end": 16847, "is_heading": false}
+{"sent_id": "s493", "text": "그림 32. 종부세 개편에 따른 보유세 세액 변화 추이 그림 33. 종부세 개편에 따른 보유세 세율 변화", "start": 16849, "end": 16907, "is_heading": false}
+{"sent_id": "s494", "text": "(만원) 0.70%", "start": 16909, "end": 16919, "is_heading": false}
+{"sent_id": "s495", "text": "4,000 현행 현행", "start": 16921, "end": 16932, "is_heading": false}
+{"sent_id": "s496", "text": "28년 종부세 개편(비거주) 0.60% 28년 종부세 개편(비거주)", "start": 16934, "end": 16971, "is_heading": false}
+{"sent_id": "s497", "text": "3,500 28년 종부세 개편(거주) 28년 종부세 개편(거주)", "start": 16973, "end": 17008, "is_heading": false}
+{"sent_id": "s498", "text": "3,000 0.50%", "start": 17010, "end": 17021, "is_heading": false}
+{"sent_id": "s499", "text": "2,500 0.40%", "start": 17023, "end": 17034, "is_heading": false}
+{"sent_id": "s500", "text": "2,000", "start": 17036, "end": 17041, "is_heading": false}
+{"sent_id": "s501", "text": "1,500 0.30%", "start": 17043, "end": 17054, "is_heading": false}
+{"sent_id": "s502", "text": "1,000 0.20%", "start": 17056, "end": 17067, "is_heading": false}
+{"sent_id": "s503", "text": "1 6 11 16 21 26 31 36 41 46 51 56 61 1 6 11 16 21 26 31 36 41 46 51 56 61", "start": 17069, "end": 17142, "is_heading": false}
+{"sent_id": "s504", "text": "(억원)", "start": 17144, "end": 17148, "is_heading": false}
+{"sent_id": "s505", "text": "주: 1가구 1주택, 종부세 공제 80%, 재산세 공제, 농특세 미반영,, 총보유세 추정치 주: 1가구 1주택, 종부세 공제 80%, 재산세 공제, 농특세 미반영,, 총보유세 추정치", "start": 17150, "end": 17251, "is_heading": false}
+{"sent_id": "s506", "text": "자료: 대신증권 Research Center 자료: 대신증권 Research Center", "start": 17253, "end": 17302, "is_heading": false}
+{"sent_id": "s507", "text": "그림 34.종합부동산세 개편안 비거주자의 보유세 부담 증가", "start": 17304, "end": 17336, "is_heading": false}
+{"sent_id": "s508", "text": "(만원) (%)", "start": 17338, "end": 17346, "is_heading": false}
+{"sent_id": "s509", "text": "3,500 증감액 증감률(%)(우)", "start": 17348, "end": 17367, "is_heading": false}
+{"sent_id": "s510", "text": "2,500 2412.0", "start": 17369, "end": 17381, "is_heading": false}
+{"sent_id": "s511", "text": "150", "start": 17383, "end": 17386, "is_heading": false}
+{"sent_id": "s512", "text": "2,000 1541.2", "start": 17388, "end": 17400, "is_heading": false}
+{"sent_id": "s513", "text": "0.0", "start": 17402, "end": 17405, "is_heading": true}
+{"sent_id": "s514", "text": "10억 20억 30억 40억원 50억원 60억원", "start": 17407, "end": 17433, "is_heading": false}
+{"sent_id": "s515", "text": "주 : 1가구 1주택, 종부세공제 80%, 재산세 공제 미반영 기준으로 현행 세제와 28년도 안 기준으로 증가율 추정, 재산세를 포함한 금액", "start": 17435, "end": 17513, "is_heading": false}
+{"sent_id": "s516", "text": "자료: 대신증권 Research Center", "start": 17515, "end": 17539, "is_heading": false}
+{"sent_id": "s517", "text": "그외 세제 개편 안에서는 매도물량 유도 눈여겨 볼 부분장기거주/고령/지방 앞서 정리한 양도소득세 장기보유특별공제의 장기거주소득공제로의 개편과 종합부동산세의 전반적인 변화가 가장 큰 변화로 생각되나 그 외에 부동산 세제 관련 변화는 아래다주택 매도기회 부여 와 같이 나타났다.", "start": 17541, "end": 17694, "is_heading": false}
+{"sent_id": "s518", "text": "1세대 1주택자 종부세 납부유예 기준 완화나 장기거주 1주택에 대한 양도소득세 기본공", "start": 17696, "end": 17743, "is_heading": false}
+{"sent_id": "s519", "text": "제 확대(10년 인상 거주, 30 억원 이하 1세대 1주택 양도시 연간 2,500만원 공제)가 도입", "start": 17745, "end": 17800, "is_heading": false}
+{"sent_id": "s520", "text": "되어 종부세 강화에 대한 대응이나, 세부담 완화 부분으로 생각된다.", "start": 17802, "end": 17839, "is_heading": false}
+{"sent_id": "s521", "text": "다만, 고령 1주택자의 비수도권 지역 이주시 양도소득세 5억원 한도 감면이나, 세컨드홈", "start": 17841, "end": 17889, "is_heading": false}
+{"sent_id": "s522", "text": "양도세, 종부세 과세특례 확대 등은 지역균형발전 지원 및 인구감소지역 인구 유입 유도", "start": 17891, "end": 17938, "is_heading": false}
+{"sent_id": "s523", "text": "를 목적으로 개편된다.", "start": 17940, "end": 17952, "is_heading": false}
+{"sent_id": "s524", "text": "또한, 다주택자의 조정대상지역 주택 양도소득세 중과 한시 완화가 개편안에 담겼다.", "start": 17954, "end": 17999, "is_heading": false}
+{"sent_id": "s525", "text": "과세특례 요건 합리화 한편, 조정대상지역 일시적 2주택 양도소득세 특례기간 단축, 매입임대 아파트에 대한", "start": 18000, "end": 18058, "is_heading": false}
+{"sent_id": "s526", "text": "양도세 중과배제 단계적 폐지, 상생임대주택에 대한 거주요건 면제 혜택 조정, 임대주택", "start": 18060, "end": 18107, "is_heading": false}
+{"sent_id": "s527", "text": "미분양 주택 등 양도소득세 과세특례 정비 등이 과세특례 요건 합리화 방안이라는 항목", "start": 18109, "end": 18155, "is_heading": false}
+{"sent_id": "s528", "text": "으로 개편된다.", "start": 18157, "end": 18165, "is_heading": false}
+{"sent_id": "s529", "text": "시장 내에 매도 물량은 출회시킬 수 있는 정책으로 생각된다.", "start": 18167, "end": 18200, "is_heading": false}
+{"sent_id": "s530", "text": "27년, 28년, 29년까지 일몰되는 과세특례가 많아 수도권 입주물량이 낮은 시기와 겹친다.", "start": 18202, "end": 18253, "is_heading": false}
+{"sent_id": "s531", "text": "그외에 거주여부가 세제상 중요해진 결과 부득이한 사유로 인한 주거이전에 대한 정의,", "start": 18255, "end": 18301, "is_heading": false}
+{"sent_id": "s532", "text": "주택공급지원, 비사업용 토지과세 정상화 등이 담겼다.", "start": 18303, "end": 18332, "is_heading": false}
+{"sent_id": "s533", "text": "그림 35.아파트 입주 예정 물량 추이", "start": 18333, "end": 18354, "is_heading": false}
+{"sent_id": "s534", "text": "(호) 서울특별시", "start": 18356, "end": 18365, "is_heading": false}
+{"sent_id": "s535", "text": "경기도", "start": 18367, "end": 18370, "is_heading": false}
+{"sent_id": "s536", "text": "500,000 광역시+세종", "start": 18372, "end": 18386, "is_heading": false}
+{"sent_id": "s537", "text": "450,000 기타지역", "start": 18388, "end": 18400, "is_heading": false}
+{"sent_id": "s538", "text": "400,000", "start": 18402, "end": 18409, "is_heading": false}
+{"sent_id": "s539", "text": "350,000", "start": 18411, "end": 18418, "is_heading": false}
+{"sent_id": "s540", "text": "300,000", "start": 18420, "end": 18427, "is_heading": false}
+{"sent_id": "s541", "text": "250,000", "start": 18429, "end": 18436, "is_heading": false}
+{"sent_id": "s542", "text": "200,000", "start": 18438, "end": 18445, "is_heading": false}
+{"sent_id": "s543", "text": "150,000", "start": 18447, "end": 18454, "is_heading": false}
+{"sent_id": "s544", "text": "100,000", "start": 18456, "end": 18463, "is_heading": false}
+{"sent_id": "s545", "text": "50,000", "start": 18465, "end": 18471, "is_heading": false}
+{"sent_id": "s546", "text": "0", "start": 18473, "end": 18474, "is_heading": false}
+{"sent_id": "s547", "text": "90 92 94 96 98 00 02 04 06 08 10 12 14 16 18 20 22 24 26 28 30", "start": 18476, "end": 18538, "is_heading": false}
+{"sent_id": "s548", "text": "자료: 부동산114, 대신증권 Research Center", "start": 18540, "end": 18572, "is_heading": false}
+{"sent_id": "s549", "text": "그림 36.과세특례 요건 합리화 방안, 매도물량 출회가 27 년, 28 년, 29 년에 집중되는 효과자료: 재정경제부, 대신증권 Research Center", "start": 18575, "end": 18662, "is_heading": false}
+{"sent_id": "s550", "text": "세제 개편 핵심 : 매매 물량 증가, 임대 물량 감소매물은 늘고 시장에 영향을 미칠만한 개편은 (1) 비거주 종부세 부담 증가, (2) 양도세/종부세 공제 금임대는 줄고 액 상한 신설, (3) 주임사 물건 등 양도세 중과 예외 및 혜택 조기 일몰 이다.", "start": 18664, "end": 18805, "is_heading": false}
+{"sent_id": "s551", "text": "이로 인하여, (1) 비거주 1주택 보유자의 실거주 전환이 예상되며, (2) 세부담을 느끼는", "start": 18807, "end": 18858, "is_heading": false}
+{"sent_id": "s552", "text": "고가 아파트 물량이 출회 될 것으로 보인다.", "start": 18860, "end": 18884, "is_heading": false}
+{"sent_id": "s553", "text": "(3) 양도차익이 큰 장기보유자의 매물 또한", "start": 18885, "end": 18909, "is_heading": false}
+{"sent_id": "s554", "text": "출회 될 수 있으며, (4) 주임사 만기 물량이 시장에 나올 것으로 예상된다.", "start": 18911, "end": 18954, "is_heading": false}
+{"sent_id": "s555", "text": "그림 37.2026 세제개편 영향", "start": 18956, "end": 18974, "is_heading": false}
+{"sent_id": "s556", "text": "자료: 대신증권 Research Center", "start": 18976, "end": 19000, "is_heading": false}
+{"sent_id": "s557", "text": "Ⅱ. 세제개편 시장영향", "start": 19002, "end": 19014, "is_heading": true}
+{"sent_id": "s558", "text": "세제 개편 잘 작동할수록 매매 물량 증가, 임대공급 감소하는 구조 2026 세제개편안 세제개편 이후 매매 물량은 증가하는 반면, 임대 공급은 감소할 가능성이 높다.", "start": 19016, "end": 19107, "is_heading": false}
+{"sent_id": "s559", "text": "시장영향 세제개편이 정책 의도대로 작동할수록 매매시장은 조정 압력이 커지는 동시에 임대 물량", "start": 19108, "end": 19159, "is_heading": false}
+{"sent_id": "s560", "text": "은 감소하는 구조가 나타날 것으로 예상된다.", "start": 19161, "end": 19185, "is_heading": false}
+{"sent_id": "s561", "text": "토지거래허가구역 확대와 실거주 요건 강", "start": 19186, "end": 19207, "is_heading": false}
+{"sent_id": "s562", "text": "화 역시 이러한 흐름을 강화하는 요인이다.", "start": 19209, "end": 19232, "is_heading": false}
+{"sent_id": "s563", "text": "가격대별, 임대/매매시장별 영향을 살펴보면 매매시장에서는 고가주택으로 갈수록 매도", "start": 19234, "end": 19279, "is_heading": false}
+{"sent_id": "s564", "text": "물량의 출회 유인이 커질 것으로 예상된다.", "start": 19281, "end": 19304, "is_heading": false}
+{"sent_id": "s565", "text": "주택임대사업자 등록 만기 물량의 비중에 따", "start": 19305, "end": 19328, "is_heading": false}
+{"sent_id": "s566", "text": "라 중저가 지역에서도 매도 물량이 상당 부분 출회될 수 있으나, 중저가 시장은 전월세", "start": 19330, "end": 19377, "is_heading": false}
+{"sent_id": "s567", "text": "가격의 상승세가 견조하고 전세가율도 높은 상황이어서 매도 물량 증가가 가격에 미치는", "start": 19379, "end": 19425, "is_heading": false}
+{"sent_id": "s568", "text": "영향은 제한적일 것으로 보인다.", "start": 19427, "end": 19444, "is_heading": false}
+{"sent_id": "s569", "text": "현재의 대출 규제 상황을 고려해도 마찬가지다.", "start": 19445, "end": 19470, "is_heading": false}
+{"sent_id": "s570", "text": "기존 대출 규제는 고가주택 시장의 구매력을 크게 낮췄으며 , 이번 세제개편도 고가주택", "start": 19472, "end": 19519, "is_heading": false}
+{"sent_id": "s571", "text": "의 세후수익률을 낮추는 방향으로 작용한다.", "start": 19521, "end": 19544, "is_heading": false}
+{"sent_id": "s572", "text": "반면 20억원 이하 주택은 가격이 낮아질수", "start": 19545, "end": 19568, "is_heading": false}
+{"sent_id": "s573", "text": "록 기존 대출 규제와 이번 세제개편의 영향이 상대적으로 미미하다.", "start": 19570, "end": 19606, "is_heading": false}
+{"sent_id": "s574", "text": "그림 38.세제개편 영향, 가격대별 매매/임대시장 영향자료: 대신증권 Research Center", "start": 19607, "end": 19661, "is_heading": false}
+{"sent_id": "s575", "text": "기존 전망 유지, 다만 실거주 요건 강화는 예상치 못한 변수큰 틀에서 세제개편 폭이 크긴 하나, 주택시장을 둘러싼 기본적인 환경은 크게 변하지 않았다.", "start": 19663, "end": 19747, "is_heading": false}
+{"sent_id": "s576", "text": "기존 전망 유지 공급은 2030년까지 아파트를 중심으로 부족하며, 대출규제는 강하게 나타나고 있다. 이", "start": 19748, "end": 19805, "is_heading": false}
+{"sent_id": "s577", "text": "러한 환경에서 세제개편의 영향은 어떻게 나타날까?", "start": 19807, "end": 19834, "is_heading": false}
+{"sent_id": "s578", "text": "필자는 초고가주택의 경우 거주자와 비거주자 모두에서, 중고가·중저가주택의 경우 비거", "start": 19836, "end": 19882, "is_heading": false}
+{"sent_id": "s579", "text": "주자를 중심으로 매도 유인이 높아지면서 전반적인 시장 조정 가능성이 커질 것으로 판", "start": 19884, "end": 19930, "is_heading": false}
+{"sent_id": "s580", "text": "단한다.", "start": 19932, "end": 19936, "is_heading": false}
+{"sent_id": "s581", "text": "다만 중저가 시장은 임대시장의 상승세가 강하고 전세가율도 높은 수준이어서", "start": 19937, "end": 19977, "is_heading": false}
+{"sent_id": "s582", "text": "가격 하락 전환까지 이어질 가능성은 크지 않다고 본다.", "start": 19979, "end": 20009, "is_heading": false}
+{"sent_id": "s583", "text": "반면 중고가 및 초고가 시장은", "start": 20010, "end": 20026, "is_heading": false}
+{"sent_id": "s584", "text": "가격 조정과 기간 조정이 내년까지 이어질 가능성이 있다.", "start": 20028, "end": 20059, "is_heading": false}
+{"sent_id": "s585", "text": "이번 세제개편에서 예상보다 큰 변화는 실거주 요건 강화다.", "start": 20061, "end": 20093, "is_heading": false}
+{"sent_id": "s586", "text": "이는 임대주택 공급을 감소", "start": 20094, "end": 20108, "is_heading": false}
+{"sent_id": "s587", "text": "시켜 임대시장의 상승 압력을 높이는 요인으로 작용할 것으로 보인다.", "start": 20110, "end": 20147, "is_heading": false}
+{"sent_id": "s588", "text": "일부에서는 서울", "start": 20148, "end": 20156, "is_heading": false}
+{"sent_id": "s589", "text": "의 전세가율이 낮다는 점을 근거로 임대시장 부담이 크지 않다고 평가하지만 , 이는 지역", "start": 20158, "end": 20206, "is_heading": false}
+{"sent_id": "s590", "text": "별·가격대별 전세가율의 차이를 충분히 반영하지 못한 해석일 수 있다.", "start": 20208, "end": 20246, "is_heading": false}
+{"sent_id": "s591", "text": "현재 서울 중저가", "start": 20247, "end": 20256, "is_heading": false}
+{"sent_id": "s592", "text": "주택시장의 전세가율은 상대적으로 높은 수준이다.", "start": 20258, "end": 20284, "is_heading": false}
+{"sent_id": "s593", "text": "따라서 실거주 요건 강화는 중저가", "start": 20285, "end": 20303, "is_heading": false}
+{"sent_id": "s594", "text": "시장에서 임대료 상승 압력을 높이는 동시에 매매가격의 하방을 지지하는 요인으로 작용", "start": 20305, "end": 20351, "is_heading": false}
+{"sent_id": "s595", "text": "할 가능성이 있다.", "start": 20353, "end": 20363, "is_heading": false}
+{"sent_id": "s596", "text": "기존의 주택시장 전망은 유지한다.", "start": 20365, "end": 20383, "is_heading": false}
+{"sent_id": "s597", "text": "다만 향후 시장에 대한 보다 구체적인 전망은 세제개", "start": 20384, "end": 20412, "is_heading": false}
+{"sent_id": "s598", "text": "편 발표 이후 마련될 보완책과 실제 입법안, 부동산 공급 대책 등을 확인한 뒤 주택시장", "start": 20414, "end": 20462, "is_heading": false}
+{"sent_id": "s599", "text": "내·외부 요인을 종합적으로 고려해 제시하고자 한다.", "start": 20464, "end": 20492, "is_heading": false}
+{"sent_id": "s600", "text": "그림 39.기존 정책 전망 흐름, 큰 틀에서 전망 유지", "start": 20493, "end": 20523, "is_heading": false}
+{"sent_id": "s601", "text": "주: 2025년 7월 및 2026년 4월 자료에서 재인용,", "start": 20525, "end": 20557, "is_heading": false}
+{"sent_id": "s602", "text": "자료: 대신증권 Research Center", "start": 20559, "end": 20583, "is_heading": false}
+{"sent_id": "s603", "text": "그림 40. 서울 25개구 전세가율 26년 7월 기준", "start": 20586, "end": 20615, "is_heading": false}
+{"sent_id": "s604", "text": "(%)", "start": 20617, "end": 20620, "is_heading": false}
+{"sent_id": "s605", "text": "70", "start": 20622, "end": 20624, "is_heading": false}
+{"sent_id": "s606", "text": "45", "start": 20626, "end": 20628, "is_heading": false}
+{"sent_id": "s607", "text": "40", "start": 20630, "end": 20632, "is_heading": false}
+{"sent_id": "s608", "text": "35", "start": 20634, "end": 20636, "is_heading": false}
+{"sent_id": "s609", "text": "30", "start": 20638, "end": 20640, "is_heading": false}
+{"sent_id": "s610", "text": "금 강 중 도 은 성 구 관 종 노 서 동 강 중 동 영 강 마 광 양 서 성 송 용 강", "start": 20642, "end": 20691, "is_heading": false}
+{"sent_id": "s611", "text": "천구 북구 랑구 봉구 평구 북구 로구 악구 로구 원구 대문 대문 서구 구 작구 등포 동구 포구 진구 천구 초구 동구 파구 산구 남구", "start": 20693, "end": 20766, "is_heading": false}
+{"sent_id": "s612", "text": "구 구 구자료: KB국민은행, 대신증권 Research Center 그림 41. 경기도 전세가율 상위 지역 하위 지역 26년 7월 기준", "start": 20768, "end": 20843, "is_heading": false}
+{"sent_id": "s613", "text": "40", "start": 20845, "end": 20847, "is_heading": false}
+{"sent_id": "s614", "text": "30", "start": 20849, "end": 20851, "is_heading": false}
+{"sent_id": "s615", "text": "20", "start": 20853, "end": 20855, "is_heading": false}
+{"sent_id": "s616", "text": "10", "start": 20857, "end": 20859, "is_heading": false}
+{"sent_id": "s617", "text": "0", "start": 20861, "end": 20862, "is_heading": false}
+{"sent_id": "s618", "text": "수도 경기 이천 동두 안성 남양 일산 파주 오산 일산 의정 평택 하남 안양 동탄 중원 동안구 수정 광명 성남 과천 분당", "start": 20864, "end": 20930, "is_heading": false}
+{"sent_id": "s619", "text": "권 도 시 천시 시 주시 서구 시 시 동구 부시 시 시 시 구 구 구 시 시 시 구자료: KB국민은행, 대신증권 Research Center", "start": 20932, "end": 21010, "is_heading": false}
+{"sent_id": "s620", "text": "한계 및 변수: 필연적으로 감소하는 임대물량, 시장에서 얼마나 믿어주나?", "start": 21012, "end": 21052, "is_heading": false}
+{"sent_id": "s621", "text": "임대공급자 공백이 이번 세제개편은 개인 소유자가 주택을 임대하기보다는 직접 거주하고, 그렇지 않은 경세제개편의 한계 우에는 매각하도록 유도하는 방향으로 읽힌다.", "start": 21053, "end": 21142, "is_heading": false}
+{"sent_id": "s622", "text": "그동안 개인 중심의 민간 임대시장이 안정적인 임대사업보다는 갭투자와 매매차익을 추", "start": 21144, "end": 21189, "is_heading": false}
+{"sent_id": "s623", "text": "구하는 방식으로 운영되어 온 측면이 있는 것도 사실이다.", "start": 21191, "end": 21222, "is_heading": false}
+{"sent_id": "s624", "text": "그러나 이를 대체할 임대주택", "start": 21223, "end": 21238, "is_heading": false}
+{"sent_id": "s625", "text": "의 공급·운영 주체를 육성하기 위한 제도 개선이나 규제·세제 완화가 함께 예고되지 않았", "start": 21240, "end": 21288, "is_heading": false}
+{"sent_id": "s626", "text": "다는 점이 한계점으로 생각된다.", "start": 21290, "end": 21307, "is_heading": false}
+{"sent_id": "s627", "text": "현시점에서 비거주 주택에 대한 세제 강화만 이루어질 경우 임대주택 공급 감소를 통해", "start": 21309, "end": 21355, "is_heading": false}
+{"sent_id": "s628", "text": "전월세 가격의 상승 압력을 높일 가능성이 있다.", "start": 21357, "end": 21383, "is_heading": false}
+{"sent_id": "s629", "text": "단기 공급이 가능한 非아파트에 대해서라도 새로운 임대주택 공급의 주체(ex.기관투자자", "start": 21385, "end": 21432, "is_heading": false}
+{"sent_id": "s630", "text": "나 정부자금 , 연기금, 공제회 등)를 유도/육성하거나, 시장수익률 추구할 수 있도록 임대", "start": 21434, "end": 21484, "is_heading": false}
+{"sent_id": "s631", "text": "운영 규제완화 (ex.일반 다주택자의 임대방식처럼 2년+2년), 보유세/양도세 일반세율 적용 등 구체적인", "start": 21486, "end": 21544, "is_heading": false}
+{"sent_id": "s632", "text": "임대 공급 세제완화가 병행되지 못한 것은 세제개편의 한계로 생각된다.", "start": 21546, "end": 21584, "is_heading": false}
+{"sent_id": "s633", "text": "구체적인 임대 물량 공급 정책이 병행되지 않는다면 시장 안정 효과는 단기적인 수준에", "start": 21586, "end": 21632, "is_heading": false}
+{"sent_id": "s634", "text": "그칠 가능성이 높으며, 이후 임대시장 불안 등 부작용을 확인하면 , 세제개편안의 지속 가", "start": 21634, "end": 21683, "is_heading": false}
+{"sent_id": "s635", "text": "능성에 대해서도 시장은 의문을 제기할 수 있다.", "start": 21685, "end": 21711, "is_heading": false}
+{"sent_id": "s636", "text": "정책 지속성을 정책 지속 가능성이 특히 중요한 부분은 양도소득세다 .", "start": 21712, "end": 21750, "is_heading": false}
+{"sent_id": "s637", "text": "종합부동산세의 경우 세부담 상살펴 볼 시장참여자들 한비율을 150%에서 200%로 상향했고, 아직 정부 출범 2년차라는 점을 고려하면 종부", "start": 21751, "end": 21828, "is_heading": false}
+{"sent_id": "s638", "text": "세 부담이 큰 가구는 매각을 고민할 유인이 충분하다.", "start": 21830, "end": 21859, "is_heading": false}
+{"sent_id": "s639", "text": "그러나 양도소득세 장기거주소득", "start": 21860, "end": 21876, "is_heading": false}
+{"sent_id": "s640", "text": "공제의 10억원 한도는 다소 다르게 작용할 수 있다.", "start": 21878, "end": 21907, "is_heading": false}
+{"sent_id": "s641", "text": "시장 참여자들은 정권 교체 가능성이나 향후 정부가 정책을 변경 또는 유예할 가능성을", "start": 21909, "end": 21955, "is_heading": false}
+{"sent_id": "s642", "text": "고려해 실제 매도 여부를 내년 말까지 고민할 것으로 보인다.", "start": 21957, "end": 21990, "is_heading": false}
+{"sent_id": "s643", "text": "특히 매도가액 40억원 이", "start": 21991, "end": 22005, "is_heading": false}
+{"sent_id": "s644", "text": "하 주택은 2028년에도 공제한도가 20억원까지 적용되기 때문에 의사결정 시점이 2028", "start": 22007, "end": 22056, "is_heading": false}
+{"sent_id": "s645", "text": "년까지 늦춰질 가능성도 있다.", "start": 22058, "end": 22074, "is_heading": false}
+{"sent_id": "s646", "text": "과거에도 세제 강화 이후 상당수 시장 참여자가 매도보다 보유를 선택했고, 이후 세 부", "start": 22076, "end": 22123, "is_heading": false}
+{"sent_id": "s647", "text": "담이 완화되면서 결과적으로 보유가 유리한 선택이 된 경험이 있다.", "start": 22125, "end": 22161, "is_heading": false}
+{"sent_id": "s648", "text": "이러한 경험은 이번", "start": 22162, "end": 22172, "is_heading": false}
+{"sent_id": "s649", "text": "세제개편의 지속 가능성에 대한 시장의 의구심을 높이는 요인이다.", "start": 22174, "end": 22209, "is_heading": false}
+{"sent_id": "s650", "text": "세제개편이 정책 의도대로 작동하더라도 초기 매도 물량이 소진되고 양도소득세 개편에", "start": 22211, "end": 22256, "is_heading": false}
+{"sent_id": "s651", "text": "따른 매도 유인이 약화되는 시점은 2029~2030년 전후로 예상된다.", "start": 22258, "end": 22297, "is_heading": false}
+{"sent_id": "s652", "text": "이때까지 충분한 신", "start": 22298, "end": 22308, "is_heading": false}
+{"sent_id": "s653", "text": "규 주택 및 임대주택 공급이 확보되지 않는다면 임대시장 발 가격 상승 압력이 다시 커", "start": 22310, "end": 22357, "is_heading": false}
+{"sent_id": "s654", "text": "질 것으로 보인다.", "start": 22359, "end": 22369, "is_heading": false}
+{"sent_id": "s655", "text": "결국 매매시장을 달랠 아파트 분양 물량과 임대시장을 충족시켜 줄 임대주택 공급 체계", "start": 22371, "end": 22417, "is_heading": false}
+{"sent_id": "s656", "text": "에 대한 제시가 현 세제개편의 지속가능성을 담보하고, 장기적인 시장 안정으로 가는 향", "start": 22419, "end": 22466, "is_heading": false}
+{"sent_id": "s657", "text": "후 핵심 변수인 셈이다.", "start": 22468, "end": 22481, "is_heading": false}

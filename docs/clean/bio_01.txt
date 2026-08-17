@@ -1,0 +1,53 @@
+Korean J. Microbiol. Biotechnol. (2013), 41(4), 383–390 pISSN 1598-642X eISSN 2234-7305 Korean Journal of Microbiology and Biotechnology
+
+경기도와 제주도 야생화들로부터 효모의 분리, 동정 및 항통풍성 Xanthine oxidase 저해물질의 생산 현세희1, 문혜연2, 이향범2, 김하근1, 이종수1* 1 배재대학교 바이오·의생명공학과 2 전남대학교 응용생물공학부
+
+Received: September 6, 2013 / Revised: September 24, 2013 / Accepted: September 27, 2013
+
+Isolation of Yeasts from Wild Flowers in Gyonggi-do Province and Jeju Island in Korea and the Production of Anti-gout Xanthine Oxidase Inhibitor. Hyun, Se Hee1, Hye Yeon Mun2, Hyang Burm Lee2, Ha-Kun Kim1, and Jong-Soo Lee1*. 1 Department of Biomedicinal Science and Bioechnology Paichai University, Daejeon 302-735, Korea, 2Divison of Applied Bioscience & Biotechnology, Chonnam National University, Gwangju 500-757, Korea
+
+Several yeasts were isolated from flowers found in Gyonggi-do Province and Jeju island in Korea. They were then identified by a comparison of their PCR-amplified D1/D2 regions of 26S rDNA, internal transcribed spacer 1 and 2 inclusive of 5.8S rDNA, using the BLAST database. A total of fifty four yeast strains were isolated from wild flowers in Gyonggi-do and the genus Pseudozyma was noted as being dominant. A total of thirty two strains were isolated from Songaksan and Seongsan-ilchulbong in Jeju island and Sporobolomyces ruberrimus was seen to be dominant. The anti-gout xanthine oxidase inhibitory activities of the culture broths and cell-free extracts from eighty six yeast strains were then determined. The cell-free extracts of Pseudozyma hubeiensis 228-S-1 exhibited the highest xanthine oxidase inhibitory activity of 19.6%. The XOD inhibitor was also maximally produced when Pseudozyma hubeiensis 228-S-1 was cultured at 30oC for 36h in YEPD medium.
+
+Keywords: 26S rDNA, ITS 1/5.8S rDNA/ITS2, wild flowers, yeasts, anti-gout xanthine oxidase inhibitor
+
+서 론
+
+효모는 유성생식과 무성생식을 하며 진핵세포를 갖고 있는 진균류로서 일반적으로 자낭균류와 일부 담자균류에 속하는 유포자 효모와 불완전균류에 속하는 무포자 효모로 크게 구분된다. 효모는 대부분이 GRAS 균주로서 오래 전부터 주류와 장류 등의 발효 식품 제조에 이용되고 있고 근래 건강식품 소비의 증가에 따라 효모에서 항고혈압성 안지오텐신 전환효소 저해물질[10, 12], 항치매성 β-secretase 저해물질[14]과 acetylcholinesterase 저해물질[15], 혈전용해물질 [8], 혈관신생억제물질[9], 미백성 tyrosinase 저해물질[7], 정미성 리보핵산물질[16]과 같은 다양한 대체 의약소재들이 개발되어 보고되었다. 최근 시판 막걸리에서 항고혈압활성이
+
+우수한 Pichia burtonii 등이 분리 동정되었고[21], killer toxin[17], 효소생산 효모[18] 등이 분리, 선별되어 일부가 산업적으로 이용되고 있다. 또한, 효모의 각종 대사산물의 생성, 분비 기작이 규명되었고 빠른 생육과 배양이 용이한 잇점 등이 있어 유전공학 연구에서 귀중한 숙주로도 이용되고 있다[11]. 지금까지 국내에서 효모는 주로 전통 발효식품이나 누룩, 곡자, 발효제 등에서 분리, 동정되어 이들의 일부가 산업적으로 이용되고 있을 뿐 우리나라 자연환경에 분포하고 있는 야생 효모들을 분리, 동정하고 이들을 산업적으로 응용하는 연구는 거의 실시되지 않았다. 따라서 필자 등은 전국 각지의 자연환경에 서식하고 있는 야생 효모들을 분리, 동정하여 다양한 효모 균주들을 확보하기 위해 전보[20]에서 대전과 충남 일부 지역에서 서식하고 있는 야생화들로부터 효모들을 분리, 동정하여 보고하였고 우리나라 해안 근접지역과 금 산군, 안동시 등의 일부 내륙지역 야생화들로부터 국내 미기록 효모들을 분리하여 특성을 보고하였다[5]. 본 연구에서는
+
+국내 야생화들의 효모 분포상을 조사하고 이들 효모로부터 새로운 고부가가치의 생리활성물질을 생산하고자 먼저 서울 (구로동)을 포함하는 경기도 지역과 제주도 송악산 일대에서 서식하고 있는 진달래 등의 야생화들로부터 효모를 분리하여 동정하였고 이들 가운데 항통풍성 xanthine oxidase 저해물질을 생산하는 효모를 선발하여 생산조건을 검토하였다.
+
+재료 및 방법
+
+효모의 분리 경기도 지역(서울 구로동, 평택, 성남, 용인, 안성)과 제주도 송악산과 성산 일출봉 일대에서 2012년 봄에 개화한 꽃 (화분) 52점들을 멸균튜브에 채취하여, 멸균수에 넣고 1시간진탕 시킨 후 일정액을 streptomycin (50 μg/ml과 ampicillin (50 μg/ml)을 함유한 yeast extract-peptone dextrose 한천배지에 도말하여 30oC에서 48시간 배양한 후 생육한 효모들을 분리하였다.
+
+효모의 동정효모의 동정은 26S rDNA의 D1/D2 region 또는 ITS1/ 5.8S rDNA/ITS2 region의 염기서열 상동성 비교법을 이용하여 다음과 같이 실시하였다. 먼저 분리한 효모들의 gDNA 를 Genomic DNA prep kit for yeast (Sol Gent Co.)로 추출하여 PCR을 위한 주형 DNA로 사용하였다. 분리한 DNA 를 26S rDNA의 D1/D2 region primer로 LN1 (5'GCA TAT CAA TAA GCG GAG GAA AAG 3')과 NL4(5'GGT CCG TGT TTC AAG ACG G 3') 또는 ITS1/5.8S rDNA/ ITS2 region primer로 ITS1(5'TCC GTA GGT GAA CCT GCG G 3')과 ITS4 (5'TCC TCC GCT TAT TGA TAT GC 3')를 이용하여 PCR하여 증폭시킨 후 1.5% agarose gel을 이용한 전기영동으로 확인하고 다시 이 PCR 산물을 Gel extraction kit (Qiagen)로 정제하고 이들의 염기서열을 분석하였다. 염기서열의 정렬은 DNAstar를 사용하여 Florence Corpet로 Multiple sequence alignment를 하여 염기서열을 정렬하였고, NCBI의 BLAST의 database 염기서열과의 상동성을 조사하였다[20].
+
+Xanthine oxidase 저해활성 측정 Xanthine oxidase 저해활성은 먼저 효모를 30oC로 2일간 YEPD 배지에서 배양한 후배양 상등액과 무세포 추출물로 구분하여 각각 동결건조 시킨 다음 0.1 M potassium phosphate buffer (pH7.5)에 10 mg/ml로 용해하였다. 이들 시료 100 μl 를 1 mM xanthine 용액 200 μl와 xanthine oxidase (0.1 U/ml) 100 μl에 혼합하고 0.1 M potassium phosphate buffer (pH7.5) 600 μl 첨가하여 1 ml로 정용한 후 37oC에서
+
+5분간 각각 반응시켰다. 1 N HCl 200 μl를 가하여 반응을 정지시킨 후 12,000 rpm으로 10분간 원심 분리하여 단백질을 제거한 다음 생성된 uric acid 함량을 분광분석기(UV-1601, Shimadzu)로 292 nm에서 흡광도를 측정하여 정량한 후 아래와 같이 배양 상등액과 무세포 추출물의 xanthine oxidase 저해활성을 계산하였고[6] 3반복의 평균값으로 표시하였다.
+
+xanthine oxidase 저해활성(%) = [1 − {A(시료구) − B(시료구 Blank)/C(대조구)}] × 100
+
+결과 및 고찰
+
+경기도 야생화들로부터 효모의 분리 및 동정 서울 구로동과 평택, 안성, 용인, 성남 등지의 야생화들로부터 효모들을 분리하여 이들의 26S rDNA의 D1/D2, ITS1/ 5.8S rDNA/ ITS2 염기서열 분석을 통한 분자생물학적 유연관계 비교분석 방법으로 동정한 결과는 Table 1과 같다. 각기 다른 31점의 야생화들로부터 26종의 효모들을 54균주 분리하였다. 이들 지역의 야생화들로부터 Pseudozyma rugulosa를 포함하는 Pseudozyma sp.가 13균주 분리되어 이들 지역에서는 이 균주들이 우점균이었고 Cryptococcus aureus 균주를 포함한 Crytococcus sp.가 7균주, Rhodosporidium sp.와 Rhodotonula sp.가 각각 4균주, 5균주가 분리되었다. 이 밖에도 Sporobolomyces sp.과 Metschnikowia sp. 등이 분리되었다. 또한 일반적으로 전통 발효식품 등에서 유용균주로 알려진 Saccharomyces cerevisiae 종이 4균주 분리되었다. 이들 중 우점균들에 대한 최근 연구로 Morita 등[22]은 당지질성 생계면활성제인 mannosylerythritol(MEL)생산 능력이 우수한 Pseudozyma rugulosa를 분리하여 동정한 후 MEL 최적 생산조건을 보고하였고, Pseudozyma fusiformata를 포함하는 몇 종의 Pseudozyma sp.들 역시 MEL 생성능이 우수함을 보고하였다[23]. 또한, Cao 등[1]은 해양 효모로 알려 진 Cryptococcus aureus HYA가 갖고 있는 insulin분해효소유전자인 INU1을 Pichia pastoris X-33에 클로닝시켜 대량발현시킨 후 이들의 특성을 보고하였고, Gao 등[4]은 Cryptococcus aureus G7이 Jerusalem artichoke 추출물에 서 단세포 단백질을 많이 생산하였음을 보고하였다.
+
+제주도 야생화들로부터 효모의 분리 및 동정 제주도 송악산과 성산 일출봉 지역 산과 밭 등지의 21점의 꽃들로부터 효모들을 분리하여 동정한 결과 모두 14종에 속하는 효모들을 32균주 분리하였다(Table 2). 이들 중 Sporobolomyces ruberrimus가 6균주, Pseudozyma aphidis 4균주를 포함한 Pseudozyma sp.가 8균주, Candida sp.가 5 균주 등으로 우점균을 이루고 있었다. Fell 등[3]은 D1, D2
+
+와 ITS 영역에 있는 rDNA 염기 조성과 형태적 특성 등을 토대로 Sporobolomyces ruberrimus를 분리, 동정하여 보고하였고, Razavi 등[26]은 Sporobolomyces ruberrimus로부터 글리세롤과 암모니움 아세테이트를 사용하여 카로티노이드와 지방산 등을 생산한 연구결과를 보고하였다. 또한 Pseudozyma aphidis 균에 대하여 최근 Parahym 등[24]은 폐 감염 균종으로, Chen 등[2]은 다리 감염 균종으로 각각 보고하였다. 한편, 필자 등[20]은 대전지역 공단 주위와 야산의 야생화로부터 희귀성 균주들인 Metschnikowia sp.와 Starmerella sp.들이 Sporobolomyces rubberimus, Cryptococcus magnus 등을 분리, 보고하였는데 위와 같이 동일한 야생화라도 경기도, 대전, 제주도 등 지역간의 기후적 차이와 이로 인한 개화시기 차이 등에 의해 일부 다른 효모들이 분포하고 있는
+
+것으로 사료된다.
+
+항통풍성 xanthine oxidase 저해물질 생산 균주의 선발 경기도와 제주도 야생화들로부터 분리, 동정한 86균주들에 대한 배양 상등액과 무세포 추출물들의 xanthine oxidase 저해활성을 측정한 결과는 Table 3과 같다. 먼저 86균주 중 26균주들의 배양 상등액에서 xanthine oxidase 저해활성을 보였고, 이들 중 특히 Rhodosporidium paludigenum 328- GY-1의 배양 상등액이 18.1%로 가장 높은 활성을 보였다. 무세포 추출물의 경우 모두 24 효모 균주들에서 저해활성을 보였고 특히 Pseudozyma hubeiensis 228-S-1의 무세포추출물이 19.6%로 가장 높아 최종적으로 항통풍성 xanthine oxidase 저해물질 생산 균주로 선발하였다. 항통풍성 xanthine oxidase 저해물질 생산균주로 선발된
+
+Pseudozyma hubeiensis 228-S-1은 필자 등이 국내 미기록효모로 보고[5]한 균주로서 국내에서는 이 균의 특성이나 산업적 응용성에 관한 연구는 실시되지 않았고 다만 Takahashi 등[27]이 Pseudozyma hubeiensis의 대두유 배양물에 함유된 mannosylerythritol과 이들의 유도체가 항산화활성과 SOD 활성이 우수하였음을 보고하였을 뿐이다.
+
+Xanthine oxidase 저해물질 생산조건 Pseudozyma hubeiensis 228-S-1의 xanthine oxidase 저해물질 생산에 미치는 배양시간의 영향을 조사한 결과는 Fig. 1과 같다. Pseudozyma hubeiensis 228-S-1을 YEPD 배지에 접종하여 30oC에서 배양하였을 때 생육은 48시간에 최고를 보였으나 항통풍성 XOD 저해물질은 대수기 말기인 36시간배양한 무세포 추출물에서 제일 높았다.
+
+항통풍성 XOD 저해활성 물질에 관한 주요 연구로 Song 등[25]은 Phellinus linteus 버섯 자실체의 70% 에탄올 추출물이 XOD 저해활성을 보였다고 보고하였고 서 등[19]은 청미래덩굴잎 발효차의 에탄올 추출물에서, 김 등[13]은 주박 (술지게미)의 열수와 에탄올 추출물에서 XOD 저해활성이 있었음을 보고하였다. 그러나 아직까지 이들의 생산과 산업적이용 및 물질 특성에 관한 연구는 실시되지 않았고 따라서최근 증가하고 있는 통풍 질환을 예방하기 위해 배양이 용이하고 단시간에 대량배양이 가능한 본 연구의 선발균주를 이용한 항통풍성 건강소재 개발에 관한 연구가 현재 진행되고 있다.
+
+요 약
+
+국내 야생화들로부터 효모를 분리하여 이들을 고부가가치의 의약이나 건강 식품산업에 응용하기 위한 연구의 일환으로 경기도와 제주도 일부 지역의 야생화들을 채집하여 효모들을 분리, 동정하고 이들 가운데 항통풍성 xanthine oxidase 저해물질 생산 균주를 선발한 후 생산 조건을 검토하였다. 서울 구로동과 일부 경기도 지역 야생화 31점에서 26종, 54균주의 효모들을 분리, 동정하였고 이들 중 Pseudozyma sp.가 13종으로 가장 많이 분리되었다. 제주도 송악산과 성산 일출봉 지역의 야생화 21점에서 모두 14종, 32균주의 효모들을 분리, 동정하였고, 이들 균 중에서 Sporobolomyces ruberrimus가 6종으로 가장 많이 분리되었다. 86효모 균주들을 YEPD 배지에서 2일간 배양하여 각각의 배양 상등액과 무세포 추출물을 제조한 후 이들의 항통풍성 Xanthine oxidase 저해활성을 측정한 결과, Pseudozyma hubeiensis 228-S-1의 무세포 추출물이 19.5%의 가장 높은 Xanthine oxidase 저해활성을 보였다. 또한 Pseudozyma hubeiensis 228-S-1을 YEPD 배지에 접종하여 30oC에서 36시간 배양하였을 때, 세포내 항통풍성 xanthine oxidase 저해물질을 가장 많이 생산하였다.
