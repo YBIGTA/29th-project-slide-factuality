@@ -146,24 +146,30 @@ def parse_excel_annotations(excel_path: Path) -> dict[str, list[dict[str, Any]]]
         
         annotator_name = extract_annotator_from_sheet(sheet)
 
-        # 1. 시트명에서 구체적인 덱 식별자 추출 (예: bio02, tech01, socio02 등)
-        # 정규식에 fin_?\d+ 추가
-        match = re.search(r"(arts_?\d+|bio_?\d+|socio_?\d+|tech_?\d+|finance_?\d+|fin_?\d+)", sheet, re.IGNORECASE)
-        if match:
-            raw_key = match.group(1).lower().replace("_", "")
-            # 번호 두자리 포맷 정규화 (예: bio2 -> bio02)
-            m_num = re.search(r"(\d+)", raw_key)
-            if m_num:
-                num = int(m_num.group(1))
-                prefix = re.sub(r"\d+", "", raw_key)
-                if prefix == "fin":      # fin으로 적은 시트명을
-                    prefix = "finance"   # 공식 규약인 finance로 자동 변환
-                deck_key = f"{prefix}_{num:02d}"
+        # 1. 시트명에서 구체적인 덱 식별자 추출
+        if "tech_03" in sheet and "중복" in sheet:
+            deck_key = "tech_04"
+        elif "arts_01" in sheet:
+            # 파일럿 덱(arts_01)은 5명 중 시나 님의 라벨을 대표로 사용
+            if annotator_name == "시나":
+                deck_key = "arts_01"
             else:
-                deck_key = raw_key
+                continue
         else:
-            # 이름만 적힌 공통 시트(시나, 윤서, 지원 등) -> arts_01
-            deck_key = f"arts_01__{annotator_name}"
+            match = re.search(r"(arts_?\d+|bio_?\d+|socio_?\d+|tech_?\d+|finance_?\d+|fin_?\d+)", sheet, re.IGNORECASE)
+            if match:
+                raw_key = match.group(1).lower().replace("_", "")
+                m_num = re.search(r"(\d+)", raw_key)
+                if m_num:
+                    num = int(m_num.group(1))
+                    prefix = re.sub(r"\d+", "", raw_key)
+                    if prefix == "fin":
+                        prefix = "finance"
+                    deck_key = f"{prefix}_{num:02d}"
+                else:
+                    deck_key = raw_key
+            else:
+                deck_key = sheet
 
         records = df.to_dict(orient="records")
         for r in records:
