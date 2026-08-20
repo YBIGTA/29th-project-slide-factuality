@@ -1,0 +1,440 @@
+{
+  "model_id": "M1",
+  "description": "frozen multilingual-E5 embeddings + train-selected LinearSVC, no slide context",
+  "created_at_utc": "2026-08-20T06:49:46.136013+00:00",
+  "encoder": {
+    "model_id": "intfloat/multilingual-e5-large",
+    "frozen": true,
+    "dimension": 1024,
+    "prefixes": {
+      "claim": "query: ",
+      "candidate": "passage: "
+    }
+  },
+  "classifier": {
+    "type": "LinearSVC",
+    "C": 1.0,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "feature_spec": "[claim, best_candidate, abs_diff, product, max/mean/std/min_similarity, candidate_count]",
+  "labels": [
+    "근거 있음",
+    "무근거",
+    "모순",
+    "Benign"
+  ],
+  "data": {
+    "split_decks": {
+      "train": [
+        "arts_01",
+        "arts_02",
+        "bio_01",
+        "bio_02",
+        "bio_03",
+        "socio_01",
+        "socio_02",
+        "socio_03",
+        "tech_01",
+        "tech_02",
+        "tech_03"
+      ],
+      "test": [
+        "arts_03",
+        "bio_04",
+        "socio_04",
+        "tech_04"
+      ],
+      "generalization": [
+        "finance_01",
+        "finance_02"
+      ]
+    },
+    "source_files": {
+      "/Users/choieunchae/Documents/학회 세션/신입기수프로젝트/29th-project-slide-factuality/dataset/train.jsonl": {
+        "sha256": "52380026c991936f604e3dc95c8d94839f7f0be3578ccf74fa0c91ac28cbdd8a",
+        "rows": 811
+      },
+      "/Users/choieunchae/Documents/학회 세션/신입기수프로젝트/29th-project-slide-factuality/dataset/test.jsonl": {
+        "sha256": "41ebe14d2f03ced43d43ddfd62c11eaad4e1888db8844c3d1f617b8d2f37eaab",
+        "rows": 290
+      }
+    },
+    "annotation": {
+      "path": "/Users/choieunchae/Documents/학회 세션/신입기수프로젝트/29th-project-slide-factuality/annotation/공통_덱_annotation_정리본.xlsx",
+      "sha256": "3af6e4af5b2c927b965f472042cc4727322cc6d3097e4a62e5254143b2882f23"
+    },
+    "raw_counts": {
+      "train": 811,
+      "test": 290
+    },
+    "valid_counts": {
+      "train": 795,
+      "test": 277
+    },
+    "invalid_labels": {
+      "train": {
+        "count": 16,
+        "by_deck": {
+          "arts_02": 4,
+          "bio_02": 3,
+          "bio_03": 5,
+          "socio_02": 3,
+          "socio_03": 1
+        },
+        "raw_values": {
+          "nan": 16
+        }
+      },
+      "test": {
+        "count": 13,
+        "by_deck": {
+          "bio_04": 12,
+          "socio_04": 1
+        },
+        "raw_values": {
+          "'여성은 남성에 비해 난민에 대해 더 낮은 다문화\\n수용 태도를 보였다(β=-0.091, p<0.1).'": 1,
+          "nan": 12
+        }
+      }
+    }
+  },
+  "class_counts": {
+    "train": {
+      "근거 있음": 529,
+      "무근거": 61,
+      "모순": 78,
+      "Benign": 127
+    },
+    "test": {
+      "근거 있음": 195,
+      "무근거": 26,
+      "모순": 12,
+      "Benign": 44
+    }
+  },
+  "cross_validation": {
+    "type": "GroupKFold",
+    "group": "deck_id",
+    "selection_metric": "mean_macro_f1",
+    "test_labels_used_for_selection": false,
+    "note": "이전 M1 반복에서 test 성능이 이미 관찰되었으므로 최종 test 수치는 완전히 미노출된 평가가 아니다.",
+    "trials": [
+      {
+        "type": "LogisticRegression",
+        "C": 0.1,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.22563176895306858,
+          0.18493150684931506,
+          0.18902439024390244,
+          0.18292682926829268,
+          0.21482889733840305
+        ],
+        "mean_macro_f1": 0.19946867853059633,
+        "std_macro_f1": 0.0174039588462025
+      },
+      {
+        "type": "LogisticRegression",
+        "C": 1.0,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.2246376811594203,
+          0.20229166666666665,
+          0.29583333333333334,
+          0.18292682926829268,
+          0.29287638431607305
+        ],
+        "mean_macro_f1": 0.2397131789487572,
+        "std_macro_f1": 0.046536282314303984
+      },
+      {
+        "type": "LogisticRegression",
+        "C": 10.0,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.23674242424242425,
+          0.2921997831390621,
+          0.3568181818181818,
+          0.23488901018922853,
+          0.35062947562947566
+        ],
+        "mean_macro_f1": 0.29425577500367445,
+        "std_macro_f1": 0.05277968217323606
+      },
+      {
+        "type": "LogisticRegression",
+        "C": 100.0,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.22392156862745097,
+          0.30933448960979737,
+          0.3263531960018953,
+          0.2913676886279626,
+          0.37075551782682514
+        ],
+        "mean_macro_f1": 0.3043464921387863,
+        "std_macro_f1": 0.04807484059027278
+      },
+      {
+        "type": "LinearSVC",
+        "C": 0.01,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.22563176895306858,
+          0.18493150684931506,
+          0.18902439024390244,
+          0.18292682926829268,
+          0.21482889733840305
+        ],
+        "mean_macro_f1": 0.19946867853059633,
+        "std_macro_f1": 0.0174039588462025
+      },
+      {
+        "type": "LinearSVC",
+        "C": 0.1,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.22563176895306858,
+          0.18384879725085912,
+          0.21611170784103115,
+          0.18292682926829268,
+          0.21482889733840305
+        ],
+        "mean_macro_f1": 0.20466960013033092,
+        "std_macro_f1": 0.01777526139151311
+      },
+      {
+        "type": "LinearSVC",
+        "C": 1.0,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.23890386343216533,
+          0.2619869664667041,
+          0.366012101306219,
+          0.3107287016185321,
+          0.3421358858858859
+        ],
+        "mean_macro_f1": 0.3039535037419013,
+        "std_macro_f1": 0.0476397168324986
+      },
+      {
+        "type": "LinearSVC",
+        "C": 10.0,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.21561395420316581,
+          0.3311961155397526,
+          0.34980162969293405,
+          0.2839407903924033,
+          0.34346298649912477
+        ],
+        "mean_macro_f1": 0.3048030952654761,
+        "std_macro_f1": 0.050211523494243335
+      },
+      {
+        "type": "RbfSVC",
+        "C": 1.0,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.22563176895306858,
+          0.18493150684931506,
+          0.18902439024390244,
+          0.18292682926829268,
+          0.21482889733840305
+        ],
+        "mean_macro_f1": 0.19946867853059633,
+        "std_macro_f1": 0.0174039588462025
+      },
+      {
+        "type": "RbfSVC",
+        "C": 10.0,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.23234265734265735,
+          0.2705570929573877,
+          0.32901691331923894,
+          0.2729735998650472,
+          0.3347980881779165
+        ],
+        "mean_macro_f1": 0.28793767033244955,
+        "std_macro_f1": 0.03873039196599616
+      },
+      {
+        "type": "RbfSVC",
+        "C": 100.0,
+        "class_weight": null,
+        "fold_macro_f1": [
+          0.22392156862745097,
+          0.29072964012032587,
+          0.29938375350140056,
+          0.24786931818181818,
+          0.3127048763106994
+        ],
+        "mean_macro_f1": 0.274921831348339,
+        "std_macro_f1": 0.033492375868087586
+      },
+      {
+        "type": "LogisticRegression",
+        "C": 0.1,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.03119402985074627,
+          0.1539259319078426,
+          0.22274091491273346,
+          0.058191018342821,
+          0.12923426346528227
+        ],
+        "mean_macro_f1": 0.11905723169588511,
+        "std_macro_f1": 0.06854829328573947
+      },
+      {
+        "type": "LogisticRegression",
+        "C": 1.0,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.24239130434782608,
+          0.29753069003069,
+          0.340158371040724,
+          0.25067147764516184,
+          0.2315405568214557
+        ],
+        "mean_macro_f1": 0.27245847997717154,
+        "std_macro_f1": 0.0406567975209622
+      },
+      {
+        "type": "LogisticRegression",
+        "C": 10.0,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.27844887955182074,
+          0.3396241736405671,
+          0.4107439508847959,
+          0.306122054548828,
+          0.311141846092504
+        ],
+        "mean_macro_f1": 0.3292161809437032,
+        "std_macro_f1": 0.045149623981636196
+      },
+      {
+        "type": "LogisticRegression",
+        "C": 100.0,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.2334169744414042,
+          0.3258862314156432,
+          0.38969995071058905,
+          0.25709965298000387,
+          0.3408674339300938
+        ],
+        "mean_macro_f1": 0.30939404869554676,
+        "std_macro_f1": 0.056954057981706815
+      },
+      {
+        "type": "LinearSVC",
+        "C": 0.01,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.22563176895306858,
+          0.18493150684931506,
+          0.18902439024390244,
+          0.18292682926829268,
+          0.21482889733840305
+        ],
+        "mean_macro_f1": 0.19946867853059633,
+        "std_macro_f1": 0.0174039588462025
+      },
+      {
+        "type": "LinearSVC",
+        "C": 0.1,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.2296153846153846,
+          0.2552634919245415,
+          0.3338944227293742,
+          0.26699829222765004,
+          0.32743506493506497
+        ],
+        "mean_macro_f1": 0.28264133128640306,
+        "std_macro_f1": 0.041083718760901104
+      },
+      {
+        "type": "LinearSVC",
+        "C": 1.0,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.26116690386941155,
+          0.319625849976288,
+          0.3570576150336868,
+          0.3779651383099659,
+          0.33872137213721376
+        ],
+        "mean_macro_f1": 0.33090737586531327,
+        "std_macro_f1": 0.039875638711357776
+      },
+      {
+        "type": "LinearSVC",
+        "C": 10.0,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.20984026522001203,
+          0.3245661628795636,
+          0.363733862959285,
+          0.26950462649514784,
+          0.33018285149493454
+        ],
+        "mean_macro_f1": 0.2995655538097886,
+        "std_macro_f1": 0.054100476955458915
+      },
+      {
+        "type": "RbfSVC",
+        "C": 1.0,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.2015764953628247,
+          0.23872899887018753,
+          0.2718715393133998,
+          0.10707638279192275,
+          0.22426261549395876
+        ],
+        "mean_macro_f1": 0.20870320636645873,
+        "std_macro_f1": 0.05570041830138924
+      },
+      {
+        "type": "RbfSVC",
+        "C": 10.0,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.31926509186351704,
+          0.27862881812804174,
+          0.3420877846526565,
+          0.3022599690282617,
+          0.3260539133355727
+        ],
+        "mean_macro_f1": 0.3136591154016099,
+        "std_macro_f1": 0.02168091090529271
+      },
+      {
+        "type": "RbfSVC",
+        "C": 100.0,
+        "class_weight": "balanced",
+        "fold_macro_f1": [
+          0.22238095238095237,
+          0.29072964012032587,
+          0.29938375350140056,
+          0.24255238740617183,
+          0.3164744096947487
+        ],
+        "mean_macro_f1": 0.2743042286207199,
+        "std_macro_f1": 0.03572480068236498
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.13.9",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "torch": "2.13.0",
+    "sentence_transformers": "5.7.0",
+    "scikit_learn": "1.7.2"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "model_id": "M1",
+  "description": "frozen multilingual-E5 embeddings + train-selected LinearSVC, no slide context",
+  "selected_classifier": {
+    "type": "LinearSVC",
+    "C": 1.0,
+    "class_weight": "balanced"
+  },
+  "evaluation_split": "non-finance annotation decks with Test Set = 1",
+  "generalization_excluded": [
+    "finance_01",
+    "finance_02"
+  ],
+  "test_decks": [
+    "arts_03",
+    "bio_04",
+    "socio_04",
+    "tech_04"
+  ],
+  "train_support": 795,
+  "test_support": 277,
+  "macro_f1": 0.5134348476232599,
+  "accuracy": 0.7436823104693141,
+  "classification_report": {
+    "근거 있음": {
+      "precision": 0.8186274509803921,
+      "recall": 0.8564102564102564,
+      "f1-score": 0.8370927318295739,
+      "support": 195.0
+    },
+    "무근거": {
+      "precision": 0.391304347826087,
+      "recall": 0.34615384615384615,
+      "f1-score": 0.3673469387755102,
+      "support": 26.0
+    },
+    "모순": {
+      "precision": 0.2222222222222222,
+      "recall": 0.16666666666666666,
+      "f1-score": 0.19047619047619047,
+      "support": 12.0
+    },
+    "Benign": {
+      "precision": 0.6829268292682927,
+      "recall": 0.6363636363636364,
+      "f1-score": 0.6588235294117647,
+      "support": 44.0
+    },
+    "accuracy": 0.7436823104693141,
+    "macro avg": {
+      "precision": 0.5287702125742485,
+      "recall": 0.5013986013986014,
+      "f1-score": 0.5134348476232599,
+      "support": 277.0
+    },
+    "weighted avg": {
+      "precision": 0.7311253181917916,
+      "recall": 0.7436823104693141,
+      "f1-score": 0.7366716703782025,
+      "support": 277.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      167,
+      8,
+      7,
+      13
+    ],
+    [
+      17,
+      9,
+      0,
+      0
+    ],
+    [
+      5,
+      5,
+      2,
+      0
+    ],
+    [
+      15,
+      1,
+      0,
+      28
+    ]
+  ],
+  "label_order": [
+    "근거 있음",
+    "무근거",
+    "모순",
+    "Benign"
+  ],
+  "per_deck": {
+    "arts_03": {
+      "support": 52,
+      "accuracy": 0.5192307692307693,
+      "macro_f1_all_labels": 0.2916513311250153
+    },
+    "bio_04": {
+      "support": 58,
+      "accuracy": 0.7241379310344828,
+      "macro_f1_all_labels": 0.27384020618556704
+    },
+    "socio_04": {
+      "support": 98,
+      "accuracy": 0.7142857142857143,
+      "macro_f1_all_labels": 0.3819047619047619
+    },
+    "tech_04": {
+      "support": 69,
+      "accuracy": 0.9710144927536232,
+      "macro_f1_all_labels": 0.982281284606866
+    }
+  },
+  "invalid_labels_excluded": {
+    "train": {
+      "count": 16,
+      "by_deck": {
+        "arts_02": 4,
+        "bio_02": 3,
+        "bio_03": 5,
+        "socio_02": 3,
+        "socio_03": 1
+      },
+      "raw_values": {
+        "nan": 16
+      }
+    },
+    "test": {
+      "count": 13,
+      "by_deck": {
+        "bio_04": 12,
+        "socio_04": 1
+      },
+      "raw_values": {
+        "'여성은 남성에 비해 난민에 대해 더 낮은 다문화\\n수용 태도를 보였다(β=-0.091, p<0.1).'": 1,
+        "nan": 12
+      }
+    }
+  },
+  "model_config": "models/M1/config.json"
+}
