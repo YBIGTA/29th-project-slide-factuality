@@ -94,20 +94,49 @@ def load_passages(root: Path, doc_id: str) -> dict[str, dict[str, Any]]:
     return {}
 
 
+_CLAIM_SUFFIX = re.compile(r"_(s\d+_c\d+)$")
+
+
+def claim_suffix(claim_id: str) -> str | None:
+    """`arts_01__claudecode_s03_c05` -> `s03_c05`.
+
+    레포에 deck_id 표기가 두 가지 있다. manifest·dataset 은 짧은 `tech_02`,
+    decks·claims·retrieval 은 파일명 그대로인 긴 `tech_02__claudecode` 다.
+    그래서 같은 claim 인데 claim_id 가 `tech_02_s01_c01` 과
+    `tech_02__claudecode_s01_c01` 로 갈린다. 슬라이드·순번 꼬리는 양쪽이
+    같으므로 이걸 조인 키로 함께 쓴다.
+    """
+    m = _CLAIM_SUFFIX.search(claim_id or "")
+    return m.group(1) if m else None
+
+
 def load_retrieval_results(root: Path, deck_id: str) -> tuple[dict[str, list[dict[str, Any]]], list[list[dict[str, Any]]]]:
+    """검색 결과를 claim_id 로 찾을 수 있게 적재한다.
+
+    파일명도 두 표기가 섞여 있어서(`tech_02.jsonl` vs `tech_02__claudecode.jsonl`)
+    정확한 이름 다음에 `{doc_id}__*.jsonl` 글롭까지 훑는다. 이게 없으면 파일이
+    멀쩡히 있는데도 못 찾아 candidates 가 조용히 빈 배열로 채워진다.
+    """
     doc_id = deck_id.split("__")[0]
-    paths = [
+    exact = [
         root / "retrieval" / "hybrid_v3" / f"{deck_id}.jsonl",
         root / "retrieval" / "dense" / f"{deck_id}.jsonl",
         root / "retrieval" / "bm25" / f"{deck_id}.jsonl",
         root / "retrieval" / "dense" / f"{doc_id}.jsonl",
         root / "retrieval" / "bm25" / f"{doc_id}.jsonl",
     ]
-    
+    globbed: list[Path] = []
+    for sub in ("hybrid_v3", "dense", "bm25"):
+        d = root / "retrieval" / sub
+        if d.is_dir():
+            # `.w5.jsonl` 같은 보조 산출물은 기본 pool 이 아니라서 뺀다.
+            globbed += sorted(p for p in d.glob(f"{doc_id}__*.jsonl")
+                              if p.name.count(".") == 1)
+
     mapping: dict[str, list[dict[str, Any]]] = {}
     ordered_list: list[list[dict[str, Any]]] = []
 
-    for p in paths:
+    for p in exact + globbed:
         if p.exists():
             rows = read_jsonl(p)
             for r in rows:
@@ -115,6 +144,10 @@ def load_retrieval_results(root: Path, deck_id: str) -> tuple[dict[str, list[dic
                 results = r.get("results", [])
                 if c_id:
                     mapping[c_id] = results
+                    suffix = claim_suffix(c_id)
+                    # 꼬리 키는 정확한 claim_id 를 덮어쓰지 않게 뒤에서만 채운다.
+                    if suffix and suffix not in mapping:
+                        mapping[suffix] = results
                 ordered_list.append(results)
             if mapping or ordered_list:
                 break
@@ -317,9 +350,16 @@ def build_dataset(root: Path, manifest_path: Path, out_dir: Path, target_deck: s
             else:
                 slide_context = []
 
-            # top-5 검색 후보 구간 매칭
+            # top-5 검색 후보 구간 매칭.
+            # claim_id 로 먼저 찾고, 표기가 갈린 경우를 위해 꼬리(sNN_cNN)로 한 번 더 찾는다.
             ret_results = retrieval_map.get(claim_id)
-            if ret_results is None and idx < len(retrieval_ordered):
+            if ret_results is None:
+                suffix = claim_suffix(claim_id)
+                if suffix:
+                    ret_results = retrieval_map.get(suffix)
+            # 순서 매칭은 라벨과 검색 결과의 claim 수가 정확히 같을 때만 쓴다.
+            # 개수가 다르면 한 칸씩 밀려 엉뚱한 구간이 근거로 붙는다 — 조용해서 더 위험하다.
+            if ret_results is None and len(retrieval_ordered) == len(raw_items) and idx < len(retrieval_ordered):
                 ret_results = retrieval_ordered[idx]
             if ret_results is None:
                 ret_results = []
