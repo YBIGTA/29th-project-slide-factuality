@@ -1,5 +1,5 @@
 import os
-os.environ['KMP_DUPLICATE_LIB_OK'] = 'True' #line 1,2는 윈도우상 오류 때문에 추가 
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 import os
 import torch
 import numpy as np
@@ -20,11 +20,10 @@ class FactCheckerPipeline:
         self.embed_model = load_dense_model(DENSE_DEFAULT_MODEL, self.device)
         
         # 2. 판정 모델 로드 (M3)
-        self.label_list = ["근거 있음", "무근거", "모순", "Benign"]
+        self.label_list = ["근거있음", "무근거", "모순", "benign"]
         self.judge_model = None
         self.judge_tokenizer = None
         
-        # M3 담당자가 모델을 넘겨주면 아래 분기를 통해 로드합니다.
         if m3_model_path and os.path.exists(m3_model_path):
             from transformers import AutoTokenizer, AutoModelForSequenceClassification
             self.judge_tokenizer = AutoTokenizer.from_pretrained(m3_model_path)
@@ -43,8 +42,8 @@ class FactCheckerPipeline:
                 "deck_id": "temp_deck",
                 "doc_id": "temp_doc"
             } 
-    for i, c in enumerate(claims)
-]
+            for i, c in enumerate(claims)
+        ]
         formatted_spans = [{"passage_id": s.span_id, "text": s.text, "sent_ids": s.sent_ids, "window": "w3"} for s in spans]
         
         # BM25 검색
@@ -81,16 +80,39 @@ class FactCheckerPipeline:
             
         return hybrid_candidates
 
-    def format_m3_input(self, claim_text: str, slide_title: str, slide_context: List[str], candidates: List[Dict]) -> tuple[str, str]:
-        """M3 모델 입력 형식으로 문자열 조립"""
-        context_str = f"[제목] {slide_title} | " + " | ".join(slide_context)
-        evidence_str = " ".join([c["text"] for c in candidates])
-        return claim_text, f"{context_str} [SEP] {evidence_str}"
+    def _encode_m3_input(self, claim_text: str, slide_title: str, slide_context: List[str], candidates: List[Dict]) -> Dict[str, torch.Tensor]:
+        """M3 학습 코드의 토큰 예산 규칙에 맞춘 정밀 절단 로직 (max_len=510)"""
+        tok = self.judge_tokenizer
+        cls_id, sep_id = tok.cls_token_id, tok.sep_token_id
+        
+        def enc(text, cap):
+            if not text: return []
+            return tok(str(text), add_special_tokens=False)["input_ids"][:cap]
+
+        # 1. Claim (최대 64토큰)
+        ids = [cls_id] + enc(claim_text, 64) + [sep_id]
+
+        # 2. Context (최대 96토큰, 불릿 6개)
+        ctx_parts = [slide_title] + slide_context[:6]
+        ids += enc(" / ".join(p for p in ctx_parts if p), 96) + [sep_id]
+
+        # 3. Candidates (각 64토큰씩 최대 5개)
+        for c in candidates[:5]:
+            cids = enc(c["text"], 64)
+            if cids:
+                ids += cids + [sep_id]
+
+        ids = ids[:510]
+        
+        return {
+            "input_ids": torch.tensor([ids], dtype=torch.long).to(self.device),
+            "attention_mask": torch.tensor([[1] * len(ids)], dtype=torch.long).to(self.device)
+        }
 
     def check(self, doc_path: str, deck_path: str) -> Dict[str, Any]:
         """
         입력: 문서 경로, PPT 경로
-        출력: claim별 판정, 모델이 선별한 근거 구간
+        출력: claim별 판정, 모델이 선별한 근거 구간 (Top-1 적용)
         """
         raw_text = Path(doc_path).read_text(encoding="utf-8")
         sents = split_sentences(raw_text)
@@ -106,27 +128,27 @@ class FactCheckerPipeline:
             cid = str(i)
             cands = candidates_map.get(cid, [])
             
-            # M3 판정부
             pred_label = "판정 대기"
             selected_evidence = "판정 대기 (모델 미연결)"
             
             if self.judge_model:
-                text1, text2 = self.format_m3_input(
+                # M3 전용 포맷터로 입력 생성
+                inputs = self._encode_m3_input(
                     claim["Claim (PPT)"], claim["Slide_Title"], claim["Context (PPT)"], cands
                 )
-                inputs = self.judge_tokenizer(text1, text2, truncation=True, max_length=512, return_tensors="pt").to(self.device)
-                if "token_type_ids" in inputs:
-                    del inputs["token_type_ids"]
                     
                 with torch.no_grad():
-                    probs = torch.nn.functional.softmax(self.judge_model(**inputs).logits, dim=-1)[0]
-                    pred_idx = torch.argmax(probs).item()
+                    logits = self.judge_model(**inputs).logits[0]
+                    pred_idx = torch.argmax(logits).item()
                     pred_label = self.label_list[pred_idx]
                 
-                # M3 담당자의 로직에 따라, 모델이 5개 후보 중 가장 정답에 가까운 구간을 
-                # 어떻게 뱉어내게 할지 확정되면 이 부분에 로직을 추가합니다.
-                # 임시로 후보 중 첫 번째를 반환하거나 전체를 텍스트로 합쳐서 반환할 수 있습니다.
-                selected_evidence = cands[0]["text"] if cands else "근거 후보 없음"
+                # 라벨에 따른 근거 선별 로직 (1등 근거 활용)
+                if pred_label in ["근거있음", "모순"] and cands:
+                    selected_evidence = cands[0]["text"]  # 가장 점수 높은 1등 문장
+                elif pred_label in ["무근거", "benign"]:
+                    selected_evidence = "해당 없음 (원문에 근거 없음)"
+                else:
+                    selected_evidence = "근거 후보 없음"
                 
             results.append({
                 "slide_number": claim["Slide #"],
@@ -143,29 +165,29 @@ class FactCheckerPipeline:
         }
 
 
+#################################
+# 테스트 코드. 지워도 됩니다 
 ###################################
-# 밑은 M3 이전까지의 테스트 코드
-# M3 완료 후 삭제 가능 
-####################################
 
 if __name__ == "__main__":
     import json
     import sys
-    from pathlib import Path
     
+    # 윈도우 환경 OpenMP 충돌 방지
+    os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
     
     test_doc = "cat.txt"  
     test_deck = "cat.pptx"
     
     if not Path(test_doc).exists() or not Path(test_deck).exists():
-        print("파일이 경로에 없습니다. 경로를 확인해 주세요.")
+        print("테스트 파일이 없습니다. 경로를 수정하거나 파일을 준비해 주세요.")
         sys.exit(1)
 
-    print("파이프라인 초기화 중 (임베딩 모델 로드)...")
-    pipeline = FactCheckerPipeline()
+    print(" 파이프라인 초기화 중...")
+    pipeline = FactCheckerPipeline(m3_model_path=None) # 모델 경로가 생기면 여기에 "models/M3"를 넣으세요
     
     print(f"\n [{test_deck}] 문서를 바탕으로 팩트체크 시작...")
     result = pipeline.check(test_doc, test_deck)
         
-    print("\n파이프라인 실행 성공! 최종 출력(JSON) 결과:")
+    print("\n 파이프라인 실행 성공! 최종 출력(JSON) 결과:")
     print(json.dumps(result, ensure_ascii=False, indent=2))
