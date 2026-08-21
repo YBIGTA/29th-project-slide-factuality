@@ -11,3 +11,6 @@ models/**/checkpoint-*/
 
 models/**/model.safetensors
 models/**/checkpoint-*/
+
+models/**/model.safetensors
+models/**/checkpoint-*/
