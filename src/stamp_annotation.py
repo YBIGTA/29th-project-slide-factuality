@@ -20,12 +20,10 @@ import openpyxl
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
-# 라벨을 붙일 때 쓰던 이름과 레포에 올라온 이름이 다른 것들.
-# claim 본문 겹침으로 확인했다 (fin_02 는 분할기 버전이 달라 67% 만 겹친다).
-DOC_ALIAS = {
-    "fin_01": "finance_01",
-    "fin_02": "finance_03",
-}
+# 라벨 시트 이름과 레포 doc_id 가 어긋난 것들. 지금은 없다 —
+# 예전 `fin_01`/`fin_02` 는 `finance_01`/`finance_03` 으로 맞췄다
+# (claim 본문 겹침으로 확인). 새로 어긋나면 여기 적는다.
+DOC_ALIAS: dict[str, str] = {}
 
 NEW_COLS = ["deck_id", "담당자"]          # 시트 맨 앞에 넣는다
 WIDTHS = {"deck_id": 22, "담당자": 10}
