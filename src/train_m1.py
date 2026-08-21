@@ -6,10 +6,10 @@ from __future__ import annotations
 
 * train: finance가 아니면서 ``Test Set`` 값이 1이 아닌 덱
 * test: finance가 아니면서 ``Test Set`` 값이 1로 시작하는 덱
-* generalization: 모든 finance 덱(이번 실행에서는 파일 자체를 불러오지 않음)
+* generalization: 모든 finance 덱
 
 하이퍼파라미터 선택과 모델 학습에는 train split만 사용한다. 보류해 둔 test
-split은 분류기가 확정된 뒤 한 번만 임베딩하고 평가한다.
+split과 generalization split은 분류기가 확정된 뒤 임베딩하고 평가한다.
 """
 
 import argparse
@@ -78,29 +78,34 @@ def resolve_split_decks(annotation_path: Path) -> dict[str, list[str]]:
         raise ValueError(f"{annotation_path}: '_시트이름' sheet is missing")
     sheet = workbook["_시트이름"]
     headers = {str(cell.value).strip(): i for i, cell in enumerate(next(sheet.iter_rows()))}
-    required = {"deck_id", "레포 파일명", "Test Set"}
+    required = {"deck_id", "레포 파일명"}
     missing = required - headers.keys()
     if missing:
         raise ValueError(f"{annotation_path}: missing columns {sorted(missing)}")
+    if "split" not in headers and "Test Set" not in headers:
+        raise ValueError(f"{annotation_path}: missing 'split' or 'Test Set' column")
 
     buckets: dict[str, set[str]] = {"train": set(), "test": set(), "generalization": set()}
     for row in sheet.iter_rows(min_row=2, values_only=True):
-        marker = row[headers["Test Set"]]
         deck = normalize_deck_id(row[headers["레포 파일명"]] or row[headers["deck_id"]])
         if not deck:
             continue
 
-        # 워크북의 tech_03 중복 행은 자신이 tech_04를 뜻한다고 명시한다.
-        marker_text = str(marker or "").lower().replace("_", "")
-        if "tech4" in marker_text:
-            deck = "tech_04"
-
-        if deck.startswith("finance_"):
-            split = "generalization"
-        elif is_test_marker(marker):
-            split = "test"
+        if "split" in headers:
+            split = str(row[headers["split"]] or "").strip().lower()
+            if split not in buckets:
+                raise ValueError(f"{annotation_path}: invalid split {split!r} for {deck}")
         else:
-            split = "train"
+            marker = row[headers["Test Set"]]
+            marker_text = str(marker or "").lower().replace("_", "")
+            if "tech4" in marker_text:
+                deck = "tech_04"
+            if deck.startswith("finance_"):
+                split = "generalization"
+            elif is_test_marker(marker):
+                split = "test"
+            else:
+                split = "train"
         buckets[split].add(deck)
 
     workbook.close()
@@ -130,12 +135,10 @@ def valid_rows(rows: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]], di
 
 
 def load_selected_rows(dataset_dir: Path, annotation_path: Path) -> tuple[
-    list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]
+    list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]
 ]:
     split_decks = resolve_split_decks(annotation_path)
-    # Finance는 generalization.jsonl에 있으며 M1 학습·모델 선택·test 평가에서
-    # 완전히 분리해야 하므로, 해당 파일 자체를 불러오지 않는다.
-    source_paths = [dataset_dir / name for name in ("train.jsonl", "test.jsonl")]
+    source_paths = [dataset_dir / name for name in ("train.jsonl", "test.jsonl", "generalization.jsonl")]
     all_rows = [row for path in source_paths for row in read_jsonl(path)]
 
     by_deck: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -145,6 +148,7 @@ def load_selected_rows(dataset_dir: Path, annotation_path: Path) -> tuple[
     available = set(by_deck)
     missing_train = set(split_decks["train"]) - available
     missing_test = set(split_decks["test"]) - available
+    missing_generalization = set(split_decks["generalization"]) - available
     if missing_train or missing_test:
         raise ValueError(
             "dataset rows missing for annotation split: "
@@ -153,15 +157,19 @@ def load_selected_rows(dataset_dir: Path, annotation_path: Path) -> tuple[
 
     train_raw = [row for deck in split_decks["train"] for row in by_deck[deck]]
     test_raw = [row for deck in split_decks["test"] for row in by_deck[deck]]
+    generalization_raw = [row for deck in split_decks["generalization"] for row in by_deck[deck]]
     train_rows, train_invalid = valid_rows(train_raw)
     test_rows, test_invalid = valid_rows(test_raw)
+    generalization_rows, generalization_invalid = valid_rows(generalization_raw)
+    evaluated_generalization_decks = sorted(
+        {normalize_deck_id(row.get("deck_id") or row.get("doc_id")) for row in generalization_rows}
+    )
 
-    # 관례적으로 빼는 데 그치지 않고 finance 누수가 있으면 즉시 중단한다.
     leaked = [r.get("claim_id") for r in train_rows + test_rows if normalize_deck_id(r.get("deck_id")).startswith("finance_")]
     if leaked:
         raise RuntimeError(f"finance leakage detected in M1 train/test: {leaked[:5]}")
-    if not train_rows or not test_rows:
-        raise ValueError("train and test must both contain at least one valid row")
+    if not train_rows or not test_rows or not generalization_rows:
+        raise ValueError("train, test, and generalization must all contain at least one valid row")
 
     metadata = {
         "split_decks": split_decks,
@@ -170,11 +178,25 @@ def load_selected_rows(dataset_dir: Path, annotation_path: Path) -> tuple[
             for path in source_paths
         },
         "annotation": {"path": str(annotation_path), "sha256": sha256_file(annotation_path)},
-        "raw_counts": {"train": len(train_raw), "test": len(test_raw)},
-        "valid_counts": {"train": len(train_rows), "test": len(test_rows)},
-        "invalid_labels": {"train": train_invalid, "test": test_invalid},
+        "raw_counts": {
+            "train": len(train_raw),
+            "test": len(test_raw),
+            "generalization": len(generalization_raw),
+        },
+        "valid_counts": {
+            "train": len(train_rows),
+            "test": len(test_rows),
+            "generalization": len(generalization_rows),
+        },
+        "invalid_labels": {
+            "train": train_invalid,
+            "test": test_invalid,
+            "generalization": generalization_invalid,
+        },
+        "missing_generalization_decks": sorted(missing_generalization),
+        "evaluated_generalization_decks": evaluated_generalization_decks,
     }
-    return train_rows, test_rows, metadata
+    return train_rows, test_rows, generalization_rows, metadata
 
 
 def candidate_texts(row: dict[str, Any]) -> list[str]:
@@ -319,7 +341,12 @@ def write_json(path: Path, value: dict[str, Any]) -> None:
 
 
 def write_readme(
-    path: Path, encoder: str, train_count: int, test_count: int, classifier_specification: dict[str, Any]
+    path: Path,
+    encoder: str,
+    train_count: int,
+    test_count: int,
+    generalization_count: int,
+    classifier_specification: dict[str, Any],
 ) -> None:
     text = f"""# M1 - frozen embedding + lightweight classifier
 
@@ -328,7 +355,7 @@ def write_readme(
 - Input: claim and up to five retrieved candidate passages; slide context is excluded to match M2's no-context condition
 - Train: non-finance decks with `Test Set != 1` ({train_count} valid claims)
 - Test: non-finance decks with `Test Set = 1` ({test_count} valid claims)
-- Generalization: every finance deck; excluded from training, model selection, and this test evaluation
+- Generalization: every finance deck ({generalization_count} valid claims; evaluation only)
 
 `classifier.joblib` contains the fitted classifier, label mapping, and feature specification.
 `config.json` records the exact deck split and SHA-256 hashes of every input file.
@@ -363,7 +390,7 @@ def main() -> int:
     model_dir = (root / args.model_dir).resolve() if not args.model_dir.is_absolute() else args.model_dir
     result_path = (root / args.result).resolve() if not args.result.is_absolute() else args.result
 
-    train_rows, test_rows, metadata = load_selected_rows(dataset_dir, annotation)
+    train_rows, test_rows, generalization_rows, metadata = load_selected_rows(dataset_dir, annotation)
     print("split decks:", json.dumps(metadata["split_decks"], ensure_ascii=False))
     print("valid rows:", metadata["valid_counts"], "invalid labels:", metadata["invalid_labels"])
 
@@ -378,7 +405,7 @@ def main() -> int:
         local_files_only=args.local_files_only,
     )
     dimension = int(encoder.get_embedding_dimension())
-    all_rows = train_rows + test_rows
+    all_rows = train_rows + test_rows + generalization_rows
     claims = [str(row.get("claim_text", "")).strip() for row in all_rows]
     passages = [text for row in all_rows for text in candidate_texts(row)]
     print(f"encoding {len(set(claims))} unique claims and {len(set(passages))} unique candidate passages")
@@ -386,14 +413,19 @@ def main() -> int:
     passage_vectors = encode_lookup(encoder, passages, "passage: ", args.batch_size)
     train_x = build_features(train_rows, claim_vectors, passage_vectors, dimension)
     test_x = build_features(test_rows, claim_vectors, passage_vectors, dimension)
+    generalization_x = build_features(generalization_rows, claim_vectors, passage_vectors, dimension)
     train_y = np.asarray([LABEL_TO_ID[row["label"]] for row in train_rows], dtype=np.int64)
     test_y = np.asarray([LABEL_TO_ID[row["label"]] for row in test_rows], dtype=np.int64)
+    generalization_y = np.asarray(
+        [LABEL_TO_ID[row["label"]] for row in generalization_rows], dtype=np.int64
+    )
     train_groups = np.asarray([normalize_deck_id(row.get("deck_id")) for row in train_rows])
 
     best_specification, cv_trials = tune_classifier(train_x, train_y, train_groups, args.seed)
     classifier = make_classifier(best_specification, args.seed)
     classifier.fit(train_x, train_y)
     prediction = classifier.predict(test_x)
+    generalization_prediction = classifier.predict(generalization_x)
     description = (
         "frozen multilingual-E5 embeddings + "
         f"train-selected {best_specification['type']}, no slide context"
@@ -424,7 +456,11 @@ def main() -> int:
         "feature_spec": FEATURE_SPEC,
         "labels": LABELS,
         "data": metadata,
-        "class_counts": {"train": class_counts(train_rows), "test": class_counts(test_rows)},
+        "class_counts": {
+            "train": class_counts(train_rows),
+            "test": class_counts(test_rows),
+            "generalization": class_counts(generalization_rows),
+        },
         "cross_validation": {
             "type": "GroupKFold",
             "group": "deck_id",
@@ -436,16 +472,31 @@ def main() -> int:
         "environment": {"python": sys.version.split()[0], "platform": platform.platform(), "torch": torch.__version__, "sentence_transformers": sentence_transformers.__version__, "scikit_learn": sklearn.__version__},
     }
     write_json(model_dir / "config.json", config)
-    write_readme(model_dir / "M1_README.md", args.encoder, len(train_rows), len(test_rows), best_specification)
+    write_readme(
+        model_dir / "M1_README.md",
+        args.encoder,
+        len(train_rows),
+        len(test_rows),
+        len(generalization_rows),
+        best_specification,
+    )
 
     report = classification_report(test_y, prediction, labels=range(len(LABELS)), target_names=LABELS, output_dict=True, zero_division=0)
+    generalization_report = classification_report(
+        generalization_y,
+        generalization_prediction,
+        labels=range(len(LABELS)),
+        target_names=LABELS,
+        output_dict=True,
+        zero_division=0,
+    )
     result = {
         "model_id": MODEL_ID,
         "description": description,
         "selected_classifier": best_specification,
         "evaluation_split": "non-finance annotation decks with Test Set = 1",
-        "generalization_excluded": metadata["split_decks"]["generalization"],
         "test_decks": metadata["split_decks"]["test"],
+        "generalization_decks": metadata["evaluated_generalization_decks"],
         "train_support": len(train_rows),
         "test_support": len(test_rows),
         "macro_f1": float(f1_score(test_y, prediction, labels=range(len(LABELS)), average="macro", zero_division=0)),
@@ -454,12 +505,36 @@ def main() -> int:
         "confusion_matrix": confusion_matrix(test_y, prediction, labels=range(len(LABELS))).tolist(),
         "label_order": LABELS,
         "per_deck": per_deck_metrics(test_rows, test_y, prediction),
+        "generalization": {
+            "evaluation_split": "finance generalization decks",
+            "support": len(generalization_rows),
+            "macro_f1": float(
+                f1_score(
+                    generalization_y,
+                    generalization_prediction,
+                    labels=range(len(LABELS)),
+                    average="macro",
+                    zero_division=0,
+                )
+            ),
+            "accuracy": float(accuracy_score(generalization_y, generalization_prediction)),
+            "classification_report": generalization_report,
+            "confusion_matrix": confusion_matrix(
+                generalization_y, generalization_prediction, labels=range(len(LABELS))
+            ).tolist(),
+            "per_deck": per_deck_metrics(
+                generalization_rows, generalization_y, generalization_prediction
+            ),
+        },
         "invalid_labels_excluded": metadata["invalid_labels"],
         "model_config": str((model_dir / "config.json").relative_to(root)),
     }
     write_json(result_path, result)
     print(f"saved {model_dir}")
-    print(f"saved {result_path}: macro-F1={result['macro_f1']:.4f}, accuracy={result['accuracy']:.4f}")
+    print(
+        f"saved {result_path}: test macro-F1={result['macro_f1']:.4f}, "
+        f"generalization macro-F1={result['generalization']['macro_f1']:.4f}"
+    )
     return 0
 
 
