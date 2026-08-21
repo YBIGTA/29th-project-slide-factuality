@@ -1,0 +1,171 @@
+import os
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True' #line 1,2는 윈도우상 오류 때문에 추가 
+import os
+import torch
+import numpy as np
+from typing import List, Dict, Any
+from pathlib import Path
+
+# 기존 모듈 임포트
+from segment import split_sentences, build_spans
+from claim_split import read_slides, build_records
+from retrieve_bm25 import BM25Index, retrieve as retrieve_bm25, DEFAULT_K1, DEFAULT_B
+from dense_retrieve import load_model as load_dense_model, encode as encode_dense, DEFAULT_MODEL as DENSE_DEFAULT_MODEL
+
+class FactCheckerPipeline:
+    def __init__(self, m3_model_path: str = None, device: str = None):
+        self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+        
+        # 1. 임베딩 모델 로드 (검색용)
+        self.embed_model = load_dense_model(DENSE_DEFAULT_MODEL, self.device)
+        
+        # 2. 판정 모델 로드 (M3)
+        self.label_list = ["근거 있음", "무근거", "모순", "Benign"]
+        self.judge_model = None
+        self.judge_tokenizer = None
+        
+        # M3 담당자가 모델을 넘겨주면 아래 분기를 통해 로드합니다.
+        if m3_model_path and os.path.exists(m3_model_path):
+            from transformers import AutoTokenizer, AutoModelForSequenceClassification
+            self.judge_tokenizer = AutoTokenizer.from_pretrained(m3_model_path)
+            self.judge_model = AutoModelForSequenceClassification.from_pretrained(m3_model_path).to(self.device)
+            self.judge_model.eval()
+
+    def _hybrid_search(self, claims: List[Dict], spans: List[Dict], top_n: int = 5) -> Dict[str, List[Dict]]:
+        """BM25와 Dense(e5)를 RRF 방식으로 융합하여 Top-N 반환"""
+        if not claims or not spans:
+            return {}
+
+        temp_queries = [
+            {
+                "claim_id": str(i), 
+                "query_text": c["Claim (PPT)"],
+                "deck_id": "temp_deck",
+                "doc_id": "temp_doc"
+            } 
+    for i, c in enumerate(claims)
+]
+        formatted_spans = [{"passage_id": s.span_id, "text": s.text, "sent_ids": s.sent_ids, "window": "w3"} for s in spans]
+        
+        # BM25 검색
+        bm25_idx = BM25Index(formatted_spans, k1=DEFAULT_K1, b=DEFAULT_B)
+        bm25_res = retrieve_bm25(temp_queries, formatted_spans, bm25_idx, top_n=60)
+        
+        # Dense 검색
+        p_texts = [s["text"] for s in formatted_spans]
+        p_vecs = encode_dense(self.embed_model, p_texts, "passage: ")
+        q_texts = [q["query_text"] for q in temp_queries]
+        q_vecs = encode_dense(self.embed_model, q_texts, "query: ")
+        
+        sims = q_vecs @ p_vecs.T
+        dense_res = []
+        for i, q in enumerate(temp_queries):
+            dense_top_idx = np.argsort(-sims[i])[:60]
+            results = [{"passage_id": formatted_spans[idx]["passage_id"], "rank": r} for r, idx in enumerate(dense_top_idx, start=1)]
+            dense_res.append({"claim_id": q["claim_id"], "results": results})
+
+        # RRF 융합 (k=60)
+        k = 60
+        hybrid_candidates = {}
+        span_lookup = {s["passage_id"]: s for s in formatted_spans}
+        
+        for q_idx, q in enumerate(temp_queries):
+            cid = q["claim_id"]
+            rrf_score = {}
+            for hit in bm25_res[q_idx]["results"] + dense_res[q_idx]["results"]:
+                pid = hit["passage_id"]
+                rrf_score[pid] = rrf_score.get(pid, 0.0) + (0.5 / (k + hit["rank"]))
+                
+            sorted_pids = sorted(rrf_score.keys(), key=lambda x: -rrf_score[x])[:top_n]
+            hybrid_candidates[cid] = [span_lookup[pid] for pid in sorted_pids]
+            
+        return hybrid_candidates
+
+    def format_m3_input(self, claim_text: str, slide_title: str, slide_context: List[str], candidates: List[Dict]) -> tuple[str, str]:
+        """M3 모델 입력 형식으로 문자열 조립"""
+        context_str = f"[제목] {slide_title} | " + " | ".join(slide_context)
+        evidence_str = " ".join([c["text"] for c in candidates])
+        return claim_text, f"{context_str} [SEP] {evidence_str}"
+
+    def check(self, doc_path: str, deck_path: str) -> Dict[str, Any]:
+        """
+        입력: 문서 경로, PPT 경로
+        출력: claim별 판정, 모델이 선별한 근거 구간
+        """
+        raw_text = Path(doc_path).read_text(encoding="utf-8")
+        sents = split_sentences(raw_text)
+        w3_spans = build_spans(sents, 3)
+        
+        slides = read_slides(Path(deck_path))
+        claims = [row for slide in slides for row in build_records(slide)]
+        
+        candidates_map = self._hybrid_search(claims, w3_spans, top_n=5)
+        
+        results = []
+        for i, claim in enumerate(claims):
+            cid = str(i)
+            cands = candidates_map.get(cid, [])
+            
+            # M3 판정부
+            pred_label = "판정 대기"
+            selected_evidence = "판정 대기 (모델 미연결)"
+            
+            if self.judge_model:
+                text1, text2 = self.format_m3_input(
+                    claim["Claim (PPT)"], claim["Slide_Title"], claim["Context (PPT)"], cands
+                )
+                inputs = self.judge_tokenizer(text1, text2, truncation=True, max_length=512, return_tensors="pt").to(self.device)
+                if "token_type_ids" in inputs:
+                    del inputs["token_type_ids"]
+                    
+                with torch.no_grad():
+                    probs = torch.nn.functional.softmax(self.judge_model(**inputs).logits, dim=-1)[0]
+                    pred_idx = torch.argmax(probs).item()
+                    pred_label = self.label_list[pred_idx]
+                
+                # M3 담당자의 로직에 따라, 모델이 5개 후보 중 가장 정답에 가까운 구간을 
+                # 어떻게 뱉어내게 할지 확정되면 이 부분에 로직을 추가합니다.
+                # 임시로 후보 중 첫 번째를 반환하거나 전체를 텍스트로 합쳐서 반환할 수 있습니다.
+                selected_evidence = cands[0]["text"] if cands else "근거 후보 없음"
+                
+            results.append({
+                "slide_number": claim["Slide #"],
+                "claim": claim["Claim (PPT)"],
+                "predicted_label": pred_label,
+                "selected_evidence": selected_evidence,
+                "top5_candidates": [{"passage_id": c["passage_id"], "text": c["text"]} for c in cands]
+            })
+            
+        return {
+            "document": doc_path,
+            "presentation": deck_path,
+            "results": results
+        }
+
+
+###################################
+# 밑은 M3 이전까지의 테스트 코드
+# M3 완료 후 삭제 가능 
+####################################
+
+if __name__ == "__main__":
+    import json
+    import sys
+    from pathlib import Path
+    
+    
+    test_doc = "cat.txt"  
+    test_deck = "cat.pptx"
+    
+    if not Path(test_doc).exists() or not Path(test_deck).exists():
+        print("파일이 경로에 없습니다. 경로를 확인해 주세요.")
+        sys.exit(1)
+
+    print("파이프라인 초기화 중 (임베딩 모델 로드)...")
+    pipeline = FactCheckerPipeline()
+    
+    print(f"\n [{test_deck}] 문서를 바탕으로 팩트체크 시작...")
+    result = pipeline.check(test_doc, test_deck)
+        
+    print("\n파이프라인 실행 성공! 최종 출력(JSON) 결과:")
+    print(json.dumps(result, ensure_ascii=False, indent=2))
