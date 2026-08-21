@@ -5,3 +5,12 @@ __pycache__/
 .idea/
 .cache/
 *.jsonl.tmp
+
+models/**/model.safetensors
+models/**/checkpoint-*/
+
+models/**/model.safetensors
+models/**/checkpoint-*/
+
+models/**/model.safetensors
+models/**/checkpoint-*/

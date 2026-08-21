@@ -1,0 +1,260 @@
+{
+  "model_id": "M3",
+  "use_context": true,
+  "backbone": "klue/roberta-base",
+  "config": {
+    "model_id": "M3",
+    "use_context": true,
+    "backbone": "klue/roberta-base",
+    "data_dir": "dataset",
+    "out_root": "models",
+    "results_dir": "results",
+    "match_args": "models/M2/training_args.bin",
+    "eval_generalization": false,
+    "max_len": 510,
+    "claim_max": 64,
+    "ctx_max": 96,
+    "ctx_bullets": 6,
+    "n_cand": 5,
+    "cand_max": 64,
+    "seeds": "13,42,777",
+    "lr": 2e-05,
+    "epochs": 8,
+    "batch_size": 16,
+    "eval_batch_size": 32,
+    "grad_accum": 1,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "label_smoothing": 0.0,
+    "scheduler": "linear",
+    "cw_power": 0.5,
+    "n_dev_docs": 3,
+    "n_boot": 1000,
+    "fp16": true,
+    "inspect": false
+  },
+  "hyperparameters": {
+    "learning_rate": 2e-05,
+    "num_train_epochs": 5,
+    "per_device_train_batch_size": 16,
+    "gradient_accumulation_steps": 1,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "label_smoothing_factor": 0.0,
+    "lr_scheduler_type": "linear",
+    "fp16": false
+  },
+  "runs": [
+    {
+      "seed": 13,
+      "dev_docs": [
+        "arts_01",
+        "socio_03",
+        "tech_01"
+      ],
+      "dev_macro_f1": 0.2246732026143791,
+      "test": {
+        "macro_f1": 0.31436706497386113,
+        "accuracy": 0.6678700361010831,
+        "per_class_f1": {
+          "근거있음": 0.7767,
+          "무근거": 0.0,
+          "모순": 0.0,
+          "benign": 0.4808
+        },
+        "support": {
+          "근거있음": 195,
+          "무근거": 26,
+          "모순": 12,
+          "benign": 44
+        },
+        "confusion": [
+          [
+            160,
+            0,
+            0,
+            35
+          ],
+          [
+            26,
+            0,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            0,
+            0
+          ],
+          [
+            19,
+            0,
+            0,
+            25
+          ]
+        ],
+        "confusion_labels": [
+          "근거있음",
+          "무근거",
+          "모순",
+          "benign"
+        ],
+        "n": 277,
+        "ci95": [
+          0.21649484536082475,
+          0.3382461311717023
+        ]
+      }
+    },
+    {
+      "seed": 42,
+      "dev_docs": [
+        "bio_01",
+        "bio_02",
+        "socio_03"
+      ],
+      "dev_macro_f1": 0.25778128858865407,
+      "test": {
+        "macro_f1": 0.32976641800171214,
+        "accuracy": 0.7292418772563177,
+        "per_class_f1": {
+          "근거있음": 0.8326,
+          "무근거": 0.0,
+          "모순": 0.0,
+          "benign": 0.4865
+        },
+        "support": {
+          "근거있음": 195,
+          "무근거": 26,
+          "모순": 12,
+          "benign": 44
+        },
+        "confusion": [
+          [
+            184,
+            0,
+            0,
+            11
+          ],
+          [
+            26,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            0,
+            1
+          ],
+          [
+            26,
+            0,
+            0,
+            18
+          ]
+        ],
+        "confusion_labels": [
+          "근거있음",
+          "무근거",
+          "모순",
+          "benign"
+        ],
+        "n": 277,
+        "ci95": [
+          0.21649484536082475,
+          0.382797619047619
+        ]
+      }
+    },
+    {
+      "seed": 777,
+      "dev_docs": [
+        "arts_02",
+        "socio_02",
+        "tech_03"
+      ],
+      "dev_macro_f1": 0.31788061031295245,
+      "test": {
+        "macro_f1": 0.3316301703163017,
+        "accuracy": 0.6895306859205776,
+        "per_class_f1": {
+          "근거있음": 0.7932,
+          "무근거": 0.0,
+          "모순": 0.0,
+          "benign": 0.5333
+        },
+        "support": {
+          "근거있음": 195,
+          "무근거": 26,
+          "모순": 12,
+          "benign": 44
+        },
+        "confusion": [
+          [
+            163,
+            0,
+            0,
+            32
+          ],
+          [
+            26,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            0,
+            1
+          ],
+          [
+            16,
+            0,
+            0,
+            28
+          ]
+        ],
+        "confusion_labels": [
+          "근거있음",
+          "무근거",
+          "모순",
+          "benign"
+        ],
+        "n": 277,
+        "ci95": [
+          0.21315789473684213,
+          0.3371464600972798
+        ]
+      }
+    }
+  ],
+  "train_label_dist": {
+    "근거있음": 528,
+    "모순": 78,
+    "무근거": 61,
+    "benign": 127
+  },
+  "data_fingerprint": {
+    "train.jsonl": {
+      "sha12": "52380026c991",
+      "lines": 811
+    },
+    "test.jsonl": {
+      "sha12": "41ebe14d2f03",
+      "lines": 290
+    },
+    "generalization.jsonl": {
+      "sha12": "4a3f556253bf",
+      "lines": 259
+    }
+  },
+  "git_commit": "728636a",
+  "test_macro_f1_mean": 0.3252545510972917,
+  "test_macro_f1_std": 0.00773612343655631
+}
