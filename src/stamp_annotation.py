@@ -25,12 +25,16 @@ from openpyxl.utils import get_column_letter
 # (claim 본문 겹침으로 확인). 새로 어긋나면 여기 적는다.
 DOC_ALIAS: dict[str, str] = {}
 
-NEW_COLS = ["deck_id", "담당자"]          # 시트 맨 앞에 넣는다
-WIDTHS = {"deck_id": 22, "담당자": 10}
+NEW_COLS = ["deck_id", "담당자", "split"]   # 시트 맨 앞에 넣는다
+WIDTHS = {"deck_id": 22, "담당자": 10, "split": 15}
 SUMMARY = "_시트이름"
 
 # 요약 시트에 덧붙이는 자료 유무 컬럼
 ASSET_COLS = ["원문 PDF", "정제 텍스트", "덱 PPTX", "manifest"]
+
+# split 은 manifest.csv 가 정답이다. 거기 없는 문서만 여기서 메운다.
+SPLIT_FALLBACK = {"finance_05": "generalization"}
+SPLIT_FILL = {"train": "E7EEF9", "test": "FFE88B", "generalization": "D9C7F0"}
 
 HEADER_FILL = "355BB7"
 THIN = Side(style="thin", color="D9D9D9")
@@ -74,7 +78,19 @@ def assets(root: Path) -> dict[str, dict[str, str]]:
     return out
 
 
-def stamp_sheet(ws, deck_id: str, who: str) -> int:
+def load_splits(root: Path) -> dict[str, str]:
+    """doc_id -> split. manifest 에 없으면 SPLIT_FALLBACK 을 본다."""
+    out = dict(SPLIT_FALLBACK)
+    mpath = root / "docs" / "manifest.csv"
+    if mpath.exists():
+        with mpath.open(encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("doc_id") and r.get("split"):
+                    out[r["doc_id"]] = r["split"].strip()
+    return out
+
+
+def stamp_sheet(ws, deck_id: str, who: str, split: str) -> int:
     """맨 앞에 deck_id·담당자 컬럼을 넣고 전 행에 값을 채운다."""
     have = [ws.cell(1, i + 1).value for i in range(len(NEW_COLS))]
     if have != NEW_COLS:
@@ -89,11 +105,13 @@ def stamp_sheet(ws, deck_id: str, who: str) -> int:
         if all(ws.cell(r, c).value in (None, "")
                for c in range(len(NEW_COLS) + 1, ws.max_column + 1)):
             continue
-        for i, val in enumerate((deck_id, who), start=1):
+        for i, val in enumerate((deck_id, who, split), start=1):
             cell = ws.cell(r, i)
             cell.value = val
             cell.alignment = Alignment(vertical="top")
             cell.border = BORDER
+            if i == 3 and val in SPLIT_FILL:
+                cell.fill = PatternFill("solid", fgColor=SPLIT_FILL[val])
         n += 1
 
     ws.freeze_panes = ws.cell(2, len(NEW_COLS) + 2).coordinate
@@ -101,7 +119,26 @@ def stamp_sheet(ws, deck_id: str, who: str) -> int:
     return n
 
 
-def stamp_summary(ws, table: dict[str, dict[str, str]]) -> None:
+def stamp_long_csv(path: Path, splits: dict[str, str]) -> int:
+    """annotations_long.csv 에도 split 컬럼을 넣는다. 코드가 읽는 쪽이라 여기가 중요하다."""
+    with path.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
+    if not rows:
+        return 0
+    cols = [c for c in rows[0] if c != "split"]
+    cols.insert(cols.index("annotator") + 1 if "annotator" in cols else 1, "split")
+    for r in rows:
+        doc = DOC_ALIAS.get(str(r.get("deck_id", "")).split("__")[0],
+                            str(r.get("deck_id", "")).split("__")[0])
+        r["split"] = splits.get(doc, "")
+    with path.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=cols)
+        w.writeheader()
+        w.writerows(rows)
+    return sum(1 for r in rows if r["split"])
+
+
+def stamp_summary(ws, table: dict[str, dict[str, str]], splits: dict[str, str]) -> None:
     """요약 시트에 자료 유무를 덧붙인다. deck_id 컬럼을 열쇠로 쓴다."""
     head = [c.value for c in ws[1]]
     key = head.index("deck_id") + 1
@@ -111,6 +148,11 @@ def stamp_summary(ws, table: dict[str, dict[str, str]]) -> None:
     for i, name in enumerate(ASSET_COLS):
         header_cell(ws.cell(1, start + i), name)
         ws.column_dimensions[get_column_letter(start + i)].width = 12
+
+    # split 은 '어느 평가에 쓰는 덱인가' 라 자료 유무보다 먼저 보인다
+    scol = start + len(ASSET_COLS)
+    header_cell(ws.cell(1, scol), "split")
+    ws.column_dimensions[get_column_letter(scol)].width = 15
 
     for r in range(2, ws.max_row + 1):
         doc = ws.cell(r, key).value
@@ -125,6 +167,13 @@ def stamp_summary(ws, table: dict[str, dict[str, str]]) -> None:
             cell.border = BORDER
             if row[name] == "X":
                 cell.fill = PatternFill("solid", fgColor=MISSING_FILL)
+        sp = splits.get(doc, "")
+        sc = ws.cell(r, scol)
+        sc.value = sp
+        sc.alignment = Alignment(horizontal="center")
+        sc.border = BORDER
+        if sp in SPLIT_FILL:
+            sc.fill = PatternFill("solid", fgColor=SPLIT_FILL[sp])
 
 
 def main() -> None:
@@ -136,22 +185,32 @@ def main() -> None:
 
     wb = openpyxl.load_workbook(args.workbook)
     table = assets(args.root)
+    splits = load_splits(args.root)
 
     total = 0
     for name in wb.sheetnames:
         if name == SUMMARY:
             continue
         deck_id, who = split_sheet_name(name)
-        n = stamp_sheet(wb[name], deck_id, who)
+        doc = DOC_ALIAS.get(deck_id, deck_id)
+        split = splits.get(doc, "")
+        if not split:
+            print(f"  !! {name}: split 을 모르겠다 (manifest 에 {doc} 없음)")
+        n = stamp_sheet(wb[name], deck_id, who, split)
         total += n
-        print(f"  {name:24s} {n:4d}행  <- {deck_id} / {who}")
+        print(f"  {name:24s} {n:4d}행  <- {deck_id} / {who} / {split}")
 
     if SUMMARY in wb.sheetnames:
-        stamp_summary(wb[SUMMARY], table)
+        stamp_summary(wb[SUMMARY], table, splits)
         print(f"  {SUMMARY:24s} 자료 유무 {len(ASSET_COLS)}칸 추가")
 
     wb.save(args.workbook)
     print(f"\n{args.workbook} · 시트 {len(wb.sheetnames)-1}개 · {total}행에 담당자 기입")
+
+    csv_path = args.workbook.parent / "annotations_long.csv"
+    if csv_path.exists():
+        n = stamp_long_csv(csv_path, splits)
+        print(f"{csv_path} · {n}행에 split 기입")
 
 
 if __name__ == "__main__":
