@@ -1,0 +1,199 @@
+# 추출 방식: 1단 (종결어미 89.5%)
+[p1 각주]   J. Korean Soc. Combust. 31(2) (2026) 10-19
+[p1 각주]   〈학술논문〉 DOI: https://doi.org/10.15231/jksc.2026.31.2.010 ISSN 1226-0959
+[p1 각주]   eISSN 2466-2089
+[p1 각주]   딥러닝 모델을 이용한 고주파 연소 불안정 조기 감지
+[p1 각주]   한경현† ․ 김규태
+[p1 각주]   한국과학기술원 항공우주공학과
+[p1 각주]   Early Detection of High-Frequency Combustion Instability Using Deep Learning Model
+[p1 각주]   Gyeonghyun Han and Kyu Tae Kim
+[p1 각주]   Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology
+[p1 각주]   (Received 26 March 2026, Received in revised form 21 April 2026, Accepted 21 April 2026)
+[p1 각주]   ABSTRACT
+[p1 각주]   This study examines the feasibility of real-time early detection of combustion instability using a ResNet-18
+[p1 각주]   model trained on recurrence plot images derived from dynamic pressure signals. Experiments were
+[p1 각주]   conducted in a hydrogen-fueled premixed combustor by gradually increasing the fuel flow rate from three
+[p1 각주]   stable initial velocities, which induced several high-frequency instability modes. A model trained on a
+[p1 각주]   single mode could detect instability onset, but its performance depended on the frequency difference
+[p1 각주]   between the trained and target instability modes. A combined-frequency model showed effective detection
+[p1 각주]   performance, although improper frequency selection caused overly sensitive responses in stable regions.
+[p1 각주]   These results indicate that robust early detection requires not only multi-band training, but also careful
+[p1 각주]   selection of representative instability frequencies.
+[p1 각주]   Key Words : Combustion instability, Hydrogen, Early detection, Deep learning, Recurrence plot
+[p1 각주]   †Corresponding Author, ghhan@kaist.ac.kr
+[p1 각주]   This is an Open-Access article distributed under the terms of
+[p1 각주]   the Creative Commons Attribution Non-Commercial License
+[p1 각주]   (http://creativecommons.org/licences/by-nc/4.0) which permits
+[p1 각주]   unrestricted non-commercial use, distribution, and reproduction
+[p1 각주]   in any medium, provided the original work is properly cited.
+[p2 머리말] 딥러닝 모델을 이용한 고주파 연소 불안정 조기 감지 11
+[p2 각주]   Fig. 1. (a) Cross-sectional view of the model gas
+[p2 각주]   turbine combustor. (b) Injector configuration
+[p2 각주]   and arrangement of the dynamic pressure
+[p2 각주]   sensors. Modified from[19].
+[p3 머리말] 수소 공급량만을 서서히 증가시켜 단열 화염 온도를 1400
+[p3 머리말] Input size 224 × 224 × 3
+[p3 머리말] Number of classes 2
+[p3 머리말] Batch size 32
+[p3 머리말] Epochs 2
+[p3 각주]   Fig. 2. Architecture of ResNet-18 deep learning
+[p3 각주]   model. Modified from[22].
+[p3 각주]   Table 1. Model configuration
+[p3 각주]   Parameter Value
+[p3 각주]   Network architecture ResNet-18
+[p3 각주]   Learning rate 0.001
+[p4 머리말] 딥러닝 모델을 이용한 고주파 연소 불안정 조기 감지 13
+[p4 각주]   Fig. 3. Transient evolution of dynamic pressure signals at different azimuthal locations in the combustor,
+[p4 각주]   along with the corresponding spectrograms (calculated from ′c) and equivalence ratio. Each column
+[p4 각주]   corresponds to a different initial velocity of 20, 25, and 35 m/s.
+[p5 머리말] 판별하였다. 학습에 사용된 데이터의 추출 구간은 Fig. 3
+[p5 각주]   Fig. 4. (a) Pressure perturbation signals measured
+[p5 각주]   over four oscillation cycles at five different
+[p5 각주]   azimuthal positions on the dump plane. (b)
+[p5 각주]   Joint probability density function of the
+[p5 각주]   amplitudes of the clockwise and counter-
+[p5 각주]   clockwise-traveling waves, 𝐴
+[p5 각주]   − and 𝐴+ r e s -
+[p5 각주]   pectively. The dashed lines indicate spin-
+[p5 각주]   ratio values of ±1/3.
+[p6 머리말] 딥러닝 모델을 이용한 고주파 연소 불안정 조기 감지 15
+[p6 각주]   Fig. 5. (a) Evolution of the pressure fluctuation, with
+[p6 각주]   the RMS value indicated by the green line. (b)
+[p6 각주]   Representative recurrence plots for the stable
+[p6 각주]   state, onset of instability, and limit-cycle
+[p6 각주]   condition, denoted as points A, B, and C,
+[p6 각주]   respectively. (c) Combustor stability determined
+[p6 각주]   using a ResNet-18 deep learning model
+[p6 각주]   trained on the gray-shaded region.
+[p6 각주]   Fig. 6. RMS value of the pressure signal and
+[p6 각주]   combustor stability determined by deep
+[p6 각주]   learning models trained on different inst-
+[p6 각주]   ability frequency bands. Green circles
+[p6 각주]   denote the initial detection times corres-
+[p6 각주]   ponding to the point where the RMS
+[p6 각주]   amplitude reaches 0.1%.
+[p7 머리말] 20 m/s 조건의 경우 FP와 TN이 모두 0으로 나타났는데,
+[p7 머리말] 스템을 안정으로 판단하는 경우가 집중되었다. 반면 20
+[p7 머리말] 762 38
+[p7 머리말] 357 443
+[p7 머리말] Case 2
+[p7 머리말] 547 26
+[p7 머리말] 161 66
+[p7 머리말] 390 183
+[p7 머리말] 19 208
+[p7 머리말] Case 3
+[p7 머리말] 690 78
+[p7 머리말] 52 7
+[p7 머리말] 03 2
+[p7 머리말] 634 134
+[p7 각주]   Table 2. C o n f u s i o n m a t r i x o f t h e r e s u l t s s h o w n i n
+[p7 각주]   Fig. 6.
+[p7 각주]   Case1
+[p7 각주]   nozzl e   ms
+[p7 각주]   1.8 kHz model 3.2 kHz model
+[p7 각주]   00
+[p7 각주]   00
+[p7 각주]   nozzl e   ms
+[p7 각주]   1.8 kHz model 2.6 kHz model
+[p7 각주]   nozzl e   ms
+[p7 각주]   2.6 kHz model 3.2 kHz model
+[p7 각주]   Notation
+[p7 각주]   n = 800 Predicted:
+[p7 각주]   Unstable
+[p7 각주]   Predicted:
+[p7 각주]   Stable
+[p7 각주]   Actual:
+[p7 각주]   Unstable TP FN
+[p7 각주]   Actual:
+[p7 각주]   Stable FP TN
+[p8 머리말] 딥러닝 모델을 이용한 고주파 연소 불안정 조기 감지 17
+[p8 머리말] 따라 다양한 주파수 대역의 불안정이 발생하였으며, 3
+[p8 각주]   Fig. 7. (a) Evolution of the pressure fluctuation, with
+[p8 각주]   the RMS value indicated by the green line. (b)
+[p8 각주]   Corresponding spectrogram. (c) Stability of
+[p8 각주]   the combustor measured by ResNet-18
+[p8 각주]   deep learning model trained at 540 Hz and
+[p8 각주]   3.2 kHz instability. (d) Stability of the com-
+[p8 각주]   bustor measured by ResNet-18 deep lear-
+[p8 각주]   ning model trained at 540 Hz and 2.6 kHz
+[p8 각주]   instability.
+[p9 머리말] dual swirl H2 burner, Proc. Combust. Inst. 40
+[p9 머리말] approach with limited data, Appl. Energy 373
+[p9 각주]   Analysis of combustion instability characteristics
+[p9 각주]   of a single-nozzle combustor in a natural gas-
+[p9 각주]   hydrogen co-firing gas turbine under varying ope-
+[p9 각주]   rating pressures, J. Korean Soc. Combust. 30(2)
+[p9 각주]   (2025) 27-35.
+[p9 각주]   [8] H. Paniez, S. Marragou, H. Magnes, T. Schuller,
+[p9 각주]   High-frequency thermo-acoustic instability in a
+[p9 각주]   (2024) 105679.
+[p9 각주]   [9] H. Kang, K.T. Kim, Combustion dynamics of
+[p9 각주]   multi-element lean-premixed hydrogen-air flame
+[p9 각주]   ensemble, Combust. Flame 233 (2021) 111585.
+[p9 각주]   [10] J.G. Aguilar, E. Æsøy, J.R. Dawson, The influence
+[p9 각주]   of hydrogen on the stability of a perfectly premixed
+[p9 각주]   combustor, Combust. Flame 245 (2022) 112323.
+[p9 각주]   [11] S. Choi, D. Kim, Diagnosis of combustion inst-
+[p9 각주]   ability using waveform pattern of dynamic pressure
+[p9 각주]   signal, J. Korean Soc. Combust. 29(1) (2024) 33-38.
+[p9 각주]   [12] D.J. Jang, S. Joo, M.K. Kim, J. Hwang, M.C. Lee,
+[p9 각주]   Novel combustion instability diagnosis method in a
+[p9 각주]   hydrogen/natural gas co-firing gas turbine combu-
+[p9 각주]   stor using a combination of four criteria: Temporal
+[p9 각주]   kurtosis, permutation entropy, energy of entropy,
+[p9 각주]   and zero-crossing rate, Int. J. Hydrog. Energy 85
+[p9 각주]   (2024) 773-782.
+[p9 각주]   [13] T. Hashimoto, H. Shibuya, H. Gotoda, Y. Ohmichi,
+[p9 각주]   S. Matsuyama, Spatiotemporal dynamics and early
+[p9 각주]   detection of thermoacoustic combustion instability
+[p9 각주]   in a model rocket combustor, Phys. Rev. E 99(3)
+[p9 각주]   (2019) 032208.
+[p9 각주]   [14] R. Meloni, N. Giannini, Real time precursor calcu-
+[p9 각주]   lation for the early detection of combustion inst-
+[p9 각주]   abilities, J. Eng. Gas Turbines Power 144(9) (2022),
+[p9 각주]   091016.
+[p9 각주]   [15] A. Cellier, C.J. Lapeyre, G. Öztarlik, T. Poinsot, T.
+[p9 각주]   Schuller, L. Selle, Detection of precursors of com-
+[p9 각주]   bustion instability using convolutional recurrent
+[p9 각주]   neural networks, Combust. Flame 233 (2021)
+[p9 각주]   111558.
+[p9 각주]   [16] S. Sarkar, K.G. Lore, S. Sarkar, V. Ramanan, S.R.
+[p9 각주]   Chakravarthy, S. Phoha, A. Ray, Early detection of
+[p9 각주]   combustion instability from hi-speed flame images
+[p9 각주]   via deep learning and symbolic time series analysis,
+[p9 각주]   Annual Conference of the PHM Society (2015), pp.
+[p9 각주]   353-362.
+[p9 각주]   [17] G. Xu, B. Wang, Y. Guan, Z. Wang, P. Liu, Early
+[p9 각주]   detection of thermoacoustic instability in a solid
+[p9 각주]   rocket motor: A generative adversarial network
+[p9 각주]   (2024) 123776.
+[p9 각주]   [18] T.M. Bury, R.I. Sujith, I. Pavithran, M. Scheffer,
+[p9 각주]   T.M. Lenton, M. Anand, C.T. Bauch, Deep learning
+[p9 각주]   for early warning signals of tipping points, Proc.
+[p9 각주]   Natl. Acad. Sci. U.S.A., 118(39) (2021) e2106140118.
+[p9 각주]   [19] D. Park, K.T. Kim, Rotational symmetry-driven
+[p9 각주]   modal dynamics of high-frequency transverse
+[p9 각주]   instabilities in a lean-premixed multislit hydrogen
+[p10 머리말] 딥러닝 모델을 이용한 고주파 연소 불안정 조기 감지 19
+[p10 각주]   [23] J.F. Bourgouin, D. Durox, J.P. Moeck, T. Schuller,
+[p10 각주]   S. Candel, Self-sustained instabilities in an annular
+[p10 각주]   combustor coupled by azimuthal and longitudinal
+[p10 각주]   acoustic modes, ASME Turbo Expo (2013), paper
+[p10 각주]   GT2013-95010.
+[p10 각주]   저자정보
+[p10 각주]   한경현
+[p10 각주]   한경현은 카이스트 항공우주공학
+[p10 각주]   과 박사과정이며, 관심분야는 수소
+[p10 각주]   연료, 가스터빈 다단연소 시스템 및
+[p10 각주]   연소 불안정이다.
+[p10 각주]   김규태
+[p10 각주]   김규태는 카이스트 항공우주공학
+[p10 각주]   과 교수로 재직중이며, 무탄소 발
+[p10 각주]   전가스터빈 연소와 항공엔진 주/후
+[p10 각주]   기연소기 관련 실험 및 모델링 연구
+[p10 각주]   를 진행하고 있다.
+[띄어쓰기] 예혼합화염에서의  ->  예 혼합 화염에서의
+[띄어쓰기] 하이퍼파라미터를  ->  하이퍼 파라미터를
+[띄어쓰기] 하이퍼파라미터튜닝은  ->  하이퍼 파라미터 튜닝은
+[띄어쓰기] 확률밀도함수에서도  ->  확률 밀도 함수에서도
+[띄어쓰기] 기후에너지환경부  ->  기후 에너지 환경부

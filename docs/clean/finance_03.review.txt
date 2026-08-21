@@ -1,0 +1,127 @@
+# 추출 방식: 1단 (종결어미 49.7%)
+[p2 머리말] 2 한국경제포럼 제 19 권제 2 호
+[p2 각주]   (Ben-Ishai et al., 2024; Filippucci, Gal, and Schief, 2024).
+[p2 각주]   생성형 AI는 비정형 인지업무까지 확장되는 기술적 특성으로 인해, 최근 여러 실험
+[p2 각주]   연구에서 유의미하고 즉각적인 생산성 향상을 입증하고 있다. 고객지원 및 소프트웨어
+[p2 각주]   개발 분야(Brynjolfsson, Li, and Raymond, 2025; Cui et al., 2025; Peng et al., 2023),
+[p2 각주]   전문직의 기획･글쓰기 과제(Noy and Zhang, 2023) 등에서 작업시간 단축과 품질 향상
+[p2 각주]   이 보고되었으며, 특히 숙련도가 낮은 근로자에게 효과가 집중되는 ‘노비스 효과’가 관
+[p2 각주]   찰되었다. 그러나 이러한 기술적 효과는 직무와 과업의 성격에 따라 불균일하게 나타나
+[p2 각주]   는 이른바 ‘들쭉날쭉한 경계(Jagged Frontier)’를 지닌다(Dell'Acqua et al., 2026). 특히
+[p2 각주]   문서 작성이나 코드 생성 등 구조화된 과업에서는 뚜렷한 효과가 확인된 반면, 창의적
+[p2 각주]   1) Statista(2025), “Artificial Intelligence – Worl dwide”, Statista Market Insights, https://www.stati
+[p2 각주]   sta.com/outlook/tmo/artificial-intelligence/worldwide (접속일자: 2025. 12. 12.).
+[p2 각주]   2) IDC(2024), “Worldwide Spending on Artificial Intelligence Forecast to Reach $632 Billion in
+[p2 각주]   2028, According to a New IDC Spending Guide,” Press Release, August 19, 2024, https://www.
+[p2 각주]   businesswire.com/news/home/20240819177906/en/ (접속일자: 2026. 7. 21.).
+[p3 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 3
+[p4 머리말] 4 한국경제포럼 제 19 권제 2 호
+[p5 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 5
+[p5 각주]   3) 설문지 문항은 “지난주 귀하는 하루 업무량 중 생성형 AI를 얼마나 사용하셨습니까?”이다.
+[p6 머리말] 6 한국경제포럼 제 19 권제 2 호
+[p7 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 7
+[p8 머리말] 8 한국경제포럼 제 19 권제 2 호
+[p9 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 9
+[p10 머리말] 10 한국경제포럼 제 19 권제 2 호
+[p11 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 11
+[p12 머리말] 12 한국경제포럼 제 19 권제 2 호
+[p12 각주]   Productivity        AITime  × Prompt Skill   (1)
+[p12 각주]     AI T ime    Prompt Skill    ′       
+[p12 각주]   4) 관측되지 않은 집단 수준 상관 가능성을 고려하여 지역 및 산업 수준 군집-강건 표준오차를 추가적으
+[p12 각주]   로 추정한 결과, 일부 계수의 통계적 유의성은 약화되었지만 주요 상호작용항의 계수 부호와 크기,
+[p12 각주]   그리고 프롬프트 역량 수준에 따른 단조적 패턴은 메인 분석 결과와 동일하게 유지되었다. 그리고
+[p12 각주]   지역(시도 수준) 및 산업(대분류 수준) 모두 군집 수가 많지 않아 군집-강건 표준오차에 기반한 추론에
+[p12 각주]   는 소표본 군집 문제로 인한 한계가 존재한다.
+[p13 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 13
+[p13 각주]   5) 이 변수들은 업무 유형별로 생성형 AI 도입의 업무별 시간 절감도와 생성형 AI 도입의 업무별 품질
+[p13 각주]   향상 기여도를 5점 척도로 구성한 설문 문항이며 구체적 내용은 <표 4>에서 확인할 수 있다 .
+[p13 각주]   6) 변수들의 구체적 설명은 <표 4>에 서술되어 있다.
+[p14 머리말] 14 한국경제포럼 제 19 권제 2 호
+[p14 머리말] 500~600만 원 미만 185 11
+[p14 머리말] 700~800만 원 미만 85 5
+[p15 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 15
+[p15 각주]   R-squared 0.33 0.08 0.35
+[p15 각주]   주: 프롬프트 작성 능력 기준은 미숙(작성법 모름)임. *, **, ***은 각각 10%, 5%, 1% 유의수준에서 통계적으로 유의
+[p15 각주]   함을 의미.
+[p15 각주]   <표 5>는 생성형 AI 활용과 업무 생산성(시간 절감) 간의 관계를 추정한 결과이다. 모
+[p15 각주]   형 (1)과 (2)는 각각 생성형 AI 활용시간과 프롬프트 작성 능력을 개별적으로 포함한 부
+[p15 각주]   분 모형이고, 모형 (3)은 두 설명변수와 상호작용항까지 포함한 모형이다. 이하에서는
+[p15 각주]   두 설명변수와 그 상호작용항을 모두 포함한 모형 (3)의 추정 결과를 중심으로 논의한다.
+[p16 머리말] 16 한국경제포럼 제 19 권제 2 호
+[p17 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 17
+[p18 머리말] 18 한국경제포럼 제 19 권제 2 호
+[p19 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 19
+[p20 머리말] 20 한국경제포럼 제 19 권제 2 호
+[p20 각주]   7) 프롬프트 작성 능력을 재범주화한 <부표 2>에서도 유사한 결과가 안정적으로 확인되며, 본 결과의
+[p20 각주]   강건성을 확인할 수 있다.
+[p21 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 21
+[p22 머리말] 22 한국경제포럼 제 19 권제 2 호
+[p23 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 23
+[p24 머리말] 24 한국경제포럼 제 19 권제 2 호
+[p24 각주]   9. Ben-Ishai, G., J. Dean, J. Manyika, R. Porat, H. Varian, and K. Walker, “AI and the Opportunity
+[p24 각주]   for Shared Prosperity: Lessons from the History of Technology and the Economy,” arXiv preprint
+[p24 각주]   arXiv:2401.09718, 2024.
+[p24 각주]   10. Brynjolfsson, E., D. Li, and L. Raymond, “Generative AI at Work,” The Quarterly Journal of
+[p24 각주]   Economics, Vol. 140, No. 2, 2025, pp.889-942.
+[p24 각주]   11.Brynjolfsson, E., D. Rock, and C. Syverson, “The Productivity J-Curve: How Intangibles
+[p24 각주]   Complement General Purpose Technologies,” American Economic Journal: Macroeconomics, Vol.
+[p24 각주]   13, No. 1, 2021, pp.333-372.
+[p24 각주]   12. Cui, Z. K., M. Demirer, S. Jaffe, L. Musolff, S. Peng, and T. Salz, “The Effects of Generative AI
+[p24 각주]   on High-Skilled Work: Evidence from Three Field Experiments with Software Developers,” SSRN
+[p24 각주]   Working Paper, No. 4945566, 2025.
+[p24 각주]   13. Dell'Acqua, F., E. McFowland III, E. Mollick, H. Lifshitz, K. C. Kellogg, S. Rajendran, L. Krayer,
+[p24 각주]   F. Candelon, and K. R. Lakhani, “Navigating the Jagged Technological Frontier: Field Experimental
+[p24 각주]   Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality,"
+[p24 각주]   Organization Science, 37(2), 403–423, 2026.
+[p24 각주]   14. Doshi, A.R. and O.P. Hauser, “Generative AI Enhances Individual Creativity but Reduces the
+[p24 각주]   Collective Diversity of Novel Content,” Science Advances, Vol. 10, No. 28, 2024, eadn5290.
+[p24 각주]   15. Eloundou, T., S. Manning, P. Mishkin, and D. Rock, “GPTs Are GPTs: An Early Look at the Labor
+[p24 각주]   Market Impact Potential of Large Language Models,” arXiv preprint arXiv:2303.10130, 2023.
+[p24 각주]   16. Filippucci, F., P. Gal, and M. Schief, “Miracle or Myth? Assessing the Macroeconomic Productivity
+[p24 각주]   Gains from Artificial Intelligence,” OECD Artificial Intelligence Papers, No. 29, OECD Publishing,
+[p24 각주]   Paris, 2024.
+[p24 각주]   17. Hartley, J., F. Jolevski, V. Melo, and B. Moore, “The Labor Market Effects of Generative Artificial
+[p24 각주]   Intelligence,” SSRN Working Paper, 2025.
+[p25 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 25
+[p25 각주]   Five Strategies, Including Prompts,” SSRN Scholarly Paper, No. 4391243, Social Science Research
+[p25 각주]   Network, 2023.
+[p25 각주]   21. Noy, S. and W. Zhang, “Experimental Evidence on the Productivity Effects of Generative Artificial
+[p25 각주]   Intelligence,” Science, Vol. 381, No. 6654, 2023, pp.187-192.
+[p25 각주]   22. OECD and Korea Labor Institute, Artificial Intelligence and the Labour Market in Korea, OECD
+[p25 각주]   Publishing, Paris, 2025, https://doi.org/10.1787/68ab1a5a-en.
+[p25 각주]   23.Peng, S., E. Kalliamvakou, P. Cihon, and M. Demirer, “The Impact of AI on Developer
+[p25 각주]   Productivity: Evidence from GitHub Copilot,” arXiv preprint arXiv:2302.06590, 2023.
+[p25 각주]   24. Statista, “Artificial Intelligence – Worldwide”, Statista Market Insights, 2025, https://www.statista.
+[p25 각주]   com/outlook/tmo/artificial-intelligence/worldwide (접속일자: 2025. 12. 12.).
+[p26 머리말] 26 한국경제포럼 제 19 권제 2 호
+[p26 각주]   R-squared 0.35
+[p26 각주]   주: 프롬프트 작성 능력을 인접 단계 동등성 검정을 참고로 재범주화함. 기존 미숙(1단계), 초급 및 중급 (2,3단계),
+[p26 각주]   상급 및 전문가급(4,5단계)의 세 그룹으로 나눔. 기본 집단은 미숙(1단계)임. *, **, ***은 각각 10%, 5%, 1% 유의
+[p26 각주]   수준에서 통계적으로 유의함을 의미.
+[p27 머리말] 생성형 AI의 업무 활용 실태와 생산성 인식 27
+[p28 머리말] 28 한국경제포럼 제 19 권제 2 호
+[p28 각주]   vary by task type, being pronounced for document writing but negligible for idea
+[p28 각주]   generation. These findings suggest policies should prioritize capability development,
+[p28 각주]   workflow redesign, and governance frameworks to mitigate adoption disparities.
+[p28 각주]   Key Words: Generative AI, Workplace Productivity, Heterogeneous Effects
+[p28 각주]   JEL Classification: C21, J24, J31, M54, O33
+[p28 각주]   Received: Mar. 27, 2026. Revised: June 4, 2026. Accepted: July 22, 2026.
+[p28 각주]   * This paper builds on and extends the authors' earlier policy report, “Generative AI and Firm
+[p28 각주]   Productivity: Realities and Challenges” (Changkeun Lee and Yongmi Kim), published as an
+[p28 각주]   SGI Brief by the Economic Research Institute (formerly SGI), Korea Chamber of Commerce
+[p28 각주]   and Industry (KCCI). We are grateful to two anonymous referees for their helpful comments
+[p28 각주]   on an earlier draft, and to Sehoon Kim for excellent research assistance. This work was
+[p28 각주]   supported by the Ministry of Education of the Republic of Korea and the National Research
+[p28 각주]   Foundation of Korea (NRF-2020S1A3A2A02104190). The views expressed herein are those of
+[p28 각주]   the authors and do not necessarily reflect the official position of the KCCI or its Economic
+[p28 각주]   Research Institute.
+[p28 각주]   ** First Author, Professor, KDI School of Public Policy and Management, 263, Namsejong-ro,
+[p28 각주]   Sejong-si, 30149, Republic of Korea, e-mail: cklee@kdischool.ac.kr
+[p28 각주]   *** Corresponding Author, Research Fellow, Economic Research Institute, Korea Chamber of
+[p28 각주]   Commerce and Industry, 39, Sejong-daero, Jung-gu, Seoul, 04513, Republic of Korea, e-mail:
+[p28 각주]   ymkim117@korcham.net
+[띄어쓰기] 효과경제학문헌목록  ->  효과 경제학 문헌 목록
+[띄어쓰기] 대규모언어모델의  ->  대규모 언어 모델의
+[띄어쓰기] 화이트칼라직군에서는  ->  화이트칼라 직군에서는
+[띄어쓰기] 자기고양편향이나  ->  자기 고양 편향이나
+[띄어쓰기] 고차원적업무에서는  ->  고차원적 업무에서는

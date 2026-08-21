@@ -1,0 +1,257 @@
+# 추출 방식: 1단 (종결어미 54.9%)
+[p2 머리말] 100 안홍복
+[p2 각주]   1) R& D에 대한 과소투자 문제는 다음과 같은 논리로 전개된다. 과소투자는 장기적 측면에서 경쟁력
+[p2 각주]   약화로 이어지고, 결국 기업가치 하락으로 결론지워진다. 특히 급변하는 시장상황에서 연구개발에
+[p2 각주]   대한 과소투자는 기업의 파산으로 연결될 가능성이 매우 크다(Mitchell and Hamilton, 1997).
+[p2 각주]   2) R& D의 시계열적 추세는 선행연구에서 유추해 볼 수 있다. 예를 들어, 안홍복․권기정(2006) 연구는
+[p2 각주]   기업의 연구개발 관련 투자는 시계열적 추세를 갖는다는 실증증거를 제시하였다.
+[p3 머리말] 코스닥 상장기업의 R&D 투자와 타인자본비용 관련성 101
+[p3 각주]   3) 벤처기업은 ｢벤처기업육성에 관한 특별조치법 제2조2｣, 기술혁신형기업은 ｢중소기업기술혁신촉진
+[p3 각주]   법｣에 법적 근거를 두고 있다. 벤처기업은 기업부설연구소를 보유하고 있으면서 창업투자회사나 기
+[p3 각주]   업은행 등에서 자본금의 일정 부분을 투자받아야 하는 등의 자격 조건이 있다. “기술혁신”이란 새로
+[p3 각주]   운 기술의 개발, 활용 중인 기술의 중요한 부분의 개선 또는 외부로부터 기술의 도입을 통하여 기업
+[p3 각주]   경영 개선 및 생산성을 높이고, 그 성과물을 거래하거나 사업화함으로써 새로운 부가가치를 창출하
+[p3 각주]   여 나가는 일련의 과정을 말한다. “기술혁신형 중소기업”이란 기술혁신활동을 통하여 기술경쟁력의
+[p3 각주]   확보가 가능하거나 미래 성장가능성이 있는 중소기업으로서 제15조에 따라 중소벤처기업부장관이
+[p3 각주]   선정한 기업을 말한다.
+[p4 머리말] 102 안홍복
+[p4 각주]   4) 기업이 초과이익을 실현하기 위해서는 적절히 연구개발투자를 해야 한다. 연구개발은 성장 및 경쟁
+[p4 각주]   우위의 원천이 되며 조직의 매너리즘을 방지해 주기 때문이다.
+[p4 각주]   5) R& D와 기업지배구조 관련 연구 중 일부는 외국인 주주의 견제가능성에 따른 제품혁신 차이 존재,
+[p4 각주]   소유권이 분산과 R& D의 관련성을 검증하였다. 이들 연구는 소유권집중 및 주주감시가 대리인비용
+[p4 각주]   완화를 통해 R& D에 영향을 준다는 연구결과를 보여주고 있다.
+[p4 각주]   6) 레버리지는 외부자본조달의 증가에 기인해 기업 산출물의 변동수준과 위험에서 발생하는 효과를 가
+[p4 각주]   리킨다.
+[p5 머리말] 코스닥 상장기업의 R&D 투자와 타인자본비용 관련성 103
+[p5 각주]   7) Lee and O’Neill(2003)은 단기적 이익과 연구개발투자 사이에 음(－)의 관련성을 제시하였다.
+[p5 각주]   8) 벤처기업에는 연구개발투자가 무엇보다 중요한데, 이는 기술집약적 중소기업인 벤처기업에 있어 지
+[p5 각주]   속적인 혁신만이 기술경쟁력을 확보하게 한다(Keizer, et al. 2002；O’Regan, et al. 2006).
+[p5 각주]   9) 연구개발투자와 혁신은 매우 밀접한 관계가 있다(Raymond and St－Pierre, 2010).
+[p6 머리말] 104 안홍복
+[p6 각주]   1) 실증분석모형
+[p6 각주]   본 연구의 목적은 혁신의 핵심행위인 R& D와 CoD(타인자본비용)에 대한 관련성을 확인하
+[p6 각주]   는 것이다. 종속변수는 CoD(타인자본비용)을 나타내는 세 가지 유형의 변수를 채택하였고,
+[p6 각주]   관심 변수로 R& D를 사용하였다. 본 연구는 패널회귀모형을 활용하는데, 본 연구는 횡단면
+[p6 각주]   및 시계열 특성을 동시에 고려하기 때문이다. 동 모형은 개별 기업의 이질성과 동태적 변화
+[p6 각주]   를 고려할 수 있고, 다중공선성 문제를 최소화하는 장점을 보유한다10). 즉, 타인자본비용은
+[p6 각주]   시장의 상황, 기업의 특성, 발행된 부채의 개별적인 특성 등 매우 다양한 요인에 의해 영향을
+[p6 각주]   받기 때문에 본 연구는 이에 대한 반영을 위해 일반 회귀분석 방법보다 패널회귀분석 방법을
+[p6 각주]   채택하여 불편추정치를 구하고자 한다.
+[p6 각주]   10) 패널회귀분석은 고정효과모형(fixed effect model)과 확률효과모형(random effect model)으로 개
+[p6 각주]   별 기업 간 이질적 차이(unobserved heterogeneity effect)를 확인하는 방식은 있는데, 전자는 기업
+[p6 각주]   특성을 상수항(intercept), 후자는 오차항(error term)으로 반영하는데, 두 모형의 적합성은 Hausman
+[p6 각주]   specification test를 통해 식별한다.
+[p7 머리말] 코스닥 상장기업의 R&D 투자와 타인자본비용 관련성 105
+[p7 머리말] Hi g h Te c ：기술집약적 기업이면 1, 아니면 0
+[p7 각주]   R& D ：(R& D / S)
+[p7 각주]    ：기관투자자지분율
+[p7 각주]    ：기업생존연수
+[p7 각주]      ：지배주주지분율
+[p7 각주]     ：ln(총자산)
+[p7 각주]    ：(부채/총자산)
+[p7 각주]   Growth ：(당기매출액－전기매출액)/전기매출액
+[p7 각주]   Ind us t r y ：산업 더미
+[p7 각주]   2) 변수의 조작적 정의
+[p7 각주]   (1) CoD( 타인자본비용)
+[p7 각주]   종속변수인 타인자본비용 측정은 국내 선행연구를 준용하여 세 가지 방법을 사용하였다
+[p7 각주]   첫째, CoD1(차입이자율)은 국내 선행연구(박종일․김명인, 2013；권오섭 등, 2020；박순홍
+[p7 각주]   등, 2021)의 계산방법을 준용하였는데, 총금융비용으로 이자비용 사채이자 사채상환손익 및
+[p7 각주]   건설자금이자를 반영하고, 이자발생부채로 단기차입금, 유동성장기부채(기타유동성장기부채
+[p7 각주]   차감), 단기사채, 장기사채, 장기차입금, 금융리스부채, 정리채무 중 장기차입금 등 정리채무,
+[p7 각주]   장단기유동화채무을 합하고 기타유동성장기부채를 차감한 방식으로 도출하고, 이를 전기이
+[p7 각주]   자부발생부채와 당기이자부부채를 더한 후, 2로 나누어 평균이자발생부채를 측정하였다.
+[p8 머리말] 106 안홍복
+[p9 머리말] 코스닥 상장기업의 R&D 투자와 타인자본비용 관련성 107
+[p9 각주]   11) 사무용품 및 컴퓨터, 광학장비업, 화학제품, 기계장비, 전자제품 및 재료, 자동차, 다른 수송장비,
+[p9 각주]   인쇄, 그래픽을 고 기술적 기회 산업으로, 음식료품, 담배, 음료, 플라스틱, 비금속광업제품, 금속,
+[p9 각주]   섬유, 의류, 가죽, 목재, 종이, 가구 및 기타제조업을 저 기술적 기회 산업으로 분류하였다.
+[p10 머리말] 108 안홍복
+[p10 머리말] 약품, 고무제품 및 플라스틱제품, 비금속 광물제품 제조업 115
+[p10 머리말] 료, 정밀, 광학기기 및 시계, 전기장비 제조업 110
+[p10 머리말] 제조업 115
+[p10 머리말] 계 375
+[p11 머리말] 코스닥 상장기업의 R&D 투자와 타인자본비용 관련성 109
+[p11 각주]   Si z e 375 24.1513 1.7456 22.2897 24.1731 28.9342
+[p11 각주]   Debt 375 0.4245 0.1892 0.0167 0.4934 0.7563
+[p11 각주]   Growth 375 0.0579 0.1894 －0.0835 0.04245 0.2522
+[p11 각주]   Hi g hTe c 375 0.5250 0.2578 0.0000 1.0000 1.0000
+[p11 각주]   1) 변수 정의：<식 1> 참조
+[p11 각주]   2. 가설의 분석 결과
+[p11 각주]   1) 그래프 분석
+[p11 각주]   본 연구는 <그림 1>을 통해 R& D와 CoD의 동태적 움직임을 시각적으로 분석하였다. 표본
+[p11 각주]   을 혁신성과 기준으로 10개의 포트폴리오를 구성하고, 각각의 그룹에서 타인자본비용의 움
+[p11 각주]   직임을 살펴보았다. CoD 관련 패턴 중 가장 두드러진 특징은 R& D가 가장 낮은 10분위와
+[p11 각주]   가장 큰 1분위수 그룹의 타인자본비용의 차이가 시각적으로 확인되는 것이다. R& D가 가장
+[p11 각주]   큰 1분위수 그룹은 자본시장에서 R& D를 통한 기업경쟁력 확보에 대한 기업의 투자의사결정
+[p11 각주]   에 긍정적인 반응을 보이는 것으로 유추해 볼 수 있다.
+[p11 각주]   <그림 1> R&D와 CoD(타인자본비용) 간 추세분석
+[p12 머리말] 110 안홍복
+[p12 머리말] Variables 1 2 3 4 5 6 7 8 9 10
+[p12 각주]   2.CoD2 0.9332 (***) 1.0000
+[p12 각주]   3.CoD3 0.4148 0.3860
+[p12 각주]   (***) (***) 1.0000
+[p12 각주]   4.R&D －0.0558 －0.0595 －0.023
+[p12 각주]   (***) (***) (**) 1.0000
+[p12 각주]   5.Block 0.018 0.0019 0.001 0.003
+[p12 각주]   ( ) ( ) ( ) ( ) 1.0000
+[p12 각주]   6.Age 0.0015 0.0022 0.0016 0.0018 0.0021
+[p12 각주]   ( ) ( ) ( ) ( ) ( ) 1.0000
+[p12 각주]   7.Owner 0.0025 0.0023 0.0033 0.0963 0.0039 0.0341
+[p12 각주]   ( ) ( ) ( ) ( ) ( ) ( ) 1.0000
+[p12 각주]   8.Size －0.1952 －0.1847 －0.1577 0.1014 0.1006 0.1280 0.1045
+[p12 각주]   (***) (***) (***) (***) (***) (***) (***) 1.000
+[p12 각주]   9.Debt 0.1679 0.1672 0.1856 －0.1367 －0.0134 0.0146 －0.1541 0.0972
+[p12 각주]   (***) (**) (***) (***) ( ) ( ) (***) (***) 1.000
+[p12 각주]   10.Growth －0.0157 －0.0143 －0.0167 0.0035 －0.0018 0.0593 0.0043 0.085 0.1312
+[p12 각주]   ( ) ( ) ( ) ( ) ( ) (***) ( ) (***) (***) 1.000
+[p12 각주]   1) 변수 정의：<식 1> 참조
+[p12 각주]   2) * p＜0.1, ** p＜0.05, *** p＜0.01
+[p13 머리말] 코스닥 상장기업의 R&D 투자와 타인자본비용 관련성 111
+[p13 각주]   CoD1 0.0411 0.0638 3.46*** 3.96*** Yes
+[p13 각주]   CoD2 0.0272 0.0491 3.91*** 4.13*** Yes
+[p13 각주]   CoD3 0.0400 0.0500 1.03 1.01 No
+[p13 각주]   1) 변수정의：<식 1> 정의 참조
+[p13 각주]   2) * p＜0.1, ** p＜0.05, *** p＜0.01
+[p13 각주]   4) 연구가설 분석 결과
+[p13 각주]   본 연구는 회귀분석 모형에서 오차항의 이상 분산성 존재 유무를 판단하기 위해 LR
+[p13 각주]   (likelihood ratio) 검정을 실시하였다12). 먼저 LR 분석 결과는 통계량의   의 유의수준인 p값
+[p13 각주]   이 0.01에 미치지 못하기 때문에 오차의 동분산성 가정은 기각되었다.
+[p13 각주]   본 연구는 식(1)에 제시된 패널 모형에 적합한 추정방법을 적용하기 위해 고정효과와 임의
+[p13 각주]   효과 추정량을 비교하는 하우스만 검정, 오차항 간 자기상관 가정을 살펴보는 우드리지 검정
+[p13 각주]   (woodridge test)13) 등을 수행하였다. <표 5>에 제시된 바와 같이 Wooldridge 검증결과는 F의
+[p13 각주]   유의수준 p값이 0.05 보다 훨씬 큰 수준으로 귀무가설인 오차항의 자기상관성이 존재하지 않
+[p13 각주]   는다는 가설을 기각할 수 없다. 즉, 본 표본의 오차항은 5% 유의수준에서 자기상관이 존재하
+[p13 각주]   지 않는다. 본 연구는 Ha us ma n 검정을 통해 고정효과모형과 랜덤효과모형의 타당성을 확인
+[p13 각주]   하였고, 그 결과는 고정효과모형을 선호하는 것으로 나타났다.
+[p13 각주]   12) LR 검정은 비제약모형과 제약모형으로 구분하여 오차항의 분산이 패널 개체별로 차이가 존재하는지
+[p13 각주]   그렇지 않은가를 로그우도함수(log－likelihood function)를 통해 검정통계량을 계산하는 방식이다.
+[p13 각주]   13) 본 연구는 오차항 간 자기상관을 검정하기 위해서는 Wooldridge 검증을 실시하였다. Wooldridge
+[p13 각주]   검증은 패널자료의 자기상관을 분석하는 데 가장 효과적이다(Drukker, 2003).
+[p14 머리말] 112 안홍복
+[p15 머리말] 코스닥 상장기업의 R&D 투자와 타인자본비용 관련성 113
+[p15 각주]   Si z e － －0.0941***－0.0949*** －0.1342***
+[p15 각주]   (－4.67) (－4.88) (－5.24)
+[p15 각주]   Debt ＋ 0.1682***0.1894***0.3183***
+[p15 각주]   (3.99) (6.03) (－11.73)
+[p15 각주]   Growth ? －0.0956***－0.0954***－0.1734***
+[p15 각주]   (4.99) (5.16) (9.47)
+[p15 각주]   Hi g hTe c － 0.0672**0.0683**0.0000
+[p15 각주]   (2.87) (2.99) (0.00)
+[p15 각주]   Industry ? 포함 포함 포함
+[p15 각주]   Wi t hi n R2 0.1045 0.1245
+[p15 각주]   Wal d 121.6
+[p15 각주]   LR test of P－value <0.001
+[p15 각주]   N37537575
+[p15 각주]   1) 변수정의：<식 1>에 제시된 정의 참조
+[p15 각주]   2) * p＜0.1, ** p＜0.05, *** p＜0.01
+[p15 각주]   3) N：표본 기업 수
+[p15 각주]   Ⅴ. 결 론
+[p15 각주]   본 연구는 기업 간 R&D 투자수준에 따른 혁신성과를 타인자본시장에서 이자율 결정과정
+[p15 각주]   에서 반영하는가를 실증적으로 분석하였다. 분석결과는 다음과 같이 요약된다.
+[p15 각주]   첫째, R& D기준에 따른 그룹 간 비교 분석 결과는 R& D 수준이 가장 높은 그룹과 가장 낮
+[p15 각주]   은 그룹 사이에 통계적으로 유의한 타인자본비용의 차이가 존재함을 확인하였다. 따라서
+[p16 머리말] 114 안홍복
+[p16 각주]   14) 우리나라 기술금융 관련 프로세스는 R& D 평가 과정에서 정량적인 지표와 정성적인 요소를 통합하
+[p16 각주]   여 실시된다. 이 과정에서 기업의 정량적인 R& D 투자규모도 중요하지만, 해당 투자가 갖는 미래경
+[p16 각주]   제적 효과를 정석으로 평가하여 신용등급에 반영한다(손석현․김재영․김재천, 2017).
+[p17 머리말] 코스닥 상장기업의 R&D 투자와 타인자본비용 관련성 115
+[p18 머리말] 116 안홍복
+[p18 각주]   pp. 1－31.
+[p18 각주]   최종서․곽영민․백정한. 2010, “코스닥 신규상장 기업의 이익조정과 경영자의 사적이익추
+[p18 각주]   구,” ｢회계학연구｣, 제35권 제3호, pp. 37－80.
+[p18 각주]   Abbey, A. and J. W. Dickson. 1983, “R&D work climate and innovation in semiconductors,”
+[p18 각주]   Academy of Management Journal, 26(2), pp. 362－368.
+[p18 각주]   Acs, Z. and S. C. Isberg. 1991, “Innovation, firm size and corporate finance：An initial
+[p18 각주]   inquiry,” Economics Letters, 35(3), pp. 323－326.
+[p18 각주]   Aghion, P., J. Van Reenen, and L. Zingales. 2013, “Innovation and institutional ownership,”
+[p18 각주]   American Economics Review, 103(1), pp. 277－304.
+[p19 머리말] 코스닥 상장기업의 R&D 투자와 타인자본비용 관련성 117
+[p19 각주]   Busom, I. 2000, “An empirical evaluation of the effects of R&D subsidies,” Economics of
+[p19 각주]   Innovation and New Technology, 9(2), pp. 111－148.
+[p19 각주]   Capon, N., J. U. Farley, D. R. Lehman, and J. M. Hulbert. 1992, “Profiles of product innovators
+[p19 각주]   among large U.S. manufacturers,”Management Science, 38(2), pp. 157－169.
+[p19 각주]   Cohen, W. and D. Levinthal. 1990, “Absorptive capacity：a new perspective on learning and
+[p19 각주]   innovation,” Administrative Science Quarterly, 35(1), pp. 128－152.
+[p19 각주]   Drukker, D. M. 2003, “Testing for serial correlation in linear panel－data models,” The Stata
+[p19 각주]   Journal, 3(2), pp. 168－177.
+[p19 각주]   Durand, R. and V. Vargas. 2003, “Ownership, organization, and private firms’ efficient use of
+[p19 각주]   resources,” Strategic Management Journal, 24(7), pp. 667－675,
+[p19 각주]   Fernandez－Arias, Eduardo. 1996, “The new wave of private capital inflows：push or pull?,”
+[p19 각주]   Journal of Development Economics, 48(3), pp. 389－418.
+[p19 각주]   Fama, E. F. and K. R. French. 1995, “Size and book－to－market factors in earnings and
+[p19 각주]   returns,” Journal of Finance, 50(1), pp. 131－155.
+[p19 각주]   Galende, J. and J. M. de la Fuente. 2003, “Internal factors determining a firm’s innovative
+[p19 각주]   behaviour,” Research Policy, 32(5), pp. 715－736.
+[p19 각주]   Geroski, P. A. and R. Pomroy. 1990, “Innovation and the evolution of market structure,”
+[p19 각주]   Journal Article, 38(3), pp. 299－314.
+[p19 각주]   Graham, J. R., M. T. Leary, and M. R. Roberts. 2015, “A century of capital structure：The
+[p19 각주]   leveraging of corporate America,” Journal of Financial Economics, 118(3), pp. 658－
+[p19 각주]   683.
+[p20 머리말] 118 안홍복
+[p20 각주]   sector in The Netherlands,” Technovation, 22(1), pp. 1－13.
+[p20 각주]   Kogan, L., D. Papanikolaou, A. Seru, and N. Stoﬀman. 2017, “Technological innovation,
+[p20 각주]   resource allocation, and growth,” Quarterly Journal of Economics, 132(2), pp. 665－712.
+[p20 각주]   Kreß, A., B. Eierle, and I. Tsalavoutas. 2019, “Development costs capitalization and debt
+[p20 각주]   f i nanc i ng,” Journal of Business Finance & Accounting, 46(5－6), pp. 636－685.
+[p20 각주]   Lasfer, M. A. 1995, “Agency costs, taxes and debt：the UK evidence,” European Financial
+[p20 각주]   Management, 1, pp. 265－285.
+[p20 각주]   Lee, P. G. and H. M. O’Neill. 2003, “Ownership structures and R&D investments of U.S. and
+[p20 각주]   Japanese firms：Agency and Stewardship Perspectives,” Academy of Management
+[p20 각주]   Journal, 46(2), pp. 212－225.
+[p20 각주]   Love, J. H. and S. Roper. 2002, “Internal versus external R&D：A study of R&D choice with
+[p20 각주]   sample selection,” International Journal of the Economics of Business, 9(2), pp. 239－
+[p20 각주]   255.
+[p20 각주]   MacKay, P. and G. M. Phillips. 2005, “How does industry aﬀect firm financial structure?,”
+[p20 각주]   Review of Financial Studies, 18(4), pp. 1433－1466.
+[p20 각주]   Mitchell, G. R. and W. F. Hamilton. 1997, “Managing R&D as a strategic opinion,” In M.
+[p20 각주]   L. Tushman and P. Anderson(Eds.), Managing Strategic Innovation and Change,
+[p20 각주]   Oxford：Oxford University Press, pp. 307－330.
+[p20 각주]   O'Regan, N., A. Ghobadian, and M. Sims. 2006, “Fast tracking innovation in manufacturing
+[p20 각주]   SMEs,” Technovation, 26(2), pp. 251－261.
+[p20 각주]   Palillo, J. G. and W. B. Brown. 1978, “How organizational factors affect R&D innovation,”
+[p21 머리말] 코스닥 상장기업의 R&D 투자와 타인자본비용 관련성 119
+[p21 각주]   Sanders, W. and M. Carpenter. 2003, “Strategic satisficing? A behavioral－agency theory
+[p21 각주]   perspective on stock repurchase program announcements,”The Academy of Management
+[p21 각주]   Journal, 46(2), pp. 160－178.
+[p21 각주]   Schumpeter, J. A. 1934, ｢The Theory of Economic Development｣, Harvard University Press,
+[p21 각주]   Cambridge, MA.
+[p21 각주]   Schumpeter. 1942, “Capitalism, socialism and democracy,” Harper & Row, New York.
+[p21 각주]   Sengupta, P. 1998, “Corporate disclosure quality and the cost of debt,” The Accounting
+[p21 각주]   Review, 73(4), pp. 459－474.
+[p21 각주]   Smith, C. W. and R. L. Watts. 1992, “The investment opportunity set and corporate financing,
+[p21 각주]   dividend, and compensation policies,” Journal of Financial Economics, 32(3), pp. 263
+[p21 각주]   －292.
+[p22 각주]   of debt of KOSDAQ listing company(small and medium enterprises；SMEs) in Korea for the
+[p22 각주]   interval from January 2018 through December 2022.
+[p22 각주]   [Findings] Our main results are summerized as follow. First, a R& D Investment significantly
+[p22 각주]   have a negative relationship with the cost of debt of KOSDAQ listing company. And the
+[p22 각주]   present R& D Investment positively have related to the current productivity. Second, the closer
+[p22 각주]   the time gap between innovation performance and the cost of debt of SMEs, the more the
+[p22 각주]   impact of R& D Investment on the cost of debt. Third, the the cost of debt in innovative
+[p22 각주]   SMEs have a greater influence than that in non－innovative SMEs.
+[p22 각주]   [Implications] An important characteristic of uncertainty for the financing of investment in R& D
+[p22 각주]   is the fact that as investments are made over time new information arrives, which reduces or
+[p22 각주]   changes the uncertainty. These results show that the finance systems about innovative SMEs
+[p22 각주]   are usefulness in Korea.
+[p22 각주]   ＜Key15)Words＞ KOSDAQ listing company, R& D Investment, the cost of debt, panel regression
+[p22 각주]   * Professor, College of Business Administration, Keimyung University, Korea.
+[p22 각주]   － 120 －
+[띄어쓰기] 한국세무회계학회  ->  한국 세무 회계 학회
+[띄어쓰기] 확률효과모형보다  ->  확률 효과 모형보다
+[띄어쓰기] 이자율스프레드와  ->  이자율 스프레드와
+[띄어쓰기] 코스닥상장기업은  ->  코스닥 상장 기업은
+[띄어쓰기] 및타인자본비용에  ->  및 타인 자본 비용에
+[띄어쓰기] 타인자본비용으로  ->  타인 자본 비용으로
+[띄어쓰기] 이자율스프레드는  ->  이자율 스프레드는
+[띄어쓰기] 부채차입이자율에서  ->  부채 차입 이자율에서
+[띄어쓰기] 신용평가등급으로  ->  신용 평가 등급으로
+[띄어쓰기] 그특수관계자지분율을  ->  그 특수 관계자 지분율을
+[띄어쓰기] 이자율스프레드가  ->  이자율 스프레드가
+[띄어쓰기] 이자율스프레드에  ->  이자율 스프레드에
+[띄어쓰기] 이자율스프레드의  ->  이자율 스프레드의
+[띄어쓰기] 기술개발전담부서  ->  기술 개발 전담 부서
+[띄어쓰기] 고위험감수성향이  ->  고위험 감수 성향이
+[띄어쓰기] 타인자본조달비용의  ->  타인 자본 조달 비용의
+[띄어쓰기] 한국세무회계학회  ->  한국 세무 회계 학회
+[띄어쓰기] 중소기업금융연구  ->  중소기업 금융 연구
+[띄어쓰기] 기술신용평가기관  ->  기술 신용 평가 기관
