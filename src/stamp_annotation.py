@@ -20,6 +20,13 @@ import openpyxl
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
+# 라벨을 붙일 때 쓰던 이름과 레포에 올라온 이름이 다른 것들.
+# claim 본문 겹침으로 확인했다 (fin_02 는 분할기 버전이 달라 67% 만 겹친다).
+DOC_ALIAS = {
+    "fin_01": "finance_01",
+    "fin_02": "finance_03",
+}
+
 NEW_COLS = ["deck_id", "담당자"]          # 시트 맨 앞에 넣는다
 WIDTHS = {"deck_id": 22, "담당자": 10}
 SUMMARY = "_시트이름"
@@ -111,7 +118,8 @@ def stamp_summary(ws, table: dict[str, dict[str, str]]) -> None:
         doc = ws.cell(r, key).value
         if not doc:
             continue
-        row = table.get(str(doc), dict.fromkeys(ASSET_COLS, "X"))
+        doc = DOC_ALIAS.get(str(doc), str(doc))
+        row = table.get(doc, dict.fromkeys(ASSET_COLS, "X"))
         for i, name in enumerate(ASSET_COLS):
             cell = ws.cell(r, start + i)
             cell.value = row[name]
