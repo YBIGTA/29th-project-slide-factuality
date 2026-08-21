@@ -5,7 +5,7 @@ socio_03,,,,,,,,,train,socio_03,,,
 socio_04,"한국 성인이 지각한 사회적 자본과 다문화 수용성 간의 관계: 이주노동자, 난민, 재외동포 집단을 중심으로","보건사회연구 45(3), 2025, 126-146",사회학,,,,ko,21,test,socio_04__claudecode,claudecode,,11
 arts_01,유대-아랍 음악과 문화정체성,"한국예술연구 제52호, 임성희, pp.131-136",예술,,,,ko,6,train,arts_01__claudecode,claudecode,,
 arts_02,,,,,,,,,train,arts_02,,,
-arts_03,,,,,,,,,test,arts_03,,,
+arts_03,"김홍도의 다양한 면모를 탐구하다 (정병모, 『김홍도 새로움』 서평)","한국예술연구 2024 제45호, 367-377쪽",예술,,,,ko,5,test,arts_03__gamma,gamma,,7
 bio_01,WILD YEAST · XOD INHIBITION,,,,,,ko,9,train,bio_01__chatGPT,chatGPT,,
 bio_02,"BF-7, 허혈성 뇌손상을 막고 기억력을 살리다","대한해부학회지 38(2), 181-188, 2005",의학,,CC BY-NC 4.0,,ko,8,train,bio_02__claudecode,claudecode,,
 bio_03,pH 감응형 수화젤 미세입자 탑재 및 방출 거동 분석,,,,,,ko,6,train,bio_03__gemini,gemini,,

@@ -1,0 +1,2 @@
+T1	Table 1. Model configuration — Parameter | Value / Network architecture | ResNet-18 / Input size | 224 × 224 × 3 / Number of classes | 2 / Learning rate | 0.001 / Batch size | 32 / Epochs | 2	원문 PDF 13쪽 Table 1. 정제 텍스트에서는 표가 걷혀 있어 PDF 를 직접 참조했다.
+T2	Table 2. Confusion matrix of the results shown in Fig. 6 (n = 800) — Case1(20 m/s) 1.8 kHz: 762 38 0 0 / 3.2 kHz: 357 443 0 0 · Case2(25 m/s) 1.8 kHz: 547 26 161 66 / 2.6 kHz: 390 183 19 208 · Case3(35 m/s) 2.6 kHz: 690 78 5 27 / 3.2 kHz: 0 32 634 134	원문 PDF 17쪽 Table 2. 정제 텍스트에서는 표가 걷혀 있어 PDF 를 직접 참조했다.
