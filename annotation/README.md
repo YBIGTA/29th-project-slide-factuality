@@ -18,6 +18,9 @@
 
 | 컬럼 | 뜻 |
 | --- | --- |
+| `deck_id` | 어느 덱의 라벨인지. 시트 이름 앞부분과 같다 |
+| `담당자` | **누가 붙인 라벨인지.** 시트를 CSV 로 뽑거나 행을 옮겨도 안 사라지도록 컬럼으로 박아 둔다 |
+| `split` | `train` · `test` · `generalization` 중 하나. 아래 참고 |
 | `Slide #` | 슬라이드 번호 (정수) |
 | `Claim (PPT)` | 판정 대상. `claims/{deck_id}.jsonl` 의 `Claim (PPT)` 와 글자가 같아야 한다 |
 | `Slide_Title` | 그 슬라이드의 제목 |
@@ -49,6 +52,33 @@
 
 빨강이 보이면 그 셀은 아직 안 끝난 것이다. 표시해 둘 일이 있으면
 `확인요망` 칸에 `Y`, 이유는 `ambiguity_note` 에 적는다.
+
+## split — 어느 평가에 쓰는 덱인가
+
+`docs/manifest.csv` 의 `split` 이 정답이고, 여기 컬럼은 그걸 옮겨 온 것이다.
+manifest 를 고치고 `stamp_annotation.py` 를 다시 돌리면 따라온다.
+
+| split | 뜻 | 덱 |
+| --- | --- | --- |
+| `train` | 모델을 만드는 데 쓴다 | arts_01 · arts_02 · bio_01 · bio_02 · bio_03 · socio_01 · socio_02 · socio_03 · tech_01 · tech_02 · tech_03 |
+| `test` | **일반 성능**을 잰다. train 과 같은 도메인의 안 본 덱 | arts_03 · bio_04 · socio_04 · tech_04 |
+| `generalization` | **처음 보는 도메인**에서 버티는지 잰다. 재무는 학습에 아예 안 넣는다 | finance_01 ~ finance_05 |
+
+도메인마다 test 를 하나씩 뽑았다. 재무는 통째로 빼서, 학습에서 한 번도 안
+본 분야에 모델을 그대로 들이댔을 때 무너지는지를 본다 — 이게 `test` 와
+`generalization` 을 나눠 두는 이유다. 둘을 섞으면 그 구분이 사라진다.
+
+## 자료가 있는지
+
+`_시트이름` 시트 오른쪽에 `원문 PDF` · `정제 텍스트` · `덱 PPTX` · `manifest`
+네 칸이 있다. **분홍(X)이면 라벨만 있고 원문이 레포에 없다는 뜻**이고, 그
+덱은 검색기 평가(B-1)도 데이터셋 생성(B-2)도 못 돌린다.
+
+```bash
+python src/stamp_annotation.py      # 담당자 기입 + 자료 유무 갱신
+```
+
+레포에 파일을 추가한 뒤 이걸 다시 돌리면 O/X 가 갱신된다.
 
 ## 다시 만들 때
 

@@ -1,0 +1,107 @@
+# 추출 방식: 1단 (종결어미 33.7%)
+[p1 각주]   126 http://dx.doi.org/10.15709/hswr.2025.45.3.126
+[p9 머리말] 전체 3,011 100
+[p10 머리말] 사회신뢰 5.15 1.80 0 10
+[p10 머리말] 사회적 자본 공적신뢰 1.36 1.53 0 3
+[p10 머리말] 대인신뢰 3.62 0.73 1 5
+[p10 머리말] 사회적지지 6.07 1.64 0 10
+[p10 머리말] 이주노동자 2.77 0.90 1 5
+[p10 머리말] 다문화 수용성 난민 2.27 0.94 1 5
+[p10 머리말] 재외동포 2.73 0.91 1 5
+[p10 머리말] 변수 1 2 3 4 5 6 7
+[p10 머리말] 대인신뢰 1
+[p10 머리말] 사회신뢰 -0.277*** 1
+[p10 머리말] 공적신뢰 -0.160*** 0.255*** 1
+[p10 머리말] 사회적지지 -0.138*** 0.227*** 0.069*** 1
+[p10 머리말] 이주노동자 -0.032 0.037* 0.062** 0.071*** 1
+[p10 머리말] 난민 -0.026 0.039* 0.048* 0.071*** 0.367*** 1
+[p10 각주]   *p<0.1, **p<0.05, ***p<0.001.
+[p10 각주]   4. 사회적 자본과 다문화 수용성의 관계
+[p10 각주]   이주노동자 다문화 수용성에 대한 결정요인 분석 결과들은 아래 <표 4>와 같다. 모형의 설명력은 5.8%(Adj.
+[p10 각주]   R²=0.051)였고, 모형 전체는 통계적으로 유의미하였다(F=8.93, p<0.001). 회귀분석 결과, 이주노동자 다문화 수
+[p10 각주]   용성에 영향을 미치는 요인을 살펴본 결과. 먼저, 사회적 자본 중 사회 신뢰, 공적 신뢰, 대인 신뢰 그리고 사회적
+[p10 각주]   지지로 측정한 통계적 유의성은 검증되지 않았다. 인구 사회학적 요인 중에서는 성별, 세대, 주관적 소득계층,
+[p10 각주]   교육수준, 접촉 빈도 그리고 경제활동 상태가 통계적으로 유의미한 것으로 나타났다. 여성은 남성에 비해 이주노
+[p10 각주]   동자에 대해 더 낮은 다문화 수용 태도를 보였다(β=-0.136, p<0.001). 세대별로는 중년층(β=-0.106, p<0.05),
+[p10 각주]   135
+[p11 각주]   N 2,929
+[p11 각주]   F/ p 8.93***
+[p11 각주]   R² (Adj. R²) 0.058( 0.051)
+[p11 각주]   *p<0.1, **p<0.05, ***p<0.001.
+[p11 각주]   난민 다문화 수용성에 대한 결정요인 분석 결과들은 아래 <표 5>와 같다. 모형의 설명력은 4.2%(Adj.
+[p11 각주]   R²=0.036)였고, 모형 전체는 통계적으로 유의미하였다(F=6.43, p<0.001). 회귀분석 결과, 난민 다문화 수용성에
+[p11 각주]   영향을 미치는 요인을 살펴본 결과 일부 사회적 자본 지표와 인구 사회학적 요인이 통계적으로 유의한 영향을
+[p11 각주]   136
+[p12 각주]   N 2,929
+[p12 각주]   F/ p 6.43***
+[p12 각주]   R² (Adj. R²) 0.042(0.036)
+[p12 각주]   *p<0.1, **p<0.05, ***p<0.001.
+[p12 각주]   137
+[p13 각주]   N 2,929
+[p13 각주]   F/ p 6.76***
+[p13 각주]   R² (Adj. R²) 0.044(0.038)
+[p13 각주]   *p<0.1, **p<0.05, ***p<0.001.
+[p13 각주]   138
+[p17 각주]   (E-mail: aliceykwak@gmail.com)
+[p17 각주]   양영미는 서울여자대학교에서 사회복지학 박사학위를 받았으며, 한국사회융합연구소 소장으로
+[p17 각주]   재직 중이다. 주요 연구 분야는 아동 및 청소년복지, 다문화, 지역사회, 돌봄 등이다.
+[p17 각주]   (E-mail: ksci.ymy@gmail.com )
+[p17 각주]   142
+[p19 각주]   Allport, G. W. (1954). The Nature of Prejudice. Addison-Wesley. Publishing Company.
+[p19 각주]   Bhandari, H., & Yasunobu, K. (2009). What is social capital? A comprehensive review of the concept. Asian Journal
+[p19 각주]   of Social Science, 37(3), 480-510.
+[p19 각주]   Burgoon, B. (2014). Immigration, Integration, and Support for Redistribution in Europe. World Politics, 66(3), 365-405.
+[p19 각주]   Çınar, P. T. (2025). Migration and the transformation of gender and parenting roles: Syrian and Afghan women in Turkey.
+[p19 각주]   Women's Studies International Forum, 109.
+[p19 각주]   144
+[p20 각주]   century. AFFRIKA Journal of Politics, Economics and Society, 7(1), 111–126.
+[p20 각주]   Putnam, R. D. (2007). E Pluribus Unum: Diversity and Community in the Twenty-First Century the 2006 Johan Skytte
+[p20 각주]   Prize Lecture. Scandinavian Political Studies, 30(2), 137–174.
+[p20 각주]   Ramakrishna, D. (2013). Multiculturalism in America, Australia and India. Social Change, 43(1), 99–110.
+[p20 각주]   Re: Match. (2025). Our core idea – Innovative approaches to solidarity. https://rematch-eu.org/?utm_source=chatgpt.com
+[p20 각주]   Rosado, C. (1996). Toward a definition of multiculturalism. Retrieved from http://rosado.net/pdf/Def_of_Multiculturalism.pdf
+[p20 각주]   Schweitzer, R., Perkoulidis, S., Krome, S., Ludlow, C., & Ryan, M. (2005). Attitudes towards refugees: The dark side
+[p20 각주]   of prejudice in Australia. Australian Journal of Psychology, 57(3), 170-179.
+[p20 각주]   Simmons, S. J., Wittig, M. A., & Grant, S. K. (2010). A mutual acculturation model of multicultural campus climate
+[p20 각주]   and acceptance of diversity. Cultural diversity & ethnic minority psychology, 16(4), 468-475.
+[p20 각주]   United Nations, Department of Economic and Social Affairs. (2024). World Population Prospects 2024. Online Edition.
+[p20 각주]   https://population.un.org/wpp
+[p20 각주]   Uslaner, E. M. (1999). Trust but verify: social capital and moral behaviour. Social Science Information, 38, 29-56.
+[p20 각주]   Uslaner, E. M. (2002). The moral foundations of trust. University of Maryland Press.
+[p20 각주]   145
+[p21 각주]   (ksci.ymy@gmail.com)
+[p21 각주]   categories by focusing on the sub-components of social capital. The study
+[p21 각주]   utilizes the raw data from the 2024 National Survey on Social Cohesion and
+[p21 각주]   conducts multiple regression analyses based on a sample of 3,011 Korean adults.
+[p21 각주]   The results reveal that both social trust and institutional trust exert a significant
+[p21 각주]   positive effect on multicultural acceptance toward refugees, whereas no
+[p21 각주]   statistically significant relationships were found for migrant workers and
+[p21 각주]   overseas Koreans. Furthermore, socio-demographic factors, including gender,
+[p21 각주]   generation, educational attainment, subjective income level, and frequency of
+[p21 각주]   contact with foreigners, were found to have varying influences on multicultural
+[p21 각주]   acceptance depending on the type of migrant group. These findings highlight
+[p21 각주]   the heterogeneous nature of multicultural attitudes within Korean society and
+[p21 각주]   underscore the importance of incorporating the role of social capital into the
+[p21 각주]   development of targeted social integration policies for different migrant
+[p21 각주]   populations.
+[p21 각주]   Keywords: Social Capital, Multiculutral Acceptance, Migrant Workers, Refugees,
+[p21 각주]   Overseas Koreans, Social Integration
+[p21 각주]   146
+[띄어쓰기] 한국사회융합연구소  ->  한국 사회 융합 연구소
+[띄어쓰기] 우리나라청소년은  ->  우리나라 청소년은
+[띄어쓰기] 저임금노동자들이  ->  저임금 노동자들이
+[띄어쓰기] 저소득층노동자들  ->  저소득층 노동자들
+[띄어쓰기] 사회통합실태조사  ->  사회 통합 실태 조사
+[띄어쓰기] 교육수준별에서는  ->  교육 수준별에서는
+[띄어쓰기] 높이는데유의미한  ->  높이는 데 유의미한
+[띄어쓰기] 확률비례계통추출법으로  ->  확률 비례 계통 추출 법으로
+[띄어쓰기] 무급가족종사자는  ->  무급 가족 종사자는
+[띄어쓰기] 비경제활동인구는  ->  비경제 활동 인구는
+[띄어쓰기] 방송통신위원회는  ->  방송 통신 위원회는
+[띄어쓰기] 사회정책학과에서  ->  사회 정책학 과에서
+[띄어쓰기] 한국보건사회연구  ->  한국 보건 사회 연구
+[띄어쓰기] 애매모호수용성이  ->  애매모호 수용성이
+[띄어쓰기] 한국컴퓨터정보학회논문지  ->  한국 컴퓨터 정보 학회 논문지
+[띄어쓰기] 한국공공관리학보  ->  한국 공공 관리 학보
+[띄어쓰기] 보건교육건강증진학회지  ->  보건 교육 건강 증진 학회지
+[띄어쓰기] 사회통합실태조사  ->  사회 통합 실태 조사
