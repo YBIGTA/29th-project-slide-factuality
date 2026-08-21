@@ -94,6 +94,7 @@ retrieval/queries/*.jsonl      claim_id 가 붙은 검색 쿼리
 | `eval_retrieval.py` | A-5 | 검색기 자체 점검. **진짜 평가가 아니다** — claim 이 원문에 그대로 있는 경우만 정답으로 쓰는 하한선 측정 |
 | `pick_extraction.py` | A-2 | PDF 를 1단·2단 두 방식으로 뽑아 점수를 재고 나은 쪽을 남긴다 |
 | `compare_retrieval.py` | B-1 | 라벨의 근거로 정답을 만들고 BM25·임베딩·하이브리드 3종을 비교한다 |
+| `stamp_annotation.py` | — | 라벨 워크북의 각 시트에 `deck_id`·`담당자` 를 박고, 요약 시트에 원문·덱이 레포에 있는지를 표시한다 |
 | `summarize_b1.py` | B-1 | 덱별 지표를 모아 `results/retrieval_summary.md` 한 표로 만든다 |
 | `build_dataset.py` | B-2 | 라벨 + 검색 결과 + claim 을 합쳐 `dataset/*.jsonl` 로. `manifest.csv` 의 split 을 따른다 |
 | `pipeline_test.py` | — | A-2 → A-3 → 검색 → B-2 를 한 번에 돌려보는 통합 점검 |
