@@ -6,11 +6,8 @@ __pycache__/
 .cache/
 *.jsonl.tmp
 
+# 모델 가중치 — 한 벌에 442MB 다. 코랩에서 받아 models/{M2,M2p,M3}/ 에 넣는다.
 models/**/model.safetensors
 models/**/checkpoint-*/
-
-models/**/model.safetensors
-models/**/checkpoint-*/
-
-models/**/model.safetensors
-models/**/checkpoint-*/
+*.safetensors
+가중치/
