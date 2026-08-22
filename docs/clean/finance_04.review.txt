@@ -1,0 +1,409 @@
+# 추출 방식: 읽기레이어 (종결어미 75.7%)
+[p1 각주]   www.earticle.net
+[p1 각주]   Download by : 165.132.XXX.XX4 Accessed : Monday, August 17, 2026 3:56 PM
+[p3 머리말] 2015 등). 대규모 서베이 자료 가운데에서는 한국노
+[p4 각주]   (Andersen et al., 2008; Andreoni & Sprenger,
+[p4 각주]   2012a).
+[p4 각주]   시간선호는 연령이나 성별, 교육수준과 같은 요인과
+[p4 각주]   관련이 높은 것으로 알려졌는데, Becker & Mulligan
+[p4 각주]   (1997)은 연령이 증가할수록, 교육수준이 높아질수
+[p4 각주]   록 현재에 즉각적인 효용을 얻는 것보다 미래 효용에
+[p4 각주]   더 높은 가치를 부여한다고 보았으며, Bishai(2004)
+[p4 각주]   또한 성별, 지능, 건강행동 등에 따라 시간선호에 차
+[p4 각주]   이가 존재한다고 밝혔다.
+[p4 각주]   한편, 위험감수성향은 개인이 자산 포트폴리오를 구
+[p4 각주]   성할 때 어느 정도의 변동성을 감수할 수 있는지에 대
+[p4 각주]   한 개인의 태도와 의지를 포함하는 개념이다(Grable
+[p4 각주]   & Lytton, 1999). Grable(2000)은 이를 투자자
+[p4 각주]   가 감수할 수 있는 불확실성의 최대치로 정의하며,
+[p4 각주]   투자 목적, 기간, 상품 선호 등 전반적인 재무 행동
+[p4 각주]   에 구조적인 영향을 미치는 요인으로 보았다.
+[p4 각주]   위험감수성향은 효용이론과 밀접하게 연결되며,
+[p4 각주]   통상적으로 위험회피형(risk adverse), 위험중립형
+[p4 각주]   (risk neutral), 위험추구형(risk seeking)으로
+[p4 각주]   구분된다(민재형․구기동, 2004). 위험회피형 개인
+[p4 각주]   은 동일한 기대수익 조건에서 낮은 위험의 상품을 선
+[p4 각주]   호하고, 위험이 증가할수록 더 큰 기대수익이 보상되
+[p4 각주]   어야 동일한 효용을 느낀다(허경옥․유수현, 2012).
+[p7 각주]   (Laibson, 1997; Andreoni & Sprenger, 2012b).
+[p7 각주]   최근에는 대규모 설문조사에서도 시간선호에 대한
+[p7 각주]   설문이 시도되고 있다(Falk et al., 2018).
+[p7 각주]   재정패널은 대규모 설문조사라는 특성상, 또한 시
+[p7 각주]   간선호가 설문의 목적이 아니기 때문에 다양한 기간
+[p7 각주]   (time horizon)을 포함한 정교한 MPL 방식을 적용
+[p7 각주]   하기 어렵다. 이에 따라 시간선호는 단순화된 형태의
+[p7 각주]   선택 문항으로 측정되었으며, 구체적인 문항 내용은
+[p7 각주]   <표 1>에 제시되어 있다. 다섯 가지 선택 옵션을 통
+[p7 각주]   해 응답자가 현재의 보상과 미래의 더 큰 보상 중 어
+[p7 각주]   느 쪽을 선호하는지를 파악하며, 미래 보상의 크기
+[p8 각주]   PreferFuture에
+[p8 각주]   어느 정도 토큰을 배분하였더라도 PreferPresent
+[p8 각주]   에 동일한 수나 더 많은 토큰을 배분하는 예도 존재
+[p8 각주]   한다. 물론 미래 선호에 많은 토큰을 투자한 사람이
+[p8 각주]   미래 선호가 없다고 보기는 어렵다. 그러나 응답자
+[p8 각주]   에 따라 선호의 연속성을 보이지 않는 경우도 존재
+[p8 각주]   하기 때문에 이런 경우를 배제하기 위하여, 본 연구
+[p8 각주]   에서는 추가로 2가지로 조치하였다. 첫 번째로 5가
+[p8 각주]   지 상황에서의 응답이 일관적이지 않아(예: 이자율
+[p8 각주]   이 증가할수록 미래 보상에 투자하는 토큰의 수가
+[p8 각주]   증가하였다가 감소하는 경우 등) 선호의 연속성에
+[p8 각주]   위배되는 경우는 분석에서 제외하였다. 두 번째로,
+[p8 각주]   PreferPresent와 PreferFuture를 하나로 결합한
+[p8 각주]   변수를 생성하였으며, 계산식은 다음과 같다.
+[p8 각주]   CombinedPreference
+[p8 각주]   = PreferFuture - PreferPresent (1)
+[p8 각주]   귀하에게 토큰 20개가 있다고 가정합니다. 내일 토큰 1개를 돈으로 교환하게 되면 100,000원을 받습니다.
+[p8 각주]   반면, 내일부터 한 달 뒤(즉, 한 달+1일) 에 교환할 경우 토큰의 가치는 아래와 같습니다.
+[p8 각주]   내일 교환할 토큰의 개수와 한 달 뒤 교환할 토큰의 개수는 각각 몇 개입니까?
+[p8 각주]   각 경우마다 20개의 토큰은 모두 교환하여야 합니다.
+[p8 각주]   내일 교환 시
+[p8 각주]   토큰 1개의 가치
+[p8 각주]   한 달 뒤 교환 시
+[p8 각주]   토큰 1개 가치 (1) 내일 교환 개수 (2) 한 달 뒤 교환 개수
+[p8 각주]   A) 100,000원 101,000원
+[p8 각주]   PreferFuture
+[p8 각주]   B) 100,000원 101,250원
+[p8 각주]   C) 100,000원 101,500원
+[p8 각주]   D) 100,000원 101,750원
+[p8 각주]   E) 100,000원 102,000원 PreferPresent
+[p8 각주]   <표 1> 재정패널 시간선호 측정 문항
+[p9 머리말] 강한 사람이 이자율이 가장 낮은 상황에서 토큰 20
+[p9 각주]   (Holt & Laury, 2002; Eckel & Grossman,
+[p9 각주]   2008; Harrison & Rustrom, 2008). 최근에는
+[p9 각주]   실험 설계가 아닌 대규모 설문조사에서 위험감수성향
+[p9 각주]   측정이 시도되고 있는데(Hryshko et al., 2011;
+[p9 각주]   Dohmen et al., 2005), 국내에서는 노동패널에
+[p9 각주]   다중가격 목록(Multiple Price List, MPL) 가상
+[p9 각주]   복권 선택 문항이 포함되어 이를 활용하여 CRRA계
+[p9 각주]   수를 산출한 연구들이 존재한다(이진형, 2008; 성
+[p9 각주]   지미․안주엽, 2007; Kim & Lee, 2012; 김태
+[p9 각주]   환․권순만, 2020). 그러나 서베이의 경우 실험과
+[p9 각주]   는 달리 실제로 보상이 주어지지는 않기 때문에 응
+[p9 각주]   답자들의 실제 위험선호도를 측정하는데 측정오차
+[p9 각주]   (measurement error)가 발생할 가능성은 충분히 존
+[p9 각주]   재한다(Bradford et al., 2014; 김태환․권순만,
+[p9 각주]   2020). 그럼에도 불구하고 가구 조사 자료는 전국적
+[p9 각주]   인 대표성을 가지는 표본으로써 충분한 장점이 있고
+[p9 각주]   개인과 가구에 대한 풍부한 정보는 실험에서는 얻기
+[p9 각주]   K씨는 1억원의 자금으로 다음 2가지 금융상품에 투자하려고 합니다.
+[p9 각주]   A: 투자금의 2% 수익률이 확실히 보장되는 예금상품
+[p9 각주]   B: 투자금의 5% 이익이 발생하거나 1% 손실이 발생할 가능성이 반반으로 동일한 펀드 상품
+[p9 각주]   질문: 만약 귀하가 이런 상황이라면 어떤 상품에 얼마를 투자하시겠습니까?
+[p9 각주]   보기 A. 예금 B. 펀드
+[p9 각주]   1) 1억 원 0원
+[p9 각주]   2) 9천만 원 1천만 원
+[p9 각주]   ․․․
+[p9 각주]   6) 5천만 원 5천만 원
+[p9 각주]   ․․․
+[p9 각주]   10) 1천만 원 9천만 원
+[p9 각주]   11) 0원 1억 원
+[p9 각주]   1억 원을 투자했다고 가정할 때, 예금상품은 200만 원의 이자소득이 발생하며, 펀드 상품은 50%의 확률로 500만 원의 이자소
+[p9 각주]   득이 50%의 확률로 100만 원의 원금 손실이 발생하는 상품입니다.
+[p9 각주]   금융상품의 수수료나 세금, 투자 기간 등 수익률과 손실들을 제외한 나머지 조건은 두 상품 모두 동일하다고 가정합니다.
+[p9 각주]   <표 2> 재정패널 위험감수성향 측정 문항
+[p10 각주]   2006; Gaudecker, 2015; Calvet et al., 2021;
+[p10 각주]   정삼호․양세정, 2024)를 참고하였는데, 일반적으로
+[p10 각주]   안전금융자산에는 예․적금, 저축성 보험 및 연금저
+[p10 각주]   축이 포함되며, 위험금융자산에는 주식, 펀드, 채권
+[p10 각주]   등이 포함됨에 따라 본 연구에서도 동일하게 정의하
+[p10 각주]   였으며, 전체 금융자산 중에서 해당 항목의 전년도
+[p10 각주]   말 기준 평가액(만 원 단위)을 합산한 금액의 비중
+[p10 각주]   으로 측정하였다.
+[p10 각주]   3. 분석모형
+[p10 각주]   시간선호와 위험감수성향은 개인의 내재적 특성으
+[p10 각주]   로, 시간에 따라 크게 변하지 않는 상대적으로 안정적
+[p10 각주]   인 선호 변수로 볼 수 있다(김대환․이동화, 2024).
+[p10 각주]   또한 개인연금저축은 장기 금융상품의 특성상 일단
+[p10 각주]   가입하면 보유 상태가 쉽게 변하지 않는 경향이 있다.
+[p10 각주]   아울러 본 연구에서 활용한 패널자료는 3개년으로
+[p10 각주]   기간이 짧기 때문에, 고정 효과 모형보다는 확률 효과
+[p10 각주]   (random effects) 모형을 적용하는 것이 적절하다.
+[p10 각주]   이에 따라 본 연구에서는 확률 효과 모형으로 분석
+[p10 각주]   하였으며, 행동적 요인의 성별 차이를 구체적으로 파
+[p10 각주]   악하기 위해 남성과 여성 집단을 구분하여 추정하였
+[p10 각주]   다. 아울러 패널자료의 특성상 오차항 간 기간 간 자
+[p10 각주]   기상관(autocorrelation)이 발생할 가능성이 있으므
+[p10 각주]   로, 이를 고려하여 개인 수준에서 강건(robust) 표준
+[p10 각주]   오차를 클러스터링하였다. 분석에 사용한 모형은 다
+[p10 각주]   음과 같다.
+[p10 각주]   Yit = β0 + β1TimePreferenceit
+[p10 각주]   + β2RiskToleranceit + βxXit’ + ui + eit (2)
+[p12 각주]   N=38,834
+[p12 각주]   종속변수 (1) 미래선호성향(s.e.) (2) 위험회피성향(s.e.)
+[p12 각주]   연령대
+[p12 각주]   30대 .103(.410) -.030(.073)
+[p12 각주]   40대 .230(.411) .042(.074)
+[p12 각주]   50대 -.036(.407)
+[p12 각주]   .320(.074)***
+[p12 각주]   60대 .389(.438) .845(.079)***
+[p12 각주]   70대 -.148(.520) 1.218(.089)***
+[p12 각주]   80대 -1.048(.599)* 1.382(.098)***
+[p12 각주]   성별 여성 1.377(.194)*** .410(.035)***
+[p12 각주]   교육수준 고졸 미만 .893(.327)*** .340(.057)***
+[p12 각주]   대졸 이상 .531(.226)** -.229(.041)***
+[p12 각주]   혼인여부 기혼 .560(.243)** .114(.042)***
+[p12 각주]   가계소득
+[p12 각주]   (3분위 기준)
+[p12 각주]   1분위 -1.093(.322)*** .143(.054)***
+[p12 각주]   2분위 -.815(.267)*** .117(.045)***
+[p12 각주]   4분위 -.056(.254) -.192(.044)***
+[p12 각주]   5분위 1.120(.279)*** -.247(.049)***
+[p12 각주]   순자산
+[p12 각주]   (3분위 기준)
+[p12 각주]   1분위 -1.276(.296)*** .203(.051)***
+[p12 각주]   2분위 -.761(.263)*** .220(.045)***
+[p12 각주]   4분위 .118(.259) -.120(.045)***
+[p12 각주]   5분위 1.384(.283)*** -.110(.050)**
+[p12 각주]   주: 괄호 안은 강건 표준오차이며 개인 수준에서 클러스터링함. 모든 모형에 연도 더미 통제함. ***p < 0.01, **p < 0.05, *p < 0.1
+[p13 각주]   N = 11,541(100.0%)
+[p13 각주]   변수 남성(N=3,951) 여성(N=7,590)
+[p13 각주]   연령(s.d.) 44.5(9.93) 47.1(9.16)
+[p13 각주]   교육수준(%)
+[p13 각주]   고졸 미만 3.2 4.2
+[p13 각주]   고졸 47.6 58.3
+[p13 각주]   대졸 이상 49.2 37.5
+[p13 각주]   혼인여부(%) 기혼 60.3 74.4
+[p13 각주]   종사상지위(%) 상용직 59.5 46.2
+[p13 각주]   개인연금 보유율(%) 13.6 11.6
+[p13 각주]   미래선호성향(-20~+20) 4.18(16.16) 6.39(15.63)
+[p13 각주]   위험회피성향(s.d.)
+[p13 각주]   위험 선호 24.0 18.7
+[p13 각주]   위험 중립 18.1 15.3
+[p13 각주]   위험 회피 57.9 66.1
+[p13 각주]   재무적 특성
+[p13 각주]   연 가계소득(s.d.) 5,885.4(4,563.26) 6,959.7(5,247.44)
+[p13 각주]   금융자산(s.d.) 4,346.9(8,092.63) 5,037.8(8,375.62)
+[p13 각주]   주식 보유율 14.33 14.53
+[p13 각주]   위험자산 비중(s.d.) 0.07(0.20) 0.07(0.19)
+[p13 각주]   안전자산 비중(s.d.) 0.77(0.37) 0.80(0.34)
+[p13 각주]   거주지역 농촌거주비율 0.08 0.06
+[p14 머리말] 유의하게 증가하였다. 구체적으로 미래선호성향이 1
+[p14 각주]   N 7,590 3,951 7,590 3,951
+[p14 각주]   주: 평균 한계 효과를 보고함. 괄호 안은 강건 표준오차. 모든 모형에 연도 더미 통제함. *** p < 0.01, *** p < 0.05, * p < 0.1
+[p14 각주]   <표 6> 시간선호 및 위험감수성향이 개인연금과 주식 보유에 미치는 영향: 확률 효과 프로빗모형
+[p15 각주]   N 7,590 3,951 7,590 3,951
+[p15 각주]   주: 평균 한계 효과를 보고함. 괄호 안은 강건 표준오차. 모든 모형에 연도 더미 통제함. *** p < 0.01, *** p < 0.05, * p < 0.1
+[p15 각주]   <표 7> 시간선호 및 위험감수성향이 위험자산과 안전자산 비중에 미치는 영향: 확률 효과 토빗모형
+[p18 각주]   https://www.kofia.or.kr/brd/m_48/view.
+[p18 각주]   do?seq=213&srchFr=&srchTo=&srchWord
+[p18 각주]   =&srchTp=&multi_itm_seq=0&itm_seq_1
+[p18 각주]   =0&itm_seq_2=0&company_cd=&company
+[p18 각주]   _nm=&page=1
+[p18 각주]   김대환(2019). 위험회피성향과 보험수요의 이론 및 실제.
+[p18 각주]   보험금융연구, 30(4), 63-86.
+[p18 각주]   김대환(2024). 시간선호도에 따른 개인연금 수요 분석.
+[p18 각주]   2024년 재정패널 학술대회 자료집.
+[p18 각주]   김대환․김태완(2020). 위험회피성향에 따른 부동산 자산
+[p18 각주]   선호 분석. Journal of Real Estate Analysis,
+[p18 각주]   6(2), 61-81.
+[p18 각주]   김대환․이동화(2024). 위험선호는 자산을 증대시키는가?
+[p18 각주]   부동산 자산을 중심으로. 부동산연구, 34(1), 23-
+[p18 각주]   39.
+[p18 각주]   김민정․손지연․최현자(2007). 직업 안정성과 위험 감
+[p18 각주]   수 성향에 따른 소비자 포트폴리오 비교 분석. 소
+[p18 각주]   비자정책교육연구, 3(2), 1-21.
+[p18 각주]   김민정․최현자(2008). 은퇴자의 투자성향에 따른 자산
+[p18 각주]   포트폴리오 변화. 소비자정책교육연구, 4(4), 23-
+[p18 각주]   40.
+[p19 머리말] 계수 산출을 중심으로. 보건경제와 정책연구, 26
+[p19 머리말] 태 및 투자결정요인. 서강대학교 경영학연구, 15
+[p19 머리말] 영향: 재무교육의 조절효과. 소비자문제연구, 52
+[p19 머리말] 리 특성 분석. Financial Planning Review, 5
+[p19 각주]   Family and Environment Research, 409-
+[p19 각주]   426.
+[p19 각주]   정순희․신민경(2011). 재무위험수용성향과 위험자산보유
+[p19 각주]   율 관련 변수에 관한 연구. Financial Planning
+[p19 각주]   Review, 4(4), 1-20.
+[p19 각주]   정은주(1992). 위험 태도에 따른 가계의 투자 행동에 관
+[p19 각주]   한 연구. 이화여자대학교 석사학위논문.
+[p19 각주]   조홍종․양철원(2016). 연금 가입수요의 결정요인은 무
+[p19 각주]   엇인가 일시납 연금에 대한 실험연구. 재무연구,
+[p19 각주]   29(3), 377-424.
+[p19 각주]   차경욱․정다은(2013). 개인투자자의 손실회피성향, 위
+[p19 각주]   험태도와 가계금융자산 보유 특성. Financial
+[p19 각주]   Planning Review, 6(3), 119-141.
+[p19 각주]   최철(2013). 우리나라 금융소비자의 금융자산 배분 행동
+[p19 각주]   에 관한 연구. 소비자학연구, 24(1), 297-325.
+[p19 각주]   한국은행(2024). 2024년 가계금융복지조사결과 보도자료.
+[p19 각주]   https://www.bok.or.kr/portal/bbs/B0000
+[p19 각주]   501/view.do?menuNo=201264&nttId=
+[p19 각주]   10088484
+[p19 각주]   허경옥․유수현(2012). 가계투자에서의 위험감수성향 판
+[p19 각주]   별변수 조사 및 위험감수성향에 따른 가계재무관
+[p19 각주]   (1), 133-159.
+[p19 각주]   허경옥․이현진․최미향(2010). 가구주의 위험감수성향의
+[p19 각주]   변화와 금융자산 포트폴리오 구조 분석. Financial
+[p19 각주]   Planning Review, 3(2), 105-134.
+[p20 머리말] Journal of Risk and Insurance , 89
+[p20 머리말] The Quarterly Journal of Economics, 112
+[p20 각주]   making? Journal of Experimental Psychology:
+[p20 각주]   General, 129(4), 508-523.
+[p20 각주]   https://doi.org/10.1037/0096-3445.129.4.508
+[p20 각주]   Baillon, A., O'Donnell, O., Quimbo, S., & van
+[p20 각주]   Wilgenburg, K.(2022). Do time preferences
+[p20 각주]   explain low health insurance take&#8208;
+[p20 각주]   up?.
+[p20 각주]   (4), 951-983.
+[p20 각주]   Becker, G. S., & Mulligan, C. B.(1997). The
+[p20 각주]   endogenous determination of time preference.
+[p20 각주]   (3), 729-758.
+[p20 각주]   Bishai, D. M.(2004). Does time preference change
+[p20 각주]   with age?. Journal of Population Economics,
+[p20 각주]   17(4), 583-602.
+[p20 각주]   Bradford, D., Courtemanche, C., Heutel, G.,
+[p20 각주]   McAlvanah P., Ruhm, C.(2014). Time
+[p20 각주]   preferences and consumer behavior, NBER
+[p20 각주]   Working Paper 20320.
+[p20 각주]   Calvet, L. E., Campbell, J. Y., Gomes, F., & Sodini,
+[p20 각주]   P.(2021). The cross-section of household
+[p20 각주]   preferences (NBER Working Paper No. 28788).
+[p20 각주]   National Bureau of Economic Research.
+[p20 각주]   Dohmen, T., Falk, A., Huffman, D., Sunde, U.,
+[p20 각주]   Schupp, J., & Gert, G. W.(2005). Individual
+[p20 각주]   risk attitudes: New evidence from a large,
+[p20 각주]   representative, experimentally-validated
+[p20 각주]   survey (No. 511).
+[p20 각주]   DIW Discussion Papers.
+[p20 각주]   Eckel, C. C., & Grossman, P. J.(2008). Men, women
+[p20 각주]   and risk aversion: Experimental evidence.
+[p20 각주]   Handbook of Experimental Economics
+[p20 각주]   Results, 1, 1061-1073.
+[p20 각주]   Falk, A., Becker, A., Dohmen, T., Enke, B., Huffman,
+[p20 각주]   D., Sunde, U.(2018). Global Evidence on
+[p20 각주]   Economic Preferences. Quarterly Journal
+[p20 각주]   of Economics, 133(4), 1645-1692.
+[p20 각주]   Gaudecker, H.-M. von(2015). How does household
+[p20 각주]   portfolio diversification vary with financial
+[p20 각주]   literacy and financial advice? The Journal
+[p20 각주]   of Finance, 70(2), 489-507.
+[p20 각주]   https://doi.org/10.1111/jofi.12231.
+[p20 각주]   Grable, J. E.(2000). Financial risk tolerance and
+[p20 각주]   additional factors that affect risk taking
+[p20 각주]   in everyday money matters. Journal of
+[p20 각주]   Business and Psychology, 14(4), 625-630.
+[p20 각주]   Grable, J. E., & Lytton, R. H.(1999). Financial
+[p20 각주]   risk tolerance revisited: The development
+[p21 머리말] of utility. Review of Economic Studies, 4
+[p21 각주]   Kim, D.-H., & Lee, B.(2023). Analysis of Korean’s
+[p21 각주]   attitudes toward risk. The Journal of Risk
+[p21 각주]   Management, 34(4), 37-76.
+[p21 각주]   https://doi.org/10.21480/tjrm.34.4.202312.002
+[p21 각주]   Kim, Y.-I., & Lee, J.(2012). Estimating risk aversion
+[p21 각주]   using individual-level survey data. The
+[p21 각주]   Korean Economic Review, 28(2), 221-239.
+[p21 각주]   Kim, Y. I., & Lee, J.(2014). The long-run impact
+[p21 각주]   of a traumatic experience on risk aversion.
+[p21 각주]   Journal of Economic Behavior & Organization,
+[p21 각주]   108, 174-186.
+[p21 각주]   Laibson, D.(1997). Golden eggs and hyperbolic
+[p21 각주]   discounting. Quarterly Journal of Economics,
+[p21 각주]   112(2), 443-478.
+[p21 각주]   https://doi.org/10.1162/003355397555253
+[p21 각주]   Lampe, I.(2022). Demand for long-term care insurance:
+[p21 각주]   Time preferences matter, risk preferences
+[p21 각주]   don’t. University of St. Gallen, School of
+[p21 각주]   Finance Research Paper (2022/01).
+[p21 각주]   Lázaro, A., Barber án, R., & Rubio, E.(2002).
+[p21 각주]   The discounted utility model and social
+[p21 각주]   preferences: Some alternative formulations
+[p21 각주]   to conventional discounting.
+[p21 각주]   Journal of
+[p21 각주]   Economic Psychology, 23(3), 317-337.
+[p21 각주]   https://doi.org/10.1016/S0167-4870(02)
+[p21 각주]   00079-X
+[p21 각주]   Miao, B., & Zhong, S.(2015). Risk preferences
+[p21 각주]   are not time preferences: Separating risk
+[p21 각주]   and time preference: Comment. American
+[p21 각주]   Economic Review, 105(7), 2272-2286.
+[p21 각주]   https://doi.org/10.1257/aer.20131183
+[p21 각주]   Mossin, J.(1968). Aspects of rational insurance
+[p21 각주]   purchasing. Journal of Political Economy,
+[p21 각주]   76(4, Pt. 1), 553-568.
+[p21 각주]   https://doi.org/10.1086/259427
+[p21 각주]   OECD(2022). OECD Reviews of Pension Systems:
+[p21 각주]   Korea. OECD Publishing.
+[p21 각주]   https://doi.org/10.1787/2f1643f9-en
+[p21 각주]   Pak, T. Y., Babiarz, P.(2019). Asset allocation of
+[p21 각주]   two-person households under different
+[p21 각주]   longevity expectations, Journal of Consumer
+[p21 각주]   Affairs, 53(3), 1234-1254.
+[p21 각주]   Samuelson, P. A.(1937). A note on measurement
+[p21 각주]   (2), 155-161.
+[p21 각주]   https://doi.org/10.2307/2967612
+[p21 각주]   Schooley, D. K., & Worden, D. D.(1999). Investors’
+[p22 머리말] 논문접수일 : 2025. 10. 09
+[p22 머리말] 1차수정본접수일 : 2025. 10. 14
+[p22 머리말] 게재확정일 : 2025. 10. 14
+[p22 각주]   https://doi.org/10.11644/KIEP.EAER.
+[p22 각주]   2023.27.3.422
+[p22 각주]   Tanaka, T., Camerer, C. F., Nguyen, Q.(2010). Risk
+[p22 각주]   and Time Preferences: Linking Experimental
+[p22 각주]   and Household Survey Data from Vietnam,
+[p22 각주]   American Economic Review, 100(1), 557-
+[p22 각주]   571.
+[p22 각주]   Zhang, X., Wu, Z., & He, Q.(2023). A mini-review
+[p22 각주]   on how the COVID-19 pandemic affected
+[p22 각주]   intertemporal choice. Psychoradiology, 3,
+[p22 각주]   kkad021.
+[p22 각주]   https://doi.org/10.1093/psyrad/kkad021
+[p22 각주]   _____________________
+[p23 각주]   lower risk aversion, while higher income and net worth correlate with more future orientation
+[p23 각주]   and less risk aversion.
+[p23 각주]   Consistent with theory and prior research, time preference and risk tolerances are significantly
+[p23 각주]   related to financial behavior. Future-oriented women are more likely to enroll in personal
+[p23 각주]   pensions, while future-oriented men are more likely to invest in stocks. Risk-seeking men are
+[p23 각주]   more likely to hold stocks, allocate more to risky assets, and less to safe assets. In contrast,
+[p23 각주]   risk-averse men and women are less likely to own stocks and allocate a lower share to risky
+[p23 각주]   assets; among women, risk aversion is linked to a higher share of safe assets.
+[p23 각주]   Our findings provide implications for financial consumer policy and education. Korean adults
+[p23 각주]   generally exhibit strong future orientation, particularly women, which may support long-term
+[p23 각주]   financial planning such as pension enrollment. However, differences by gender, income, education,
+[p23 각주]   and wealth highlight the need for targeted education to strengthen future orientation among
+[p23 각주]   disadvantaged groups. High levels of risk aversion and conservative portfolios, especially among
+[p23 각주]   lower socioeconomic groups, point to the importance of financial education on diversification,
+[p23 각주]   risk management, and long-term investment strategies.
+[p23 각주]   ※ Key Words: time preference, risk tolerance, financial behavior, personal pension, financial
+[p23 각주]   asset portfolio
+[p23 각주]   * Professor, Department of Management of Technology, Konkuk University(haekyung@konkuk.ac.kr), First Author
+[p23 각주]   ** Ph.D., Department of Consumer Science, Seoul National University(jwj0516@snu.ac.kr), Corresponding Author
+[띄어쓰기] 소비자정책교육연구  ->  소비자 정책 교육 연구
+[띄어쓰기] 소비자정책교육연구  ->  소비자 정책 교육 연구
+[띄어쓰기] 선호소비자정책교육연구  ->  선호 소비자 정책 교육 연구
+[띄어쓰기] 교신저자소비자정책교육연구  ->  교신 저자 소비자 정책 교육 연구
+[띄어쓰기] 금융소비자보호와  ->  금융 소비자 보호와
+[띄어쓰기] 그러나시간선호를  ->  그러나 시간 선호를
+[띄어쓰기] 금융소비자교육과  ->  금융 소비자 교육과
+[띄어쓰기] 시점별효용평가의  ->  시점별 효용 평가의
+[띄어쓰기] 소비자정책교육연구  ->  소비자 정책 교육 연구
+[띄어쓰기] 필수적으금융소비자의  ->  필수적으 금융 소비자의
+[띄어쓰기] 재무위험추구성향이  ->  재무 위험 추구 성향이
+[띄어쓰기] 생애주소비자정책교육연구  ->  생애 주 소비자 정책 교육 연구
+[띄어쓰기] 조세재정연구원에서  ->  조세 재정 연구원에서
+[띄어쓰기] 즉소비자정책교육연구  ->  즉 소비자 정책 교육 연구
+[띄어쓰기] 소비자정책교육연구  ->  소비자 정책 교육 연구
+[띄어쓰기] 위험회피성향이며  ->  위험 회피 성향이며
+[띄어쓰기] 현재선호성향보다  ->  현재 선호 성향보다
+[띄어쓰기] 위험회피성향금융소비자의  ->  위험 회피 성향 금융 소비자의
+[띄어쓰기] 미래선호성향이며  ->  미래 선호 성향이며
+[띄어쓰기] 요인소비자정책교육연구  ->  요인 소비자 정책 교육 연구
+[띄어쓰기] 특성금융소비자의  ->  특성 금융 소비자의
+[띄어쓰기] 경우미래선호성향이  ->  경우 미래 선호 성향이
+[띄어쓰기] 종속변수개인연금  ->  종속 변수 개인연금
+[띄어쓰기] 남성미래선호성향  ->  남성 미래 선호 성향
+[띄어쓰기] 소비자정책교육연구  ->  소비자 정책 교육 연구
+[띄어쓰기] 위험회피적일수록  ->  위험 회피적일수록
+[띄어쓰기] 및종속변수위험자산  ->  및 종속 변수 위험 자산
+[띄어쓰기] 남성미래선호성향  ->  남성 미래 선호 성향
+[띄어쓰기] 위험선호적일수록  ->  위험 선호적일수록
+[띄어쓰기] 행동소비자정책교육연구  ->  행동 소비자 정책 교육 연구
+[띄어쓰기] 포트폴리오다각화와  ->  포트폴리오 다각화와
+[띄어쓰기] 소비자정책교육연구  ->  소비자 정책 교육 연구
+[띄어쓰기] 사회과학연구논총  ->  사회 과학 연구 논총
+[띄어쓰기] 일정상대위험회피  ->  일정상 대위험 회피
+[띄어쓰기] 불확실성하에서의  ->  불확실성 하에서의
+[띄어쓰기] 한국가정관리학회지  ->  한국 가정 관리 학회지
+[띄어쓰기] 한국생활과학회지  ->  한국 생활과 학회지
+[띄어쓰기] 자산선택결정요인  ->  자산 선택 결정 요인
+[띄어쓰기] 재무위험감수성향영향요인  ->  재무 위험 감수 성향 영향 요인
+[띄어쓰기] 소비자정책교육연구  ->  소비자 정책 교육 연구
+[띄어쓰기] 소비자정책교육연구  ->  소비자 정책 교육 연구

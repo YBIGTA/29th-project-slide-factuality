@@ -272,6 +272,16 @@ def _page_lines_two_column(page, gutter_frac: float = 0.5, y_eps: float = 2.5,
             if dropped is not None:
                 dropped.append(f"[p{pno} 회전텍스트] {text.strip()}")
             return
+        # 페이지 전체를 한 덩어리로 다시 넣어놓은 중복 레이어를 걸러낸다.
+        # earticle 로 받은 PDF(finance_04)가 그렇다. 줄 단위 조각들과 **별개로**
+        # 페이지 본문 전체가 1,800자짜리 조각 하나로 한 좌표에 얹혀 있다.
+        # 이게 섞이면 그 좌표가 속한 컬럼에 페이지 전체가 쏟아져 들어가서
+        # 좌우 단이 뒤엉킨 것처럼 보인다 — 컬럼 분리를 아무리 손봐도 안 고쳐진다.
+        # 진짜 줄 조각은 줄바꿈을 많아야 하나 갖는다. 여러 개면 통짜 덩어리다.
+        if text.count("\n") > 1:
+            if dropped is not None:
+                dropped.append(f"[p{pno} 중복레이어 {len(text)}자] {text.strip()[:60]}...")
+            return
         frags.append((tm[4], tm[5], text))
 
     page.extract_text(visitor_text=visitor)
@@ -299,13 +309,43 @@ def _page_lines_two_column(page, gutter_frac: float = 0.5, y_eps: float = 2.5,
     return left + right
 
 
+def _page_lines_reading_layer(page) -> list[tuple[int, str]]:
+    """PDF 가 따로 심어둔 '읽기 순서' 텍스트 레이어를 쓴다.
+
+    earticle 로 받은 PDF(finance_04)는 줄 단위 조각들과 별개로, 페이지 본문
+    전체를 이미 읽기 순서대로 이어붙인 큰 조각 하나를 얹어 놓는다. 2단 조판인데
+    이 레이어에는 좌우 단이 **이미 올바른 순서로** 들어가 있다.
+
+    좌표로 컬럼을 다시 나누는 것보다 이쪽이 훨씬 정확하다 (finance_04 에서
+    종결어미 비율 26% -> 52%). 다만 이런 레이어가 없는 PDF 가 대부분이라
+    있을 때만 쓰고, 없으면 빈 리스트를 돌려줘 호출자가 다른 방식을 고르게 한다.
+    """
+    blobs: list[str] = []
+
+    def visitor(text, cm, tm, font_dict, font_size):
+        # 진짜 줄 조각은 줄바꿈을 많아야 하나 갖는다. 여러 개면 통짜 덩어리다.
+        if text and text.count("\n") > 1:
+            blobs.append(text)
+
+    page.extract_text(visitor_text=visitor)
+    if not blobs:
+        return []
+    out = []
+    for ln in max(blobs, key=len).split("\n"):
+        if ln.strip():
+            out.append((len(ln) - len(ln.lstrip(" ")), re.sub(r"\s+", " ", ln).strip()))
+    return out
+
+
 def pdf_to_text(pdf_path: str | Path, keep_footnotes: bool = False,
                 fix_spacing: bool = True, two_column: bool = False,
-                gutter_frac: float = 0.5):
+                gutter_frac: float = 0.5, reading_layer: bool = False):
     reader = PdfReader(str(pdf_path))
     joiner = LineJoiner(Kiwi() if Kiwi else None)
     dropped: list[str] = []
-    if two_column:
+    if reading_layer:
+        pages = [_page_lines_reading_layer(p) or _page_lines(p) for p in reader.pages]
+    elif two_column:
         pages = [
             _page_lines_two_column(p, gutter_frac=gutter_frac, dropped=dropped, pno=i)
             for i, p in enumerate(reader.pages, 1)

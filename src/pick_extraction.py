@@ -50,14 +50,15 @@ def main() -> int:
     args = ap.parse_args()
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
-    print(f"{'문서':10s} {'1단':>18s} {'2단':>18s}   채택")
-    print("-" * 62)
+    print(f"{'문서':10s} {'1단':>18s} {'2단':>18s} {'읽기레이어':>18s}   채택")
+    print("-" * 80)
 
     for pdf in args.pdfs:
         doc_id = args.doc_id if (args.doc_id and len(args.pdfs) == 1) else pdf.stem
         best = None
         cells = []
-        for label, kwargs in (("1단", {}), ("2단", {"two_column": True})):
+        for label, kwargs in (("1단", {}), ("2단", {"two_column": True}),
+                              ("읽기레이어", {"reading_layer": True})):
             try:
                 text, dropped, markers = pdf_to_text(pdf, **kwargs)
             except Exception as e:                      # 한쪽만 실패할 수 있다
@@ -72,7 +73,8 @@ def main() -> int:
             print(f"{doc_id:10s} {'양쪽 다 실패':>18s}")
             continue
         pct, label, text, dropped, markers = best
-        print(f"{doc_id:10s} {cells[0]:>18s} {cells[1] if len(cells) > 1 else '':>18s}   {label}")
+        cells += [""] * (3 - len(cells))
+        print(f"{doc_id:10s} {cells[0]:>18s} {cells[1]:>18s} {cells[2]:>18s}   {label}")
 
         if not args.dry_run:
             (args.out_dir / f"{doc_id}.txt").write_text(text, encoding="utf-8")
