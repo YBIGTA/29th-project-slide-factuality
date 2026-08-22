@@ -1,0 +1,421 @@
+{
+  "model_id": "M2p",
+  "use_context": false,
+  "backbone": "klue/roberta-base",
+  "config": {
+    "model_id": "M2p",
+    "use_context": false,
+    "backbone": "klue/roberta-base",
+    "data_dir": "dataset",
+    "out_root": "models",
+    "results_dir": "results",
+    "match_args": "models/M2/training_args.bin",
+    "eval_generalization": true,
+    "max_len": 510,
+    "claim_max": 64,
+    "ctx_max": 96,
+    "ctx_bullets": 6,
+    "n_cand": 5,
+    "cand_max": 64,
+    "seeds": "13,42,777",
+    "lr": 2e-05,
+    "epochs": 8,
+    "batch_size": 16,
+    "eval_batch_size": 32,
+    "grad_accum": 1,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "label_smoothing": 0.0,
+    "scheduler": "linear",
+    "cw_power": 0.5,
+    "n_dev_docs": 3,
+    "n_boot": 1000,
+    "fp16": true,
+    "inspect": false
+  },
+  "hyperparameters": {
+    "learning_rate": 2e-05,
+    "num_train_epochs": 5,
+    "per_device_train_batch_size": 16,
+    "gradient_accumulation_steps": 1,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "label_smoothing_factor": 0.0,
+    "lr_scheduler_type": "linear",
+    "fp16": false
+  },
+  "runs": [
+    {
+      "seed": 13,
+      "dev_docs": [
+        "arts_01",
+        "socio_03",
+        "tech_01"
+      ],
+      "dev_macro_f1": 0.2164705882352941,
+      "test": {
+        "macro_f1": 0.2065677966101695,
+        "accuracy": 0.703971119133574,
+        "per_class_f1": {
+          "근거있음": 0.8263,
+          "무근거": 0.0,
+          "모순": 0.0,
+          "benign": 0.0
+        },
+        "support": {
+          "근거있음": 195,
+          "무근거": 26,
+          "모순": 12,
+          "benign": 44
+        },
+        "confusion": [
+          [
+            195,
+            0,
+            0,
+            0
+          ],
+          [
+            26,
+            0,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            0,
+            0
+          ],
+          [
+            44,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_labels": [
+          "근거있음",
+          "무근거",
+          "모순",
+          "benign"
+        ],
+        "n": 277,
+        "ci95": [
+          0.19813519813519814,
+          0.21890547263681592
+        ]
+      },
+      "generalization": {
+        "macro_f1": 0.18944844124700239,
+        "accuracy": 0.61003861003861,
+        "per_class_f1": {
+          "근거있음": 0.7578,
+          "무근거": 0.0,
+          "모순": 0.0,
+          "benign": 0.0
+        },
+        "support": {
+          "근거있음": 158,
+          "무근거": 2,
+          "모순": 3,
+          "benign": 96
+        },
+        "confusion": [
+          [
+            158,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            96,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_labels": [
+          "근거있음",
+          "무근거",
+          "모순",
+          "benign"
+        ],
+        "n": 259,
+        "ci95": [
+          0.18849840255591052,
+          0.19230769230769232
+        ]
+      }
+    },
+    {
+      "seed": 42,
+      "dev_docs": [
+        "bio_01",
+        "bio_02",
+        "socio_03"
+      ],
+      "dev_macro_f1": 0.2705191798941799,
+      "test": {
+        "macro_f1": 0.5129945753004759,
+        "accuracy": 0.7581227436823105,
+        "per_class_f1": {
+          "근거있음": 0.8469,
+          "무근거": 0.375,
+          "모순": 0.0909,
+          "benign": 0.7391
+        },
+        "support": {
+          "근거있음": 195,
+          "무근거": 26,
+          "모순": 12,
+          "benign": 44
+        },
+        "confusion": [
+          [
+            166,
+            7,
+            9,
+            13
+          ],
+          [
+            17,
+            9,
+            0,
+            0
+          ],
+          [
+            4,
+            6,
+            1,
+            1
+          ],
+          [
+            10,
+            0,
+            0,
+            34
+          ]
+        ],
+        "confusion_labels": [
+          "근거있음",
+          "무근거",
+          "모순",
+          "benign"
+        ],
+        "n": 277,
+        "ci95": [
+          0.28530392883617495,
+          0.7393300225814868
+        ]
+      },
+      "generalization": {
+        "macro_f1": 0.2601075294761055,
+        "accuracy": 0.5907335907335908,
+        "per_class_f1": {
+          "근거있음": 0.7417,
+          "무근거": 0.1667,
+          "모순": 0.0,
+          "benign": 0.1321
+        },
+        "support": {
+          "근거있음": 158,
+          "무근거": 2,
+          "모순": 3,
+          "benign": 96
+        },
+        "confusion": [
+          [
+            145,
+            6,
+            4,
+            3
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            0,
+            0
+          ],
+          [
+            85,
+            2,
+            2,
+            7
+          ]
+        ],
+        "confusion_labels": [
+          "근거있음",
+          "무근거",
+          "모순",
+          "benign"
+        ],
+        "n": 259,
+        "ci95": [
+          0.21988945882540056,
+          0.2639328063241107
+        ]
+      }
+    },
+    {
+      "seed": 777,
+      "dev_docs": [
+        "arts_02",
+        "socio_02",
+        "tech_03"
+      ],
+      "dev_macro_f1": 0.35137024511000314,
+      "test": {
+        "macro_f1": 0.42831700510628196,
+        "accuracy": 0.6931407942238267,
+        "per_class_f1": {
+          "근거있음": 0.788,
+          "무근거": 0.25,
+          "모순": 0.0952,
+          "benign": 0.58
+        },
+        "support": {
+          "근거있음": 195,
+          "무근거": 26,
+          "모순": 12,
+          "benign": 44
+        },
+        "confusion": [
+          [
+            158,
+            2,
+            8,
+            27
+          ],
+          [
+            22,
+            4,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            1,
+            0
+          ],
+          [
+            15,
+            0,
+            0,
+            29
+          ]
+        ],
+        "confusion_labels": [
+          "근거있음",
+          "무근거",
+          "모순",
+          "benign"
+        ],
+        "n": 277,
+        "ci95": [
+          0.20108695652173914,
+          0.5496161460141848
+        ]
+      },
+      "generalization": {
+        "macro_f1": 0.12838589981447127,
+        "accuracy": 0.25868725868725867,
+        "per_class_f1": {
+          "근거있음": 0.4727,
+          "무근거": 0.0,
+          "모순": 0.0,
+          "benign": 0.0408
+        },
+        "support": {
+          "근거있음": 158,
+          "무근거": 2,
+          "모순": 3,
+          "benign": 96
+        },
+        "confusion": [
+          [
+            65,
+            4,
+            89,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            48,
+            7,
+            39,
+            2
+          ]
+        ],
+        "confusion_labels": [
+          "근거있음",
+          "무근거",
+          "모순",
+          "benign"
+        ],
+        "n": 259,
+        "ci95": [
+          0.1076923076923077,
+          0.18920454545454546
+        ]
+      }
+    }
+  ],
+  "train_label_dist": {
+    "근거있음": 528,
+    "모순": 78,
+    "무근거": 61,
+    "benign": 127
+  },
+  "data_fingerprint": {
+    "train.jsonl": {
+      "sha12": "52380026c991",
+      "lines": 811
+    },
+    "test.jsonl": {
+      "sha12": "41ebe14d2f03",
+      "lines": 290
+    },
+    "generalization.jsonl": {
+      "sha12": "4a3f556253bf",
+      "lines": 259
+    }
+  },
+  "git_commit": "1f1ee31",
+  "test_macro_f1_mean": 0.38262645900564246,
+  "test_macro_f1_std": 0.12920284356225936,
+  "generalization_macro_f1_mean": 0.19264729017919305,
+  "generalization_macro_f1_std": 0.05382268051077484
+}
