@@ -3,9 +3,9 @@
 
     python src/eval_test_models.py -o results/model_compare.md
 
-M1 은 여기서 직접 돌린다 (frozen e5 + LinearSVC, 가중치가 레포에 있다).
-M2 · M2' · M3 는 `models/**/model.safetensors` 가 .gitignore 에 걸려
-레포에 없어서 다시 돌릴 수 없다. 각자 커밋해 둔 results/*.json 을 읽는다.
+전부 여기서 직접 돌린다. M2 · M2' · M3 의 가중치는 `.gitignore` 때문에
+레포에 없으니 `models/{M2,M2p,M3}/model.safetensors` 를 따로 받아 두어야 한다
+(없으면 그 모델은 커밋된 results/*.json 수치로 대신한다 — 표에 표시된다).
 
 LLM 은 results/judgments/*.tsv — 원문 PDF 를 직접 읽고 붙인 판정이다.
 claim 분할 단위가 dataset 과 달라(불릿을 쪼갠다) 원래 claim 으로 되묶는다.
@@ -65,6 +65,36 @@ def llm_by_claim(root: Path, judgments: Path) -> dict[tuple[str, str], str]:
             if labels:
                 out[(doc_id, norm(row[key]))] = max(labels, key=lambda l: SEVERITY[l])
     return out
+
+
+# ── M2 · M2' · M3 를 실제로 돌린다 ───────────────────────────────────
+def run_bert(root: Path, model_dir: Path, rows: list[dict], use_context: bool) -> list[str]:
+    """학습 때와 **똑같은** 입력 조립을 쓴다 — train_judge_m3 를 그대로 부른다.
+    여기서 형식을 다시 짜면 [SEP] 위치나 블록별 절단이 어긋나서
+    성능이 낮게 나오고, 그 원인을 나중에 못 찾는다."""
+    import torch
+    from transformers import AutoModelForSequenceClassification, AutoTokenizer
+    import train_judge_m3 as T
+
+    tok = AutoTokenizer.from_pretrained(model_dir)
+    model = AutoModelForSequenceClassification.from_pretrained(model_dir).eval()
+    a = argparse.Namespace(use_context=use_context, claim_max=64, ctx_max=96,
+                           ctx_bullets=6, n_cand=5, cand_max=64, max_len=510)
+
+    recs = T.normalize(rows, verbose=False)
+    out: list[str] = []
+    pad = tok.pad_token_id
+    with torch.no_grad():
+        for i in range(0, len(recs), 16):
+            batch = [T.build_one(r, tok, a)["input_ids"] for r in recs[i:i + 16]]
+            n = max(len(b) for b in batch)
+            ids = torch.tensor([b + [pad] * (n - len(b)) for b in batch])
+            mask = torch.tensor([[1] * len(b) + [0] * (n - len(b)) for b in batch])
+            for j in model(input_ids=ids, attention_mask=mask).logits.argmax(-1).tolist():
+                out.append(T.LABELS[j])
+    # train_judge_m3 는 라벨을 '근거있음'/'benign' 으로 쓴다. 표기를 되돌린다.
+    back = {"근거있음": "근거 있음", "benign": "Benign"}
+    return [back.get(l, l) for l in out]
 
 
 # ── M1 을 실제로 돌린다 ──────────────────────────────────────────────
@@ -164,26 +194,41 @@ def main() -> None:
         m1 = run_m1(args.root, rows)
         results["M1 (frozen e5 + LinearSVC)"] = score(gold, m1)
 
-    for name, f in [("M2 (KLUE-RoBERTa, 맥락 없음)", "M2_test.json"),
-                    ("M2' (동일 백본 대조군)", "M2p_test.json"),
-                    ("M3 (KLUE-RoBERTa, 맥락 포함)", "M3_test.json")]:
-        got = from_json(args.root / "results" / f)
-        if got:
-            results[name] = got
+    # M2 · M2' · M3 — 가중치가 있으면 직접, 없으면 커밋된 수치로
+    preds: dict[str, list[str]] = {}
+    for name, d, ctx, f in [("M2 (KLUE-RoBERTa, 맥락 없음)", "M2", False, "M2_test.json"),
+                            ("M2' (동일 백본 대조군)", "M2p", False, "M2p_test.json"),
+                            ("M3 (KLUE-RoBERTa, 맥락 포함)", "M3", True, "M3_test.json")]:
+        mdir = args.root / "models" / d
+        if (mdir / "model.safetensors").exists():
+            print("  %s 직접 추론…" % d)
+            preds[name] = run_bert(args.root, mdir, rows, ctx)
+            results[name] = score(gold, preds[name])
+            results[name]["how"] = "직접 추론"
+            ref = from_json(args.root / "results" / f)
+            if ref:
+                results[name]["committed_macro_f1"] = ref["macro_f1"]
+        else:
+            got = from_json(args.root / "results" / f)
+            if got:
+                got["how"] = "커밋된 json"
+                results[name] = got
 
     # ── 표 만들기 ────────────────────────────────────────────────
     def table(rows_out, title, note):
         out = ["## " + title, "", note, "",
-               "| 모델 | n | macro-F1 | 정확도 | 근거 있음 | 무근거 | 모순 | Benign |",
-               "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |"]
+               "| 모델 | n | macro-F1 | 정확도 | 근거 있음 | 무근거 | 모순 | Benign | 팀원 기록값 |",
+               "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |"]
         best = max((r["macro_f1"] for _, r in rows_out), default=0)
         for name, r in sorted(rows_out, key=lambda kv: -kv[1]["macro_f1"]):
             f1 = ("**%.3f**" if r["macro_f1"] == best else "%.3f") % r["macro_f1"]
             if r.get("seeds", 1) > 1:
                 f1 += " ±%.3f" % r["std"]
             pc = r["per_class"]
+            ref = r.get("committed_macro_f1")
             out.append("| %s | %s | %s | %.3f | " % (name, r.get("n", "—"), f1, r["accuracy"]) +
-                       " | ".join("%.3f" % pc.get(l, NAN) for l in LABELS) + " |")
+                       " | ".join("%.3f" % pc.get(l, NAN) for l in LABELS) +
+                       " | %s |" % ("%.3f" % ref if ref is not None else "—"))
         return out + [""]
 
     lines = ["# test 셋 모델 비교", "",
@@ -191,7 +236,13 @@ def main() -> None:
              "라벨이 4분류가 아닌 13행(빈칸 12 + 근거문이 라벨칸에 들어간 1행)은 뺐다.", ""]
 
     lines += table(list(results.items()), "전체 277행",
-                   "팀원들이 각자 낸 수치와 같은 조건이다. **아래 누수 항목을 먼저 읽을 것.**")
+                   "M1·M2·M2'·M3 전부 이 스크립트에서 직접 추론했다. "
+                   "맨 오른쪽은 팀원이 각자 커밋해 둔 수치다.")
+    lines += ["`M2` 만 값이 벌어진다(0.426 → 0.482). M2 는 코랩에서 학습했고 "
+              "학습 코드가 레포에 없어서, 입력 조립을 `train_judge_m3.py` 형식으로 "
+              "가정해 돌렸다. M2 담당자가 쓴 형식과 다를 수 있으니 **M2 는 커밋된 "
+              "0.426 을 기준으로 보는 게 안전하다.** M2'·M3 는 학습 코드가 레포에 "
+              "있어 같은 형식이 보장된다.", ""]
 
     # 누수
     lines += ["## 이 표를 그대로 믿으면 안 되는 이유", "",
@@ -210,14 +261,16 @@ def main() -> None:
 
     # 누수 제거 + LLM 대응되는 행만
     keep = [i for i in range(len(rows)) if not leaked[i] and llm[i] is not None]
-    if keep and m1 is not None:
+    if keep:
         g = [gold[i] for i in keep]
-        sub = [("M1 (frozen e5 + LinearSVC)", score(g, [m1[i] for i in keep])),
-               ("LLM (원문 직접 판정)", score(g, [llm[i] for i in keep]))]
+        sub = [("LLM (원문 직접 판정)", score(g, [llm[i] for i in keep]))]
+        if m1 is not None:
+            sub.append(("M1 (frozen e5 + LinearSVC)", score(g, [m1[i] for i in keep])))
+        for name, pr in preds.items():
+            sub.append((name, score(g, [pr[i] for i in keep])))
         decks = sorted({str(rows[i]["doc_id"]) for i in keep})
         lines += table(sub, "누수 제거 · 정면 비교",
-                       "학습에서 본 행을 빼고, LLM 이 실제로 판정한 행만 남긴 %d행 (%s). "
-                       "M2·M2'·M3 는 행 단위 예측이 없어 이 표에 못 넣는다."
+                       "학습에서 본 행을 빼고, LLM 이 실제로 판정한 행만 남긴 %d행 (%s)."
                        % (len(keep), " · ".join(decks)))
 
     sup = score(gold, gold)["support"]
