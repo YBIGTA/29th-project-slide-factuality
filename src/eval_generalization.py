@@ -86,6 +86,8 @@ def main() -> int:
     ap.add_argument("--data", type=Path, default=Path("dataset/generalization.jsonl"))
     ap.add_argument("--suffix", default="_everything_543",
                     help="결과 파일명 꼬리. 259행 결과와 겹치지 않게 한다")
+    ap.add_argument("--split-name", default="generalization (finance_01~05)",
+                    help="결과 json 에 적을 평가 셋 이름")
     args = ap.parse_args()
 
     raw = [json.loads(l) for l in args.data.open(encoding="utf-8") if l.strip()]
@@ -142,7 +144,7 @@ def main() -> int:
         g = block(gold, pred)
         doc = {
             "model_id": model_id,
-            "evaluation_split": "generalization (finance_01~05)",
+            "evaluation_split": args.split_name,
             "use_context": use_ctx,
             **extra,
             "single_seed": True,
@@ -150,6 +152,7 @@ def main() -> int:
             "data_fingerprint": fingerprint,
             "git_commit": commit,
             "runs": [{"seed": None, "generalization": g}],
+            "split_block": g,
             "generalization_macro_f1_mean": g["macro_f1"],
             "generalization_macro_f1_std": None,
             "per_deck": per_deck(rows, gold, pred),

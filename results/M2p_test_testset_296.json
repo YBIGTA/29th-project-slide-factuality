@@ -1,0 +1,169 @@
+{
+  "model_id": "M2p",
+  "evaluation_split": "test (arts_03·bio_04·socio_04·tech_04, 누수 제거 후)",
+  "use_context": false,
+  "backbone": "klue/roberta-base",
+  "weights": "models/M2p/model.safetensors (.gitignore 대상)",
+  "single_seed": true,
+  "seeds_note": "가중치 1벌만 확보되어 3-seed 평균·표준편차를 낼 수 없다",
+  "data_fingerprint": {
+    "train": {
+      "sha12": "5fa5a258a016",
+      "lines": 811
+    },
+    "test": {
+      "sha12": "15e42b972ad0",
+      "lines": 296
+    },
+    "generalization": {
+      "sha12": "5ccf5c633f02",
+      "lines": 543
+    }
+  },
+  "git_commit": "02d1a7c",
+  "runs": [
+    {
+      "seed": null,
+      "generalization": {
+        "macro_f1": 0.24671404904890099,
+        "accuracy": 0.6254416961130742,
+        "per_class_f1": {
+          "근거있음": 0.7882,
+          "무근거": 0.0909,
+          "모순": 0.0714,
+          "benign": 0.0364
+        },
+        "support": {
+          "근거있음": 201,
+          "무근거": 25,
+          "모순": 14,
+          "benign": 43
+        },
+        "confusion": [
+          [
+            173,
+            8,
+            9,
+            11
+          ],
+          [
+            23,
+            2,
+            0,
+            0
+          ],
+          [
+            11,
+            2,
+            1,
+            0
+          ],
+          [
+            31,
+            7,
+            4,
+            1
+          ]
+        ],
+        "confusion_labels": [
+          "근거있음",
+          "무근거",
+          "모순",
+          "benign"
+        ],
+        "n": 283,
+        "ci95": [
+          0.5690498926596558,
+          0.6818334995664926
+        ]
+      }
+    }
+  ],
+  "split_block": {
+    "macro_f1": 0.24671404904890099,
+    "accuracy": 0.6254416961130742,
+    "per_class_f1": {
+      "근거있음": 0.7882,
+      "무근거": 0.0909,
+      "모순": 0.0714,
+      "benign": 0.0364
+    },
+    "support": {
+      "근거있음": 201,
+      "무근거": 25,
+      "모순": 14,
+      "benign": 43
+    },
+    "confusion": [
+      [
+        173,
+        8,
+        9,
+        11
+      ],
+      [
+        23,
+        2,
+        0,
+        0
+      ],
+      [
+        11,
+        2,
+        1,
+        0
+      ],
+      [
+        31,
+        7,
+        4,
+        1
+      ]
+    ],
+    "confusion_labels": [
+      "근거있음",
+      "무근거",
+      "모순",
+      "benign"
+    ],
+    "n": 283,
+    "ci95": [
+      0.5690498926596558,
+      0.6818334995664926
+    ]
+  },
+  "generalization_macro_f1_mean": 0.24671404904890099,
+  "generalization_macro_f1_std": null,
+  "per_deck": {
+    "arts_03__gamma": {
+      "n": 52,
+      "accuracy": 0.5384615384615384,
+      "macro_f1": 0.175,
+      "n_without_candidates": 52
+    },
+    "bio_04__gemini": {
+      "n": 58,
+      "accuracy": 0.7931034482758621,
+      "macro_f1": 0.22115384615384615,
+      "n_without_candidates": 0
+    },
+    "socio_04__claudecode": {
+      "n": 98,
+      "accuracy": 0.5816326530612245,
+      "macro_f1": 0.232897384305835,
+      "n_without_candidates": 0
+    },
+    "tech_04__claudecode": {
+      "n": 75,
+      "accuracy": 0.6133333333333333,
+      "macro_f1": 0.3029137080695372,
+      "n_without_candidates": 21
+    }
+  },
+  "caveats": [
+    "가중치가 모델당 1개뿐이라 단일 seed 결과다. 259행 결과(M3/M2')는 seed 13/42/777 세 벌의 평균이므로 그 수치와 직접 비교하면 안 된다.",
+    "평가 대상은 finance_01~05 전체다(543행 중 라벨 유효 538행). 259행(sha12 4a3f556253bf)은 finance_01+02 만이었다.",
+    "후보 구간이 비어 있는 행이 73개다. 어노테이션이 claim_split.py 보다 잘게 쪼갠 항목이라 대응하는 검색 결과가 없다. 그 행은 근거 없이 판정된다.",
+    "finance_03·finance_05 의 docs/clean 은 사람 검수 전 초벌이다 (종결어미 비율 49.7% / 54.9%). finance_04 는 읽기레이어 추출로 75.7%."
+  ]
+}
