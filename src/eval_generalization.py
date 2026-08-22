@@ -156,6 +156,9 @@ def main() -> int:
             "generalization_macro_f1_mean": g["macro_f1"],
             "generalization_macro_f1_std": None,
             "per_deck": per_deck(rows, gold, pred),
+            # 행별 예측을 남긴다. 이게 없으면 나중에 부분집합(예: LLM 이 판정한
+            # 행만) 으로 다시 집계할 때 추론을 통째로 다시 돌려야 한다.
+            "predictions": {r["claim_id"]: p for r, p in zip(rows, pred)},
             "caveats": notes,
         }
         out = args.root / "results" / f"{model_id}_test{args.suffix}.json"
