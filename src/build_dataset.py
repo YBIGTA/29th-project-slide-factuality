@@ -45,11 +45,17 @@ def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
     if path.exists():
         existing_data = read_jsonl(path)
     
-    # 2. 이번에 새로 갱신되는 덱 ID들 확인
-    new_deck_ids = {r.get("deck_id") for r in rows if r.get("deck_id")}
-    
+    # 2. 이번에 새로 갱신되는 덱 확인 — **doc_id 로 비교한다.**
+    #    deck_id 로 비교하면 규약이 바뀌었을 때(`socio_04` -> `socio_04__claudecode`)
+    #    옛 행이 '갱신 대상이 아니다' 로 잡혀 살아남고, 같은 claim 이 두 벌
+    #    들어간다. 실제로 그렇게 test 가 290행에서 586행으로 불어난 적이 있다.
+    def key(r):
+        return str(r.get("doc_id") or r.get("deck_id", "")).split("__")[0]
+
+    new_docs = {key(r) for r in rows if key(r)}
+
     # 3. 기존 데이터 중, 이번 갱신 대상이 '아닌' 데이터만 남기고 새 데이터와 결합
-    merged_rows = [r for r in existing_data if r.get("deck_id") not in new_deck_ids]
+    merged_rows = [r for r in existing_data if key(r) not in new_docs]
     merged_rows.extend(rows)
 
     # 4. 결합된 전체 데이터를 저장
@@ -180,9 +186,14 @@ def parse_excel_annotations(excel_path: Path) -> dict[str, list[dict[str, Any]]]
         annotator_name = extract_annotator_from_sheet(sheet)
 
         # 1. 시트명에서 구체적인 덱 식별자 추출
-        if "tech_03" in sheet and "중복" in sheet:
-            deck_key = "tech_04"
-        elif "arts_01" in sheet:
+        # 예전에 여기 `tech_03 중복 시트는 tech_04 다` 라는 예외가 있었다.
+        # 그때 워크북에서 지원님이 STRM 덱(tech_03)을 두 시트에 중복
+        # 라벨링했고, 그 사본에 이름만 tech_04 로 갈아 끼워 test 로 보냈다.
+        # 결과적으로 train 의 tech_03 69행이 test 에 그대로 다시 들어가
+        # 모델이 외운 것을 평가하게 됐다. 지금 워크북은 시트가
+        # `tech_04__지원`(연소 불안정 75행)으로 제대로 채워져 있으므로
+        # 예외 없이 시트 이름을 그대로 믿는다.
+        if "arts_01" in sheet:
             # 파일럿 덱(arts_01)은 5명 중 시나 님의 라벨을 대표로 사용
             if annotator_name == "시나":
                 deck_key = "arts_01"
